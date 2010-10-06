@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D2ACC516125D179100A2688D</string>
+										<string>D2ACC51D125D1D1300A2688D</string>
 										<key>history</key>
 										<array>
 											<string>D26E9F28124514370011CCEE</string>
@@ -553,9 +553,6 @@
 		<string>D2ACC4A8125D07A300A2688D</string>
 		<string>D2ACC4A9125D07A300A2688D</string>
 		<string>1C78EAAD065D492600B07095</string>
-		<string>D26E9F0D1245132F0011CCEE</string>
-		<string>1CD10A99069EF8BA00B06720</string>
-		<string>/Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 59 1920 999 0 0 1920 1058 </string>
