@@ -1,0 +1,2531 @@
+TTNWLM2
+v7
+r0
+t308090921.794515
+cCheck dependencies
+cCpResource build/Release-iphoneos/TNWLM2.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist TNWLM2-Info.plist
+cCpResource build/Release-iphoneos/TNWLM2.app/Three20.bundle ../three20/src/Three20.bundle
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Icon.png Icon.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/loadingbutton.png loadingbutton.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/pausebutton.png pausebutton.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/playbutton.png playbutton.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/stopbutton.png stopbutton.png
+cCompileXIB /Users/packn/appdev/Xcode/TNWLM2/iPhoneStreamingPlayerViewController.xib
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Default.png Default.png
+cCpResource build/Release-iphoneos/TNWLM2.app/background.jpg background.jpg
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Listen.png Listen.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Members.png Members.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/News.png News.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Pictures.png Pictures.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Releases.png Releases.png
+cCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Videos.png Videos.png
+cProcessPCH /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch.gch TNWLM2_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch.gch TNWLM2_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cDataModelCompile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom /Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o /Users/packn/appdev/Xcode/TNWLM2/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AppDelegate.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LauncherView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AudioStreamer.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LevelMeterView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/NPStyles.o /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 normal armv6
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o /Users/packn/appdev/Xcode/TNWLM2/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AppDelegate.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LauncherView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AudioStreamer.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LevelMeterView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/NPStyles.o /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 normal armv7
+cCreateUniversalBinary /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"
+cGenerateDSYMFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
+cProcessProductPackaging "/Users/packn/Library/MobileDevice/Provisioning Profiles/2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E.mobileprovision" /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+cTouch /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent
+cCodeSign /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk
+c000000004C6DE9E30000000000000110
+t1282271715
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist
+c000000004C578FA900000000000001A7
+t1280806825
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+c000000004C578FA900000000000001E5
+t1280806825
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004C5A51EA000000000039EF90
+t1280987626
+s3796880
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004C5A51980000000000000A23
+t1280987544
+s2595
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004C5A524A00000000002CE430
+t1280987722
+s2942000
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004C5A517D00000000000004CF
+t1280987517
+s1231
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreData.framework/CoreData
+c000000004C5A533700000000002F9FB0
+t1280987959
+s3121072
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreData.framework/Headers/CoreData.h
+c000000004C5A5311000000000000046B
+t1280987921
+s1131
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004C5A51050000000000345F00
+t1280987397
+s3432192
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004C5A52B100000000003E1EF0
+t1280987825
+s4071152
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004C5A527F0000000000001466
+t1280987775
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/MediaPlayer.framework/Headers/MediaPlayer.h
+c000000004C68BC420000000000000268
+t1281932354
+s616
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/MediaPlayer.framework/MediaPlayer
+c000000004C68BC6800000000002577F0
+t1281932392
+s2455536
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CoreAnimation.h
+c000000004C5A55640000000000000364
+t1280988516
+s868
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004C5A556300000000000000C4
+t1280988515
+s196
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004C5A56D600000000002573D0
+t1280988886
+s2454480
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C62427000000000000009CD
+t1281507952
+s2509
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C62430F0000000002EBC2B0
+t1281508111
+s49005232
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/Availability.h
+c000000004C57A57A0000000000001A5C
+t1280812410
+s6748
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/TargetConditionals.h
+c000000004C57A57B00000000000031E9
+t1280812411
+s12777
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/usr/include/pthread.h
+c000000004C57909100000000000038F0
+t1280807057
+s14576
+
+N/Users/packn/Library/MobileDevice/Provisioning Profiles/2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E.mobileprovision
+c000000004CA5BCC90000000000001C7A
+t1285930185
+s7290
+
+N/Users/packn/Library/MobileDevice/Provisioning Profiles/99A60C30-7FC7-4578-AE3B-43C8BE1E6FBE.mobileprovision
+c000000004C9A552F0000000000001C7E
+t1285182767
+s7294
+
+N/Users/packn/Library/MobileDevice/Provisioning Profiles/BCBDCB9F-7A26-4817-954A-5FC630107307.mobileprovision
+c000000004C9A55310000000000001C7A
+t1285182769
+s7290
+
+N/Users/packn/appdev/Xcode/TNWLM2/../three20/src/Three20.bundle
+c000000004CA32DD60000000000000220
+t1285762518
+s544
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.h
+c000000004CA3368B0000000000000406
+t1285764747
+s1030
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m
+c000000004CA5CE520000000000002983
+t1285934674
+s10627
+i"AppDelegate.h"
+i"LauncherView.h"
+i"iPhoneStreamingPlayerViewController.h"
+i"AudioStreamer.h"
+i"NPStyles.h"
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.h
+c000000004C9A8F170000000000001A5F
+t1285197591
+s6751
+i<UIKit/UIKit.h>
+i<Cocoa/Cocoa.h>
+i<pthread.h>
+i<AudioToolbox/AudioToolbox.h>
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m
+c000000004C9A9002000000000000EC4D
+t1285197826
+s60493
+i"AudioStreamer.h"
+i<CFNetwork/CFNetwork.h>
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.h
+c000000004CACD438000000000000008C
+t1286394936
+s140
+i<Three20/Three20.h>
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m
+c000000004CACDDEF0000000000000CE4
+t1286397423
+s3300
+i"LauncherView.h"
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.h
+c000000004C9A90440000000000000157
+t1285197892
+s343
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m
+c000000004C9A9058000000000000061A
+t1285197912
+s1562
+i"LevelMeterView.h"
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.h
+c000000004CA35AB900000000000000D3
+t1285774009
+s211
+i"Three20/Three20.h"
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m
+c000000004CACDED800000000000003D7
+t1286397656
+s983
+i"Three20/Three20.h"
+i"NPStyles.h"
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.h
+c000000004CA4467E00000000000004F1
+t1285834366
+s1265
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m
+c000000004CA3673B0000000000003156
+t1285777211
+s12630
+i"AppDelegate.h"
+i"iPhoneStreamingPlayerViewController.h"
+i"AudioStreamer.h"
+i"LevelMeterView.h"
+i<QuartzCore/CoreAnimation.h>
+i<MediaPlayer/MediaPlayer.h>
+i<CFNetwork/CFNetwork.h>
+
+N/Users/packn/appdev/Xcode/TNWLM2/Default.png
+c000000004CACC9AF0000000000049CCC
+t1286392239
+s302284
+
+N/Users/packn/appdev/Xcode/TNWLM2/Icon.png
+c000000004C1B2C630000000000001850
+t1276849251
+s6224
+
+N/Users/packn/appdev/Xcode/TNWLM2/Listen.png
+c000000004CACC31F000000000000147C
+t1286390559
+s5244
+
+N/Users/packn/appdev/Xcode/TNWLM2/Members.png
+c000000004CACC3200000000000001165
+t1286390560
+s4453
+
+N/Users/packn/appdev/Xcode/TNWLM2/News.png
+c000000004CACC322000000000000095C
+t1286390562
+s2396
+
+N/Users/packn/appdev/Xcode/TNWLM2/Pictures.png
+c000000004CACC325000000000000134F
+t1286390565
+s4943
+
+N/Users/packn/appdev/Xcode/TNWLM2/Releases.png
+c000000004CACC32600000000000015FF
+t1286390566
+s5631
+
+N/Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel
+c000000004C94DB830000000000000088
+t1284823939
+s136
+
+N/Users/packn/appdev/Xcode/TNWLM2/TNWLM2_Prefix.pch
+c000000004C94DB830000000000000178
+t1284823939
+s376
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<CoreData/CoreData.h>
+i"Three20/Three20.h"
+
+N/Users/packn/appdev/Xcode/TNWLM2/Videos.png
+c000000004CACC3270000000000000EA2
+t1286390567
+s3746
+
+N/Users/packn/appdev/Xcode/TNWLM2/background.jpg
+c000000004CACBF0000000000000236DE
+t1286389504
+s145118
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+t1286398121
+s850
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM
+t1286398118
+s102
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Default.png
+t1286398083
+s383094
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Icon.png
+t1286398082
+s7549
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist
+t1286398081
+s760
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Listen.png
+t1286398083
+s5110
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Members.png
+t1286398083
+s4260
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/News.png
+t1286398083
+s2809
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Pictures.png
+t1286398083
+s5331
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/PkgInfo
+t1286398081
+s8
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Releases.png
+t1286398083
+s6284
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/ResourceRules.plist
+t1286398081
+s485
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
+t1286398117
+s2522240
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom
+t1286398107
+s488
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Three20.bundle
+t1286398082
+s544
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Videos.png
+t1286398083
+s4840
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/background.jpg
+t1286398083
+s145118
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+t1286398120
+s7290
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/iPhoneStreamingPlayerViewController.nib
+t1286398097
+s6306
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/loadingbutton.png
+t1286398082
+s2601
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/pausebutton.png
+t1286398082
+s3194
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/playbutton.png
+t1286398082
+s6069
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/stopbutton.png
+t1286398082
+s3079
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AppDelegate.o
+t1286398109
+s83156
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AudioStreamer.o
+t1286398111
+s92156
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LauncherView.o
+t1286398109
+s54616
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LevelMeterView.o
+t1286398112
+s39312
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/NPStyles.o
+t1286398112
+s11380
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2
+t1286398113
+s1257500
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2.LinkFileList
+c000000004CACE0810000000000000347
+t1286398081
+s839
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o
+t1286398112
+s73936
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o
+t1286398108
+s6668
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AppDelegate.o
+t1286398114
+s82912
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AudioStreamer.o
+t1286398116
+s90848
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LauncherView.o
+t1286398115
+s54556
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LevelMeterView.o
+t1286398116
+s39204
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/NPStyles.o
+t1286398116
+s11344
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2
+t1286398117
+s1256576
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2.LinkFileList
+c000000004CACE0810000000000000347
+t1286398081
+s839
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o
+t1286398116
+s72956
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o
+t1286398114
+s6648
+
+N/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent
+t1286398120
+s470
+
+N/Users/packn/appdev/Xcode/TNWLM2/iPhoneStreamingPlayerViewController.xib
+c000000004CA34EE2000000000000A78C
+t1285770978
+s42892
+
+N/Users/packn/appdev/Xcode/TNWLM2/loadingbutton.png
+c000000004C9A59E50000000000000AAA
+t1285183973
+s2730
+
+N/Users/packn/appdev/Xcode/TNWLM2/main.m
+c000000004C94DB830000000000000148
+t1284823939
+s328
+
+N/Users/packn/appdev/Xcode/TNWLM2/pausebutton.png
+c000000004C9A59E50000000000000A5D
+t1285183973
+s2653
+
+N/Users/packn/appdev/Xcode/TNWLM2/playbutton.png
+c000000004C9A59E50000000000001746
+t1285183973
+s5958
+
+N/Users/packn/appdev/Xcode/TNWLM2/stopbutton.png
+c000000004C9A59E50000000000000A6A
+t1285183973
+s2666
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20.a
+c000000004CACE08100000000000021D0
+t1286398081
+s8656
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Core.a
+c000000004CACE014000000000005BD38
+t1286397972
+s376120
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Network.a
+c000000004CACE01A000000000008CAB0
+t1286397978
+s576176
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Style.a
+c000000004CACE02F0000000000217500
+t1286397999
+s2192640
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UI.a
+c000000004CACE07B00000000009DBE00
+t1286398075
+s10337792
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UICommon.a
+c000000004CACE03400000000000639F0
+t1286398004
+s408048
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a
+c000000004CACE04200000000000F0270
+t1286398018
+s983664
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20/Three20.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Core/Three20Core.h"
+i"Three20Network/Three20Network.h"
+i"Three20Style/Three20Style.h"
+i"Three20UICommon/Three20UICommon.h"
+i"Three20UINavigator/Three20UINavigator.h"
+i"Three20UI/Three20UI.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTCorePreprocessorMacros.h
+c000000004CACD01B0000000000000876
+t1286393883
+s2166
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTDebug.h
+c000000004CACD01B0000000000000EBD
+t1286393883
+s3773
+i<TargetConditionals.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTEntityTables.h
+c000000004CACD01B00000000000004E0
+t1286393883
+s1248
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTGlobalCore.h
+c000000004CACD01B00000000000005E6
+t1286393883
+s1510
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTGlobalCoreLocale.h
+c000000004CACD01B000000000000056D
+t1286393883
+s1389
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTGlobalCorePaths.h
+c000000004CACD01B0000000000000457
+t1286393883
+s1111
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTGlobalCoreRects.h
+c000000004CACD01B0000000000000520
+t1286393883
+s1312
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/TTMarkupStripper.h
+c000000004CACD01B00000000000003CB
+t1286393883
+s971
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Core/Three20Core.h
+c000000004CACD01B00000000000003DD
+t1286393883
+s989
+i"Three20Core/TTCorePreprocessorMacros.h"
+i"Three20Core/TTGlobalCore.h"
+i"Three20Core/TTGlobalCoreLocale.h"
+i"Three20Core/TTGlobalCorePaths.h"
+i"Three20Core/TTGlobalCoreRects.h"
+i"Three20Core/TTDebug.h"
+i"Three20Core/TTEntityTables.h"
+i"Three20Core/TTMarkupStripper.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTGlobalNetwork.h
+c000000004CACD022000000000000057D
+t1286393890
+s1405
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTModel.h
+c000000004CACD0220000000000000CEB
+t1286393890
+s3307
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTModelDelegate.h
+c000000004CACD02200000000000008A8
+t1286393890
+s2216
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLCache.h
+c000000004CACD02200000000000018EA
+t1286393890
+s6378
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLDataResponse.h
+c000000004CACD0220000000000000363
+t1286393890
+s867
+i"Three20Network/TTURLResponse.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLImageResponse.h
+c000000004CACD0220000000000000434
+t1286393890
+s1076
+i"Three20Network/TTURLResponse.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLRequest.h
+c000000004CACD0220000000000001A70
+t1286393890
+s6768
+i<Foundation/Foundation.h>
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Core/TTCorePreprocessorMacros.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLRequestCachePolicy.h
+c000000004CACD02200000000000004CF
+t1286393890
+s1231
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLRequestDelegate.h
+c000000004CACD02200000000000006C3
+t1286393890
+s1731
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLRequestModel.h
+c000000004CACD02200000000000006A1
+t1286393890
+s1697
+i"Three20Network/TTModel.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLRequestQueue.h
+c000000004CACD0220000000000000DAC
+t1286393890
+s3500
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTURLResponse.h
+c000000004CACD022000000000000064F
+t1286393890
+s1615
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/TTUserInfo.h
+c000000004CACD0220000000000000673
+t1286393890
+s1651
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Network/Three20Network.h
+c000000004CACD022000000000000053E
+t1286393890
+s1342
+i"Three20Network/TTGlobalNetwork.h"
+i"Three20Network/TTURLRequestCachePolicy.h"
+i"Three20Network/TTModel.h"
+i"Three20Network/TTModelDelegate.h"
+i"Three20Network/TTURLRequestModel.h"
+i"Three20Network/TTURLRequest.h"
+i"Three20Network/TTURLRequestDelegate.h"
+i"Three20Network/TTURLResponse.h"
+i"Three20Network/TTURLDataResponse.h"
+i"Three20Network/TTURLImageResponse.h"
+i"Three20Network/TTUserInfo.h"
+i"Three20Network/TTURLRequestQueue.h"
+i"Three20Network/TTURLCache.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTBevelBorderStyle.h
+c000000004CACD02700000000000004FD
+t1286393895
+s1277
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTBlendStyle.h
+c000000004CACD0270000000000000340
+t1286393895
+s832
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTBoxStyle.h
+c000000004CACD02700000000000005FD
+t1286393895
+s1533
+i"Three20Style/TTStyle.h"
+i"Three20Style/TTPosition.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTContentStyle.h
+c000000004CACD02700000000000002DB
+t1286393895
+s731
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTDefaultStyleSheet+DragRefreshHeader.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTDefaultStyleSheet.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTDefaultStyleSheet.h
+c000000004CACD0270000000000000F98
+t1286393895
+s3992
+i"Three20Style/TTStyleSheet.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTFlowLayout.h
+c000000004CACD0270000000000000324
+t1286393895
+s804
+i"Three20Style/TTLayout.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTFourBorderStyle.h
+c000000004CACD0270000000000000630
+t1286393895
+s1584
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTGlobalStyle.h
+c000000004CACD0270000000000000774
+t1286393895
+s1908
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTGridLayout.h
+c000000004CACD0270000000000000373
+t1286393895
+s883
+i"Three20Style/TTLayout.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTHighlightBorderStyle.h
+c000000004CACD0270000000000000442
+t1286393895
+s1090
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTImageStyle.h
+c000000004CACD02700000000000007A7
+t1286393895
+s1959
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTInnerShadowStyle.h
+c000000004CACD02700000000000002B8
+t1286393895
+s696
+i"Three20Style/TTShadowStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTInsetStyle.h
+c000000004CACD0270000000000000337
+t1286393895
+s823
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTLayout.h
+c000000004CACD02700000000000002F8
+t1286393895
+s760
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTLinearGradientBorderStyle.h
+c000000004CACD02700000000000005DC
+t1286393895
+s1500
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTLinearGradientFillStyle.h
+c000000004CACD02700000000000003D5
+t1286393895
+s981
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTMaskStyle.h
+c000000004CACD027000000000000032D
+t1286393895
+s813
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTPartStyle.h
+c000000004CACD02700000000000003CD
+t1286393895
+s973
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTPosition.h
+c000000004CACD02700000000000002CA
+t1286393895
+s714
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTRectangleShape.h
+c000000004CACD02700000000000002C8
+t1286393895
+s712
+i"Three20Style/TTShape.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTReflectiveFillStyle.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTRoundedLeftArrowShape.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTRoundedRectangleShape.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTRoundedRightArrowShape.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTShadowStyle.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTShape.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTShapeStyle.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTSolidBorderStyle.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTSolidFillStyle.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTSpeechBubbleShape.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyle.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyleContext.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyleDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyleSheet.h
+c000000004CACD02700000000000003E3
+t1286393895
+s995
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledBlock.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledBoldNode.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledBoxFrame.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledButtonNode.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyledInlineBlock.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledElement.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledFrame.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledImageFrame.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledImageNode.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledInline.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledInlineBlock.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledInlineFrame.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledItalicNode.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledLineBreakNode.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledLinkNode.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyledInline.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledNode.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledText.h
+c00000000000000000000000000000000
+t2
+s0
+i<UIKit/UIKit.h>
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledTextDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledTextFrame.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledTextNode.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyledNode.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTStyledTextParser.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/TTTextStyle.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyle.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20Style/Three20Style.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Core/Three20Core.h"
+i"Three20Network/Three20Network.h"
+i"Three20Style/TTGlobalStyle.h"
+i"Three20Style/TTPosition.h"
+i"Three20Style/TTDefaultStyleSheet.h"
+i"Three20Style/TTDefaultStyleSheet+DragRefreshHeader.h"
+i"Three20Style/TTLayout.h"
+i"Three20Style/TTFlowLayout.h"
+i"Three20Style/TTGridLayout.h"
+i"Three20Style/TTShape.h"
+i"Three20Style/TTRectangleShape.h"
+i"Three20Style/TTRoundedRectangleShape.h"
+i"Three20Style/TTRoundedRightArrowShape.h"
+i"Three20Style/TTRoundedLeftArrowShape.h"
+i"Three20Style/TTSpeechBubbleShape.h"
+i"Three20Style/TTStyle.h"
+i"Three20Style/TTStyleDelegate.h"
+i"Three20Style/TTStyleContext.h"
+i"Three20Style/TTContentStyle.h"
+i"Three20Style/TTPartStyle.h"
+i"Three20Style/TTShapeStyle.h"
+i"Three20Style/TTInsetStyle.h"
+i"Three20Style/TTBoxStyle.h"
+i"Three20Style/TTTextStyle.h"
+i"Three20Style/TTImageStyle.h"
+i"Three20Style/TTMaskStyle.h"
+i"Three20Style/TTBlendStyle.h"
+i"Three20Style/TTSolidFillStyle.h"
+i"Three20Style/TTLinearGradientFillStyle.h"
+i"Three20Style/TTReflectiveFillStyle.h"
+i"Three20Style/TTShadowStyle.h"
+i"Three20Style/TTInnerShadowStyle.h"
+i"Three20Style/TTSolidBorderStyle.h"
+i"Three20Style/TTHighlightBorderStyle.h"
+i"Three20Style/TTFourBorderStyle.h"
+i"Three20Style/TTBevelBorderStyle.h"
+i"Three20Style/TTLinearGradientBorderStyle.h"
+i"Three20Style/TTStyledText.h"
+i"Three20Style/TTStyledTextDelegate.h"
+i"Three20Style/TTStyledNode.h"
+i"Three20Style/TTStyledTextNode.h"
+i"Three20Style/TTStyledElement.h"
+i"Three20Style/TTStyledBlock.h"
+i"Three20Style/TTStyledInline.h"
+i"Three20Style/TTStyledInlineBlock.h"
+i"Three20Style/TTStyledBoldNode.h"
+i"Three20Style/TTStyledItalicNode.h"
+i"Three20Style/TTStyledLinkNode.h"
+i"Three20Style/TTStyledButtonNode.h"
+i"Three20Style/TTStyledImageNode.h"
+i"Three20Style/TTStyledLineBreakNode.h"
+i"Three20Style/TTStyledFrame.h"
+i"Three20Style/TTStyledBoxFrame.h"
+i"Three20Style/TTStyledInlineFrame.h"
+i"Three20Style/TTStyledTextFrame.h"
+i"Three20Style/TTStyledImageFrame.h"
+i"Three20Style/TTStyledTextParser.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTActionSheetController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTPopupViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTActionSheetControllerDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTActivityLabel.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTAlertViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTPopupViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTAlertViewControllerDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTButton.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyleDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTButtonBar.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTErrorView.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTImageView.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+i"Three20Network/TTURLRequestDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTImageViewDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTLabel.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTLauncherItem.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTLauncherView.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTLauncherViewDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTLink.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTListDataSource.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTMessageController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTViewController.h"
+i"Three20UI/TTTextEditorDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTMessageControllerDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTMessageField.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTMessageRecipientField.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTMessageField.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTMessageSubjectField.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTMessageTextField.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTMessageTextField.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTMessageField.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTModelViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTViewController.h"
+i"Three20Network/TTModelDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTNavigationController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UINavigator/TTBaseNavigationController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTNavigator.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UINavigator/TTBaseNavigator.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPageControl.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPhoto.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UINavigator/TTURLObject.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPhotoSource.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Network/TTModel.h"
+i"Three20UINavigator/TTURLObject.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPhotoVersion.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPhotoView.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTImageView.h"
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UI/TTImageViewDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPhotoViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTModelViewController.h"
+i"Three20UI/TTScrollViewDelegate.h"
+i"Three20UI/TTScrollViewDataSource.h"
+i"Three20UI/TTThumbsViewControllerDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPickerTextField.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTSearchTextField.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPopupViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTModelViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPostController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTPopupViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTPostControllerDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTRecursiveProgress.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTScrollView.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTScrollViewDataSource.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTScrollViewDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTSearchBar.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTSearchDisplayController.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTSearchTextField.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTSearchTextFieldDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTSearchlightLabel.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTSectionedDataSource.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTStyledTextLabel.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyledTextDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTStyledTextTableCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTStyledTextTableItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTab.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTButton.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTabBar.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTabDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTabGrid.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTabBar.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTabItem.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTabStrip.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTabBar.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableActivityItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableActivityItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableButton.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableCaptionItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableCaptionItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableControlCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableControlItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableFlushViewCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableGrayTextItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableHeaderView.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableImageItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableImageItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableItem.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableLink.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableLinkedItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableLinkedItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableLongTextItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableMessageItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableMessageItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableMoreButton.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableSubtitleItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableMoreButtonCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableSubtitleItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableRightCaptionItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableCaptionItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableRightCaptionItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableRightImageItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableImageItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableStyledTextItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableSubtextItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableCaptionItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableSubtextItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableSubtitleItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableSubtitleItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableSummaryItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableTextItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableTextItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableTextItemCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableLinkedItemCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableView.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewCell.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTModelViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewDataSource.h
+c00000000000000000000000000000000
+t2
+s0
+i<UIKit/UIKit.h>
+i"Three20Network/TTModel.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewDragRefreshDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewGroupedVarHeightDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewItem.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableItem.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewPlainDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewPlainVarHeightDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTableViewVarHeightDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTextBarController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTPopupViewController.h"
+i"Three20UI/TTTextEditorDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTextBarDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTextEditor.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTView.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTTextEditorDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTThumbView.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTButton.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTThumbsDataSource.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewDataSource.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTThumbsTableViewCell.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewCell.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTThumbsTableViewCellDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTThumbsViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTTableViewController.h"
+i"Three20UI/TTThumbsTableViewCellDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTThumbsViewControllerDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTView.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20Style/TTStyleDelegate.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UINavigator/TTNavigatorViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTWebController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTModelViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/TTYouTubeView.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UI/Three20UI.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UI/TTNavigator.h"
+i"Three20UI/TTViewController.h"
+i"Three20UI/TTNavigationController.h"
+i"Three20UI/TTWebController.h"
+i"Three20UI/TTMessageController.h"
+i"Three20UI/TTMessageControllerDelegate.h"
+i"Three20UI/TTMessageField.h"
+i"Three20UI/TTMessageRecipientField.h"
+i"Three20UI/TTMessageTextField.h"
+i"Three20UI/TTMessageSubjectField.h"
+i"Three20UI/TTAlertViewController.h"
+i"Three20UI/TTAlertViewControllerDelegate.h"
+i"Three20UI/TTActionSheetController.h"
+i"Three20UI/TTActionSheetControllerDelegate.h"
+i"Three20UI/TTPostController.h"
+i"Three20UI/TTPostControllerDelegate.h"
+i"Three20UI/TTTextBarController.h"
+i"Three20UI/TTTextBarDelegate.h"
+i"Three20Network/TTURLCache.h"
+i"Three20UI/TTView.h"
+i"Three20UI/TTImageView.h"
+i"Three20UI/TTImageViewDelegate.h"
+i"Three20UI/TTYouTubeView.h"
+i"Three20UI/TTScrollView.h"
+i"Three20UI/TTScrollViewDelegate.h"
+i"Three20UI/TTScrollViewDataSource.h"
+i"Three20UI/TTLauncherView.h"
+i"Three20UI/TTLauncherViewDelegate.h"
+i"Three20UI/TTLauncherItem.h"
+i"Three20UI/TTLabel.h"
+i"Three20UI/TTStyledTextLabel.h"
+i"Three20UI/TTActivityLabel.h"
+i"Three20UI/TTSearchlightLabel.h"
+i"Three20UI/TTButton.h"
+i"Three20UI/TTLink.h"
+i"Three20UI/TTTabBar.h"
+i"Three20UI/TTTabDelegate.h"
+i"Three20UI/TTTabStrip.h"
+i"Three20UI/TTTabGrid.h"
+i"Three20UI/TTTab.h"
+i"Three20UI/TTTabItem.h"
+i"Three20UI/TTButtonBar.h"
+i"Three20UI/TTPageControl.h"
+i"Three20UI/TTTextEditor.h"
+i"Three20UI/TTTextEditorDelegate.h"
+i"Three20UI/TTSearchTextField.h"
+i"Three20UI/TTSearchTextFieldDelegate.h"
+i"Three20UI/TTPickerTextField.h"
+i"Three20UI/TTSearchBar.h"
+i"Three20UI/TTTableViewController.h"
+i"Three20UI/TTSearchDisplayController.h"
+i"Three20UI/TTTableView.h"
+i"Three20UI/TTTableViewDelegate.h"
+i"Three20UI/TTTableViewVarHeightDelegate.h"
+i"Three20UI/TTTableViewGroupedVarHeightDelegate.h"
+i"Three20UI/TTTableViewPlainDelegate.h"
+i"Three20UI/TTTableViewPlainVarHeightDelegate.h"
+i"Three20UI/TTTableViewDragRefreshDelegate.h"
+i"Three20UI/TTListDataSource.h"
+i"Three20UI/TTSectionedDataSource.h"
+i"Three20UI/TTTableHeaderView.h"
+i"Three20UI/TTTableViewCell.h"
+i"Three20UI/TTTableItem.h"
+i"Three20UI/TTTableLinkedItem.h"
+i"Three20UI/TTTableTextItem.h"
+i"Three20UI/TTTableCaptionItem.h"
+i"Three20UI/TTTableRightCaptionItem.h"
+i"Three20UI/TTTableSubtextItem.h"
+i"Three20UI/TTTableSubtitleItem.h"
+i"Three20UI/TTTableMessageItem.h"
+i"Three20UI/TTTableLongTextItem.h"
+i"Three20UI/TTTableGrayTextItem.h"
+i"Three20UI/TTTableSummaryItem.h"
+i"Three20UI/TTTableLink.h"
+i"Three20UI/TTTableButton.h"
+i"Three20UI/TTTableMoreButton.h"
+i"Three20UI/TTTableImageItem.h"
+i"Three20UI/TTTableRightImageItem.h"
+i"Three20UI/TTTableActivityItem.h"
+i"Three20UI/TTTableStyledTextItem.h"
+i"Three20UI/TTTableControlItem.h"
+i"Three20UI/TTTableViewItem.h"
+i"Three20UI/TTTableLinkedItemCell.h"
+i"Three20UI/TTTableTextItemCell.h"
+i"Three20UI/TTTableCaptionItemCell.h"
+i"Three20UI/TTTableSubtextItemCell.h"
+i"Three20UI/TTTableRightCaptionItemCell.h"
+i"Three20UI/TTTableSubtitleItemCell.h"
+i"Three20UI/TTTableMessageItemCell.h"
+i"Three20UI/TTTableMoreButtonCell.h"
+i"Three20UI/TTTableImageItemCell.h"
+i"Three20UI/TTStyledTextTableItemCell.h"
+i"Three20UI/TTStyledTextTableCell.h"
+i"Three20UI/TTTableActivityItemCell.h"
+i"Three20UI/TTTableControlCell.h"
+i"Three20UI/TTTableFlushViewCell.h"
+i"Three20UI/TTErrorView.h"
+i"Three20UI/TTPhotoVersion.h"
+i"Three20UI/TTPhotoSource.h"
+i"Three20UI/TTPhoto.h"
+i"Three20UI/TTPhotoViewController.h"
+i"Three20UI/TTPhotoView.h"
+i"Three20UI/TTThumbsViewController.h"
+i"Three20UI/TTThumbsViewControllerDelegate.h"
+i"Three20UI/TTThumbsDataSource.h"
+i"Three20UI/TTThumbsTableViewCell.h"
+i"Three20UI/TTThumbsTableViewCellDelegate.h"
+i"Three20UI/TTThumbView.h"
+i"Three20UI/TTRecursiveProgress.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UICommon/TTBaseViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UICommon/TTGlobalUICommon.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UICommon/Three20UICommon.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UICommon/TTGlobalUICommon.h"
+i"Three20UICommon/TTBaseViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTBaseNavigationController.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTBaseNavigator.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Three20UINavigator/TTNavigatorPersistenceMode.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTGlobalNavigatorMetrics.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTNavigationMode.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTNavigatorDelegate.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTNavigatorPersistenceMode.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTNavigatorViewController.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UICommon/TTBaseViewController.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTURLAction.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTURLGeneratorPattern.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UINavigator/TTURLPattern.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTURLMap.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+i"Three20UINavigator/TTNavigationMode.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTURLNavigatorPattern.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UINavigator/TTURLPattern.h"
+i"Three20UINavigator/TTNavigationMode.h"
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTURLObject.h
+c00000000000000000000000000000000
+t2
+s0
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/TTURLPattern.h
+c00000000000000000000000000000000
+t2
+s0
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/packn/appdev/Xcode/three20/Build/Products/three20/Three20UINavigator/Three20UINavigator.h
+c00000000000000000000000000000000
+t2
+s0
+i"Three20UINavigator/TTGlobalNavigatorMetrics.h"
+i"Three20UINavigator/TTURLObject.h"
+i"Three20UINavigator/TTNavigatorViewController.h"
+i"Three20UINavigator/TTBaseNavigationController.h"
+i"Three20UINavigator/TTNavigatorPersistenceMode.h"
+i"Three20UINavigator/TTBaseNavigator.h"
+i"Three20UINavigator/TTNavigatorDelegate.h"
+i"Three20UINavigator/TTURLAction.h"
+i"Three20UINavigator/TTURLMap.h"
+i"Three20UINavigator/TTNavigationMode.h"
+i"Three20UINavigator/TTURLPattern.h"
+i"Three20UINavigator/TTURLGeneratorPattern.h"
+i"Three20UINavigator/TTURLNavigatorPattern.h"
+
+N/var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch.gch
+t1286398105
+s12108336
+
+N/var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch.gch
+t1286398106
+s12567088
+
+NTNWLM2-Info.plist
+c000000004CA5B8B9000000000000038A
+t1285929145
+s906
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies308090881#308090881#0(0"0(0#1#0"8670027552#0"0#
+
+CCodeSign /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+s308090920.207971
+e308090921.793560
+r1
+xCodeSign
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+lSLF07#2@42"CodeSign build/Release-iphoneos/TNWLM2.app308090920#308090921#0(0"0(0#0#66"/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app8674796672#623"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nikki Pack (P5HYE39C37)" --resource-rules=/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/ResourceRules.plist --entitlements /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AppDelegate.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090908.560505
+e308090909.056526
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AppDelegate.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didRegisterForRemoteNotificationsWithDeviceToken:]':
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:60: warning: format not a string literal and no format arguments
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didFailToRegisterForRemoteNotificationsWithError:]':
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:67: warning: format not a string literal and no format arguments
+lSLF07#2@62"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m308090908#308090909#0(536"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didRegisterForRemoteNotificationsWithDeviceToken:]':/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:60: warning: format not a string literal and no format arguments/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didFailToRegisterForRemoteNotificationsWithError:]':/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:67: warning: format not a string literal and no format arguments2(22@51"Format not a string literal and no format arguments308090908#148#120#0(6@54"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m307627474#60#0#60#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments308090908#416#120#0(6@54"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m307627474#67#0#67#0#51"format not a string literal and no format arguments0(0#0#54"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m8677851648#1760"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AppDelegate.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AudioStreamer.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090909.260854
+e308090911.331631
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AudioStreamer.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m308090909#308090911#0(0"0(0#0#56"/Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m8673431488#1764"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AudioStreamer.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LauncherView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090909.056670
+e308090909.260732
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LauncherView.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m308090909#308090909#0(0"0(0#0#55"/Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m8659544256#1762"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LauncherView.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LevelMeterView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090912.406521
+e308090912.573022
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LevelMeterView.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m308090912#308090912#0(0"0(0#0#57"/Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m8678545504#1766"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/LevelMeterView.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/NPStyles.o /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090912.573126
+e308090912.691190
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/NPStyles.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m308090912#308090912#0(0"0(0#0#51"/Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m8668994176#1754"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/NPStyles.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090911.331818
+e308090912.406409
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308090911#308090912#0(0"0(0#0#78"/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8662534112#1808"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o /Users/packn/appdev/Xcode/TNWLM2/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090907.392553
+e308090908.560323
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o
+x/Users/packn/appdev/Xcode/TNWLM2/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/packn/appdev/Xcode/TNWLM2/main.m308090907#308090908#0(0"0(0#0#39"/Users/packn/appdev/Xcode/TNWLM2/main.m8623168160#1738"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/main.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AppDelegate.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090914.283825
+e308090914.863942
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AppDelegate.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didRegisterForRemoteNotificationsWithDeviceToken:]':
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:60: warning: format not a string literal and no format arguments
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didFailToRegisterForRemoteNotificationsWithError:]':
+o/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:67: warning: format not a string literal and no format arguments
+lSLF07#2@62"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m308090914#308090914#0(536"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didRegisterForRemoteNotificationsWithDeviceToken:]':/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:60: warning: format not a string literal and no format arguments/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m: In function '-[AppDelegate application:didFailToRegisterForRemoteNotificationsWithError:]':/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m:67: warning: format not a string literal and no format arguments2(22@51"Format not a string literal and no format arguments308090914#148#120#0(6@54"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m307627474#60#0#60#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments308090914#416#120#0(6@54"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m307627474#67#0#67#0#51"format not a string literal and no format arguments0(0#0#54"/Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m8671530624#1760"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AppDelegate.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AudioStreamer.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090915.090678
+e308090916.241111
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AudioStreamer.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@64"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m308090915#308090916#0(0"0(0#0#56"/Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m8665555712#1764"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/AudioStreamer.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/AudioStreamer.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LauncherView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090914.864244
+e308090915.090463
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LauncherView.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@63"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m308090914#308090915#0(0"0(0#0#55"/Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m8631097120#1762"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/LauncherView.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LauncherView.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LevelMeterView.o /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090916.618975
+e308090916.864927
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LevelMeterView.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@65"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m308090916#308090916#0(0"0(0#0#57"/Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m8673791904#1766"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/LevelMeterView.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/LevelMeterView.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/NPStyles.o /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090916.865065
+e308090916.966751
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/NPStyles.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@59"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m308090916#308090916#0(0"0(0#0#51"/Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m8639930560#1754"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/NPStyles.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/NPStyles.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090916.241228
+e308090916.618739
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o
+x/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@86"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308090916#308090916#0(0"0(0#0#78"/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8669911392#1808"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o0#
+
+CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o /Users/packn/appdev/Xcode/TNWLM2/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090913.581753
+e308090914.283711
+r1
+xCompileC
+xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o
+x/Users/packn/appdev/Xcode/TNWLM2/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@47"Compile /Users/packn/appdev/Xcode/TNWLM2/main.m308090913#308090914#0(0"0(0#0#39"/Users/packn/appdev/Xcode/TNWLM2/main.m8668208608#1738"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/main.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o0#
+
+CCompileXIB /Users/packn/appdev/Xcode/TNWLM2/iPhoneStreamingPlayerViewController.xib
+s308090882.775785
+e308090898.767002
+r1
+xCompileXIB
+x/Users/packn/appdev/Xcode/TNWLM2/iPhoneStreamingPlayerViewController.xib
+lSLF07#2@50"CompileXIB iPhoneStreamingPlayerViewController.xib308090882#308090898#0(0"0(0#0#72"/Users/packn/appdev/Xcode/TNWLM2/iPhoneStreamingPlayerViewController.xib8655915456#577"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/iPhoneStreamingPlayerViewController.nib /Users/packn/appdev/Xcode/TNWLM2/iPhoneStreamingPlayerViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Default.png Default.png
+s308090882.839359
+e308090883.555262
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Default.png
+xDefault.png
+lSLF07#2@69"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Default.png Default.png308090882#308090883#0(0"0(0#0#44"/Users/packn/appdev/Xcode/TNWLM2/Default.png8650005696#545"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Default.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Default.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Icon.png Icon.png
+s308090881.283446
+e308090882.720317
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Icon.png
+xIcon.png
+lSLF07#2@63"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Icon.png Icon.png308090881#308090882#0(0"0(0#0#41"/Users/packn/appdev/Xcode/TNWLM2/Icon.png8633668544#539"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Icon.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Icon.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Listen.png Listen.png
+s308090883.556203
+e308090883.676159
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Listen.png
+xListen.png
+lSLF07#2@67"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Listen.png Listen.png308090883#308090883#0(0"0(0#0#43"/Users/packn/appdev/Xcode/TNWLM2/Listen.png8671085088#543"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Listen.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Listen.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Members.png Members.png
+s308090883.722645
+e308090883.764950
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Members.png
+xMembers.png
+lSLF07#2@69"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Members.png Members.png308090883#308090883#0(0"0(0#0#44"/Users/packn/appdev/Xcode/TNWLM2/Members.png8665829984#545"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Members.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Members.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/News.png News.png
+s308090883.765155
+e308090883.812745
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/News.png
+xNews.png
+lSLF07#2@63"CopyPNGFile build/Release-iphoneos/TNWLM2.app/News.png News.png308090883#308090883#0(0"0(0#0#41"/Users/packn/appdev/Xcode/TNWLM2/News.png8677329216#539"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/News.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/News.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Pictures.png Pictures.png
+s308090883.812848
+e308090883.859752
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Pictures.png
+xPictures.png
+lSLF07#2@71"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Pictures.png Pictures.png308090883#308090883#0(0"0(0#0#45"/Users/packn/appdev/Xcode/TNWLM2/Pictures.png8669441600#547"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Pictures.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Pictures.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Releases.png Releases.png
+s308090883.859973
+e308090883.914531
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Releases.png
+xReleases.png
+lSLF07#2@71"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Releases.png Releases.png308090883#308090883#0(0"0(0#0#45"/Users/packn/appdev/Xcode/TNWLM2/Releases.png8666731936#547"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Releases.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Releases.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Videos.png Videos.png
+s308090883.914629
+e308090883.978844
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Videos.png
+xVideos.png
+lSLF07#2@67"CopyPNGFile build/Release-iphoneos/TNWLM2.app/Videos.png Videos.png308090883#308090883#0(0"0(0#0#43"/Users/packn/appdev/Xcode/TNWLM2/Videos.png8656158528#543"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/Videos.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Videos.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/loadingbutton.png loadingbutton.png
+s308090882.336286
+e308090882.720152
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/loadingbutton.png
+xloadingbutton.png
+lSLF07#2@81"CopyPNGFile build/Release-iphoneos/TNWLM2.app/loadingbutton.png loadingbutton.png308090882#308090882#0(0"0(0#0#50"/Users/packn/appdev/Xcode/TNWLM2/loadingbutton.png8657820672#557"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/loadingbutton.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/loadingbutton.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/pausebutton.png pausebutton.png
+s308090882.720399
+e308090882.763245
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/pausebutton.png
+xpausebutton.png
+lSLF07#2@77"CopyPNGFile build/Release-iphoneos/TNWLM2.app/pausebutton.png pausebutton.png308090882#308090882#0(0"0(0#0#48"/Users/packn/appdev/Xcode/TNWLM2/pausebutton.png8644441664#553"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/pausebutton.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/pausebutton.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/playbutton.png playbutton.png
+s308090882.721267
+e308090882.775604
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/playbutton.png
+xplaybutton.png
+lSLF07#2@75"CopyPNGFile build/Release-iphoneos/TNWLM2.app/playbutton.png playbutton.png308090882#308090882#0(0"0(0#0#47"/Users/packn/appdev/Xcode/TNWLM2/playbutton.png8626772480#551"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/playbutton.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/playbutton.png0#
+
+CCopyPNGFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/stopbutton.png stopbutton.png
+s308090882.763347
+e308090882.839254
+r1
+xCopyPNGFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/stopbutton.png
+xstopbutton.png
+lSLF07#2@75"CopyPNGFile build/Release-iphoneos/TNWLM2.app/stopbutton.png stopbutton.png308090882#308090882#0(0"0(0#0#47"/Users/packn/appdev/Xcode/TNWLM2/stopbutton.png8654699808#551"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/packn/appdev/Xcode/TNWLM2/stopbutton.png /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/stopbutton.png0#
+
+CCpResource build/Release-iphoneos/TNWLM2.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+s308090881.205569
+e308090881.281484
+r1
+xCpResource
+xbuild/Release-iphoneos/TNWLM2.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist308090881#308090881#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist8674075744#490"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+
+CCpResource build/Release-iphoneos/TNWLM2.app/Three20.bundle ../three20/src/Three20.bundle
+s308090881.282551
+e308090882.336107
+r1
+xCpResource
+xbuild/Release-iphoneos/TNWLM2.app/Three20.bundle
+x../three20/src/Three20.bundle
+lSLF07#2@34"Copy ../three20/src/Three20.bundle308090881#308090882#0(0"0(0#0#62"/Users/packn/appdev/Xcode/TNWLM2/../three20/src/Three20.bundle8659327936#463"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/packn/appdev/Xcode/TNWLM2/../three20/src/Three20.bundle /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+
+CCpResource build/Release-iphoneos/TNWLM2.app/background.jpg background.jpg
+s308090883.555374
+e308090883.722545
+r1
+xCpResource
+xbuild/Release-iphoneos/TNWLM2.app/background.jpg
+xbackground.jpg
+lSLF07#2@19"Copy background.jpg308090883#308090883#0(0"0(0#0#47"/Users/packn/appdev/Xcode/TNWLM2/background.jpg8674592864#448"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -strip-debug-symbols -resolve-src-symlinks /Users/packn/appdev/Xcode/TNWLM2/background.jpg /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+
+CCreateUniversalBinary /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"
+s308090917.682663
+e308090917.740547
+r1
+xCreateUniversalBinary
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
+xnormal
+xarmv6 armv7
+lSLF07#2@83"CreateUniversalBinary build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"308090917#308090917#0(0"0(0#0#44"/Users/packn/appdev/Xcode/TNWLM2/armv6 armv78679612512#492"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 -output /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM20#
+
+CDataModelCompile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom /Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel
+s308090906.950472
+e308090907.392309
+r1
+xDataModelCompile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom
+x/Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel
+lSLF07#2@59"Compile /Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel308090906#308090907#0(0"0(0#0#51"/Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel8671085280#322"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/momc /Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom0#
+
+CGenerateDSYMFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
+s308090917.740656
+e308090920.090201
+r1
+xGenerateDSYMFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
+lSLF07#2@96"GenerateDSYMFile build/Release-iphoneos/TNWLM2.app.dSYM build/Release-iphoneos/TNWLM2.app/TNWLM2308090917#308090920#0(0"0(0#0#73"/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM28671162816#345"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 -o /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM0#
+
+CLd /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 normal armv6
+s308090912.691290
+e308090913.581525
+r1
+xLd
+x/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2
+xnormal
+xarmv6
+lSLF07#2@114"Link /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2308090912#308090913#0(0"0(0#0#0"8638439488#1551"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -filelist /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM20#
+
+CLd /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 normal armv7
+s308090916.966864
+e308090917.682551
+r1
+xLd
+x/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2
+xnormal
+xarmv7
+lSLF07#2@114"Link /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2308090916#308090917#0(0"0(0#0#0"8663164800#1551"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -filelist /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2.LinkFileList -dead_strip -all_load -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM20#
+
+CProcessInfoPlistFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist TNWLM2-Info.plist
+s308090881.206869
+e308090881.282459
+r1
+xProcessInfoPlistFile
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist
+xTNWLM2-Info.plist
+lSLF07#2@25"Process TNWLM2-Info.plist308090881#308090881#0(0"0(0#0#50"/Users/packn/appdev/Xcode/TNWLM2/TNWLM2-Info.plist8672565568#540"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TNWLM2-Info.plist -genpkginfo /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/ResourceRules.plist -o /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist0#
+
+CProcessPCH /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch.gch TNWLM2_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s308090898.767185
+e308090905.333414
+r1
+xProcessPCH
+x/var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch.gch
+xTNWLM2_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile TNWLM2_Prefix.pch308090898#308090905#0(0"0(0#0#50"/Users/packn/appdev/Xcode/TNWLM2/TNWLM2_Prefix.pch8657034464#1641"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -c /Users/packn/appdev/Xcode/TNWLM2/TNWLM2_Prefix.pch -o /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch.gch TNWLM2_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s308090905.333677
+e308090906.950246
+r1
+xProcessPCH
+x/var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch.gch
+xTNWLM2_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile TNWLM2_Prefix.pch308090905#308090906#0(0"0(0#0#50"/Users/packn/appdev/Xcode/TNWLM2/TNWLM2_Prefix.pch8678652064#1641"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -c /Users/packn/appdev/Xcode/TNWLM2/TNWLM2_Prefix.pch -o /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/packn/Library/MobileDevice/Provisioning Profiles/2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E.mobileprovision" /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+s308090920.090575
+e308090920.134138
+r1
+xProcessProductPackaging
+x/Users/packn/Library/MobileDevice/Provisioning Profiles/2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E.mobileprovision
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+lSLF07#2@193"ProcessProductPackaging "/Users/packn/Library/MobileDevice/Provisioning Profiles/2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E.mobileprovision" build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision308090920#308090920#0(0"0(0#0#91"/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision8668654080#412"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/packn/Library/MobileDevice/Provisioning Profiles/2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E.mobileprovision" -o /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/packn/Library/MobileDevice/Provisioning Profiles/99A60C30-7FC7-4578-AE3B-43C8BE1E6FBE.mobileprovision" /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging "/Users/packn/Library/MobileDevice/Provisioning Profiles/BCBDCB9F-7A26-4817-954A-5FC630107307.mobileprovision" /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+s307622633.335543
+e307622633.468591
+r1
+xProcessProductPackaging
+x/Users/packn/Library/MobileDevice/Provisioning Profiles/BCBDCB9F-7A26-4817-954A-5FC630107307.mobileprovision
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision
+lSLF07#2@193"ProcessProductPackaging "/Users/packn/Library/MobileDevice/Provisioning Profiles/BCBDCB9F-7A26-4817-954A-5FC630107307.mobileprovision" build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision307622633#307622633#0(0"0(0#0#91"/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision8615051168#412"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/packn/Library/MobileDevice/Provisioning Profiles/BCBDCB9F-7A26-4817-954A-5FC630107307.mobileprovision" -o /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/embedded.mobileprovision0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent
+s308090920.188730
+e308090920.207889
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist
+x/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent
+lSLF07#2@174"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent308090920#308090920#0(0"0(0#0#94"/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent8669222112#419"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent0#
+
+CTouch /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+s308090920.134222
+e308090920.188626
+r1
+xTouch
+x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
+lSLF07#2@72"Touch /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app308090920#308090920#0(0"0(0#0#0"8670244608#253"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+
