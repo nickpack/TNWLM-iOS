@@ -20,6 +20,9 @@
 #import <QuartzCore/CoreAnimation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CFNetwork/CFNetwork.h>
+#import "CommonData.h"
+#import <Three20/Three20.h>
+#import <Three20UI/UIViewAdditions.h>
 
 @implementation iPhoneStreamingPlayerViewController
 
@@ -38,6 +41,7 @@
 {
 	
 	[button.layer removeAllAnimations];
+	
 	if (!image)
 	{
 		[button setImage:[UIImage imageNamed:@"playbutton.png"] forState:0];
@@ -60,18 +64,16 @@
 //
 - (void)destroyStreamer
 {
-	if (streamer)
+	if (commonData.streamer)
 	{
 		[[NSNotificationCenter defaultCenter]
 			removeObserver:self
 			name:ASStatusChangedNotification
-			object:streamer];
-		[progressUpdateTimer invalidate];
-		progressUpdateTimer = nil;
-		
-		[streamer stop];
-		[streamer release];
-		streamer = nil;
+			object:commonData.streamer];
+				
+		[commonData.streamer stop];
+		[commonData.streamer release];
+		commonData.streamer = nil;
 	}
 }
 
@@ -82,32 +84,17 @@
 //
 - (void)createStreamer
 {
-	if (streamer)
+	
+	if (commonData.streamer)
 	{
 		return;
 	}
 
 	[self destroyStreamer];
 	
-	NSString *escapedValue =
-		[(NSString *)CFURLCreateStringByAddingPercentEscapes(
-			nil,
-			(CFStringRef)downloadSourceField.text,
-			NULL,
-			NULL,
-			kCFStringEncodingUTF8)
-		autorelease];
-
-	NSURL *url = [NSURL URLWithString:escapedValue];
-	streamer = [[AudioStreamer alloc] initWithURL:url];
-	
-	progressUpdateTimer =
-		[NSTimer
-			scheduledTimerWithTimeInterval:0.1
-			target:self
-			selector:@selector(updateProgress:)
-			userInfo:nil
-			repeats:YES];
+	commonData.streamUrl = [NSURL URLWithString:@"http://thor.nickpack.com:9000"];
+	commonData.streamer = [[AudioStreamer alloc] initWithURL:commonData.streamUrl];
+	NSLog(@"%@",commonData.streamUrl);
 	levelMeterUpdateTimer = 
 		[NSTimer 
 			scheduledTimerWithTimeInterval:.1 
@@ -119,13 +106,13 @@
 		addObserver:self
 		selector:@selector(playbackStateChanged:)
 		name:ASStatusChangedNotification
-		object:streamer];
+		object:commonData.streamer];
 #ifdef SHOUTCAST_METADATA
 	[[NSNotificationCenter defaultCenter]
 	 addObserver:self
 	 selector:@selector(metadataChanged:)
 	 name:ASUpdateMetadataNotification
-	 object:streamer];
+	 object:commonData.streamer];
 #endif
 }
 
@@ -139,7 +126,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	
+	commonData = [CommonData sharedCommonData];
 	MPVolumeView *volumeView = [[[MPVolumeView alloc] initWithFrame:volumeSlider.bounds] autorelease];
 	[volumeSlider addSubview:volumeView];
 	[volumeView sizeToFit];
@@ -148,30 +135,15 @@
 	
 	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(10.0, 280.0, 300.0, 60.0)];
 	[self.view addSubview:levelMeterView];
-	
-	if ([streamer isPlaying]) {
-		NSNotification *notification1 =
-		[NSNotification
-		 notificationWithName:ASUpdateMetadataNotification
-		 object:self];
-		[[NSNotificationCenter defaultCenter]
-		 postNotification:notification1];
-		NSLog(@"Appeared and playing");
-	} else {
-	[downloadSourceField resignFirstResponder];
-	
+		
+	if ([commonData.streamer isPlaying]) {
+		[commonData.streamer stop];
+		[self destroyStreamer];
+	}
+
 	[self createStreamer];
 	[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
-	[streamer start];
-	}
-}
-
--(void)viewWillDisappear
-{
-	if ([streamer isPlaying]) {
-		[streamer stop];
-	}
-	NSLog(@"viewDidDisappear");
+	[commonData.streamer start];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -258,34 +230,17 @@
 {
 	if ([button.currentImage isEqual:[UIImage imageNamed:@"playbutton.png"]])
 	{
-		[downloadSourceField resignFirstResponder];
-		
 		[self createStreamer];
 		[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
-		[streamer start];
+		[commonData.streamer start];
 	}
 	else
 	{
-		[streamer stop];
+		[commonData.streamer stop];
+		[self setButtonImage:[UIImage imageNamed:@"playbutton.png"]];
 	}
 }
 
-//
-// sliderMoved:
-//
-// Invoked when the user moves the slider
-//
-// Parameters:
-//    aSlider - the slider (assumed to be the progress slider)
-//
-- (IBAction)sliderMoved:(UISlider *)aSlider
-{
-	if (streamer.duration)
-	{
-		double newSeekTime = (aSlider.value / 100.0) * streamer.duration;
-		[streamer seekToTime:newSeekTime];
-	}
-}
 
 //
 // playbackStateChanged:
@@ -295,19 +250,19 @@
 //
 - (void)playbackStateChanged:(NSNotification *)aNotification
 {
-	if ([streamer isWaiting])
+	if ([commonData.streamer isWaiting])
 	{
 		[levelMeterView updateMeterWithLeftValue:0.0 
 									  rightValue:0.0];
-		[streamer setMeteringEnabled:NO];
+		[commonData.streamer setMeteringEnabled:NO];
 		[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
 	}
-	else if ([streamer isPlaying])
+	else if ([commonData.streamer isPlaying])
 	{
-		[streamer setMeteringEnabled:YES];
+		[commonData.streamer setMeteringEnabled:YES];
 		[self setButtonImage:[UIImage imageNamed:@"stopbutton.png"]];
 	}
-	else if ([streamer isIdle])
+	else if ([commonData.streamer isIdle])
 	{
 		[levelMeterView updateMeterWithLeftValue:0.0 
 									  rightValue:0.0];
@@ -379,66 +334,17 @@
 #endif
 
 //
-// updateProgress:
-//
-// Invoked when the AudioStreamer
-// reports that its playback progress has changed.
-//
-- (void)updateProgress:(NSTimer *)updatedTimer
-{
-	if (streamer.bitRate != 0.0)
-	{
-		double progress = streamer.progress;
-		double duration = streamer.duration;
-		
-		if (duration > 0)
-		{
-			[positionLabel setText:
-				[NSString stringWithFormat:@"Time Played: %.1f/%.1f seconds",
-					progress,
-					duration]];
-			[progressSlider setEnabled:YES];
-			[progressSlider setValue:100 * progress / duration];
-		}
-		else
-		{
-			[progressSlider setEnabled:NO];
-		}
-	}
-	else
-	{
-		positionLabel.text = @"Time Played:";
-	}
-}
-
-//
 // updateLevelMeters:
 //
 
 - (void)updateLevelMeters:(NSTimer *)timer {
 	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-	if([streamer isMeteringEnabled] && appDelegate.uiIsVisible) {
-		[levelMeterView updateMeterWithLeftValue:[streamer averagePowerForChannel:0] 
-									  rightValue:[streamer averagePowerForChannel:1]];
+	if([commonData.streamer isMeteringEnabled] && appDelegate.uiIsVisible) {
+		[levelMeterView updateMeterWithLeftValue:[commonData.streamer averagePowerForChannel:0] 
+									  rightValue:[commonData.streamer averagePowerForChannel:1]];
 	}
 }
 
-//
-// textFieldShouldReturn:
-//
-// Dismiss the text field when done is pressed
-//
-// Parameters:
-//    sender - the text field
-//
-// returns YES
-//
-- (BOOL)textFieldShouldReturn:(UITextField *)sender
-{
-	[sender resignFirstResponder];
-	[self createStreamer];
-	return YES;
-}
 
 //
 // dealloc
@@ -447,7 +353,7 @@
 //
 - (void)dealloc
 {
-	[self destroyStreamer];
+	/*[self destroyStreamer];
 	if (progressUpdateTimer)
 	{
 		[progressUpdateTimer invalidate];
@@ -457,7 +363,7 @@
 		[levelMeterUpdateTimer invalidate];
 		levelMeterUpdateTimer = nil;
 	}
-	[levelMeterView release];
+	[levelMeterView release];*/
 	[super dealloc];
 }
 
@@ -466,21 +372,21 @@
 - (void)remoteControlReceivedWithEvent:(UIEvent *)event {
 	switch (event.subtype) {
 		case UIEventSubtypeRemoteControlTogglePlayPause:
-			if ([streamer isPlaying])
-				[streamer stop];
+			if ([commonData.streamer isPlaying])
+				[commonData.streamer stop];
 			else {
 				[self createStreamer];
-				[streamer start];
+				[commonData.streamer start];
 			}
 			break;
 		case UIEventSubtypeRemoteControlPlay:
-			[streamer start];
+			[commonData.streamer start];
 			break;
 		case UIEventSubtypeRemoteControlPause:
-			[streamer pause];
+			[commonData.streamer pause];
 			break;
 		case UIEventSubtypeRemoteControlStop:
-			[streamer stop];
+			[commonData.streamer stop];
 			break;
 		default:
 			break;

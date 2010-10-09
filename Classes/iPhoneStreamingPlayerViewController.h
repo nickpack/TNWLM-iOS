@@ -13,30 +13,27 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Three20/Three20.h>
+#import "NPStyles.h"
+#import "CommonData.h"
 
 @class AudioStreamer, LevelMeterView;
 
 @interface iPhoneStreamingPlayerViewController : UIViewController
 {
-	IBOutlet UITextField *downloadSourceField;
 	IBOutlet UIButton *button;
 	IBOutlet UIView *volumeSlider;
 	IBOutlet UILabel *positionLabel;
-	IBOutlet UISlider *progressSlider;
 	IBOutlet UITextField *metadataArtist;
 	IBOutlet UITextField *metadataTitle;
 	IBOutlet UITextField *metadataAlbum;
-	UIActivityIndicatorView *waitView;
-	AudioStreamer *streamer;
-	NSTimer *progressUpdateTimer;
 	NSTimer *levelMeterUpdateTimer;
 	LevelMeterView *levelMeterView;
+	CommonData *commonData;
 }
 
 - (IBAction)buttonPressed:(id)sender;
 - (void)spinButton;
-- (void)updateProgress:(NSTimer *)aNotification;
-- (IBAction)sliderMoved:(UISlider *)aSlider;
 
 @end
 

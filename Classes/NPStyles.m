@@ -16,7 +16,7 @@
 @implementation NPStyles
 
 - (UIColor*)navigationBarTintColor {
-	return RGBCOLOR(0, 0, 0);
+	return RGBCOLOR(116, 14, 14);
 }
 
 - (UIColor*)toolbarTintColor {
