@@ -16,7 +16,7 @@
 #import "iPhoneStreamingPlayerViewController.h"
 #import "AudioStreamer.h"
 #import "LevelMeterView.h"
-//#import "RegexKitLite.h"
+#import "RegexKitLite.h"
 #import <QuartzCore/CoreAnimation.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CFNetwork/CFNetwork.h>
@@ -26,6 +26,7 @@
 
 @implementation iPhoneStreamingPlayerViewController
 
+@synthesize imageView;
 //
 // setButtonImage:
 //
@@ -130,7 +131,12 @@
 	MPVolumeView *volumeView = [[[MPVolumeView alloc] initWithFrame:volumeSlider.bounds] autorelease];
 	[volumeSlider addSubview:volumeView];
 	[volumeView sizeToFit];
+	self.imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(30, 30, 0, 0)]
+							  autorelease];
+	self.imageView.autoresizesToImage = YES;
+	self.imageView.urlPath = @"http://farm4.static.flickr.com/3163/3110335722_7a906f9d8b_m.jpg";
 	
+	[self.view addSubview:self.imageView];
 	[self setButtonImage:[UIImage imageNamed:@"playbutton.png"]];
 	
 	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(10.0, 280.0, 300.0, 60.0)];
@@ -323,11 +329,13 @@
 	///if (appDelegate.uiIsVisible) {
 		metadataArtist.text = streamArtist;
 		metadataTitle.text = streamTitle;
-		//self.titleprompt = streamTitle;
-		/*NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
+		self.title = streamTitle;
+	//self.view.subtitle = streamTitle;
+		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
 																  withString:@""];
 		NSString *albumArtName = [albumArt lowercaseString];
-		NSLog(@"%@.jpg",albumArtName);*/
+		NSLog(@"%@.jpg",albumArtName);
+	self.imageView.urlPath = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@", albumArtName];
 		metadataAlbum.text = streamAlbum;
 	//}
 }

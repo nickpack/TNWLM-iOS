@@ -28,9 +28,11 @@
 	IBOutlet UITextField *metadataTitle;
 	IBOutlet UITextField *metadataAlbum;
 	NSTimer *levelMeterUpdateTimer;
+	TTImageView *imageView;
 	LevelMeterView *levelMeterView;
 	CommonData *commonData;
 }
+@property (nonatomic,retain) TTImageView* imageView;
 
 - (IBAction)buttonPressed:(id)sender;
 - (void)spinButton;

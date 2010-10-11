@@ -33,7 +33,7 @@
 
 @synthesize uiIsVisible;
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (void)applicationDidFinishLaunching:(UIApplication *)application {
+- (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Forcefully removes the model db and recreates it.
   //_resetModel = YES;
   [TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc]  
@@ -46,32 +46,56 @@
   [map from:@"*" toViewController:[TTWebController class]];
   [map from:@"tt://launcher" toViewController:[LauncherView class]];
   [map from:@"tt://streamer" toViewController:[iPhoneStreamingPlayerViewController class]];
-  if (![navigator restoreViewControllers]) {
-    [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://launcher"]];
-  }
+	NSDictionary *remoteNotif =
+	[launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+    if (remoteNotif) {
+		NSString *itemName = [NSString 
+							  stringWithFormat:@"tt://%@",[remoteNotif objectForKey:@"action"]];
+		[navigator openURLAction:[TTURLAction actionWithURLPath:itemName]];
+		NSLog(@"I got some action: %@",itemName);
+	} else if (![navigator restoreViewControllers]) {
+		[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://launcher"]];
+	}
   [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+
+  return YES;
 }
 
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
 	
     NSString *str = [NSString 
-					 stringWithFormat:@"Device Token=%@",deviceToken];
-    NSLog(str);
-	
+					 stringWithFormat:@"%@",deviceToken];
+	TTURLRequest* request = [TTURLRequest requestWithURL:@"http://thor.nickpack.com/phone.php" delegate: self];
+    request.httpMethod = @"POST";
+    request.cachePolicy = TTURLRequestCachePolicyNoCache; 
+	[request.parameters addObject:str forKey:@"device"];
+    request.response = [[[TTURLDataResponse alloc] init] autorelease]; 
+	[request send];
 }
+
+- (void)requestDidFinishLoad:(TTURLRequest*)request {
+	//TTURLDataResponse* deviceResponse = (TTURLDataResponse*)request.response;
+	
+	NSLog(@"Device token submit finished");
+}
+
+- (void)request:(TTURLRequest*)request didFailLoadWithError:(NSError*)error {
+	NSLog(@"Failed to send device token, try again.");
+}
+
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err { 
 	
     NSString *str = [NSString stringWithFormat: @"Error: %@", err];
-    NSLog(str);    
+    NSLog(@"%@",str);    
 	
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-	application.applicationIconBadgeNumber = 0;
+	application.applicationIconBadgeNumber = -1;
     for (id key in userInfo) {
-        NSLog(@"key: %@, value: %@", key, [userInfo objectForKey:key]);
+		 NSLog(@"key: %@, value: %@", key, [userInfo objectForKey:key]);
     }    
 	
 }

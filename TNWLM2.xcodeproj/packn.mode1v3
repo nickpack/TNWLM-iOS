@@ -270,13 +270,12 @@
 								<string>6EF963BC118E96B7003902E7</string>
 								<string>6E37974711B9BDB80011C497</string>
 								<string>1C37FBAC04509CD000000102</string>
-								<string>D22567301260C1A4001F97E1</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>14</integer>
+									<integer>8</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -319,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AppDelegate.m</string>
+								<string>iPhoneStreamingPlayerViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -327,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AppDelegate.m</string>
+										<string>iPhoneStreamingPlayerViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D225674C1260C433001F97E1</string>
+										<string>D212AF281263AA9A00212B44</string>
 										<key>history</key>
 										<array>
 											<string>D26E9F28124514370011CCEE</string>
@@ -345,19 +344,18 @@
 											<string>D225667912608757001F97E1</string>
 											<string>D225667A12608757001F97E1</string>
 											<string>D225670F1260C036001F97E1</string>
-											<string>D22567101260C036001F97E1</string>
-											<string>D22567111260C036001F97E1</string>
-											<string>D22567131260C036001F97E1</string>
 											<string>D22567141260C036001F97E1</string>
 											<string>D22567151260C036001F97E1</string>
 											<string>D225671A1260C036001F97E1</string>
 											<string>D225671B1260C036001F97E1</string>
-											<string>D225671C1260C036001F97E1</string>
-											<string>D225673A1260C355001F97E1</string>
-											<string>D225673B1260C355001F97E1</string>
-											<string>D225673C1260C355001F97E1</string>
-											<string>D225673D1260C355001F97E1</string>
-											<string>D225673E1260C355001F97E1</string>
+											<string>D212AF201263AA9A00212B44</string>
+											<string>D212AF211263AA9A00212B44</string>
+											<string>D212AF221263AA9A00212B44</string>
+											<string>D212AF231263AA9A00212B44</string>
+											<string>D212AF241263AA9A00212B44</string>
+											<string>D212AF251263AA9A00212B44</string>
+											<string>D212AF261263AA9A00212B44</string>
+											<string>D212AF271263AA9A00212B44</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -369,14 +367,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1712, 733}}</string>
+								<string>{{0, 0}, {1712, 728}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1920 999 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>733pt</string>
+							<string>728pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -389,14 +387,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 738}, {1712, 220}}</string>
+								<string>{{0, 733}, {1712, 225}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1920 999 0 0 1920 1058 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>220pt</string>
+							<string>225pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -415,9 +413,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D2256629126085A5001F97E1</string>
+				<string>D212AE2012637E9B00212B44</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>D225662A126085A5001F97E1</string>
+				<string>D212AE2112637E9B00212B44</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -555,10 +553,11 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>D225667E12608757001F97E1</string>
-		<string>D225667F12608757001F97E1</string>
-		<string>1C78EAAD065D492600B07095</string>
+		<string>D212AE471263893200212B44</string>
+		<string>D212AE481263893200212B44</string>
 		<string>D26E9F0D1245132F0011CCEE</string>
+		<string>1CD10A99069EF8BA00B06720</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -583,7 +582,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>iPhoneStreamingPlayerViewController.m</string>
+								<string>AppDelegate.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -641,7 +640,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>D26E9F0D1245132F0011CCEE</string>
-				<string>D225662B126085A5001F97E1</string>
+				<string>D212AE2212637E9B00212B44</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -763,13 +762,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>D225662C126085A5001F97E1</string>
+				<string>D212AE2312637E9B00212B44</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>D225662D126085A5001F97E1</string>
-				<string>D225662E126085A5001F97E1</string>
-				<string>D225662F126085A5001F97E1</string>
-				<string>D2256630126085A5001F97E1</string>
-				<string>D2256631126085A5001F97E1</string>
+				<string>D212AE2412637E9B00212B44</string>
+				<string>D212AE2512637E9B00212B44</string>
+				<string>D212AE2612637E9B00212B44</string>
+				<string>D212AE2712637E9B00212B44</string>
+				<string>D212AE2812637E9B00212B44</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -933,7 +932,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>D225667D12608757001F97E1</string>
+				<string>D212AE37126385E300212B44</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
