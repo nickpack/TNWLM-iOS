@@ -1,7 +1,7 @@
 TTNWLM2
 v7
 r0
-t308562907.817696
+t308565491.673680
 cCheck dependencies
 cCpResource build/Release-iphoneos/TNWLM2.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk/ResourceRules.plist
 cProcessInfoPlistFile /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist TNWLM2-Info.plist
@@ -2476,9 +2476,9 @@ i"NPStyles.h"
 i"CommonData.h"
 
 N/Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m
-c000000004CB411510000000000002F91
-t1286869329
-s12177
+c000000004CB41E120000000000002FE7
+t1286872594
+s12263
 i"AppDelegate.h"
 i"iPhoneStreamingPlayerViewController.h"
 i"AudioStreamer.h"
@@ -2562,11 +2562,11 @@ t1286800865
 s145118
 
 N/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app
-t1286870089
+t1286872627
 s1020
 
 N/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM
-t1286869793
+t1286872624
 s102
 
 N/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/Contact.png
@@ -2614,7 +2614,7 @@ t1286800867
 s510
 
 N/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
-t1286869791
+t1286872623
 s2678080
 
 N/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom
@@ -2702,7 +2702,7 @@ t1286869786
 s168536
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2
-t1286869788
+t1286872623
 s1323096
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2.LinkFileList
@@ -2711,8 +2711,8 @@ t1286869762
 s992
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o
-t1286869780
-s72848
+t1286872619
+s73392
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o
 t1286869779
@@ -2747,7 +2747,7 @@ t1286869791
 s162476
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2
-t1286869791
+t1286872623
 s1322232
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2.LinkFileList
@@ -2756,8 +2756,8 @@ t1286869762
 s992
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o
-t1286869789
-s72212
+t1286872620
+s72752
 
 N/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o
 t1286869781
@@ -4405,7 +4405,7 @@ s938
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies308562907#308562907#0(0"0(0#1#0"8628405344#0"0#
+lSLF07#2@18"Check dependencies308565491#308565491#0(0"0(0#1#0"8631864416#0"0#
 
 CCodeSign /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
 s308521536.377946
@@ -4416,13 +4416,12 @@ x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
 lSLF07#2@42"CodeSign build/Release-iphoneos/TNWLM2.app308521536#308521537#0(0"0(0#0#66"/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app8689635424#623"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nikki Pack (P5HYE39C37)" --resource-rules=/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/ResourceRules.plist --entitlements /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
 
 CCodeSign /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app
-s308562889.142394
-e308562889.835449
+s308565425.265228
+e308565427.083594
 r1
 xCodeSign
 x/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app
-o/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app: replacing existing signature
-lSLF07#2@42"CodeSign build/Release-iphoneos/TNWLM2.app308562889#308562889#0(88"/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app: replacing existing signature0(0#0#57"/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app8624035968#649"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nikki Pack (P5HYE39C37)" --resource-rules=/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/ResourceRules.plist --entitlements /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+lSLF07#2@42"CodeSign build/Release-iphoneos/TNWLM2.app308565425#308565427#0(0"0(0#0#57"/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app8622407872#649"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Nikki Pack (P5HYE39C37)" --resource-rules=/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/ResourceRules.plist --entitlements /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2.xcent /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
 
 CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/AppDelegate.o /Users/packn/appdev/Xcode/TNWLM2/Classes/AppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s308521149.778395
@@ -4636,8 +4635,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308521532#308521533#0(0"0(0#0#78"/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8687189376#1808"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-ecpjmnjivpmshueawkocgjqajejo/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o0#
 
 CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s308562579.574022
-e308562580.064491
+s308565415.163191
+e308565419.745191
 r1
 xCompileC
 xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o
@@ -4646,7 +4645,7 @@ xnormal
 xarmv6
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308562579#308562580#0(0"0(0#0#69"/Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8626134208#1771"    cd /Users/packn/dev/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -I/Users/packn/dev/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-bqsrrefonfbnzrgvrtnplvgzjnft/TNWLM2_Prefix.pch -c /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o0#
+lSLF07#2@77"Compile /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308565415#308565419#0(0"0(0#0#69"/Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8624471680#1771"    cd /Users/packn/dev/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -I/Users/packn/dev/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv6 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-bqsrrefonfbnzrgvrtnplvgzjnft/TNWLM2_Prefix.pch -c /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/iPhoneStreamingPlayerViewController.o0#
 
 CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/main.o /Users/packn/appdev/Xcode/TNWLM2/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
 s308516622.957285
@@ -4886,8 +4885,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@86"Compile /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308521532#308521533#0(0"0(0#0#78"/Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8689238016#1808"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -I/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-edyyhpnusoxmbuduodhbzyjfwgms/TNWLM2_Prefix.pch -c /Users/packn/appdev/Xcode/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o0#
 
 CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s308562588.713777
-e308562589.122084
+s308565415.620704
+e308565420.077925
 r1
 xCompileC
 xbuild/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o
@@ -4896,7 +4895,7 @@ xnormal
 xarmv7
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@77"Compile /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308562588#308562589#0(0"0(0#0#69"/Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8626451072#1771"    cd /Users/packn/dev/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -I/Users/packn/dev/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-abzidokyrohzupficdvgvqgqxesi/TNWLM2_Prefix.pch -c /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o0#
+lSLF07#2@77"Compile /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m308565415#308565420#0(0"0(0#0#69"/Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m8608646176#1771"    cd /Users/packn/dev/TNWLM2    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -mdynamic-no-pic -Wreturn-type -Wunused-variable -DSHOUTCAST_METADATA -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1.3 -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-generated-files.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-own-target-headers.hmap -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-all-target-headers.hmap -iquote /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/TNWLM2-project-headers.hmap -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -I/Users/packn/dev/TNWLM2/build/Release-iphoneos/include -I../three20/Build/Products/three20 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources/armv7 -I/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/DerivedSources -include /var/folders/fl/fl6SoGOUHRCoOqgV4cplZGwG5h2/-Caches-/com.apple.Xcode.789716689/SharedPrecompiledHeaders/TNWLM2_Prefix-abzidokyrohzupficdvgvqgqxesi/TNWLM2_Prefix.pch -c /Users/packn/dev/TNWLM2/Classes/iPhoneStreamingPlayerViewController.m -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/iPhoneStreamingPlayerViewController.o0#
 
 CCompileC build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/main.o /Users/packn/appdev/Xcode/TNWLM2/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
 s308516624.825268
@@ -5218,14 +5217,14 @@ xarmv6 armv7
 lSLF07#2@83"CreateUniversalBinary build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"308521534#308521534#0(0"0(0#0#44"/Users/packn/appdev/Xcode/TNWLM2/armv6 armv78682881632#492"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 -output /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM20#
 
 CCreateUniversalBinary /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"
-s308562591.928361
-e308562591.998471
+s308565423.406629
+e308565423.656673
 r1
 xCreateUniversalBinary
 x/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
 xnormal
 xarmv6 armv7
-lSLF07#2@83"CreateUniversalBinary build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"308562591#308562591#0(0"0(0#0#35"/Users/packn/dev/TNWLM2/armv6 armv78626485280#518"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/lipo -create /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 -output /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM20#
+lSLF07#2@83"CreateUniversalBinary build/Release-iphoneos/TNWLM2.app/TNWLM2 normal "armv6 armv7"308565423#308565423#0(0"0(0#0#35"/Users/packn/dev/TNWLM2/armv6 armv78608591968#518"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/lipo -create /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 -output /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM20#
 
 CDataModelCompile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2.mom /Users/packn/appdev/Xcode/TNWLM2/TNWLM2.xcdatamodel
 s308516622.956027
@@ -5249,13 +5248,13 @@ x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
 lSLF07#2@96"GenerateDSYMFile build/Release-iphoneos/TNWLM2.app.dSYM build/Release-iphoneos/TNWLM2.app/TNWLM2308521534#308521536#0(0"0(0#0#73"/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM28635633952#345"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 -o /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM0#
 
 CGenerateDSYMFile /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
-s308562591.998585
-e308562593.470376
+s308565423.656783
+e308565425.238934
 r1
 xGenerateDSYMFile
 x/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM
 x/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2
-lSLF07#2@96"GenerateDSYMFile build/Release-iphoneos/TNWLM2.app.dSYM build/Release-iphoneos/TNWLM2.app/TNWLM2308562591#308562593#0(0"0(0#0#64"/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM28625987872#380"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 -o /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM0#
+lSLF07#2@96"GenerateDSYMFile build/Release-iphoneos/TNWLM2.app.dSYM build/Release-iphoneos/TNWLM2.app/TNWLM2308565423#308565425#0(0"0(0#0#64"/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM28624410784#380"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/usr/bin/dsymutil /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app/TNWLM2 -o /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app.dSYM0#
 
 CLd /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 normal armv6
 s308521533.133339
@@ -5278,24 +5277,24 @@ xarmv7
 lSLF07#2@114"Link /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2308521533#308521534#0(0"0(0#0#0"8689106880#1561"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -F/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos -filelist /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2.LinkFileList -dead_strip -all_load -licucore -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/appdev/Xcode/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/appdev/Xcode/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM20#
 
 CLd /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2 normal armv6
-s308562586.804265
-e308562588.713608
+s308565419.745394
+e308565423.183652
 r1
 xLd
 x/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2
 xnormal
 xarmv6
-lSLF07#2@105"Link /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2308562586#308562588#0(0"0(0#0#0"8626129472#1515"    cd /Users/packn/dev/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/dev/TNWLM2/build/Release-iphoneos -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -filelist /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2.LinkFileList -dead_strip -all_load -licucore -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM20#
+lSLF07#2@105"Link /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2308565419#308565423#0(0"0(0#0#0"8625409280#1515"    cd /Users/packn/dev/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/dev/TNWLM2/build/Release-iphoneos -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -filelist /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM2.LinkFileList -dead_strip -all_load -licucore -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv6/TNWLM20#
 
 CLd /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2 normal armv7
-s308562591.232662
-e308562591.928244
+s308565420.078430
+e308565423.406380
 r1
 xLd
 x/Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2
 xnormal
 xarmv7
-lSLF07#2@105"Link /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2308562591#308562591#0(0"0(0#0#0"8618686528#1515"    cd /Users/packn/dev/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/dev/TNWLM2/build/Release-iphoneos -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -filelist /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2.LinkFileList -dead_strip -all_load -licucore -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM20#
+lSLF07#2@105"Link /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2308565420#308565423#0(0"0(0#0#0"8609090528#1515"    cd /Users/packn/dev/TNWLM2    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.1.sdk -L/Users/packn/dev/TNWLM2/build/Release-iphoneos -F/Users/packn/dev/TNWLM2/build/Release-iphoneos -filelist /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM2.LinkFileList -dead_strip -all_load -licucore -ObjC -miphoneos-version-min=3.1.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework CoreData -framework QuartzCore /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Core.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Network.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20Style.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UI.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UICommon.a /Users/packn/dev/three20/Build/Products/Release-iphoneos/libThree20UINavigator.a -framework AudioToolbox -framework CFNetwork -framework MediaPlayer -o /Users/packn/dev/TNWLM2/build/TNWLM2.build/Release-iphoneos/TNWLM2.build/Objects-normal/armv7/TNWLM20#
 
 CProcessInfoPlistFile /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app/Info.plist TNWLM2-Info.plist
 s308516613.994449
@@ -5412,10 +5411,10 @@ x/Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app
 lSLF07#2@72"Touch /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app308521536#308521536#0(0"0(0#0#0"8689820352#253"    cd /Users/packn/appdev/Xcode/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/packn/appdev/Xcode/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
 
 CTouch /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app
-s308562593.530034
-e308562593.533886
+s308565425.240020
+e308565425.265051
 r1
 xTouch
 x/Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app
-lSLF07#2@63"Touch /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app308562593#308562593#0(0"0(0#0#0"8621155296#297"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
+lSLF07#2@63"Touch /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app308565425#308565425#0(0"0(0#0#0"8623699968#297"    cd /Users/packn/dev/TNWLM2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/opt/local/bin:/usr/local/git/bin"    /usr/bin/touch -c /Users/packn/dev/TNWLM2/build/Release-iphoneos/TNWLM2.app0#
 

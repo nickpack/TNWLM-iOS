@@ -127,6 +127,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000]; 
 	imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
 				 autorelease];
 	[self.view addSubview:imageView];
@@ -332,7 +333,7 @@
 		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
 																  withString:@""];
 		NSString *albumArtName = [albumArt lowercaseString];
-		NSString *albumArtUrl = [NSString stringWithFormat:@"bundle://%@.jpg", albumArtName];
+		NSString *albumArtUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@.jpg", albumArtName];
 		NSLog(@"%@",albumArtUrl);
 		
 		if (imageView == nil) {
