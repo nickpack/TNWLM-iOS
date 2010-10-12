@@ -127,19 +127,17 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+	imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
+				 autorelease];
+	[self.view addSubview:imageView];
 	commonData = [CommonData sharedCommonData];
 	MPVolumeView *volumeView = [[[MPVolumeView alloc] initWithFrame:volumeSlider.bounds] autorelease];
 	[volumeSlider addSubview:volumeView];
 	[volumeView sizeToFit];
-	self.imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(30, 30, 0, 0)]
-							  autorelease];
-	self.imageView.autoresizesToImage = YES;
-	self.imageView.urlPath = @"http://farm4.static.flickr.com/3163/3110335722_7a906f9d8b_m.jpg";
 	
-	[self.view addSubview:self.imageView];
 	[self setButtonImage:[UIImage imageNamed:@"playbutton.png"]];
 	
-	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(10.0, 280.0, 300.0, 60.0)];
+	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 314.0, self.view.width, 60.0)];
 	[self.view addSubview:levelMeterView];
 		
 	if ([commonData.streamer isPlaying]) {
@@ -334,8 +332,18 @@
 		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
 																  withString:@""];
 		NSString *albumArtName = [albumArt lowercaseString];
-		NSLog(@"%@.jpg",albumArtName);
-	self.imageView.urlPath = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@", albumArtName];
+		NSString *albumArtUrl = [NSString stringWithFormat:@"bundle://%@.jpg", albumArtName];
+		NSLog(@"%@",albumArtUrl);
+		
+		if (imageView == nil) {
+			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
+																									autorelease];
+		
+			imageView.urlPath = albumArtUrl;		
+			[self.view addSubview:imageView];
+		} else {
+			imageView.urlPath = albumArtUrl;
+		}
 		metadataAlbum.text = streamAlbum;
 	//}
 }
