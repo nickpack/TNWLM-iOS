@@ -126,11 +126,43 @@
 //
 - (void)viewDidLoad
 {
+	UIView *btn = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
+	
+	UILabel *label;
+	UILabel *label2;
+	label = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 200, 16)];
+	label.tag = 1;
+	label.backgroundColor = [UIColor clearColor];
+	label.font = [UIFont boldSystemFontOfSize:14];
+	label.adjustsFontSizeToFitWidth = NO;
+	label.textAlignment = UITextAlignmentCenter;
+	label.textColor = [UIColor whiteColor];
+	label.text = @"Track Name";
+	label.highlightedTextColor = [UIColor whiteColor];
+	label.shadowColor = [UIColor blackColor];
+	label.shadowOffset = CGSizeMake(0,1);
+	[btn addSubview:label];
+	[label release];
+	
+	label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 16)];
+	label2.tag = 2;
+	label2.backgroundColor = [UIColor clearColor];
+	label2.font = [UIFont boldSystemFontOfSize:10];
+	label2.adjustsFontSizeToFitWidth = NO;
+	label2.textAlignment = UITextAlignmentCenter;
+	label2.textColor = [UIColor grayColor];
+	label2.text = @"Album Title";
+	label2.highlightedTextColor = [UIColor grayColor];
+	label2.shadowColor = [UIColor blackColor];
+	label2.shadowOffset = CGSizeMake(0,1);
+	
+	[btn addSubview:label2];
+	[label2 release];
+	self.navigationItem.titleView = btn;
+	
 	[super viewDidLoad];
 	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000]; 
-	imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
-				 autorelease];
-	[self.view addSubview:imageView];
+		
 	commonData = [CommonData sharedCommonData];
 	MPVolumeView *volumeView = [[[MPVolumeView alloc] initWithFrame:volumeSlider.bounds] autorelease];
 	[volumeSlider addSubview:volumeView];
@@ -138,7 +170,7 @@
 	
 	[self setButtonImage:[UIImage imageNamed:@"playbutton.png"]];
 	
-	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 314.0, self.view.width, 60.0)];
+	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 362.0, self.view.width, 60.0)];
 	[self.view addSubview:levelMeterView];
 		
 	if ([commonData.streamer isPlaying]) {
@@ -149,6 +181,8 @@
 	[self createStreamer];
 	[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
 	[commonData.streamer start];
+	
+	
 }
 
 - (void)viewDidAppear:(BOOL)animated {
@@ -326,9 +360,13 @@
 	// only update the UI if in foreground
 	//AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 	///if (appDelegate.uiIsVisible) {
-		metadataArtist.text = streamArtist;
-		metadataTitle.text = streamTitle;
-		self.title = streamTitle;
+	UILabel *headerTrack = (UILabel*)[self.navigationItem.titleView viewWithTag:1];
+	UILabel *headerAlbum = (UILabel*)[self.navigationItem.titleView viewWithTag:2];
+	//headerTrack.text = @"Bollocks";
+		//metadataArtist.text = streamArtist;
+		//metadataTitle.text = streamTitle;
+
+		//self.title = streamTitle;
 	//self.view.subtitle = streamTitle;
 		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
 																  withString:@""];
@@ -339,13 +377,17 @@
 		if (imageView == nil) {
 			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
 																									autorelease];
-		
 			imageView.urlPath = albumArtUrl;		
 			[self.view addSubview:imageView];
 		} else {
 			imageView.urlPath = albumArtUrl;
 		}
-		metadataAlbum.text = streamAlbum;
+		//metadataAlbum.text = streamAlbum;
+	headerTrack.text = [NSString stringWithFormat:@"%@", streamTitle];
+	headerAlbum.text = [NSString stringWithFormat:@"%@",streamAlbum];
+	
+	/*[headerAlbum release];
+	[headerTrack release];*/
 	//}
 }
 #endif
@@ -370,17 +412,15 @@
 //
 - (void)dealloc
 {
-	/*[self destroyStreamer];
-	if (progressUpdateTimer)
-	{
-		[progressUpdateTimer invalidate];
-		progressUpdateTimer = nil;
-	}
+	/*[self destroyStreamer];*/
+	
 	if(levelMeterUpdateTimer) {
 		[levelMeterUpdateTimer invalidate];
 		levelMeterUpdateTimer = nil;
 	}
-	[levelMeterView release];*/
+	
+	[levelMeterView release];
+	//[imageView release];
 	[super dealloc];
 }
 
