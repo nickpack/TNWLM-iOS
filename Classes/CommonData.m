@@ -16,6 +16,9 @@
 
 @synthesize streamUrl;
 @synthesize streamer;
+@synthesize currentTrack;
+@synthesize currentAlbum;
+@synthesize currentArt;
 
 -(void)dealloc{
 	[super dealloc];

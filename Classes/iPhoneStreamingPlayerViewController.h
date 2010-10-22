@@ -22,8 +22,6 @@
 @interface iPhoneStreamingPlayerViewController : UIViewController
 {
 	IBOutlet UIButton *button;
-	IBOutlet UIView *volumeSlider;
-	IBOutlet UILabel *positionLabel;
 	IBOutlet UITextField *metadataArtist;
 	IBOutlet UITextField *metadataTitle;
 	IBOutlet UITextField *metadataAlbum;

@@ -11,6 +11,9 @@
 
 @interface CommonData : NSObject {
 	NSURL *streamUrl;
+	NSString *currentTrack;
+	NSString *currentAlbum;
+	NSString *currentArt;
 	AudioStreamer *streamer;
 }
 
@@ -18,5 +21,8 @@
 
 @property (nonatomic, retain) NSURL *streamUrl;
 @property (nonatomic, retain) AudioStreamer *streamer;
+@property (nonatomic, retain) NSString *currentTrack;
+@property (nonatomic, retain) NSString *currentAlbum;
+@property (nonatomic, retain) NSString *currentArt;
 
 @end

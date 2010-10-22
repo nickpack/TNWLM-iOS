@@ -95,9 +95,8 @@
 	
 	commonData.streamUrl = [NSURL URLWithString:@"http://thor.nickpack.com:9000"];
 	commonData.streamer = [[AudioStreamer alloc] initWithURL:commonData.streamUrl];
-	NSLog(@"%@",commonData.streamUrl);
 	levelMeterUpdateTimer = 
-		[NSTimer 
+	[NSTimer 
 			scheduledTimerWithTimeInterval:.1 
 			target:self
 			selector:@selector(updateLevelMeters:)
@@ -126,6 +125,14 @@
 //
 - (void)viewDidLoad
 {
+	[super viewDidLoad];
+	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000]; 
+		
+	commonData = [CommonData sharedCommonData];
+
+	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 362.0, self.view.width, 60.0)];
+	[self.view addSubview:levelMeterView];
+
 	UIView *btn = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
 	
 	UILabel *label;
@@ -137,13 +144,11 @@
 	label.adjustsFontSizeToFitWidth = NO;
 	label.textAlignment = UITextAlignmentCenter;
 	label.textColor = [UIColor whiteColor];
-	label.text = @"Track Name";
+	label.text = @"Listen";
 	label.highlightedTextColor = [UIColor whiteColor];
 	label.shadowColor = [UIColor blackColor];
 	label.shadowOffset = CGSizeMake(0,1);
-	[btn addSubview:label];
-	[label release];
-	
+		
 	label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 16)];
 	label2.tag = 2;
 	label2.backgroundColor = [UIColor clearColor];
@@ -151,44 +156,58 @@
 	label2.adjustsFontSizeToFitWidth = NO;
 	label2.textAlignment = UITextAlignmentCenter;
 	label2.textColor = [UIColor grayColor];
-	label2.text = @"Album Title";
+	label2.text = @"The Nurse Who Loved Me";
 	label2.highlightedTextColor = [UIColor grayColor];
 	label2.shadowColor = [UIColor blackColor];
 	label2.shadowOffset = CGSizeMake(0,1);
 	
+	if ([commonData.streamer isPlaying]) {
+		NSLog(@"We is playing, set shit up");
+		levelMeterUpdateTimer = 
+		[NSTimer 
+		 scheduledTimerWithTimeInterval:.1 
+		 target:self
+		 selector:@selector(updateLevelMeters:)
+		 userInfo:nil
+		 repeats:YES];
+		[[NSNotificationCenter defaultCenter]
+		 addObserver:self
+		 selector:@selector(playbackStateChanged:)
+		 name:ASStatusChangedNotification
+		 object:commonData.streamer];
+
+#ifdef SHOUTCAST_METADATA
+		[[NSNotificationCenter defaultCenter]
+		 addObserver:self
+		 selector:@selector(metadataChanged:)
+		 name:ASUpdateMetadataNotification
+		 object:commonData.streamer];
+		NSLog(@"Set label text");
+		label.text = commonData.currentTrack;
+		label2.text = commonData.currentAlbum;
+		NSLog(@"set image view up and set it");
+		imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
+					 autorelease];
+		imageView.urlPath = commonData.currentArt;		
+		[self.view addSubview:imageView];
+#endif
+		[self setButtonImage:[UIImage imageNamed:@"stopbutton.png"]];
+	} else {
+		[self createStreamer];
+		[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
+		[commonData.streamer start];
+	}
+	NSLog(@"Add header labels");
+	[btn addSubview:label];
+	[label release];
 	[btn addSubview:label2];
 	[label2 release];
 	self.navigationItem.titleView = btn;
-	
-	[super viewDidLoad];
-	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000]; 
-		
-	commonData = [CommonData sharedCommonData];
-	MPVolumeView *volumeView = [[[MPVolumeView alloc] initWithFrame:volumeSlider.bounds] autorelease];
-	[volumeSlider addSubview:volumeView];
-	[volumeView sizeToFit];
-	
-	[self setButtonImage:[UIImage imageNamed:@"playbutton.png"]];
-	
-	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 362.0, self.view.width, 60.0)];
-	[self.view addSubview:levelMeterView];
-		
-	if ([commonData.streamer isPlaying]) {
-		[commonData.streamer stop];
-		[self destroyStreamer];
-	}
-
-	[self createStreamer];
-	[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
-	[commonData.streamer start];
-	
-	
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-	//AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-	NSLog(@"Viewdidappear");
-	//appDelegate.uiIsVisible = YES;
+	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+	appDelegate.uiIsVisible = YES;
 	[super viewDidAppear:animated];
 	[[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
 	[self becomeFirstResponder]; // this enables listening for events
@@ -334,16 +353,16 @@
 			[hash setObject:[pair objectAtIndex:1] forKey:[pair objectAtIndex:0]];
 	}
 
-	// do something with the StreamTitle
+
 	NSString *streamString = [[hash objectForKey:@"StreamTitle"] stringByReplacingOccurrencesOfString:@"'" withString:@""];
-	
 	NSArray *streamParts = [streamString componentsSeparatedByString:@" - "];
+
 	if ([streamParts count] > 0) {
 		streamArtist = [streamParts objectAtIndex:0];
 	} else {
 		streamArtist = @"";
 	}
-	// this looks odd but not every server will have all artist hyphen title
+
 	if ([streamParts count] >= 2) {
 		streamTitle = [streamParts objectAtIndex:1];
 		if ([streamParts count] >= 3) {
@@ -355,40 +374,34 @@
 		streamTitle = @"";
 		streamAlbum = @"";
 	}
-	NSLog(@"%@ by %@ from %@", streamTitle, streamArtist, streamAlbum);
 
-	// only update the UI if in foreground
-	//AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
-	///if (appDelegate.uiIsVisible) {
-	UILabel *headerTrack = (UILabel*)[self.navigationItem.titleView viewWithTag:1];
-	UILabel *headerAlbum = (UILabel*)[self.navigationItem.titleView viewWithTag:2];
-	//headerTrack.text = @"Bollocks";
-		//metadataArtist.text = streamArtist;
-		//metadataTitle.text = streamTitle;
-
-		//self.title = streamTitle;
-	//self.view.subtitle = streamTitle;
+	AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+	if (appDelegate.uiIsVisible) {
+		UILabel *headerTrack = (UILabel*)[self.navigationItem.titleView viewWithTag:1];
+		UILabel *headerAlbum = (UILabel*)[self.navigationItem.titleView viewWithTag:2];
 		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
-																  withString:@""];
+																   withString:@""];
 		NSString *albumArtName = [albumArt lowercaseString];
 		NSString *albumArtUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@.jpg", albumArtName];
-		NSLog(@"%@",albumArtUrl);
 		
 		if (imageView == nil) {
 			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
-																									autorelease];
+																								   autorelease];
 			imageView.urlPath = albumArtUrl;		
 			[self.view addSubview:imageView];
 		} else {
 			imageView.urlPath = albumArtUrl;
 		}
-		//metadataAlbum.text = streamAlbum;
-	headerTrack.text = [NSString stringWithFormat:@"%@", streamTitle];
-	headerAlbum.text = [NSString stringWithFormat:@"%@",streamAlbum];
-	
-	/*[headerAlbum release];
-	[headerTrack release];*/
-	//}
+		
+		headerTrack.text = [NSString stringWithFormat:@"%@", streamTitle];
+		headerAlbum.text = [NSString stringWithFormat:@"%@",streamAlbum];
+		commonData.currentTrack = [NSString stringWithFormat:@"%@", streamTitle];
+		commonData.currentAlbum = [NSString stringWithFormat:@"%@",streamAlbum];
+		commonData.currentArt = albumArtUrl;
+		
+		/*[headerAlbum release];
+		[headerTrack release];*/
+	}
 }
 #endif
 
@@ -412,7 +425,17 @@
 //
 - (void)dealloc
 {
-	/*[self destroyStreamer];*/
+	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+	appDelegate.uiIsVisible = NO;
+	[[NSNotificationCenter defaultCenter]
+	 removeObserver:self
+	 name:ASStatusChangedNotification
+	 object:commonData.streamer];
+	
+	[[NSNotificationCenter defaultCenter]
+	 removeObserver:self
+	 name:ASUpdateMetadataNotification
+	 object:commonData.streamer];
 	
 	if(levelMeterUpdateTimer) {
 		[levelMeterUpdateTimer invalidate];
@@ -420,7 +443,7 @@
 	}
 	
 	[levelMeterView release];
-	//[imageView release];
+	[imageView release];
 	[super dealloc];
 }
 
