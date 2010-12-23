@@ -15,12 +15,14 @@
 @synthesize title = _title;
 @synthesize body = _body;
 @synthesize link = _link;
+@synthesize poster = _poster;
 
 - (void) dealloc {
 	TT_RELEASE_SAFELY(_posted);
 	TT_RELEASE_SAFELY(_title);
 	TT_RELEASE_SAFELY(_body);
 	TT_RELEASE_SAFELY(_link);
+	TT_RELEASE_SAFELY(_poster);
 	[super dealloc];
 }
 

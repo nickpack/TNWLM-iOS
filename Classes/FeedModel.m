@@ -90,6 +90,7 @@
 		item.title = [[entry objectForKey:@"title"] objectForXMLNode];
 		item.body = [[entry objectForKey:@"description"] objectForXMLNode];
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
+		item.poster = [[entry objectForKey:@"dc:creator"] objectForXMLNode];
 		[items addObject:item];
 		NSLog(@"Parsed: %@",item.body);
 		TT_RELEASE_SAFELY(item);

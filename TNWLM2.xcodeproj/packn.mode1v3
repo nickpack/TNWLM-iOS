@@ -271,7 +271,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>24</integer>
+									<integer>28</integer>
 									<integer>1</integer>
 									<integer>0</integer>
 								</array>
@@ -314,7 +314,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>FeedModel.m</string>
+								<string>NewsView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -322,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>FeedModel.m</string>
+										<string>NewsView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D2D224BB12C3AAAB00CC6E04</string>
+										<string>D2D2250312C3B2A800CC6E04</string>
 										<key>history</key>
 										<array>
 											<string>D26E9F28124514370011CCEE</string>
@@ -341,28 +341,28 @@
 											<string>D22EAF51126448C1009A5420</string>
 											<string>D2F3CC9F1272144E0047312C</string>
 											<string>D2F3CCA7127216120047312C</string>
-											<string>D2F3CCA8127216120047312C</string>
 											<string>D2F3CCCB12721C380047312C</string>
-											<string>D2F3CCF3127221750047312C</string>
 											<string>D27623C512C3441900AFA9DE</string>
 											<string>D27623D212C3441900AFA9DE</string>
-											<string>D276242D12C34FA300AFA9DE</string>
 											<string>D2762BBF12C374AF00AFA9DE</string>
 											<string>D2762CDB12C37CBF00AFA9DE</string>
-											<string>D2D223EA12C3935200CC6E04</string>
 											<string>D2D223EB12C3935200CC6E04</string>
 											<string>D2D223EC12C3935200CC6E04</string>
-											<string>D2D223ED12C3935200CC6E04</string>
-											<string>D2D223EF12C3935200CC6E04</string>
 											<string>D2D2243C12C39B0900CC6E04</string>
 											<string>D2D2246512C39D8800CC6E04</string>
 											<string>D2D2246612C39D8800CC6E04</string>
 											<string>D2D2246712C39D8800CC6E04</string>
 											<string>D2D2247712C3A18200CC6E04</string>
-											<string>D2D224A812C3A92100CC6E04</string>
-											<string>D2D224A912C3A92100CC6E04</string>
-											<string>D2D224B812C3A9FB00CC6E04</string>
-											<string>D2D224B912C3A9FB00CC6E04</string>
+											<string>D2D224C812C3AC7C00CC6E04</string>
+											<string>D2D224E312C3AEAE00CC6E04</string>
+											<string>D2D224E412C3AEAE00CC6E04</string>
+											<string>D2D224EC12C3AF5600CC6E04</string>
+											<string>D2D224EE12C3AF5600CC6E04</string>
+											<string>D2D224FE12C3B28F00CC6E04</string>
+											<string>D2D224FF12C3B28F00CC6E04</string>
+											<string>D2D2250012C3B28F00CC6E04</string>
+											<string>D2D2250112C3B28F00CC6E04</string>
+											<string>D2D224ED12C3AF5600CC6E04</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
