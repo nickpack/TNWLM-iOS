@@ -37,7 +37,7 @@
 	coverflow.delegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
-	[coverflow setNumberOfCovers:580];
+	[coverflow setNumberOfCovers:5];
 	
 	
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];

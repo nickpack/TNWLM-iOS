@@ -13,12 +13,12 @@
 	NSDate*   _posted;
 	NSString* _title;
 	NSString* _body;
-	NSURL* _link;
+	NSString* _link;
 }
 
 @property (nonatomic, retain) NSDate* posted;
 @property (nonatomic, copy)   NSString* title;
 @property (nonatomic, copy)   NSString* body;
-@property (nonatomic, copy)   NSURL* link;
+@property (nonatomic, copy)   NSString* link;
 
 @end

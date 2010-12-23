@@ -10,13 +10,13 @@
 
 
 @interface FeedModel : TTURLRequestModel {
-	NSURL* _feedUrl;
+	NSString* _feedUrl;
 	NSArray*  _items;
 }
 
-@property (nonatomic, copy)     NSURL* feedUrl;
+@property (nonatomic, copy)     NSString* feedUrl;
 @property (nonatomic, readonly) NSArray*  items;
 
-- (id)initWithFeedUrl:(NSURL*)feedUrl;
+- (id)initWithFeedUrl:(NSString*)feedUrl;
 
 @end

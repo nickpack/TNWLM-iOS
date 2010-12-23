@@ -229,8 +229,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -267,23 +265,19 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
-								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>6EF963BC118E96B7003902E7</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
 								<string>1C37FBAC04509CD000000102</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>68</integer>
-									<integer>63</integer>
+									<integer>24</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 578}, {186, 910}}</string>
+							<string>{{0, 0}, {186, 910}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -313,12 +307,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>TNWLM2_Prefix.pch</string>
+								<string>FeedModel.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +322,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>TNWLM2_Prefix.pch</string>
+										<string>FeedModel.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D2762B6112C3701B00AFA9DE</string>
+										<string>D2D224BB12C3AAAB00CC6E04</string>
 										<key>history</key>
 										<array>
 											<string>D26E9F28124514370011CCEE</string>
@@ -350,19 +346,23 @@
 											<string>D2F3CCF3127221750047312C</string>
 											<string>D27623C512C3441900AFA9DE</string>
 											<string>D27623D212C3441900AFA9DE</string>
-											<string>D27623E612C3448C00AFA9DE</string>
-											<string>D276242512C34FA300AFA9DE</string>
-											<string>D276242612C34FA300AFA9DE</string>
-											<string>D276242812C34FA300AFA9DE</string>
-											<string>D276242912C34FA300AFA9DE</string>
-											<string>D276242A12C34FA300AFA9DE</string>
-											<string>D276242B12C34FA300AFA9DE</string>
-											<string>D276242C12C34FA300AFA9DE</string>
 											<string>D276242D12C34FA300AFA9DE</string>
-											<string>D276242E12C34FA300AFA9DE</string>
-											<string>D276246E12C3568F00AFA9DE</string>
-											<string>D276262912C35D6D00AFA9DE</string>
-											<string>D2762B1912C36FD000AFA9DE</string>
+											<string>D2762BBF12C374AF00AFA9DE</string>
+											<string>D2762CDB12C37CBF00AFA9DE</string>
+											<string>D2D223EA12C3935200CC6E04</string>
+											<string>D2D223EB12C3935200CC6E04</string>
+											<string>D2D223EC12C3935200CC6E04</string>
+											<string>D2D223ED12C3935200CC6E04</string>
+											<string>D2D223EF12C3935200CC6E04</string>
+											<string>D2D2243C12C39B0900CC6E04</string>
+											<string>D2D2246512C39D8800CC6E04</string>
+											<string>D2D2246612C39D8800CC6E04</string>
+											<string>D2D2246712C39D8800CC6E04</string>
+											<string>D2D2247712C3A18200CC6E04</string>
+											<string>D2D224A812C3A92100CC6E04</string>
+											<string>D2D224A912C3A92100CC6E04</string>
+											<string>D2D224B812C3A9FB00CC6E04</string>
+											<string>D2D224B912C3A9FB00CC6E04</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -374,14 +374,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1472, 590}}</string>
+								<string>{{0, 0}, {1472, 542}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1680 969 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
 							<key>Proportion</key>
-							<string>590pt</string>
+							<string>542pt</string>
 						</dict>
 						<dict>
 							<key>ContentConfiguration</key>
@@ -394,14 +394,14 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 595}, {1472, 333}}</string>
+								<string>{{0, 547}, {1472, 381}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 59 1680 969 0 0 1680 1028 </string>
 							</dict>
 							<key>Module</key>
 							<string>XCDetailModule</string>
 							<key>Proportion</key>
-							<string>333pt</string>
+							<string>381pt</string>
 						</dict>
 					</array>
 					<key>Proportion</key>
@@ -420,9 +420,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>D2762B6212C3701B00AFA9DE</string>
+				<string>D2D222C212C389CD00CC6E04</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>D2762B6312C3701B00AFA9DE</string>
+				<string>D2D222C312C389CD00CC6E04</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -560,8 +560,10 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>D2D223F512C3935200CC6E04</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>D26E9F0D1245132F0011CCEE</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/packn/dev/TNWLM2/TNWLM2.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -586,7 +588,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>FeedModel.m</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -603,6 +605,8 @@
 							<string>516pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -642,7 +646,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>D26E9F0D1245132F0011CCEE</string>
-				<string>D2762B6412C3701B00AFA9DE</string>
+				<string>D2D2222D12C3863300CC6E04</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
@@ -655,7 +659,7 @@
 			<key>WindowToolGUID</key>
 			<string>D26E9F0D1245132F0011CCEE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
@@ -764,13 +768,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>D2762B6512C3701B00AFA9DE</string>
+				<string>D2D222C412C389CD00CC6E04</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>D2762B6612C3701B00AFA9DE</string>
-				<string>D2762B6712C3701B00AFA9DE</string>
-				<string>D2762B6812C3701B00AFA9DE</string>
-				<string>D2762B6912C3701B00AFA9DE</string>
-				<string>D2762B6A12C3701B00AFA9DE</string>
+				<string>D2D222C512C389CD00CC6E04</string>
+				<string>D2D222C612C389CD00CC6E04</string>
+				<string>D2D222C712C389CD00CC6E04</string>
+				<string>D2D222C812C389CD00CC6E04</string>
+				<string>D2D222C912C389CD00CC6E04</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -934,7 +938,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>D276233912C3424300AFA9DE</string>
+				<string>D2D223A912C38D0E00CC6E04</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
@@ -944,7 +948,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>Identifier</key>

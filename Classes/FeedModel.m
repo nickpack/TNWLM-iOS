@@ -15,11 +15,11 @@
 @synthesize feedUrl = _feedUrl;
 @synthesize items = _items;
 
-- (id)initWithFeedUrl:(NSURL*)feedUrl {
+- (id)initWithFeedUrl:(NSString*)feedUrl {
 	if (self = [super init]) {
 		self.feedUrl = feedUrl;
 	}
-	
+	NSLog(@"Feed Model init with: %@",feedUrl);
 	return self;
 }
 
@@ -30,13 +30,16 @@
 }
 
 - (void)load:(TTURLRequestCachePolicy)cachePolicy more:(BOOL)more {
+	NSLog(@"Feed model load");
 	if (!self.isLoading) {
+		NSLog(@"Feed Model is not loading");
+		//NSURL *url = [NSURL URLWithString: self.feedUrl];
 		TTURLRequest* request = [TTURLRequest
 								 requestWithURL: self.feedUrl
 								 delegate: self];
 		
 		request.cachePolicy = cachePolicy;
-		request.cacheExpirationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
+		request.cacheExpirationAge = 1;
 		
 		TTURLXMLResponse* response = [[TTURLXMLResponse alloc] init];
 		response.isRssFeed = YES;
@@ -48,14 +51,23 @@
 }
 
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
+	NSLog(@"Feed request finished");
 	TTURLXMLResponse* response = request.response;
 	TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
 	
 	NSDictionary* feed = response.rootObject;
-	TTDASSERT([[feed objectForKey:@"entry"] isKindOfClass:[NSArray class]]);
 	
-	NSArray* entries = [feed objectForKey:@"entry"];
+	for (id key in feed) {
+		
+        NSLog(@"key: %@, value: %@", key, [feed objectForKey:key]);
+		
+    }
 	
+	
+	TTDASSERT([[feed objectForKey:@"item"] isKindOfClass:[NSArray class]]);
+	
+	NSArray* entries = [[feed objectForKey:@"channel"] objectForKey:@"item"];
+	NSLog(@"%d",[entries count]);
 	NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setTimeStyle:NSDateFormatterFullStyle];
 	[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
@@ -71,14 +83,17 @@
 		 NSString* _body;
 		 NSURL* _link;
 		 */
-		NSDate* date = [dateFormatter dateFromString:[[entry objectForKey:@"published"]
+		NSDate* date = [dateFormatter dateFromString:[[entry objectForKey:@"pubDate"]
 													  objectForXMLNode]];
+		
 		item.posted = date;
 		item.title = [[entry objectForKey:@"title"] objectForXMLNode];
 		item.body = [[entry objectForKey:@"description"] objectForXMLNode];
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
 		[items addObject:item];
+		NSLog(@"Parsed: %@",item.body);
 		TT_RELEASE_SAFELY(item);
+		
 	}
 	_items = items;
 	

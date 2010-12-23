@@ -14,5 +14,5 @@
 	FeedModel* _feedModel;
 }
 
-- (id)initWithFeedUrl:(NSURL*)feedUrl;
+- (id)initWithFeedUrl:(NSString*)feedUrl;
 @end

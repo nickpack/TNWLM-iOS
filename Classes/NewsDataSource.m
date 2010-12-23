@@ -13,9 +13,9 @@
 
 @implementation NewsDataSource
 
-- (id)initWithFeedUrl:(NSURL*)feedUrl {
+- (id)initWithFeedUrl:(NSString*)feedUrl {
 	if (self = [super init]) {
-		_feedModel = [[FeedModel alloc] initWithFeedUrl:(NSURL *)feedUrl];
+		_feedModel = [[FeedModel alloc] initWithFeedUrl:feedUrl];
 	}
 	
 	return self;
@@ -35,14 +35,10 @@
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	
 	for (FeedItem* item in _feedModel.items) {
-		TTStyledText* styledText = [TTStyledText textFromXHTML:
-									[NSString stringWithFormat:@"%@\n<b>%@</b>",
-									 [[item.body stringByReplacingOccurrencesOfString:@"&"
-																			withString:@"&amp;"]
-									  stringByReplacingOccurrencesOfString:@"<"
-									  withString:@"&lt;"],
+		TTStyledText* styledText = [TTStyledText textFromXHTML:[NSString stringWithFormat:@"<b>%@</b>\n%@\n<b>%@</b>",item.title,item.body,
 									 [item.posted formatRelativeTime]]
 													lineBreaks:YES URLs:YES];
+		
 		// If this asserts, it's likely that the tweet.text contains an HTML character that caused
 		// the XML parser to fail.
 		TTDASSERT(nil != styledText);

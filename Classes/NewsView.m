@@ -26,9 +26,8 @@
 }
 
 - (void)createModel {
-	NSURL *url = [NSURL URLWithString: @"http://www.thenursewholovedme.com/feed"];
 	self.dataSource = [[[NewsDataSource alloc]
-						initWithFeedUrl:url] autorelease];
+						initWithFeedUrl:@"http://www.thenursewholovedme.com/feed"] autorelease];
 }
 
 - (id<UITableViewDelegate>)createDelegate {
