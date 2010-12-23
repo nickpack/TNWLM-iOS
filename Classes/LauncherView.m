@@ -32,7 +32,7 @@
 						 [NSArray arrayWithObjects:
 						  [[[TTLauncherItem alloc] initWithTitle:@"News"
 														   image:@"bundle://News.png"
-															 URL:@"tt://streamer" canDelete:YES] autorelease],
+															 URL:@"tt://news" canDelete:YES] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Listen"
                                image:@"bundle://Listen.png"
                                URL:@"tt://streamer" canDelete:NO] autorelease],
@@ -44,7 +44,7 @@
                                URL:@"fb://item4" canDelete:NO] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Releases"
                                image:@"bundle://Releases.png"
-                               URL:nil canDelete:NO] autorelease],
+                               URL:@"tt://releases" canDelete:NO] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Pictures"
                                image:@"bundle://Pictures.png"
                                URL:nil canDelete:NO] autorelease],

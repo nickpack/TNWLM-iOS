@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LauncherView.h"
+#import "ReleasesView.h"
+#import "NewsView.h"
 #import "iPhoneStreamingPlayerViewController.h"
 #import "AudioStreamer.h"
 #import "NPStyles.h"
@@ -46,6 +48,8 @@
   [map from:@"*" toViewController:[TTWebController class]];
   [map from:@"tt://launcher" toViewController:[LauncherView class]];
   [map from:@"tt://streamer" toViewController:[iPhoneStreamingPlayerViewController class]];
+  [map from:@"tt://releases" toViewController:[ReleasesView class]];
+  [map from:@"tt://news" toViewController:[NewsView class]];
 	NSDictionary *remoteNotif =
 	[launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotif) {
@@ -64,14 +68,14 @@
 
 - (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
 	
-    NSString *str = [NSString 
+    /*NSString *str = [NSString 
 					 stringWithFormat:@"%@",deviceToken];
 	TTURLRequest* request = [TTURLRequest requestWithURL:@"http://thor.nickpack.com/phone.php" delegate: self];
     request.httpMethod = @"POST";
     request.cachePolicy = TTURLRequestCachePolicyNoCache; 
 	[request.parameters addObject:str forKey:@"device"];
     request.response = [[[TTURLDataResponse alloc] init] autorelease]; 
-	[request send];
+	[request send];*/
 }
 
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
