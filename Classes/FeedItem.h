@@ -14,11 +14,13 @@
 	NSString* _title;
 	NSString* _body;
 	NSString* _link;
+	NSString* _poster;
 }
 
 @property (nonatomic, retain) NSDate* posted;
 @property (nonatomic, copy)   NSString* title;
 @property (nonatomic, copy)   NSString* body;
 @property (nonatomic, copy)   NSString* link;
+@property (nonatomic, copy)   NSString* poster;
 
 @end
