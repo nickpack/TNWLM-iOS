@@ -38,10 +38,10 @@
                                URL:@"tt://streamer" canDelete:NO] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Members"
                                image:@"bundle://Members.png"
-                               URL:@"fb://item3" canDelete:NO] autorelease],
+                               URL:@"tt://members" canDelete:NO] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Videos"
                                image:@"bundle://Videos.png"
-                               URL:@"fb://item4" canDelete:NO] autorelease],
+                               URL:@"tt://videos" canDelete:NO] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Releases"
                                image:@"bundle://Releases.png"
                                URL:@"tt://releases" canDelete:NO] autorelease],

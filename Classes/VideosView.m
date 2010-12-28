@@ -1,33 +1,34 @@
 //
-//  NewsView.m
+//  VideosView.m
 //  TNWLM2
 //
-//  Created by Nick Pack on 23/12/2010.
+//  Created by Nick on 28/12/2010.
 //  Copyright 2010 Nikki James Pack. All rights reserved.
 //
 
-#import "NewsView.h"
-#import "NewsDataSource.h"
+#import "VideosView.h"
+#import "VideoDataSource.h"
+
+//http://gdata.youtube.com/feeds/api/videos?alt=rss&format=1&author=thenursewholovedme
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////
+@implementation VideosView
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////
-@implementation NewsView
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-		self.title = @"News";
+- (id) init {
+	if (self = [super init]) {
 		self.variableHeightRows = YES;
+		self.title = @"News";
 	}
 	
 	return self;
 }
 
 - (void)createModel {
-	self.dataSource = [[[NewsDataSource alloc]
-						initWithFeedUrl:@"http://www.thenursewholovedme.com/feed"] autorelease];
+	self.dataSource = [[[VideoDataSource alloc]
+						initWithFeedUrl:@"http://gdata.youtube.com/feeds/api/videos?alt=rss&format=1&author=thenursewholovedme"] autorelease];
 }
 
 - (id<UITableViewDelegate>)createDelegate {

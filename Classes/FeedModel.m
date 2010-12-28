@@ -56,33 +56,26 @@
 	TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
 	
 	NSDictionary* feed = response.rootObject;
+		
+	TTDASSERT([[feed objectForKey:@"channel"] objectForKey:@"item"] isKindOfClass:[NSArray class]]);
 	
-	for (id key in feed) {
+	/*for (id key in feed) {
 		
         NSLog(@"key: %@, value: %@", key, [feed objectForKey:key]);
 		
-    }
-	
-	
-	TTDASSERT([[feed objectForKey:@"item"] isKindOfClass:[NSArray class]]);
+    }*/
 	
 	NSArray* entries = [[feed objectForKey:@"channel"] objectForKey:@"item"];
 	NSLog(@"%d",[entries count]);
 	NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setTimeStyle:NSDateFormatterFullStyle];
-	[dateFormatter setDateFormat:@"yyyy-MM-dd'T'HH:mm:ss'Z'"];
+	[dateFormatter setDateFormat:@"EEE, dd MMMM yyyy HH:mm:ss Z"];
 	
 	TT_RELEASE_SAFELY(_items);
 	NSMutableArray* items = [[NSMutableArray alloc] initWithCapacity:[entries count]];
 	
 	for (NSDictionary* entry in entries) {
 		FeedItem* item = [[FeedItem alloc] init];
-		/*
-		 NSDate*   _posted;
-		 NSString* _title;
-		 NSString* _body;
-		 NSURL* _link;
-		 */
 		NSDate* date = [dateFormatter dateFromString:[[entry objectForKey:@"pubDate"]
 													  objectForXMLNode]];
 		
@@ -91,8 +84,17 @@
 		item.body = [[entry objectForKey:@"description"] objectForXMLNode];
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
 		item.poster = [[entry objectForKey:@"dc:creator"] objectForXMLNode];
+		//item.thumb = [[entry objectForKey:@"media:thumbnail"] objectForXMLNode];
+		item.thumb = [[entry objectForKey:@"media:thumbnail"] objectForKey:@"url"];
+		
+		for (id key in entry) {
+			
+			NSLog(@"key: %@, value: %@", key, [entry objectForKey:key]);
+			
+		}
+		
 		[items addObject:item];
-		NSLog(@"Parsed: %@",item.body);
+		NSLog(@"Thumb: %@",item.thumb);
 		TT_RELEASE_SAFELY(item);
 		
 	}

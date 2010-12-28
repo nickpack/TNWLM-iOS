@@ -12,6 +12,8 @@
 #import "NewsView.h"
 #import "iPhoneStreamingPlayerViewController.h"
 #import "AudioStreamer.h"
+#import "MembersView.h"
+#import "VideosView.h"
 #import "NPStyles.h"
 
 #define kStoreType      NSSQLiteStoreType
@@ -50,6 +52,8 @@
   [map from:@"tt://streamer" toViewController:[iPhoneStreamingPlayerViewController class]];
   [map from:@"tt://releases" toViewController:[ReleasesView class]];
   [map from:@"tt://news" toViewController:[NewsView class]];
+  [map from:@"tt://members" toViewController:[MembersView class]];
+  [map from:@"tt://videos" toViewController:[VideosView class]];
 	NSDictionary *remoteNotif =
 	[launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotif) {

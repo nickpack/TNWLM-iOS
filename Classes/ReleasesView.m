@@ -26,23 +26,22 @@
     [super viewDidLoad];
 	
 	covers = [[NSArray arrayWithObjects:
-			   [UIImage imageNamed:@"cover_2.jpg"],[UIImage imageNamed:@"cover_1.jpg"],
-			   [UIImage imageNamed:@"cover_3.jpg"],[UIImage imageNamed:@"cover_4.jpg"],
-			   [UIImage imageNamed:@"cover_5.jpg"],[UIImage imageNamed:@"cover_6.jpg"],
-			   [UIImage imageNamed:@"cover_7.jpg"],[UIImage imageNamed:@"cover_8.jpg"],
-			   [UIImage imageNamed:@"cover_9.jpeg"],nil] retain];
+			   [UIImage imageNamed:@"cover_2.jpg"],
+			   [UIImage imageNamed:@"cover_3.jpg"],
+			   [UIImage imageNamed:@"cover_5.jpg"],
+			   [UIImage imageNamed:@"cover_7.jpg"],nil] retain];
 	
 	
-	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, 480, 300)];
+	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, 320, 180)];
 	coverflow.delegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
-	[coverflow setNumberOfCovers:5];
+	[coverflow setNumberOfCovers:4];
 	
 	
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];
 	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
-	infoButton.frame = CGRectMake(480-50, 300-30, 50, 30);
+	infoButton.frame = CGRectMake(320-50, 180-30, 50, 30);
 	[self.view addSubview:infoButton];
 	
 	
