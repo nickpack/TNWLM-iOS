@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <TapkuLibrary/TapkuLibrary.h>
 
-@interface ReleasesView : UIViewController <TKCoverflowViewDelegate,TKCoverflowViewDataSource,UIScrollViewDelegate> {
+@interface ReleasesView : UIViewController <TKCoverflowViewDelegate,TKCoverflowViewDataSource> {
 	
 	TKCoverflowView *coverflow; 
 	

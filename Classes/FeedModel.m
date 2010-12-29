@@ -30,10 +30,8 @@
 }
 
 - (void)load:(TTURLRequestCachePolicy)cachePolicy more:(BOOL)more {
-	NSLog(@"Feed model load");
 	if (!self.isLoading) {
-		NSLog(@"Feed Model is not loading");
-		//NSURL *url = [NSURL URLWithString: self.feedUrl];
+		
 		TTURLRequest* request = [TTURLRequest
 								 requestWithURL: self.feedUrl
 								 delegate: self];
@@ -51,22 +49,14 @@
 }
 
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
-	NSLog(@"Feed request finished");
 	TTURLXMLResponse* response = request.response;
 	TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
 	
 	NSDictionary* feed = response.rootObject;
 		
 	TTDASSERT([[feed objectForKey:@"channel"] objectForKey:@"item"] isKindOfClass:[NSArray class]]);
-	
-	/*for (id key in feed) {
 		
-        NSLog(@"key: %@, value: %@", key, [feed objectForKey:key]);
-		
-    }*/
-	
 	NSArray* entries = [[feed objectForKey:@"channel"] objectForKey:@"item"];
-	NSLog(@"%d",[entries count]);
 	NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
 	[dateFormatter setTimeStyle:NSDateFormatterFullStyle];
 	[dateFormatter setDateFormat:@"EEE, dd MMMM yyyy HH:mm:ss Z"];
@@ -78,23 +68,14 @@
 		FeedItem* item = [[FeedItem alloc] init];
 		NSDate* date = [dateFormatter dateFromString:[[entry objectForKey:@"pubDate"]
 													  objectForXMLNode]];
-		
 		item.posted = date;
 		item.title = [[entry objectForKey:@"title"] objectForXMLNode];
 		item.body = [[entry objectForKey:@"description"] objectForXMLNode];
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
 		item.poster = [[entry objectForKey:@"dc:creator"] objectForXMLNode];
-		//item.thumb = [[entry objectForKey:@"media:thumbnail"] objectForXMLNode];
-		item.thumb = [[entry objectForKey:@"media:thumbnail"] objectForKey:@"url"];
-		
-		for (id key in entry) {
-			
-			NSLog(@"key: %@, value: %@", key, [entry objectForKey:key]);
-			
-		}
+		item.thumb = [[[[entry objectForKey:@"media:group"] objectForKey:@"media:thumbnail"] objectAtIndex:0] objectForKey:@"url"];
 		
 		[items addObject:item];
-		NSLog(@"Thumb: %@",item.thumb);
 		TT_RELEASE_SAFELY(item);
 		
 	}

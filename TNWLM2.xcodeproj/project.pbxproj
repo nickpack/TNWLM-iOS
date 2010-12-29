@@ -370,7 +370,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2239212C38D0000CC6E04 /* extThree20XML.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 66C34C87126625E000489E9A /* extThree20XML-Xcode3.2.5 */;
+			remoteGlobalIDString = 66C34C87126625E000489E9A;
 			remoteInfo = "extThree20XML-Xcode3.2.5";
 		};
 /* End PBXContainerItemProxy section */

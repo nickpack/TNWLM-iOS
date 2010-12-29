@@ -36,12 +36,12 @@
 	
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	
-	NSString* remoteImage = @"bundle://News.png";
 	for (FeedItem* item in _feedModel.items) {
 		NSString* body = [item.body stringByRemovingHTMLTags];
-		[items addObject:[TTTableMessageItem itemWithTitle:item.poster caption:item.title
-													  text:body timestamp:item.posted
-												  imageURL:item.thumb URL:item.link]];
+		
+		[items addObject:[TTTableSubtitleItem itemWithText:item.title subtitle:body
+												  imageURL:item.thumb defaultImage:nil
+													   URL:item.link accessoryURL:nil]];
 	}
 	
 	self.items = items;

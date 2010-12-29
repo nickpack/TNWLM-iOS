@@ -33,7 +33,7 @@
 	
 	
 	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, 320, 180)];
-	coverflow.delegate = self;
+	//coverflow.delegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:4];
@@ -87,10 +87,10 @@
 	
 }
 
-
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeRight);
 }
+
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
@@ -101,6 +101,7 @@
 	// Release any retained subviews of the main view.
 	// e.g. self.myOutlet = nil;
 }
+
 - (void)dealloc {
 	[infoButton release];
 	[coverflow release];
