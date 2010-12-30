@@ -23,6 +23,8 @@
 		D22566721260874B001F97E1 /* Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = D225666D1260874B001F97E1 /* Pictures.png */; };
 		D225668412608ED1001F97E1 /* CommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = D225668312608ED1001F97E1 /* CommonData.m */; };
 		D22567221260C074001F97E1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D22567211260C074001F97E1 /* RegexKitLite.m */; };
+		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
+		D2494A3412CD372A0089FC79 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2494A3312CD372A0089FC79 /* Reachability.m */; };
 		D276233512C3421D00AFA9DE /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D276233212C3421A00AFA9DE /* libTapkuLibrary.a */; };
 		D276233B12C3424800AFA9DE /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */; };
 		D27623A312C3426D00AFA9DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27623A212C3426D00AFA9DE /* MapKit.framework */; };
@@ -398,6 +400,9 @@
 		D225668512608F4B001F97E1 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
 		D22567201260C074001F97E1 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		D22567211260C074001F97E1 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D2494A3212CD372A0089FC79 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D2494A3312CD372A0089FC79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapkuLibrary.bundle; path = ../tapkulibrary/src/TapkuLibrary.bundle; sourceTree = SOURCE_ROOT; };
 		D27623A212C3426D00AFA9DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -484,6 +489,7 @@
 				D2D2237912C38BD300CC6E04 /* libThree20UICommon-Xcode3.2.5.a in Frameworks */,
 				D2D2237A12C38BD600CC6E04 /* libThree20UINavigator-Xcode3.2.5.a in Frameworks */,
 				D2D223A612C38D0400CC6E04 /* libextThree20XML-Xcode3.2.5.a in Frameworks */,
+				D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -526,6 +532,8 @@
 				D2D6D75D12CA79900039776B /* MembersView.m */,
 				D2D6D78A12CA818A0039776B /* VideosView.h */,
 				D2D6D78B12CA818A0039776B /* VideosView.m */,
+				D2494A3212CD372A0089FC79 /* Reachability.h */,
+				D2494A3312CD372A0089FC79 /* Reachability.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -608,6 +616,7 @@
 				28D801B30F44B63D00FB423F /* CoreData.framework */,
 				EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */,
 				D27623A212C3426D00AFA9DE /* MapKit.framework */,
+				D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1119,6 +1128,7 @@
 				D2D6D75E12CA79900039776B /* MembersView.m in Sources */,
 				D2D6D78912CA7FBF0039776B /* VideoDataSource.m in Sources */,
 				D2D6D78C12CA818A0039776B /* VideosView.m in Sources */,
+				D2494A3412CD372A0089FC79 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1247,7 +1257,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				CURRENT_PROJECT_VERSION = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1266,8 +1276,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E";
+				PROVISIONING_PROFILE = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1276,7 +1286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				CURRENT_PROJECT_VERSION = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -1292,8 +1302,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "2F7C50B6-FAF5-4EEB-B83E-0CA296319A2E";
+				PROVISIONING_PROFILE = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

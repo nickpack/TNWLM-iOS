@@ -15,6 +15,7 @@
 #import "MembersView.h"
 #import "VideosView.h"
 #import "NPStyles.h"
+#import "Reachability.h"
 
 #define kStoreType      NSSQLiteStoreType
 #define kStoreFilename  @"db.sqlite"
@@ -36,6 +37,17 @@
 @implementation AppDelegate
 
 @synthesize uiIsVisible;
+
+
+-(BOOL) isInternetReachable {
+	return ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
+}
+
+-(BOOL) isWebSiteReachable: (NSString *)host {
+	return ([[Reachability reachabilityWithHostName: host] currentReachabilityStatus] != NotReachable);
+}
+
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Forcefully removes the model db and recreates it.

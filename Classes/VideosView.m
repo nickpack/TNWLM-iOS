@@ -35,5 +35,9 @@
 	return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
 }
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
+
 @end
 

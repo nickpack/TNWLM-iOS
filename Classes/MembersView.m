@@ -42,6 +42,10 @@
 	NSLog(@"Tab %i is selected",selectedIndex); 
 } 
 
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
+
 - (void)dealloc { 
 	TT_RELEASE_SAFELY(_memberTabs); 
 	[super dealloc]; 
