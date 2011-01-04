@@ -8,15 +8,18 @@
 
 #import "ReleasesView.h"
 
-
 @implementation ReleasesView
 
 @synthesize coverflow;
+@synthesize coverIndex;
+
 
 - (void) viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque]; 
+	[self.navigationController setNavigationBarHidden:YES animated:animated];
 }
+
 - (void) viewWillDisappear:(BOOL)animated{
 	[super viewWillDisappear:animated];
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
@@ -26,22 +29,24 @@
     [super viewDidLoad];
 	
 	covers = [[NSArray arrayWithObjects:
-			   [UIImage imageNamed:@"cover_2.jpg"],
-			   [UIImage imageNamed:@"cover_3.jpg"],
-			   [UIImage imageNamed:@"cover_5.jpg"],
-			   [UIImage imageNamed:@"cover_7.jpg"],nil] retain];
-	
-	
-	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, 320, 180)];
-	//coverflow.delegate = self;
+										[UIImage imageNamed:@"lemonheads.png"],
+										[UIImage imageNamed:@"echoesinthealleyway.png"],
+										[UIImage imageNamed:@"ill.png"],
+										[UIImage imageNamed:@"hereagainsomewhere.png"],
+										[UIImage imageNamed:@"inthisroom.png"],
+										[UIImage imageNamed:@"vandalattack.png"],
+										[UIImage imageNamed:@"nursecd2004.png"],nil] retain];	
+
+	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, 480, 300)];
+	coverflow.coverflowDelegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
-	[coverflow setNumberOfCovers:4];
+	[coverflow setNumberOfCovers:[covers count]];
 	
 	
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];
 	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
-	infoButton.frame = CGRectMake(320-50, 180-30, 50, 30);
+	infoButton.frame = CGRectMake(480-50, 300-30, 50, 30);
 	[self.view addSubview:infoButton];
 	
 	
@@ -49,13 +54,16 @@
 }
 
 - (void) info{
-	NSLog(@"info");
+	NSLog(@"info: %@",self.coverIndex);
+	
 	[self dismissModalViewControllerAnimated:YES];
 }
 
 
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasBroughtToFront:(int)index{
-	//NSLog(@"Front %d",index);
+	NSInteger* theIndex = index;
+	self.coverIndex = theIndex;
+	NSLog(@"Front %d",index);
 }
 - (TKCoverflowCoverView*) coverflowView:(TKCoverflowView*)coverflowView coverAtIndex:(int)index{
 	

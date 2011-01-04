@@ -62,7 +62,7 @@
   [map from:@"*" toViewController:[TTWebController class]];
   [map from:@"tt://launcher" toViewController:[LauncherView class]];
   [map from:@"tt://streamer" toViewController:[iPhoneStreamingPlayerViewController class]];
-  [map from:@"tt://releases" toViewController:[ReleasesView class]];
+  [map from:@"tt://releases" toModalViewController:[ReleasesView class]];
   [map from:@"tt://news" toViewController:[NewsView class]];
   [map from:@"tt://members" toViewController:[MembersView class]];
   [map from:@"tt://videos" toViewController:[VideosView class]];
