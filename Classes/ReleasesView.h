@@ -13,12 +13,13 @@
 	
 	TKCoverflowView *coverflow; 
 	
+	UIButton *exitButton;
 	UIButton *infoButton;
 	
 	NSMutableArray *covers; // album covers images
-	NSInteger *coverIndex;
+	NSInteger coverIndex;
 }
 
 @property (retain,nonatomic) TKCoverflowView *coverflow;
-@property (nonatomic) NSInteger *coverIndex;
+@property (nonatomic) NSInteger coverIndex;
 @end

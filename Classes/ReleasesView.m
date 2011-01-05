@@ -27,7 +27,8 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-	
+	CGFloat x = self.view.bounds.size.height + 10;
+	CGFloat y = self.view.bounds.size.width;
 	covers = [[NSArray arrayWithObjects:
 										[UIImage imageNamed:@"lemonheads.png"],
 										[UIImage imageNamed:@"echoesinthealleyway.png"],
@@ -36,33 +37,40 @@
 										[UIImage imageNamed:@"inthisroom.png"],
 										[UIImage imageNamed:@"vandalattack.png"],
 										[UIImage imageNamed:@"nursecd2004.png"],nil] retain];	
-
-	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, 480, 300)];
+	
+	
+	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, x, y)];
+	
 	coverflow.coverflowDelegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:[covers count]];
 	
+	exitButton = [[UIButton buttonWithType:UIButtonTypeDetailDisclosure] retain];
+	[exitButton addTarget:self action:@selector(exit) forControlEvents:UIControlEventTouchUpInside];
+	exitButton.frame = CGRectMake(x-60, y-30, 50, 30);
+	[self.view addSubview:exitButton];
 	
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];
 	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
-	infoButton.frame = CGRectMake(480-50, 300-30, 50, 30);
+	infoButton.frame = CGRectMake(0, y-30, 50, 30);
 	[self.view addSubview:infoButton];
-	
-	
 	
 }
 
-- (void) info{
-	NSLog(@"info: %@",self.coverIndex);
+-(void) info{
+	
+}
+
+- (void) exit{
+	//NSLog(@"info: %@",self.coverIndex);
 	
 	[self dismissModalViewControllerAnimated:YES];
 }
 
 
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasBroughtToFront:(int)index{
-	NSInteger* theIndex = index;
-	self.coverIndex = theIndex;
+	self.coverIndex = index;
 	NSLog(@"Front %d",index);
 }
 - (TKCoverflowCoverView*) coverflowView:(TKCoverflowView*)coverflowView coverAtIndex:(int)index{
