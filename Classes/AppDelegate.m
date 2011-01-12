@@ -10,7 +10,7 @@
 #import "LauncherView.h"
 #import "ReleasesView.h"
 #import "NewsView.h"
-#import "iPhoneStreamingPlayerViewController.h"
+#import "AudioPlayer.h"
 #import "AudioStreamer.h"
 #import "MembersView.h"
 #import "VideosView.h"
@@ -37,7 +37,7 @@
 @implementation AppDelegate
 
 @synthesize uiIsVisible;
-
+@synthesize shouldOpenStream;
 
 -(BOOL) isInternetReachable {
 	return ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
@@ -61,7 +61,7 @@
 
   [map from:@"*" toViewController:[TTWebController class]];
   [map from:@"tt://launcher" toViewController:[LauncherView class]];
-  [map from:@"tt://streamer" toViewController:[iPhoneStreamingPlayerViewController class]];
+  [map from:@"tt://streamer" toViewController:[AudioPlayer class]];
   [map from:@"tt://releases" toModalViewController:[ReleasesView class]];
   [map from:@"tt://news" toViewController:[NewsView class]];
   [map from:@"tt://members" toViewController:[MembersView class]];

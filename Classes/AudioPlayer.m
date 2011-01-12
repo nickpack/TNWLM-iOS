@@ -13,7 +13,7 @@
 //
 
 #import "AppDelegate.h"
-#import "iPhoneStreamingPlayerViewController.h"
+#import "AudioPlayer.h"
 #import "AudioStreamer.h"
 #import "LevelMeterView.h"
 #import "RegexKitLite.h"
@@ -24,7 +24,7 @@
 #import <Three20/Three20.h>
 #import <Three20UI/UIViewAdditions.h>
 
-@implementation iPhoneStreamingPlayerViewController
+@implementation AudioPlayer
 
 @synthesize imageView;
 //

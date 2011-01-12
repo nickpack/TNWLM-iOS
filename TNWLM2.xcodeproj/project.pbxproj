@@ -38,7 +38,7 @@
 		D2CB4F5312536818001A31CA /* LauncherView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB4F5212536818001A31CA /* LauncherView.m */; };
 		D2CB4F61125369A3001A31CA /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4F60125369A3001A31CA /* Icon.png */; };
 		D2CB4F7812536AAA001A31CA /* AudioStreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB4F7112536AAA001A31CA /* AudioStreamer.m */; };
-		D2CB4F7912536AAA001A31CA /* iPhoneStreamingPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB4F7312536AAA001A31CA /* iPhoneStreamingPlayerViewController.m */; };
+		D2CB4F7912536AAA001A31CA /* AudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB4F7312536AAA001A31CA /* AudioPlayer.m */; };
 		D2CB4F7A12536AAA001A31CA /* LevelMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CB4F7512536AAA001A31CA /* LevelMeterView.m */; };
 		D2CB4FA912536B0B001A31CA /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CB4FA812536B0B001A31CA /* AudioToolbox.framework */; };
 		D2CB4FAB12536B0B001A31CA /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2CB4FAA12536B0B001A31CA /* CFNetwork.framework */; };
@@ -47,7 +47,7 @@
 		D2CB4FB312536B2A001A31CA /* pausebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FAF12536B2A001A31CA /* pausebutton.png */; };
 		D2CB4FB412536B2A001A31CA /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FB012536B2A001A31CA /* playbutton.png */; };
 		D2CB4FB512536B2A001A31CA /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FB112536B2A001A31CA /* stopbutton.png */; };
-		D2CB4FBB12536BEC001A31CA /* iPhoneStreamingPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FBA12536BEC001A31CA /* iPhoneStreamingPlayerViewController.xib */; };
+		D2CB4FBB12536BEC001A31CA /* AudioPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FBA12536BEC001A31CA /* AudioPlayer.xib */; };
 		D2D2237512C38BC700CC6E04 /* libThree20Core-Xcode3.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2232D12C38BA500CC6E04 /* libThree20Core-Xcode3.2.5.a */; };
 		D2D2237612C38BCA00CC6E04 /* libThree20Network-Xcode3.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2233912C38BA500CC6E04 /* libThree20Network-Xcode3.2.5.a */; };
 		D2D2237712C38BCE00CC6E04 /* libThree20Style-Xcode3.2.5.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2234512C38BA500CC6E04 /* libThree20Style-Xcode3.2.5.a */; };
@@ -395,12 +395,12 @@
 		D225666D1260874B001F97E1 /* Pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pictures.png; sourceTree = "<group>"; };
 		D225668212608ED1001F97E1 /* CommonData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonData.h; sourceTree = "<group>"; };
 		D225668312608ED1001F97E1 /* CommonData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonData.m; sourceTree = "<group>"; };
-		D225668512608F4B001F97E1 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
-		D22567201260C074001F97E1 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
-		D22567211260C074001F97E1 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		D225668512608F4B001F97E1 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Classes/SynthesizeSingleton.h; sourceTree = "<group>"; };
+		D22567201260C074001F97E1 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = Classes/RegexKitLite.h; sourceTree = "<group>"; };
+		D22567211260C074001F97E1 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = Classes/RegexKitLite.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D2494A3212CD372A0089FC79 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		D2494A3312CD372A0089FC79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D2494A3212CD372A0089FC79 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
+		D2494A3312CD372A0089FC79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Reachability.m; sourceTree = "<group>"; };
 		D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapkuLibrary.bundle; path = ../tapkulibrary/src/TapkuLibrary.bundle; sourceTree = SOURCE_ROOT; };
 		D27623A212C3426D00AFA9DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -419,10 +419,10 @@
 		D2CB4F5112536818001A31CA /* LauncherView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherView.h; sourceTree = "<group>"; };
 		D2CB4F5212536818001A31CA /* LauncherView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherView.m; sourceTree = "<group>"; };
 		D2CB4F60125369A3001A31CA /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		D2CB4F7012536AAA001A31CA /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioStreamer.h; sourceTree = "<group>"; };
-		D2CB4F7112536AAA001A31CA /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioStreamer.m; sourceTree = "<group>"; };
-		D2CB4F7212536AAA001A31CA /* iPhoneStreamingPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPhoneStreamingPlayerViewController.h; sourceTree = "<group>"; };
-		D2CB4F7312536AAA001A31CA /* iPhoneStreamingPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPhoneStreamingPlayerViewController.m; sourceTree = "<group>"; };
+		D2CB4F7012536AAA001A31CA /* AudioStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AudioStreamer.h; path = Classes/AudioStreamer.h; sourceTree = "<group>"; };
+		D2CB4F7112536AAA001A31CA /* AudioStreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AudioStreamer.m; path = Classes/AudioStreamer.m; sourceTree = "<group>"; };
+		D2CB4F7212536AAA001A31CA /* AudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AudioPlayer.h; sourceTree = "<group>"; };
+		D2CB4F7312536AAA001A31CA /* AudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AudioPlayer.m; sourceTree = "<group>"; };
 		D2CB4F7412536AAA001A31CA /* LevelMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LevelMeterView.h; sourceTree = "<group>"; };
 		D2CB4F7512536AAA001A31CA /* LevelMeterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LevelMeterView.m; sourceTree = "<group>"; };
 		D2CB4FA812536B0B001A31CA /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -432,7 +432,7 @@
 		D2CB4FAF12536B2A001A31CA /* pausebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebutton.png; sourceTree = "<group>"; };
 		D2CB4FB012536B2A001A31CA /* playbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playbutton.png; sourceTree = "<group>"; };
 		D2CB4FB112536B2A001A31CA /* stopbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stopbutton.png; sourceTree = "<group>"; };
-		D2CB4FBA12536BEC001A31CA /* iPhoneStreamingPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iPhoneStreamingPlayerViewController.xib; sourceTree = "<group>"; };
+		D2CB4FBA12536BEC001A31CA /* AudioPlayer.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AudioPlayer.xib; sourceTree = "<group>"; };
 		D2D222FB12C38B8A00CC6E04 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D2D2231712C38BA500CC6E04 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -495,41 +495,25 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				D22567201260C074001F97E1 /* RegexKitLite.h */,
-				D22567211260C074001F97E1 /* RegexKitLite.m */,
-				D225668512608F4B001F97E1 /* SynthesizeSingleton.h */,
-				D2CB4F7012536AAA001A31CA /* AudioStreamer.h */,
-				D2CB4F7112536AAA001A31CA /* AudioStreamer.m */,
-				D2CB4F7212536AAA001A31CA /* iPhoneStreamingPlayerViewController.h */,
-				D2CB4F7312536AAA001A31CA /* iPhoneStreamingPlayerViewController.m */,
-				D2CB4F7412536AAA001A31CA /* LevelMeterView.h */,
-				D2CB4F7512536AAA001A31CA /* LevelMeterView.m */,
+				D2E5EFAF12DDB6CC00DD7B82 /* Styles */,
+				D2E5EEFF12DDB63200DD7B82 /* Audio Player */,
+				D2E5EEFE12DDB61C00DD7B82 /* Feeds */,
+				D2CB4F7212536AAA001A31CA /* AudioPlayer.h */,
+				D2CB4F7312536AAA001A31CA /* AudioPlayer.m */,
 				D2CB4F5112536818001A31CA /* LauncherView.h */,
 				D2CB4F5212536818001A31CA /* LauncherView.m */,
 				EB383C0410BBF8A40000B2D2 /* AppDelegate.h */,
 				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
-				D2F0E40F1253909F007B48CA /* NPStyles.h */,
-				D2F0E4101253909F007B48CA /* NPStyles.m */,
 				D225668212608ED1001F97E1 /* CommonData.h */,
 				D225668312608ED1001F97E1 /* CommonData.m */,
 				D27623A912C342D600AFA9DE /* ReleasesView.h */,
 				D27623AA12C342D600AFA9DE /* ReleasesView.m */,
-				D27623F812C3460300AFA9DE /* FeedItem.h */,
-				D27623F912C3460300AFA9DE /* FeedItem.m */,
-				D27623FB12C349C400AFA9DE /* FeedModel.h */,
-				D27623FC12C349C400AFA9DE /* FeedModel.m */,
-				D27623FE12C34C6500AFA9DE /* NewsDataSource.h */,
-				D27623FF12C34C6500AFA9DE /* NewsDataSource.m */,
-				D2D6D78712CA7FBF0039776B /* VideoDataSource.h */,
-				D2D6D78812CA7FBF0039776B /* VideoDataSource.m */,
 				D276240112C34DE800AFA9DE /* NewsView.h */,
 				D276240212C34DE800AFA9DE /* NewsView.m */,
 				D2D6D75C12CA79900039776B /* MembersView.h */,
 				D2D6D75D12CA79900039776B /* MembersView.m */,
 				D2D6D78A12CA818A0039776B /* VideosView.h */,
 				D2D6D78B12CA818A0039776B /* VideosView.m */,
-				D2494A3212CD372A0089FC79 /* Reachability.h */,
-				D2494A3312CD372A0089FC79 /* Reachability.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -551,9 +535,6 @@
 				6EF963BC118E96B7003902E7 /* Dependencies */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
-				D2CB4FA812536B0B001A31CA /* AudioToolbox.framework */,
-				D2CB4FAA12536B0B001A31CA /* CFNetwork.framework */,
-				D2CB4FAC12536B0B001A31CA /* MediaPlayer.framework */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -570,13 +551,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D2E5EFC112DDB86300DD7B82 /* Bundles */,
 				D2EDFEF112D10DD100C62319 /* Audio Player */,
 				D2EDFEF012D10DBA00C62319 /* Launcher Images */,
 				D2EDFEE312D10DA900C62319 /* Album Covers */,
-				D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */,
 				D2ACC487125D021800A2688D /* Default.png */,
 				D2CB4F60125369A3001A31CA /* Icon.png */,
-				D2D2238912C38C2400CC6E04 /* Three20.bundle */,
 				28C3AD890F43EF2300507BA6 /* TNWLM2.xcdatamodel */,
 				8D1107310486CEB800E47090 /* TNWLM2-Info.plist */,
 			);
@@ -586,6 +566,9 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D2CB4FA812536B0B001A31CA /* AudioToolbox.framework */,
+				D2CB4FAA12536B0B001A31CA /* CFNetwork.framework */,
+				D2CB4FAC12536B0B001A31CA /* MediaPlayer.framework */,
 				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
@@ -601,6 +584,13 @@
 		6EF963BC118E96B7003902E7 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				D2494A3212CD372A0089FC79 /* Reachability.h */,
+				D2494A3312CD372A0089FC79 /* Reachability.m */,
+				D22567201260C074001F97E1 /* RegexKitLite.h */,
+				D22567211260C074001F97E1 /* RegexKitLite.m */,
+				D225668512608F4B001F97E1 /* SynthesizeSingleton.h */,
+				D2CB4F7012536AAA001A31CA /* AudioStreamer.h */,
+				D2CB4F7112536AAA001A31CA /* AudioStreamer.m */,
 				D2D2239212C38D0000CC6E04 /* extThree20XML.xcodeproj */,
 				D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */,
 				D2D2231712C38BA500CC6E04 /* Three20Network.xcodeproj */,
@@ -711,6 +701,48 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D2E5EEFE12DDB61C00DD7B82 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				D27623FE12C34C6500AFA9DE /* NewsDataSource.h */,
+				D27623FF12C34C6500AFA9DE /* NewsDataSource.m */,
+				D2D6D78712CA7FBF0039776B /* VideoDataSource.h */,
+				D2D6D78812CA7FBF0039776B /* VideoDataSource.m */,
+				D27623F812C3460300AFA9DE /* FeedItem.h */,
+				D27623F912C3460300AFA9DE /* FeedItem.m */,
+				D27623FB12C349C400AFA9DE /* FeedModel.h */,
+				D27623FC12C349C400AFA9DE /* FeedModel.m */,
+			);
+			name = Feeds;
+			sourceTree = "<group>";
+		};
+		D2E5EEFF12DDB63200DD7B82 /* Audio Player */ = {
+			isa = PBXGroup;
+			children = (
+				D2CB4F7412536AAA001A31CA /* LevelMeterView.h */,
+				D2CB4F7512536AAA001A31CA /* LevelMeterView.m */,
+			);
+			name = "Audio Player";
+			sourceTree = "<group>";
+		};
+		D2E5EFAF12DDB6CC00DD7B82 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				D2F0E40F1253909F007B48CA /* NPStyles.h */,
+				D2F0E4101253909F007B48CA /* NPStyles.m */,
+			);
+			name = Styles;
+			sourceTree = "<group>";
+		};
+		D2E5EFC112DDB86300DD7B82 /* Bundles */ = {
+			isa = PBXGroup;
+			children = (
+				D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */,
+				D2D2238912C38C2400CC6E04 /* Three20.bundle */,
+			);
+			name = Bundles;
+			sourceTree = "<group>";
+		};
 		D2EDFEE312D10DA900C62319 /* Album Covers */ = {
 			isa = PBXGroup;
 			children = (
@@ -743,7 +775,7 @@
 		D2EDFEF112D10DD100C62319 /* Audio Player */ = {
 			isa = PBXGroup;
 			children = (
-				D2CB4FBA12536BEC001A31CA /* iPhoneStreamingPlayerViewController.xib */,
+				D2CB4FBA12536BEC001A31CA /* AudioPlayer.xib */,
 				D2CB4FAE12536B2A001A31CA /* loadingbutton.png */,
 				D2CB4FAF12536B2A001A31CA /* pausebutton.png */,
 				D2CB4FB012536B2A001A31CA /* playbutton.png */,
@@ -1097,7 +1129,7 @@
 				D2CB4FB312536B2A001A31CA /* pausebutton.png in Resources */,
 				D2CB4FB412536B2A001A31CA /* playbutton.png in Resources */,
 				D2CB4FB512536B2A001A31CA /* stopbutton.png in Resources */,
-				D2CB4FBB12536BEC001A31CA /* iPhoneStreamingPlayerViewController.xib in Resources */,
+				D2CB4FBB12536BEC001A31CA /* AudioPlayer.xib in Resources */,
 				D2ACC488125D021800A2688D /* Default.png in Resources */,
 				D2ACC4F4125D156400A2688D /* background.jpg in Resources */,
 				D225664D1260865B001F97E1 /* Releases.png in Resources */,
@@ -1131,7 +1163,7 @@
 				EB383C0610BBF8A40000B2D2 /* AppDelegate.m in Sources */,
 				D2CB4F5312536818001A31CA /* LauncherView.m in Sources */,
 				D2CB4F7812536AAA001A31CA /* AudioStreamer.m in Sources */,
-				D2CB4F7912536AAA001A31CA /* iPhoneStreamingPlayerViewController.m in Sources */,
+				D2CB4F7912536AAA001A31CA /* AudioPlayer.m in Sources */,
 				D2CB4F7A12536AAA001A31CA /* LevelMeterView.m in Sources */,
 				D2F0E4111253909F007B48CA /* NPStyles.m in Sources */,
 				D225668412608ED1001F97E1 /* CommonData.m in Sources */,
@@ -1302,8 +1334,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = SHOUTCAST_METADATA;
@@ -1318,8 +1350,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

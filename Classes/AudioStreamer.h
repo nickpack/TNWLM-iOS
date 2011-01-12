@@ -161,7 +161,9 @@ extern NSString * const ASUpdateMetadataNotification;
 	double packetDuration;		// sample rate times frames per packet
 	double lastProgress;		// last calculated progress point
 	UInt32 numberOfChannels;    // Number of audio channels in the stream (1 = mono, 2 = stereo)
-
+#ifdef TARGET_OS_IPHONE
+	BOOL pausedByInterruption;
+#endif
 #ifdef SHOUTCAST_METADATA
 	BOOL foundIcyStart;
 	BOOL foundIcyEnd;

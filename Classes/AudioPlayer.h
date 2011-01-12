@@ -19,7 +19,7 @@
 
 @class AudioStreamer, LevelMeterView;
 
-@interface iPhoneStreamingPlayerViewController : UIViewController
+@interface AudioPlayer : UIViewController
 {
 	IBOutlet UIButton *button;
 	IBOutlet UITextField *metadataArtist;
