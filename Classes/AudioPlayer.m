@@ -352,8 +352,7 @@
 		if ([pair count] == 2)
 			[hash setObject:[pair objectAtIndex:1] forKey:[pair objectAtIndex:0]];
 	}
-
-
+	
 	NSString *streamString = [[hash objectForKey:@"StreamTitle"] stringByReplacingOccurrencesOfString:@"'" withString:@""];
 	NSArray *streamParts = [streamString componentsSeparatedByString:@" - "];
 

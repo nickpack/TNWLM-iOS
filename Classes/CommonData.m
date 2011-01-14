@@ -12,7 +12,7 @@
 
 @implementation CommonData
 
-	SYNTHESIZE_SINGLETON_FOR_CLASS(CommonData); 
+SYNTHESIZE_SINGLETON_FOR_CLASS(CommonData); 
 
 @synthesize streamUrl;
 @synthesize streamer;

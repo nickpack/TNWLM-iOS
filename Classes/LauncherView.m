@@ -47,7 +47,7 @@
                                URL:@"tt://releases" canDelete:NO] autorelease],
       [[[TTLauncherItem alloc] initWithTitle:@"Pictures"
                                image:@"bundle://Pictures.png"
-                               URL:nil canDelete:NO] autorelease],
+                               URL:@"tt://photos" canDelete:NO] autorelease],
 	  nil],
 	nil
     ];
@@ -77,10 +77,8 @@
 
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item 
 {
-    /*TTNavigator *navigator = [TTNavigator navigator];
-    [navigator openURLAction:[TTURLAction actionWithURLPath:item.URL]];*/
-	
-	[[TTNavigator navigator] openURLAction: [[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]]; 
+    //[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:item.URL] applyTransition:UIViewAnimationTransitionCurlDown] applyAnimated:YES]];
+	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]];
 }
 
 - (void)launcherViewDidBeginEditing:(TTLauncherView*)launcher {

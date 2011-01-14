@@ -19,7 +19,6 @@
 	if (self = [super init]) {
 		self.feedUrl = feedUrl;
 	}
-	NSLog(@"Feed Model init with: %@",feedUrl);
 	return self;
 }
 

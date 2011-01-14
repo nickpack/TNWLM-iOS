@@ -19,9 +19,25 @@
 	return RGBCOLOR(116, 14, 14);
 }
 
+-(UIColor*)tabBarTintColor {
+	return RGBCOLOR(116, 14, 14);
+}
+
 - (UIColor*)toolbarTintColor {
 	return RGBCOLOR(0, 0, 0);
 }
+
+/*- (UITableViewCellSelectionStyle)tableSelectionStyle {
+	return UITableViewCellSelectionStyleGray;
+}
+
+- (UIColor*)tablePlainBackgroundColor {
+	return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+}
+
+- (UIImage*)tableRefreshHeaderArrowImage {
+	return TTIMAGE(@"bundle://Three20.bundle/images/blackArrow.png");
+}*/
 
 - (TTStyle*)launcherButton:(UIControlState)state { 
 	return 

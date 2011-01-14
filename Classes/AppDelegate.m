@@ -15,6 +15,7 @@
 #import "MembersView.h"
 #import "VideosView.h"
 #import "NPStyles.h"
+#import "PhotosView.h"
 #import "Reachability.h"
 
 #define kStoreType      NSSQLiteStoreType
@@ -29,8 +30,6 @@
 - (NSString *)applicationDocumentsDirectory;
 
 @end
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39,46 +38,38 @@
 @synthesize uiIsVisible;
 @synthesize shouldOpenStream;
 
--(BOOL) isInternetReachable {
-	return ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] != NotReachable);
-}
-
--(BOOL) isWebSiteReachable: (NSString *)host {
-	return ([[Reachability reachabilityWithHostName: host] currentReachabilityStatus] != NotReachable);
-}
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Forcefully removes the model db and recreates it.
   //_resetModel = YES;
-  [TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc]  
-                                        init] autorelease]]; 
-  TTNavigator* navigator = [TTNavigator navigator];
-  navigator.persistenceMode = TTNavigatorPersistenceModeAll;
+  
+	[TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc] init] autorelease]]; 
+	TTNavigator* navigator = [TTNavigator navigator];
+	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
 
-  TTURLMap* map = navigator.URLMap;
+	TTURLMap* map = navigator.URLMap;
 
-  [map from:@"*" toViewController:[TTWebController class]];
-  [map from:@"tt://launcher" toViewController:[LauncherView class]];
-  [map from:@"tt://streamer" toViewController:[AudioPlayer class]];
-  [map from:@"tt://releases" toModalViewController:[ReleasesView class]];
-  [map from:@"tt://news" toViewController:[NewsView class]];
-  [map from:@"tt://members" toViewController:[MembersView class]];
-  [map from:@"tt://videos" toViewController:[VideosView class]];
-	NSDictionary *remoteNotif =
-	[launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+	[map from:@"*" toViewController:[TTWebController class]];
+	[map from:@"tt://launcher" toViewController:[LauncherView class]];
+	[map from:@"tt://streamer" toViewController:[AudioPlayer class]];
+	[map from:@"tt://releases" toModalViewController:[ReleasesView class]];
+	[map from:@"tt://news" toViewController:[NewsView class]];
+	[map from:@"tt://members" toViewController:[MembersView class]];
+	[map from:@"tt://videos" toViewController:[VideosView class]];
+	[map from:@"tt://photos" toViewController:[PhotosView class]];
+	// Check for push notifications and open the request action if we have one
+	NSDictionary *remoteNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotif) {
-		NSString *itemName = [NSString 
-							  stringWithFormat:@"tt://%@",[remoteNotif objectForKey:@"action"]];
+		NSString *itemName = [NSString stringWithFormat:@"tt://%@",[remoteNotif objectForKey:@"action"]];
 		[navigator openURLAction:[TTURLAction actionWithURLPath:itemName]];
-		NSLog(@"I got some action: %@",itemName);
+		DLog(@"I got some action: %@",itemName);
 	} else if (![navigator restoreViewControllers]) {
 		[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://launcher"]];
 	}
-  [[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+	
+	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 
-  return YES;
+	return YES;
 }
 
 
@@ -97,25 +88,25 @@
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
 	//TTURLDataResponse* deviceResponse = (TTURLDataResponse*)request.response;
 	
-	NSLog(@"Device token submit finished");
+	DLog(@"Device token submit finished");
 }
 
 - (void)request:(TTURLRequest*)request didFailLoadWithError:(NSError*)error {
-	NSLog(@"Failed to send device token, try again.");
+	DLog(@"Failed to send device token, try again.");
 }
 
 
 - (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err { 
 	
     NSString *str = [NSString stringWithFormat: @"Error: %@", err];
-    NSLog(@"%@",str);    
+    DLog(@"%@",str);    
 	
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 	application.applicationIconBadgeNumber = -1;
     for (id key in userInfo) {
-		 NSLog(@"key: %@, value: %@", key, [userInfo objectForKey:key]);
+		 DLog(@"key: %@, value: %@", key, [userInfo objectForKey:key]);
     }    
 	
 }
@@ -128,41 +119,16 @@
 
 	[super dealloc];
 }
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)navigator:(TTNavigator*)navigator shouldOpenURL:(NSURL*)URL {
   return YES;
 }
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
   [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
   return YES;
 }
 
-- (void)presentAlertWithTitle:(NSNotification *)notification
-{
-	if (!uiIsVisible)
-		return;
-	NSString *title = [[notification userInfo] objectForKey:@"title"];
-	NSString *message = [[notification userInfo] objectForKey:@"message"];
-	UIAlertView *alert = [
-						  [[UIAlertView alloc]
-						   initWithTitle:title
-						   message:message
-						   delegate:self
-						   cancelButtonTitle:NSLocalizedString(@"OK", @"")
-						   otherButtonTitles: nil]
-						  autorelease];
-	[alert
-	 performSelector:@selector(show)
-	 onThread:[NSThread mainThread]
-	 withObject:nil
-	 waitUntilDone:NO];
-
-}
 - (void)applicationWillResignActive:(UIApplication *)application {
     /*
      Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -207,7 +173,7 @@
   NSError* error = nil;
   if (_managedObjectContext != nil) {
     if ([_managedObjectContext hasChanges] && ![_managedObjectContext save:&error]) {
-      NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
+      DLog(@"Unresolved error %@, %@", error, [error userInfo]);
       abort();
     }
   }
@@ -342,6 +308,28 @@
     lastObject];
 }
 
+
+- (void)presentAlertWithTitle:(NSNotification *)notification
+{
+	if (!uiIsVisible)
+		return;
+	NSString *title = [[notification userInfo] objectForKey:@"title"];
+	NSString *message = [[notification userInfo] objectForKey:@"message"];
+	UIAlertView *alert = [
+						  [[UIAlertView alloc]
+						   initWithTitle:title
+						   message:message
+						   delegate:self
+						   cancelButtonTitle:NSLocalizedString(@"OK", @"")
+						   otherButtonTitles: nil]
+						  autorelease];
+	[alert
+	 performSelector:@selector(show)
+	 onThread:[NSThread mainThread]
+	 withObject:nil
+	 waitUntilDone:NO];
+	
+}
 
 @end
 
