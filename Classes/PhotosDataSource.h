@@ -7,12 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "PhotosModel.h"
+#import "PhotoResponse.h"
 
 @interface PhotosDataSource : TTURLRequestModel <TTPhotoSource> {
     NSString* _title;
 	NSArray* _photos;
-	PhotosModel* _feedModel;
+	PhotoResponse* responseProcessor;
+	NSUInteger page;
 }
 
 @end

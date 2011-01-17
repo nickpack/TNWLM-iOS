@@ -45,7 +45,7 @@
       [[[TTLauncherItem alloc] initWithTitle:@"Releases"
                                image:@"bundle://Releases.png"
                                URL:@"tt://releases" canDelete:NO] autorelease],
-      [[[TTLauncherItem alloc] initWithTitle:@"Pictures"
+      [[[TTLauncherItem alloc] initWithTitle:@"Photos"
                                image:@"bundle://Pictures.png"
                                URL:@"tt://photos" canDelete:NO] autorelease],
 	  nil],
