@@ -57,11 +57,25 @@
 										[[rawResult objectForKey:@"height_m"] floatValue]);
 			PhotoItem* photo = [[[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
 			[self.objects addObject:photo];
+			
 			[bigURL release];
 			[smallURL release];
 			[title release];
+			photo = nil;
+			[photo dealloc];
+			rawResult = nil;
+			[rawResult dealloc];
 		}
-		
+		feed = nil;
+		data = nil;
+		parser = nil;
+		root = nil;
+		results = nil;
+		TT_RELEASE_SAFELY(results);
+		TT_RELEASE_SAFELY(root);
+		TT_RELEASE_SAFELY(feed);
+		TT_RELEASE_SAFELY(data);
+		TT_RELEASE_SAFELY(parser);
 	}	
 	
 	return nil;

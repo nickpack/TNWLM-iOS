@@ -64,8 +64,8 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 316946800;
-			PBXWorkspaceStateSaveDate = 316946800;
+			PBXPerProjectTemplateStateSaveDate = 316987038;
+			PBXWorkspaceStateSaveDate = 316987038;
 		};
 		perUserProjectItems = {
 			D20DB89D12E445CF00C9975C /* PBXTextBookmark */ = D20DB89D12E445CF00C9975C /* PBXTextBookmark */;
@@ -73,15 +73,11 @@
 			D20DB8DF12E4540000C9975C /* PBXTextBookmark */ = D20DB8DF12E4540000C9975C /* PBXTextBookmark */;
 			D20DB91812E4582300C9975C /* PBXTextBookmark */ = D20DB91812E4582300C9975C /* PBXTextBookmark */;
 			D20DB92012E4589B00C9975C /* PBXTextBookmark */ = D20DB92012E4589B00C9975C /* PBXTextBookmark */;
-			D20DB92112E4589B00C9975C /* PBXTextBookmark */ = D20DB92112E4589B00C9975C /* PBXTextBookmark */;
 			D20DB93512E4598100C9975C /* PBXTextBookmark */ = D20DB93512E4598100C9975C /* PBXTextBookmark */;
 			D20DB99012E4623F00C9975C /* PBXTextBookmark */ = D20DB99012E4623F00C9975C /* PBXTextBookmark */;
 			D20DB9B312E4665B00C9975C /* PBXTextBookmark */ = D20DB9B312E4665B00C9975C /* PBXTextBookmark */;
-			D20DB9C212E4679E00C9975C /* PBXTextBookmark */ = D20DB9C212E4679E00C9975C /* PBXTextBookmark */;
-			D20DB9C312E4679E00C9975C /* PBXTextBookmark */ = D20DB9C312E4679E00C9975C /* PBXTextBookmark */;
 			D20DB9C412E4679E00C9975C /* PBXTextBookmark */ = D20DB9C412E4679E00C9975C /* PBXTextBookmark */;
 			D20DB9C512E4679E00C9975C /* PBXTextBookmark */ = D20DB9C512E4679E00C9975C /* PBXTextBookmark */;
-			D20DB9E812E473C900C9975C /* PBXTextBookmark */ = D20DB9E812E473C900C9975C /* PBXTextBookmark */;
 			D20DB9E912E473C900C9975C /* PBXTextBookmark */ = D20DB9E912E473C900C9975C /* PBXTextBookmark */;
 			D20DB9EA12E473C900C9975C /* PBXTextBookmark */ = D20DB9EA12E473C900C9975C /* PBXTextBookmark */;
 			D20DB9EB12E473C900C9975C /* PBXTextBookmark */ = D20DB9EB12E473C900C9975C /* PBXTextBookmark */;
@@ -90,7 +86,6 @@
 			D20DB9EE12E473C900C9975C /* PBXTextBookmark */ = D20DB9EE12E473C900C9975C /* PBXTextBookmark */;
 			D20DB9EF12E473C900C9975C /* PBXTextBookmark */ = D20DB9EF12E473C900C9975C /* PBXTextBookmark */;
 			D20DB9F012E473C900C9975C /* PBXTextBookmark */ = D20DB9F012E473C900C9975C /* PBXTextBookmark */;
-			D20DB9F112E473C900C9975C /* PBXTextBookmark */ = D20DB9F112E473C900C9975C /* PBXTextBookmark */;
 			D22299BF12DF3E0E0084F3CF /* PBXTextBookmark */ = D22299BF12DF3E0E0084F3CF /* PBXTextBookmark */;
 			D2229BE812DF65140084F3CF /* PBXTextBookmark */ = D2229BE812DF65140084F3CF /* PBXTextBookmark */;
 			D2229BEA12DF65140084F3CF /* PBXTextBookmark */ = D2229BEA12DF65140084F3CF /* PBXTextBookmark */;
@@ -106,77 +101,19 @@
 			D252C10412D3D63B00AC789F /* PBXBookmark */ = D252C10412D3D63B00AC789F /* PBXBookmark */;
 			D252C10612D3D63B00AC789F /* PBXTextBookmark */ = D252C10612D3D63B00AC789F /* PBXTextBookmark */;
 			D26E9F28124514370011CCEE /* PBXTextBookmark */ = D26E9F28124514370011CCEE /* PBXTextBookmark */;
-			D2A2BEC912D4747700D3A316 /* PBXTextBookmark */ = D2A2BEC912D4747700D3A316 /* PBXTextBookmark */;
 			D2C89E2F12DDDC17007B153C /* PBXTextBookmark */ = D2C89E2F12DDDC17007B153C /* PBXTextBookmark */;
-			D2C89E3712DDDC18007B153C /* PBXBookmark */ = D2C89E3712DDDC18007B153C /* PBXBookmark */;
-			D2C89E3912DDDC18007B153C /* PBXBookmark */ = D2C89E3912DDDC18007B153C /* PBXBookmark */;
-			D2C89E3B12DDDC18007B153C /* PBXBookmark */ = D2C89E3B12DDDC18007B153C /* PBXBookmark */;
-			D2C89E3F12DDDC18007B153C /* PBXBookmark */ = D2C89E3F12DDDC18007B153C /* PBXBookmark */;
-			D2C89E4112DDDC18007B153C /* PBXBookmark */ = D2C89E4112DDDC18007B153C /* PBXBookmark */;
-			D2C89E4712DDDC18007B153C /* PBXBookmark */ = D2C89E4712DDDC18007B153C /* PBXBookmark */;
-			D2C89E4912DDDC18007B153C /* PBXBookmark */ = D2C89E4912DDDC18007B153C /* PBXBookmark */;
-			D2C89E4B12DDDC18007B153C /* PBXBookmark */ = D2C89E4B12DDDC18007B153C /* PBXBookmark */;
-			D2C89E4D12DDDC18007B153C /* PBXBookmark */ = D2C89E4D12DDDC18007B153C /* PBXBookmark */;
-			D2C89E4F12DDDC18007B153C /* PBXBookmark */ = D2C89E4F12DDDC18007B153C /* PBXBookmark */;
-			D2C89E5112DDDC18007B153C /* PBXBookmark */ = D2C89E5112DDDC18007B153C /* PBXBookmark */;
-			D2C89E5312DDDC18007B153C /* PBXBookmark */ = D2C89E5312DDDC18007B153C /* PBXBookmark */;
-			D2C89E5512DDDC18007B153C /* PBXBookmark */ = D2C89E5512DDDC18007B153C /* PBXBookmark */;
-			D2C89E5B12DDDC18007B153C /* PBXBookmark */ = D2C89E5B12DDDC18007B153C /* PBXBookmark */;
-			D2C89E5D12DDDC18007B153C /* PBXBookmark */ = D2C89E5D12DDDC18007B153C /* PBXBookmark */;
-			D2C89E6B12DDDC18007B153C /* PBXBookmark */ = D2C89E6B12DDDC18007B153C /* PBXBookmark */;
-			D2CAA3A012E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A012E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3A112E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A112E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3A312E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A312E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3A512E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A512E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3A612E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A612E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3A712E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A712E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3A812E0BE0600ECA54B /* PBXBookmark */ = D2CAA3A812E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3AA12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3AA12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3AC12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3AC12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3AE12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3AE12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3B012E0BE0600ECA54B /* PBXBookmark */ = D2CAA3B012E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3B212E0BE0600ECA54B /* PBXBookmark */ = D2CAA3B212E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3B412E0BE0600ECA54B /* PBXBookmark */ = D2CAA3B412E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3B512E0BE0600ECA54B /* PBXBookmark */ = D2CAA3B512E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3B612E0BE0600ECA54B /* PBXBookmark */ = D2CAA3B612E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3B812E0BE0600ECA54B /* PBXBookmark */ = D2CAA3B812E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3BA12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3BA12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3BC12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3BC12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3BD12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3BD12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3BE12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3BE12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3C012E0BE0600ECA54B /* PBXBookmark */ = D2CAA3C012E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3C212E0BE0600ECA54B /* PBXBookmark */ = D2CAA3C212E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3C412E0BE0600ECA54B /* PBXBookmark */ = D2CAA3C412E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3C612E0BE0600ECA54B /* PBXBookmark */ = D2CAA3C612E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3C812E0BE0600ECA54B /* PBXBookmark */ = D2CAA3C812E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3CA12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3CA12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3CB12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3CB12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3CC12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3CC12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3CE12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3CE12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3D012E0BE0600ECA54B /* PBXBookmark */ = D2CAA3D012E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3D112E0BE0600ECA54B /* PBXBookmark */ = D2CAA3D112E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3D312E0BE0600ECA54B /* PBXBookmark */ = D2CAA3D312E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3D512E0BE0600ECA54B /* PBXBookmark */ = D2CAA3D512E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3D712E0BE0600ECA54B /* PBXBookmark */ = D2CAA3D712E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3D912E0BE0600ECA54B /* PBXBookmark */ = D2CAA3D912E0BE0600ECA54B /* PBXBookmark */;
 			D2CAA3DA12E0BE0600ECA54B /* PBXTextBookmark */ = D2CAA3DA12E0BE0600ECA54B /* PBXTextBookmark */;
 			D2CAA3DB12E0BE0600ECA54B /* PBXTextBookmark */ = D2CAA3DB12E0BE0600ECA54B /* PBXTextBookmark */;
-			D2CAA3DC12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3DC12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3DD12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3DD12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3DF12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3DF12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3E112E0BE0600ECA54B /* PBXBookmark */ = D2CAA3E112E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3E312E0BE0600ECA54B /* PBXBookmark */ = D2CAA3E312E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3E512E0BE0600ECA54B /* PBXBookmark */ = D2CAA3E512E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3E712E0BE0600ECA54B /* PBXBookmark */ = D2CAA3E712E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3E912E0BE0600ECA54B /* PBXBookmark */ = D2CAA3E912E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3EB12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3EB12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3EC12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3EC12E0BE0600ECA54B /* PBXBookmark */;
-			D2CAA3EE12E0BE0600ECA54B /* PBXBookmark */ = D2CAA3EE12E0BE0600ECA54B /* PBXBookmark */;
 			D2CAA3F012E0BE0600ECA54B /* PBXTextBookmark */ = D2CAA3F012E0BE0600ECA54B /* PBXTextBookmark */;
 			D2CAA3F412E0BE0600ECA54B /* PBXTextBookmark */ = D2CAA3F412E0BE0600ECA54B /* PBXTextBookmark */;
 			D2CAA3F712E0BE0600ECA54B /* PBXTextBookmark */ = D2CAA3F712E0BE0600ECA54B /* PBXTextBookmark */;
 			D2D5B16B12D4C8450031B0A0 /* PBXTextBookmark */ = D2D5B16B12D4C8450031B0A0 /* PBXTextBookmark */;
 			D2D5B16E12D4C8450031B0A0 /* PBXTextBookmark */ = D2D5B16E12D4C8450031B0A0 /* PBXTextBookmark */;
+			D2D9FC7C12E4E64600EA3C19 /* PBXTextBookmark */ = D2D9FC7C12E4E64600EA3C19 /* PBXTextBookmark */;
+			D2D9FC7D12E4E64600EA3C19 /* PBXTextBookmark */ = D2D9FC7D12E4E64600EA3C19 /* PBXTextBookmark */;
+			D2D9FC7E12E4E64600EA3C19 /* PBXTextBookmark */ = D2D9FC7E12E4E64600EA3C19 /* PBXTextBookmark */;
+			D2D9FC7F12E4E64600EA3C19 /* PBXTextBookmark */ = D2D9FC7F12E4E64600EA3C19 /* PBXTextBookmark */;
+			D2D9FC8012E4E64600EA3C19 /* PBXTextBookmark */ = D2D9FC8012E4E64600EA3C19 /* PBXTextBookmark */;
 			D2E5EF0212DDB66700DD7B82 /* PBXTextBookmark */ = D2E5EF0212DDB66700DD7B82 /* PBXTextBookmark */;
 			D2E5EF0612DDB66700DD7B82 /* PlistBookmark */ = D2E5EF0612DDB66700DD7B82 /* PlistBookmark */;
 			D2E5EF0712DDB66700DD7B82 /* PBXTextBookmark */ = D2E5EF0712DDB66700DD7B82 /* PBXTextBookmark */;
@@ -264,16 +201,6 @@
 		vrLen = 315;
 		vrLoc = 0;
 	};
-	D20DB92112E4589B00C9975C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D27623FF12C34C6500AFA9DE /* NewsDataSource.m */;
-		name = "NewsDataSource.m: 19";
-		rLen = 57;
-		rLoc = 398;
-		rType = 0;
-		vrLen = 842;
-		vrLoc = 0;
-	};
 	D20DB93512E4598100C9975C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D2D6D78712CA7FBF0039776B /* VideoDataSource.h */;
@@ -293,9 +220,9 @@
 	};
 	D20DB94E12E45C7500C9975C /* PhotoResponse.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1316, 923}}";
-			sepNavSelRange = "{1896, 0}";
-			sepNavVisRange = "{0, 1200}";
+			sepNavIntBoundsRect = "{{0, 0}, {1316, 1040}}";
+			sepNavSelRange = "{2112, 0}";
+			sepNavVisRange = "{419, 1947}";
 		};
 	};
 	D20DB99012E4623F00C9975C /* PBXTextBookmark */ = {
@@ -318,26 +245,6 @@
 		vrLen = 1578;
 		vrLoc = 903;
 	};
-	D20DB9C212E4679E00C9975C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */;
-		name = "PhotosDataSource.m: 58";
-		rLen = 0;
-		rLoc = 1198;
-		rType = 0;
-		vrLen = 1153;
-		vrLoc = 1099;
-	};
-	D20DB9C312E4679E00C9975C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D2CAA30912E0A65100ECA54B /* PhotosDataSource.h */;
-		name = "PhotosDataSource.h: 11";
-		rLen = 0;
-		rLoc = 202;
-		rType = 0;
-		vrLen = 371;
-		vrLoc = 0;
-	};
 	D20DB9C412E4679E00C9975C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D20DB94D12E45C7500C9975C /* PhotoResponse.h */;
@@ -357,16 +264,6 @@
 		rType = 0;
 		vrLen = 1085;
 		vrLoc = 159;
-	};
-	D20DB9E812E473C900C9975C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */;
-		name = "PhotoResponse.m: 57";
-		rLen = 0;
-		rLoc = 1896;
-		rType = 0;
-		vrLen = 1200;
-		vrLoc = 0;
 	};
 	D20DB9E912E473C900C9975C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -447,16 +344,6 @@
 		rType = 0;
 		vrLen = 1196;
 		vrLoc = 0;
-	};
-	D20DB9F112E473C900C9975C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D27623FF12C34C6500AFA9DE /* NewsDataSource.m */;
-		name = "NewsDataSource.m: 19";
-		rLen = 57;
-		rLoc = 398;
-		rType = 0;
-		vrLen = 1512;
-		vrLoc = 139;
 	};
 	D22299BF12DF3E0E0084F3CF /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -689,7 +576,7 @@
 	D27623FF12C34C6500AFA9DE /* NewsDataSource.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1316, 793}}";
-			sepNavSelRange = "{398, 57}";
+			sepNavSelRange = "{460, 0}";
 			sepNavVisRange = "{139, 1512}";
 			sepNavWindowFrame = "{{15, 4}, {1767, 1054}}";
 		};
@@ -709,23 +596,6 @@
 			sepNavVisRange = "{32, 1212}";
 		};
 	};
-	D2A2BEC912D4747700D3A316 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D2A2BECA12D4747700D3A316 /* DemoCalendarMonth.m */;
-		name = "DemoCalendarMonth.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1526;
-		vrLoc = 713;
-	};
-	D2A2BECA12D4747700D3A316 /* DemoCalendarMonth.m */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.objc;
-		name = DemoCalendarMonth.m;
-		path = /Users/packn/dev/tapkulibrary/universaldemo/iPhone/DemoCalendarMonth.m;
-		sourceTree = "<absolute>";
-	};
 	D2C89E2F12DDDC17007B153C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 32CA4F630368D1EE00C91783 /* TNWLM2_Prefix.pch */;
@@ -736,283 +606,9 @@
 		vrLen = 525;
 		vrLoc = 0;
 	};
-	D2C89E3712DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E3812DDDC18007B153C /* ind_blue_left.png */;
-	};
-	D2C89E3812DDDC18007B153C /* ind_blue_left.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_blue_left.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_blue_left.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E3912DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E3A12DDDC18007B153C /* ind_blue_middle.png */;
-	};
-	D2C89E3A12DDDC18007B153C /* ind_blue_middle.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_blue_middle.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_blue_middle.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E3B12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E3C12DDDC18007B153C /* ind_blue_right.png */;
-	};
-	D2C89E3C12DDDC18007B153C /* ind_blue_right.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_blue_right.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_blue_right.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E3E12DDDC18007B153C /* ind_green_left.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_green_left.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_green_left.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E3F12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4012DDDC18007B153C /* ind_green_middle.png */;
-	};
-	D2C89E4012DDDC18007B153C /* ind_green_middle.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_green_middle.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_green_middle.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E4112DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4212DDDC18007B153C /* ind_green_right.png */;
-	};
-	D2C89E4212DDDC18007B153C /* ind_green_right.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_green_right.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_green_right.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E4412DDDC18007B153C /* ind_red_left.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_red_left.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_red_left.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E4612DDDC18007B153C /* ind_red_right.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = ind_red_right.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/overview/ind_red_right.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E4712DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4812DDDC18007B153C /* ui back button hover.png */;
-	};
-	D2C89E4812DDDC18007B153C /* ui back button hover.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui back button hover.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui back button hover.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E4912DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4A12DDDC18007B153C /* ui back button hover@2x.png */;
-	};
-	D2C89E4A12DDDC18007B153C /* ui back button hover@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui back button hover@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui back button hover@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E4B12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4C12DDDC18007B153C /* ui back button.png */;
-	};
-	D2C89E4C12DDDC18007B153C /* ui back button.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui back button.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui back button.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E4D12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4E12DDDC18007B153C /* ui back button@2x.png */;
-	};
-	D2C89E4E12DDDC18007B153C /* ui back button@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui back button@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui back button@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E4F12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5012DDDC18007B153C /* ui done button.png */;
-	};
-	D2C89E5012DDDC18007B153C /* ui done button.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui done button.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui done button.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5112DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5212DDDC18007B153C /* ui done button@2x.png */;
-	};
-	D2C89E5212DDDC18007B153C /* ui done button@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui done button@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui done button@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5312DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5412DDDC18007B153C /* ui plain button hover.png */;
-	};
-	D2C89E5412DDDC18007B153C /* ui plain button hover.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui plain button hover.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui plain button hover.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5512DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5612DDDC18007B153C /* ui plain button hover@2x.png */;
-	};
-	D2C89E5612DDDC18007B153C /* ui plain button hover@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui plain button hover@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui plain button hover@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5812DDDC18007B153C /* ui plain button.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui plain button.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui plain button.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5A12DDDC18007B153C /* ui plain button@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "ui plain button@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/gui/ui plain button@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5B12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5C12DDDC18007B153C /* chatbubble@2x.png */;
-	};
-	D2C89E5C12DDDC18007B153C /* chatbubble@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "chatbubble@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/chatbubble@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E5D12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5E12DDDC18007B153C /* eye.png */;
-	};
-	D2C89E5E12DDDC18007B153C /* eye.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = eye.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/eye.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6012DDDC18007B153C /* malePerson.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = malePerson.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/malePerson.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6212DDDC18007B153C /* sign.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = sign.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/sign.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6412DDDC18007B153C /* star.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = star.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/star.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6612DDDC18007B153C /* stopwatch.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = stopwatch.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/stopwatch.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6812DDDC18007B153C /* television.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = television.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/television.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6A12DDDC18007B153C /* television@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "television@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/television@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2C89E6B12DDDC18007B153C /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6C12DDDC18007B153C /* movieclip.png */;
-	};
-	D2C89E6C12DDDC18007B153C /* movieclip.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = movieclip.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/movieclip.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E6E12DDDC18007B153C /* note.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = note.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/note.png;
-		sourceTree = "<absolute>";
-	};
-	D2C89E7012DDDC18007B153C /* chatbubble.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = chatbubble.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/chatbubble.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA24812E09DF100ECA54B /* blackArrow.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = blackArrow.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/blackArrow.png;
-		sourceTree = "<absolute>";
-	};
 	D2CAA30912E0A65100ECA54B /* PhotosDataSource.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1316, 488}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1316, 690}}";
 			sepNavSelRange = "{202, 0}";
 			sepNavVisRange = "{0, 371}";
 		};
@@ -1021,7 +617,7 @@
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1517, 1157}}";
 			sepNavSelRange = "{1198, 0}";
-			sepNavVisRange = "{1099, 1153}";
+			sepNavVisRange = "{297, 1323}";
 		};
 	};
 	D2CAA30F12E0A67C00ECA54B /* PhotoItem.h */ = {
@@ -1052,307 +648,6 @@
 			sepNavVisRange = "{0, 651}";
 		};
 	};
-	D2CAA3A012E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6E12DDDC18007B153C /* note.png */;
-	};
-	D2CAA3A112E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3A212E0BE0600ECA54B /* sign@2x.png */;
-	};
-	D2CAA3A212E0BE0600ECA54B /* sign@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "sign@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/sign@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3A312E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3A412E0BE0600ECA54B /* note@2x.png */;
-	};
-	D2CAA3A412E0BE0600ECA54B /* note@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "note@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/note@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3A512E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5A12DDDC18007B153C /* ui plain button@2x.png */;
-	};
-	D2CAA3A612E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6812DDDC18007B153C /* television.png */;
-	};
-	D2CAA3A712E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4412DDDC18007B153C /* ind_red_left.png */;
-	};
-	D2CAA3A812E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3A912E0BE0600ECA54B /* popup.png */;
-	};
-	D2CAA3A912E0BE0600ECA54B /* popup.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = popup.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/graph/popup.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3AA12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3AB12E0BE0600ECA54B /* Month Calendar Right Arrow.png */;
-	};
-	D2CAA3AB12E0BE0600ECA54B /* Month Calendar Right Arrow.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "Month Calendar Right Arrow.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/Month Calendar Right Arrow.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3AC12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3AD12E0BE0600ECA54B /* key.png */;
-	};
-	D2CAA3AD12E0BE0600ECA54B /* key.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = key.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/key.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3AE12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3AF12E0BE0600ECA54B /* pictureframe@2x.png */;
-	};
-	D2CAA3AF12E0BE0600ECA54B /* pictureframe@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "pictureframe@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/pictureframe@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3B012E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3B112E0BE0600ECA54B /* clock.png */;
-	};
-	D2CAA3B112E0BE0600ECA54B /* clock.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = clock.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/clock.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3B212E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3B312E0BE0600ECA54B /* shadow.png */;
-	};
-	D2CAA3B312E0BE0600ECA54B /* shadow.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = shadow.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/shadow.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3B412E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E3E12DDDC18007B153C /* ind_green_left.png */;
-	};
-	D2CAA3B512E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E5812DDDC18007B153C /* ui plain button.png */;
-	};
-	D2CAA3B612E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3B712E0BE0600ECA54B /* clock@2x.png */;
-	};
-	D2CAA3B712E0BE0600ECA54B /* clock@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "clock@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/clock@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3B812E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3B912E0BE0600ECA54B /* mask.png */;
-	};
-	D2CAA3B912E0BE0600ECA54B /* mask.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = mask.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/graph/mask.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3BA12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3BB12E0BE0600ECA54B /* close@2x.png */;
-	};
-	D2CAA3BB12E0BE0600ECA54B /* close@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "close@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/graph/close@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3BC12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6A12DDDC18007B153C /* television@2x.png */;
-	};
-	D2CAA3BD12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6212DDDC18007B153C /* sign.png */;
-	};
-	D2CAA3BE12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3BF12E0BE0600ECA54B /* todayselected.png */;
-	};
-	D2CAA3BF12E0BE0600ECA54B /* todayselected.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = todayselected.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/todayselected.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3C012E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3C112E0BE0600ECA54B /* Month Calendar Today Selected Tile.png */;
-	};
-	D2CAA3C112E0BE0600ECA54B /* Month Calendar Today Selected Tile.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "Month Calendar Today Selected Tile.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/Month Calendar Today Selected Tile.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3C212E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3C312E0BE0600ECA54B /* Month Calendar Date Tile.png */;
-	};
-	D2CAA3C312E0BE0600ECA54B /* Month Calendar Date Tile.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "Month Calendar Date Tile.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/Month Calendar Date Tile.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3C412E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3C512E0BE0600ECA54B /* topbar.png */;
-	};
-	D2CAA3C512E0BE0600ECA54B /* topbar.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = topbar.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/topbar.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3C612E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3C712E0BE0600ECA54B /* search@2x.png */;
-	};
-	D2CAA3C712E0BE0600ECA54B /* search@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "search@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/search@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3C812E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3C912E0BE0600ECA54B /* Month Calendar Date Tile Gray.png */;
-	};
-	D2CAA3C912E0BE0600ECA54B /* Month Calendar Date Tile Gray.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "Month Calendar Date Tile Gray.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/Month Calendar Date Tile Gray.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3CA12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6412DDDC18007B153C /* star.png */;
-	};
-	D2CAA3CB12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E4612DDDC18007B153C /* ind_red_right.png */;
-	};
-	D2CAA3CC12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3CD12E0BE0600ECA54B /* star@2x.png */;
-	};
-	D2CAA3CD12E0BE0600ECA54B /* star@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "star@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/star@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3CE12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3CF12E0BE0600ECA54B /* rightarrow.png */;
-	};
-	D2CAA3CF12E0BE0600ECA54B /* rightarrow.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = rightarrow.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/calendar/rightarrow.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3D012E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6612DDDC18007B153C /* stopwatch.png */;
-	};
-	D2CAA3D112E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3D212E0BE0600ECA54B /* stopwatch@2x.png */;
-	};
-	D2CAA3D212E0BE0600ECA54B /* stopwatch@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "stopwatch@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/stopwatch@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3D312E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3D412E0BE0600ECA54B /* vertical.png */;
-	};
-	D2CAA3D412E0BE0600ECA54B /* vertical.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = vertical.png;
-		path = /Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/graph/vertical.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3D512E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3D612E0BE0600ECA54B /* malePerson@2x.png */;
-	};
-	D2CAA3D612E0BE0600ECA54B /* malePerson@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "malePerson@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/malePerson@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3D712E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3D812E0BE0600ECA54B /* photos@2x.png */;
-	};
-	D2CAA3D812E0BE0600ECA54B /* photos@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "photos@2x.png";
-		path = "/Users/packn/dev/tapkulibrary/src/TapkuLibrary.bundle/Images/empty/photos@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3D912E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E6012DDDC18007B153C /* malePerson.png */;
-	};
 	D2CAA3DA12E0BE0600ECA54B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D276240112C34DE800AFA9DE /* NewsView.h */;
@@ -1372,113 +667,6 @@
 		rType = 0;
 		vrLen = 1212;
 		vrLoc = 32;
-	};
-	D2CAA3DC12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2C89E7012DDDC18007B153C /* chatbubble.png */;
-	};
-	D2CAA3DD12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3DE12E0BE0600ECA54B /* overflowLeft.png */;
-	};
-	D2CAA3DE12E0BE0600ECA54B /* overflowLeft.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = overflowLeft.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/overflowLeft.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3DF12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3E012E0BE0600ECA54B /* overflowRight.png */;
-	};
-	D2CAA3E012E0BE0600ECA54B /* overflowRight.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = overflowRight.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/overflowRight.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3E112E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3E212E0BE0600ECA54B /* error.png */;
-	};
-	D2CAA3E212E0BE0600ECA54B /* error.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = error.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/error.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3E312E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3E412E0BE0600ECA54B /* closeButton.png */;
-	};
-	D2CAA3E412E0BE0600ECA54B /* closeButton.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = closeButton.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/closeButton.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3E512E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3E612E0BE0600ECA54B /* empty.png */;
-	};
-	D2CAA3E612E0BE0600ECA54B /* empty.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = empty.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/empty.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3E712E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3E812E0BE0600ECA54B /* blueArrow@2x.png */;
-	};
-	D2CAA3E812E0BE0600ECA54B /* blueArrow@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "blueArrow@2x.png";
-		path = "/Users/packn/dev/three20/src/Three20.bundle/images/blueArrow@2x.png";
-		sourceTree = "<absolute>";
-	};
-	D2CAA3E912E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3EA12E0BE0600ECA54B /* blueArrow.png */;
-	};
-	D2CAA3EA12E0BE0600ECA54B /* blueArrow.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = blueArrow.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/blueArrow.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3EB12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA24812E09DF100ECA54B /* blackArrow.png */;
-	};
-	D2CAA3EC12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3ED12E0BE0600ECA54B /* backIcon.png */;
-	};
-	D2CAA3ED12E0BE0600ECA54B /* backIcon.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = backIcon.png;
-		path = /Users/packn/dev/three20/src/Three20.bundle/images/backIcon.png;
-		sourceTree = "<absolute>";
-	};
-	D2CAA3EE12E0BE0600ECA54B /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2CAA3EF12E0BE0600ECA54B /* backIcon@2x.png */;
-	};
-	D2CAA3EF12E0BE0600ECA54B /* backIcon@2x.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = "backIcon@2x.png";
-		path = "/Users/packn/dev/three20/src/Three20.bundle/images/backIcon@2x.png";
-		sourceTree = "<absolute>";
 	};
 	D2CAA3F012E0BE0600ECA54B /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1630,6 +818,56 @@
 			sepNavSelRange = "{937, 21}";
 			sepNavVisRange = "{34, 1348}";
 		};
+	};
+	D2D9FC7C12E4E64600EA3C19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D27623FF12C34C6500AFA9DE /* NewsDataSource.m */;
+		name = "NewsDataSource.m: 21";
+		rLen = 0;
+		rLoc = 460;
+		rType = 0;
+		vrLen = 1512;
+		vrLoc = 139;
+	};
+	D2D9FC7D12E4E64600EA3C19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2CAA30912E0A65100ECA54B /* PhotosDataSource.h */;
+		name = "PhotosDataSource.h: 11";
+		rLen = 0;
+		rLoc = 202;
+		rType = 0;
+		vrLen = 371;
+		vrLoc = 0;
+	};
+	D2D9FC7E12E4E64600EA3C19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */;
+		name = "PhotosDataSource.m: 58";
+		rLen = 0;
+		rLoc = 1198;
+		rType = 0;
+		vrLen = 1323;
+		vrLoc = 297;
+	};
+	D2D9FC7F12E4E64600EA3C19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */;
+		name = "PhotoResponse.m: 57";
+		rLen = 0;
+		rLoc = 1896;
+		rType = 0;
+		vrLen = 1754;
+		vrLoc = 0;
+	};
+	D2D9FC8012E4E64600EA3C19 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */;
+		name = "PhotoResponse.m: 60";
+		rLen = 0;
+		rLoc = 2112;
+		rType = 0;
+		vrLen = 1947;
+		vrLoc = 419;
 	};
 	D2E5EF0212DDB66700DD7B82 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
