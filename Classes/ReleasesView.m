@@ -12,6 +12,16 @@
 
 @synthesize coverflow;
 @synthesize coverIndex;
+@synthesize covers;
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+		self.title = @"Releases";
+	}
+	
+	return self;
+}
+
 
 
 - (void) viewWillAppear:(BOOL)animated{
@@ -31,23 +41,15 @@
 	CGFloat y = self.view.bounds.size.width;
 	NSString *path=[[NSBundle mainBundle] pathForResource:@"albums" ofType:@"plist"];
 	NSMutableArray* dict = [[NSMutableDictionary dictionaryWithContentsOfFile:path] valueForKey:@"Albums"];
-	NSMutableArray* covers2 = [NSMutableArray arrayWithCapacity:2];
-	/*covers = [[NSArray arrayWithObjects:
-										[UIImage imageNamed:@"lemonheads.png"],
-										[UIImage imageNamed:@"echoesinthealleyway.png"],
-										[UIImage imageNamed:@"ill.png"],
-										[UIImage imageNamed:@"hereagainsomewhere.png"],
-										[UIImage imageNamed:@"inthisroom.png"],
-										[UIImage imageNamed:@"vandalattack.png"],
-										[UIImage imageNamed:@"nursecd2004.png"],
-										nil] 
-			  retain];	*/
-	
+	covers = [NSMutableArray arrayWithCapacity:1];
 	for (id album in dict) {
-		[covers2 addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
+		[covers addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
 	}
 	
-	covers = covers2;
+	path = nil;
+	dict = nil;
+	[path release];
+	[dict release];
 	
 	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, x, y)];
 	
@@ -74,9 +76,9 @@
 }
 
 - (void) exit{
-	[infoButton release];
+	/*[infoButton release];
 	[coverflow release];
-	[covers release];
+	[covers release];*/
 	[self dismissModalViewControllerAnimated:YES];
 }
 
@@ -112,6 +114,9 @@
 }
 
 - (void)dealloc {
+	infoButton = nil;
+	coverflow = nil;
+	covers = nil;
 	[infoButton release];
 	[coverflow release];
 	[covers release];

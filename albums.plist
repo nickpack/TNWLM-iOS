@@ -5,22 +5,59 @@
 	<key>Albums</key>
 	<array>
 		<array>
-			<string>Illuminate</string>
-			<string>ill.png</string>
+			<string>The Squealing Fans Covers Project (Lemonheads Tribute)</string>
+			<string>lemonheads.png</string>
 			<string>2010</string>
-			<string>The Nurse Who Loved Me return with their third full length album, ‘ILLUMINATE’ featuring the two singles ‘The Final Sleep’ and ‘Scared &amp; Alone’ which were available as free downloads from the bands website.
-
-The 12 track album was recorded and produced by the band as a 2 piece, with Guitarist/Vocalist Steve Weston also providing drum duties. Bassist Lee ‘Meat Arm’ Yates also wrote and played alot of guitar parts, making this album take a whole new direction to previous Nurse releases, pushing their big ambient sound, with more lush melody’s, this record is their most complete yet</string>
+			<string>N/A</string>
 			<array>
-				<string>Will I sink?</string>
-				<string>The final sleep</string>
-				<string>Our rescue</string>
-				<string>Not like me</string>
+				<string>Break Me feat. Chris MacCarthy</string>
 			</array>
 		</array>
 		<array>
-			<string>ARSE</string>
+			<string>Echoes In the Alleyway (Doves Tribute)</string>
 			<string>echoesinthealleyway.png</string>
+			<string>2010</string>
+			<string>Echoes in the alleyway is a cover album put together by fans of doves. </string>
+			<array>
+				<string>The Cedar Room</string>
+			</array>
+		</array>
+		<array>
+			<string>Illuminate</string>
+			<string>ill.png</string>
+			<string>2010</string>
+			<string>The Nurse Who Loved Me return with their third full length album, ‘ILLUMINATE’ featuring the two singles ‘The Final Sleep’ and ‘Scared &amp; Alone’
+
+The 12 track album was recorded and produced by the band as a 2 piece, with Guitarist/Vocalist Steve Weston also providing drum duties. Bassist Lee ‘Meat Arm’ Yates also wrote and played alot of guitar parts, making this album take a whole new direction to previous Nurse releases, pushing their big ambient sound, with more lush melody’s, this record is their most complete yet</string>
+			<array>
+				<string>Will I Sink?</string>
+				<string>The Final Sleep</string>
+				<string>Our Rescue</string>
+				<string>Not Like Me</string>
+				<string>Recovery</string>
+				<string>Scared &amp; Alone</string>
+				<string>Staring At The Sun</string>
+				<string>Treehouse</string>
+				<string>Words &amp; Regrets</string>
+				<string>Be There</string>
+				<string>Why Do I Still Think Of You?...</string>
+				<string>Slowest Summer</string>
+			</array>
+		</array>
+		<array>
+			<string>Here, Again, Somewhere</string>
+			<string>hereagainsomewhere.png</string>
+			<string>2008</string>
+			<string>N/A</string>
+			<array>
+				<string>Hear The Squad</string>
+				<string>Inside Down</string>
+				<string>Cannot Compare</string>
+				<string>We All Stand Alone</string>
+				<string>Beat Me Sensible</string>
+				<string>The Crunch</string>
+				<string>Never Enough</string>
+			</array>
 		</array>
 	</array>
 </dict>

@@ -333,11 +333,16 @@
 		// don't bother with bad metadata
 		if ([pair count] == 2)
 			[hash setObject:[pair objectAtIndex:1] forKey:[pair objectAtIndex:0]];
+		
+		pair = nil;
+		[pair release];
 	}
 	
 	NSString *streamString = [[hash objectForKey:@"StreamTitle"] stringByReplacingOccurrencesOfString:@"'" withString:@""];
 	NSArray *streamParts = [streamString componentsSeparatedByString:@" - "];
-
+	hash = nil;
+	[hash release];
+	
 	if ([streamParts count] > 0) {
 		streamArtist = [streamParts objectAtIndex:0];
 	} else {
@@ -355,7 +360,10 @@
 		streamTitle = @"";
 		streamAlbum = @"";
 	}
-
+	
+	streamParts = nil;
+	[streamParts release];
+	
 	AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 	if (appDelegate.uiIsVisible) {
 		UILabel *headerTrack = (UILabel*)[self.navigationItem.titleView viewWithTag:1];

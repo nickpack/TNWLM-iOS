@@ -15,11 +15,12 @@
 	
 	UIButton *exitButton;
 	UIButton *infoButton;
-	
 	NSMutableArray *covers; // album covers images
 	int coverIndex;
 }
 
 @property (retain,nonatomic) TKCoverflowView *coverflow;
+@property (retain,nonatomic) NSMutableArray *covers;
 @property (nonatomic) NSInteger coverIndex;
+
 @end

@@ -54,6 +54,7 @@
 			
 	NSString* imageUrl = [NSString stringWithFormat:@"bundle://%@",[albumInfo objectAtIndex:1]];
 	
+		
 	TTStyle* style = 
 	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
 	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
@@ -69,7 +70,7 @@
 	TTTableImageItem* coverTitle = [TTTableImageItem
 				  itemWithText: [albumInfo objectAtIndex:0]
 				  imageURL: imageUrl
-				  defaultImage: TTIMAGE(@"bundle://gravatar-48.png")
+				  defaultImage: nil
 				  imageStyle: style
 				  URL: nil];
 	
@@ -78,13 +79,38 @@
 	 caption: @"Year"
 	 URL: nil];
 	
-	self.dataSource =
+	TTTableCaptionItem* description = [TTTableCaptionItem
+								itemWithText:[albumInfo objectAtIndex:3]
+								caption: @"Description"
+								URL: nil];
+	
+	
+	NSMutableArray* tracklist = [NSMutableArray arrayWithCapacity:1];
+	int trackCount = 1;	
+	for (id track in [albumInfo objectAtIndex:4]) {
+		TTTableCaptionItem* ctrack = [TTTableCaptionItem
+									  itemWithText:track
+									  caption: [NSString stringWithFormat:@"%i",trackCount]
+									  URL: nil];
+		[tracklist addObject:ctrack];
+		trackCount++;
+	}
+	
+	
+	
+	/*self.dataSource =
 	[TTSectionedDataSource dataSourceWithObjects:
 	 @"",
 	 coverTitle,
 	 year,
+	 description,
 	 @"Track Listing",
-	 nil];
+	 tracklist,
+	 nil];*/
+	
+	self.dataSource = [TTSectionedDataSource dataSourceWithItems:tracklist sections: nil];
+	
+	
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
