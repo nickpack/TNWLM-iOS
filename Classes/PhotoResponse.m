@@ -22,7 +22,7 @@
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(objects);
-	totalObjectsAvailableOnServer = nil;
+	//totalObjectsAvailableOnServer = nil;
 	[super dealloc];
 }
 
