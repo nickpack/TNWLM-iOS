@@ -12,11 +12,14 @@
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     self.title = @"Home";
   }
+	
   return self;
 }
 
 - (void)dealloc {
-  [super dealloc];
+	_launcherView = nil;
+	TT_RELEASE_SAFELY(_launcherView);
+	[super dealloc];
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,25 +35,24 @@
 						 [NSArray arrayWithObjects:
 						  [[[TTLauncherItem alloc] initWithTitle:@"News"
 														   image:@"bundle://News.png"
-															 URL:@"tt://news" canDelete:YES] autorelease],
-      [[[TTLauncherItem alloc] initWithTitle:@"Listen"
-                               image:@"bundle://Listen.png"
-                               URL:@"tt://streamer" canDelete:NO] autorelease],
-      [[[TTLauncherItem alloc] initWithTitle:@"Members"
-                               image:@"bundle://Members.png"
-                               URL:@"tt://members" canDelete:NO] autorelease],
-      [[[TTLauncherItem alloc] initWithTitle:@"Videos"
-                               image:@"bundle://Videos.png"
-                               URL:@"tt://videos" canDelete:NO] autorelease],
-      [[[TTLauncherItem alloc] initWithTitle:@"Releases"
-                               image:@"bundle://Releases.png"
-                               URL:@"tt://releases" canDelete:NO] autorelease],
-      [[[TTLauncherItem alloc] initWithTitle:@"Photos"
-                               image:@"bundle://Pictures.png"
-                               URL:@"tt://photos" canDelete:NO] autorelease],
-	  nil],
-	nil
-    ];
+															 URL:@"tt://news" canDelete:NO] autorelease],
+						  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
+														   image:@"bundle://Listen.png"
+															 URL:@"tt://streamer" canDelete:NO] autorelease],
+						  [[[TTLauncherItem alloc] initWithTitle:@"Members"
+														   image:@"bundle://Members.png"
+															 URL:@"tt://members" canDelete:NO] autorelease],
+						  [[[TTLauncherItem alloc] initWithTitle:@"Videos"
+														   image:@"bundle://Videos.png"
+															 URL:@"tt://videos" canDelete:NO] autorelease],
+						  [[[TTLauncherItem alloc] initWithTitle:@"Releases"
+														   image:@"bundle://Releases.png"
+															 URL:@"tt://releases" canDelete:NO] autorelease],
+						  [[[TTLauncherItem alloc] initWithTitle:@"Photos"
+														   image:@"bundle://Pictures.png"
+															 URL:@"tt://photos" canDelete:NO] autorelease],
+						  nil],
+						 nil];
   [self.view addSubview:_launcherView];
   [background release];
 }

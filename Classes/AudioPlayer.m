@@ -1,16 +1,3 @@
-//
-//  iPhoneStreamingPlayerViewController.m
-//  iPhoneStreamingPlayer
-//
-//  Created by Matt Gallagher on 28/10/08.
-//  Copyright Matt Gallagher 2008. All rights reserved.
-//
-//  Permission is given to use this source code file, free of charge, in any
-//  project, commercial or otherwise, entirely at your risk, with the condition
-//  that any redistribution (in part or whole) of source code must retain
-//  this copyright and permission notice. Attribution in compiled projects is
-//  appreciated but not required.
-//
 
 #import "AppDelegate.h"
 #import "AudioPlayer.h"
@@ -176,7 +163,6 @@
 		 name:ASStatusChangedNotification
 		 object:commonData.streamer];
 
-#ifdef SHOUTCAST_METADATA
 		[[NSNotificationCenter defaultCenter]
 		 addObserver:self
 		 selector:@selector(metadataChanged:)
@@ -190,7 +176,6 @@
 					 autorelease];
 		imageView.urlPath = commonData.currentArt;		
 		[self.view addSubview:imageView];
-#endif
 		[self setButtonImage:[UIImage imageNamed:@"stopbutton.png"]];
 	} else {
 		[self createStreamer];
@@ -218,8 +203,6 @@
 	 object:self];
 	[[NSNotificationCenter defaultCenter]
 	 postNotification:notification];
-		
-	
 }
 
 - (BOOL)canBecomeFirstResponder {
@@ -329,7 +312,6 @@
 	}
 }
 
-#ifdef SHOUTCAST_METADATA
 /** Example metadata
  * 
  StreamTitle='Kim Sozzi / Amuka / Livvi Franc - Secret Love / It's Over / Automatik',
@@ -398,11 +380,16 @@
 		commonData.currentAlbum = [NSString stringWithFormat:@"%@",streamAlbum];
 		commonData.currentArt = albumArtUrl;
 		
-		/*[headerAlbum release];
-		[headerTrack release];*/
+		headerTrack = nil;
+		headerAlbum = nil;
+		albumArtName = nil;
+		albumArtUrl = nil;
+		TT_RELEASE_SAFELY(headerTrack);
+		TT_RELEASE_SAFELY(headerAlbum);
+		TT_RELEASE_SAFELY(albumArtName);
+		TT_RELEASE_SAFELY(albumArtUrl);
 	}
 }
-#endif
 
 //
 // updateLevelMeters:

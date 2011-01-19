@@ -15,8 +15,10 @@
 @implementation PhotosView
 
 - (void)createModel {
-	PhotosDataSource *alPhotoSource = [[PhotosDataSource alloc] init];
-	self.photoSource = alPhotoSource;
+	PhotosDataSource *flickrPhotoSource = [[PhotosDataSource alloc] init];
+	self.photoSource = flickrPhotoSource;
+	flickrPhotoSource = nil;
+	TT_RELEASE_SAFELY(flickrPhotoSource);
 }
 
 @end

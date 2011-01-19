@@ -22,6 +22,7 @@
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(objects);
+	totalObjectsAvailableOnServer = nil;
 	[super dealloc];
 }
 
@@ -58,13 +59,13 @@
 			PhotoItem* photo = [[[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
 			[self.objects addObject:photo];
 			
+			photo = nil;
+			rawResult = nil;
 			[bigURL release];
 			[smallURL release];
 			[title release];
-			photo = nil;
-			[photo dealloc];
-			rawResult = nil;
-			[rawResult dealloc];
+			[photo release];
+			[rawResult release];
 		}
 		feed = nil;
 		data = nil;

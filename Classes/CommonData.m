@@ -21,6 +21,11 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CommonData);
 @synthesize currentArt;
 
 -(void)dealloc{
+	TT_RELEASE_SAFELY(streamUrl);
+	TT_RELEASE_SAFELY(streamer);
+	TT_RELEASE_SAFELY(currentTrack);
+	TT_RELEASE_SAFELY(currentAlbum);
+	TT_RELEASE_SAFELY(currentArt);
 	[super dealloc];
 }
 

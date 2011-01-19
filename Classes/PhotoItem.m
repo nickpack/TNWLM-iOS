@@ -39,6 +39,7 @@
 	TT_RELEASE_SAFELY(_smallURL);
 	TT_RELEASE_SAFELY(_thumbURL);
 	TT_RELEASE_SAFELY(_caption);
+	TT_RELEASE_SAFELY(_photoSource);
 	[super dealloc];
 }
 

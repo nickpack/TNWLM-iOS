@@ -2,7 +2,6 @@
 
 @interface LauncherView : TTViewController <TTLauncherViewDelegate> {
 	TTLauncherView* _launcherView;
-	UIToolbar *toolbar;
 }
 
 @end

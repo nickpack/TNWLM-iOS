@@ -22,9 +22,6 @@
 @interface AudioPlayer : UIViewController
 {
 	IBOutlet UIButton *button;
-	IBOutlet UITextField *metadataArtist;
-	IBOutlet UITextField *metadataTitle;
-	IBOutlet UITextField *metadataAlbum;
 	NSTimer *levelMeterUpdateTimer;
 	TTImageView *imageView;
 	LevelMeterView *levelMeterView;

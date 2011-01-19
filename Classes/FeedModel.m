@@ -79,7 +79,8 @@
 		
 	}
 	_items = items;
-	
+	entries = nil;
+	TT_RELEASE_SAFELY(entries);
 	TT_RELEASE_SAFELY(dateFormatter);
 	
 	[super requestDidFinishLoad:request];

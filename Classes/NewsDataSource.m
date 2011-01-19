@@ -36,17 +36,6 @@
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	NSString* remoteImage = TTIMAGE(@"bundle://TapkuLibrary.bundle/Images/chatbubble.png");
 	for (FeedItem* item in _feedModel.items) {
-		/*TTStyledText* styledText = [TTStyledText textFromXHTML:[NSString stringWithFormat:@"%@",item.body]
-																			   lineBreaks:YES URLs:YES];*/
-		/*TTTableMessageItem* row =[TTTableMessageItem itemWithTitle:item.title caption:@"TTTableMessageItem"
-									 text:item.body timestamp:item.posted
-								 imageURL:@"" URL:item.link]*/
-		
-		
-		
-		// If this asserts, it's likely that the tweet.text contains an HTML character that caused
-		// the XML parser to fail.
-		//TTDASSERT(nil != styledText);
 		NSString* body = [item.body stringByRemovingHTMLTags];
 		[items addObject:[TTTableMessageItem itemWithTitle:item.poster caption:item.title
 													  text:body timestamp:item.posted
