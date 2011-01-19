@@ -14,7 +14,8 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation AlbumView
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+@synthesize albumInfo;
+/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		//self.variableHeightRows = YES;
 		self.title = @"Album Information";
@@ -22,6 +23,22 @@
         self.variableHeightRows = YES;
 	}
 	
+	return self;
+}*/
+
+-(id)initWithIndex:(int)coverIndex {
+	if (self = [super init]) {
+		//self.variableHeightRows = YES;
+		self.title = @"Album Information";
+		self.tableViewStyle = UITableViewStyleGrouped;
+        self.variableHeightRows = YES;
+	}
+	
+	NSString *path=[[NSBundle mainBundle] pathForResource:@"albums" ofType:@"plist"];
+	NSMutableArray* dict = [[NSMutableDictionary dictionaryWithContentsOfFile:path] valueForKey:@"Albums"];
+	albumInfo = [dict objectAtIndex:coverIndex];
+	//TT_RELEASE_SAFELY(path);
+	//TT_RELEASE_SAFELY(dict);
 	return self;
 }
 
@@ -34,8 +51,8 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void) createModel {
-	
-	NSString* imageUrl = @"bundle://ill.png";
+			
+	NSString* imageUrl = [NSString stringWithFormat:@"bundle://%@",[albumInfo objectAtIndex:1]];
 	
 	TTStyle* style = 
 	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
@@ -50,14 +67,14 @@
 	
 	
 	TTTableImageItem* coverTitle = [TTTableImageItem
-				  itemWithText: @"Illuminate"
+				  itemWithText: [albumInfo objectAtIndex:0]
 				  imageURL: imageUrl
 				  defaultImage: TTIMAGE(@"bundle://gravatar-48.png")
 				  imageStyle: style
 				  URL: nil];
 	
 	TTTableCaptionItem* year = [TTTableCaptionItem
-	 itemWithText:@"2009"
+	 itemWithText:[albumInfo objectAtIndex:2]
 	 caption: @"Year"
 	 URL: nil];
 	
@@ -75,6 +92,8 @@
 }
 
 - (void) exit{
+	albumInfo = nil;
+	TT_RELEASE_SAFELY(albumInfo);
 	[self dismissModalViewControllerAnimated:YES];
 }
 

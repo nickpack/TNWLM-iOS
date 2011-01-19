@@ -54,7 +54,7 @@
 	[map from:@"tt://launcher" toSharedViewController:[LauncherView class]];
 	[map from:@"tt://streamer" toSharedViewController:[AudioPlayer class]];
 	[map from:@"tt://releases" toModalViewController:[ReleasesView class]];
-	[map from:@"tt://album" toModalViewController:[AlbumView class]];
+	[map from:@"tt://album/(initWithIndex:)" toModalViewController:[AlbumView class]];
 	[map from:@"tt://news" toViewController:[NewsView class]];
 	[map from:@"tt://members" toViewController:[MembersView class]];
 	[map from:@"tt://videos" toViewController:[VideosView class]];

@@ -17,7 +17,7 @@
 	UIButton *infoButton;
 	
 	NSMutableArray *covers; // album covers images
-	NSInteger coverIndex;
+	int coverIndex;
 }
 
 @property (retain,nonatomic) TKCoverflowView *coverflow;

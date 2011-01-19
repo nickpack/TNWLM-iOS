@@ -7,7 +7,9 @@
 //
 
 @interface AlbumView : TTTableViewController {
-
+	NSMutableArray* albumInfo;
 }
+
+@property (nonatomic,retain) NSMutableArray* albumInfo;
 
 @end

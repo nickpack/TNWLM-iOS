@@ -1,4 +1,4 @@
-    //
+//
 //  ReleasesView.m
 //  TNWLM2
 //
@@ -29,15 +29,25 @@
     [super viewDidLoad];
 	CGFloat x = self.view.bounds.size.height + 10;
 	CGFloat y = self.view.bounds.size.width;
-	covers = [[NSArray arrayWithObjects:
+	NSString *path=[[NSBundle mainBundle] pathForResource:@"albums" ofType:@"plist"];
+	NSMutableArray* dict = [[NSMutableDictionary dictionaryWithContentsOfFile:path] valueForKey:@"Albums"];
+	NSMutableArray* covers2 = [NSMutableArray arrayWithCapacity:2];
+	/*covers = [[NSArray arrayWithObjects:
 										[UIImage imageNamed:@"lemonheads.png"],
 										[UIImage imageNamed:@"echoesinthealleyway.png"],
 										[UIImage imageNamed:@"ill.png"],
 										[UIImage imageNamed:@"hereagainsomewhere.png"],
 										[UIImage imageNamed:@"inthisroom.png"],
 										[UIImage imageNamed:@"vandalattack.png"],
-										[UIImage imageNamed:@"nursecd2004.png"],nil] retain];	
+										[UIImage imageNamed:@"nursecd2004.png"],
+										nil] 
+			  retain];	*/
 	
+	for (id album in dict) {
+		[covers2 addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
+	}
+	
+	covers = covers2;
 	
 	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, x, y)];
 	
@@ -55,23 +65,24 @@
 	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
 	infoButton.frame = CGRectMake(0, y-30, 50, 30);
 	[self.view addSubview:infoButton];
-	
 }
 
 -(void) info{
-	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"tt://album"] applyAnimated:YES]];
+	NSString* albumUrl = [NSString stringWithFormat:@"tt://album/%d",self.coverIndex];
+	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:albumUrl] applyAnimated:YES]];
+	//TT_RELEASE_SAFELY(albumUrl);
 }
 
 - (void) exit{
-	//NSLog(@"info: %@",self.coverIndex);
-	
+	[infoButton release];
+	[coverflow release];
+	[covers release];
 	[self dismissModalViewControllerAnimated:YES];
 }
 
 
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasBroughtToFront:(int)index{
 	self.coverIndex = index;
-	NSLog(@"Front %d",index);
 }
 - (TKCoverflowCoverView*) coverflowView:(TKCoverflowView*)coverflowView coverAtIndex:(int)index{
 	
@@ -80,16 +91,15 @@
 	if(cover == nil){
 		cover = [[[TKCoverflowCoverView alloc] initWithFrame:CGRectMake(0, 0, 224, 300)] autorelease]; // 224
 		cover.baseline = 224;
-		
 	}
+	
 	cover.image = [covers objectAtIndex:index%[covers count]];
 	
 	return cover;
 	
 }
+
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasDoubleTapped:(int)index{
-	TKCoverflowCoverView *cover = [coverflowView coverAtIndex:index];
-	if(cover == nil) return;
 	[self info];
 }
 
@@ -98,14 +108,7 @@
 }
 
 - (void)didReceiveMemoryWarning {
-	// Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-	
-	// Release any cached data, images, etc that aren't in use.
-}
-- (void)viewDidUnload {
-	// Release any retained subviews of the main view.
-	// e.g. self.myOutlet = nil;
 }
 
 - (void)dealloc {

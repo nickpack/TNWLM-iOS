@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Albums</key>
+	<array>
+		<array>
+			<string>Illuminate</string>
+			<string>ill.png</string>
+			<string>2010</string>
+			<string>The Nurse Who Loved Me return with their third full length album, ‘ILLUMINATE’ featuring the two singles ‘The Final Sleep’ and ‘Scared &amp; Alone’ which were available as free downloads from the bands website.
+
+The 12 track album was recorded and produced by the band as a 2 piece, with Guitarist/Vocalist Steve Weston also providing drum duties. Bassist Lee ‘Meat Arm’ Yates also wrote and played alot of guitar parts, making this album take a whole new direction to previous Nurse releases, pushing their big ambient sound, with more lush melody’s, this record is their most complete yet</string>
+			<array>
+				<string>Will I sink?</string>
+				<string>The final sleep</string>
+				<string>Our rescue</string>
+				<string>Not like me</string>
+			</array>
+		</array>
+		<array>
+			<string>ARSE</string>
+			<string>echoesinthealleyway.png</string>
+		</array>
+	</array>
+</dict>
+</plist>
