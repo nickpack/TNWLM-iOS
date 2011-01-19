@@ -63,6 +63,12 @@
 	TT_RELEASE_SAFELY(_items);
 	NSMutableArray* items = [[NSMutableArray alloc] initWithCapacity:[entries count]];
 	
+	for (id key in feed) {
+		
+        NSLog(@"key: %@, value: %@", key, [feed objectForKey:key]);
+		
+    }
+	
 	for (NSDictionary* entry in entries) {
 		FeedItem* item = [[FeedItem alloc] init];
 		NSDate* date = [dateFormatter dateFromString:[[entry objectForKey:@"pubDate"]
@@ -71,6 +77,8 @@
 		item.title = [[entry objectForKey:@"title"] objectForXMLNode];
 		item.body = [[entry objectForKey:@"description"] objectForXMLNode];
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
+		//item.link = [[[entry objectForKey:@"media:group"] objectForKey:@"media:player"] objectForKey:@"url"];
+		NSLog(@"media link: %@",item.link);
 		item.poster = [[entry objectForKey:@"dc:creator"] objectForXMLNode];
 		item.thumb = [[[[entry objectForKey:@"media:group"] objectForKey:@"media:thumbnail"] objectAtIndex:0] objectForKey:@"url"];
 		

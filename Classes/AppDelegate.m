@@ -16,6 +16,7 @@
 #import "VideosView.h"
 #import "NPStyles.h"
 #import "PhotosView.h"
+#import "AlbumView.h"
 #import "Reachability.h"
 
 #define kStoreType      NSSQLiteStoreType
@@ -50,9 +51,10 @@
 	TTURLMap* map = navigator.URLMap;
 
 	[map from:@"*" toViewController:[TTWebController class]];
-	[map from:@"tt://launcher" toViewController:[LauncherView class]];
-	[map from:@"tt://streamer" toViewController:[AudioPlayer class]];
+	[map from:@"tt://launcher" toSharedViewController:[LauncherView class]];
+	[map from:@"tt://streamer" toSharedViewController:[AudioPlayer class]];
 	[map from:@"tt://releases" toModalViewController:[ReleasesView class]];
+	[map from:@"tt://album" toModalViewController:[AlbumView class]];
 	[map from:@"tt://news" toViewController:[NewsView class]];
 	[map from:@"tt://members" toViewController:[MembersView class]];
 	[map from:@"tt://videos" toViewController:[VideosView class]];
@@ -110,10 +112,9 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
-  TT_RELEASE_SAFELY(_managedObjectContext);
-  TT_RELEASE_SAFELY(_managedObjectModel);
-  TT_RELEASE_SAFELY(_persistentStoreCoordinator);
-
+	TT_RELEASE_SAFELY(_managedObjectContext);
+	TT_RELEASE_SAFELY(_managedObjectModel);
+	TT_RELEASE_SAFELY(_persistentStoreCoordinator);
 	[super dealloc];
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////

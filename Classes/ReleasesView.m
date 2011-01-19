@@ -59,7 +59,7 @@
 }
 
 -(void) info{
-	
+	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"tt://album"] applyAnimated:YES]];
 }
 
 - (void) exit{
@@ -88,19 +88,9 @@
 	
 }
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasDoubleTapped:(int)index{
-	
-	
 	TKCoverflowCoverView *cover = [coverflowView coverAtIndex:index];
 	if(cover == nil) return;
-	[UIView beginAnimations:nil context:nil];
-	[UIView setAnimationDuration:1];
-	[UIView setAnimationTransition:UIViewAnimationTransitionFlipFromLeft forView:cover cache:YES];
-	[UIView commitAnimations];
-	
-	NSLog(@"Index: %d",index);
-	
-	
-	
+	[self info];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
