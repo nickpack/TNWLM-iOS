@@ -53,6 +53,7 @@
 															 URL:@"tt://photos" canDelete:NO] autorelease],
 						  nil],
 						 nil];
+  
   [self.view addSubview:_launcherView];
   [background release];
 }

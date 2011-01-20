@@ -58,9 +58,10 @@
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:[covers count]];
 	
-	exitButton = [[UIButton buttonWithType:UIButtonTypeDetailDisclosure] retain];
+	exitButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
+	[exitButton setTitle:@"Close" forState:UIControlStateNormal];
 	[exitButton addTarget:self action:@selector(exit) forControlEvents:UIControlEventTouchUpInside];
-	exitButton.frame = CGRectMake(x-60, y-30, 50, 30);
+	exitButton.frame = CGRectMake(x-80, y-30, 60, 25);
 	[self.view addSubview:exitButton];
 	
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];
@@ -72,13 +73,17 @@
 -(void) info{
 	NSString* albumUrl = [NSString stringWithFormat:@"tt://album/%d",self.coverIndex];
 	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:albumUrl] applyAnimated:YES]];
-	//TT_RELEASE_SAFELY(albumUrl);
+	albumUrl = nil;
+	TT_RELEASE_SAFELY(albumUrl);
 }
 
 - (void) exit{
-	/*[infoButton release];
+	infoButton = nil;
+	coverflow = nil;
+	covers = nil;
+	[infoButton release];
 	[coverflow release];
-	[covers release];*/
+	[covers release];
 	[self dismissModalViewControllerAnimated:YES];
 }
 

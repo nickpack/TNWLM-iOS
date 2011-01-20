@@ -15,20 +15,9 @@
 @implementation AlbumView
 
 @synthesize albumInfo;
-/*- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-		//self.variableHeightRows = YES;
-		self.title = @"Album Information";
-		self.tableViewStyle = UITableViewStyleGrouped;
-        self.variableHeightRows = YES;
-	}
-	
-	return self;
-}*/
 
 -(id)initWithIndex:(int)coverIndex {
 	if (self = [super init]) {
-		//self.variableHeightRows = YES;
 		self.title = @"Album Information";
 		self.tableViewStyle = UITableViewStyleGrouped;
         self.variableHeightRows = YES;
@@ -37,15 +26,19 @@
 	NSString *path=[[NSBundle mainBundle] pathForResource:@"albums" ofType:@"plist"];
 	NSMutableArray* dict = [[NSMutableDictionary dictionaryWithContentsOfFile:path] valueForKey:@"Albums"];
 	albumInfo = [dict objectAtIndex:coverIndex];
-	//TT_RELEASE_SAFELY(path);
-	//TT_RELEASE_SAFELY(dict);
+	path = nil;
+	dict = nil;
+	[path release];
+	[dict release];
 	return self;
 }
 
 - (void) viewDidLoad {
 	[super viewDidLoad];	
-	UIBarButtonItem *cancelAdd = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(exit)];
-	self.navigationItem.leftBarButtonItem = cancelAdd;
+	UIBarButtonItem *close = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(exit)];
+	self.navigationItem.leftBarButtonItem = close;
+	close = nil;
+	[close release];
 }
 
 
@@ -112,7 +105,18 @@
 	
 	self.dataSource = [TTSectionedDataSource dataSourceWithItems:tracklist sections: nil];
 	
-	
+	tracklist = nil;
+	imageUrl = nil;
+	style = nil;
+	coverTitle = nil;
+	year = nil;
+	description = nil;
+	[tracklist release];
+	[imageUrl release];
+	[style release];
+	[coverTitle release];
+	[year release];
+	[description release];
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

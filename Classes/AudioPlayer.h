@@ -19,7 +19,7 @@
 
 @class AudioStreamer, LevelMeterView;
 
-@interface AudioPlayer : UIViewController
+@interface AudioPlayer : TTViewController
 {
 	IBOutlet UIButton *button;
 	NSTimer *levelMeterUpdateTimer;

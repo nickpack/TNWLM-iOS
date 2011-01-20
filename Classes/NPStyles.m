@@ -31,13 +31,26 @@
 	return UITableViewCellSelectionStyleGray;
 }
 
-- (UIColor*)tablePlainBackgroundColor {
-	return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
-}
+
 
 - (UIImage*)tableRefreshHeaderArrowImage {
 	return TTIMAGE(@"bundle://Three20.bundle/images/blackArrow.png");
 }*/
+
+- (UIColor*)tableGroupedBackgroundColor {
+	return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+	//return RGBCOLOR(224, 221, 203);
+}
+
+/*- (UIColor*)tablePlainBackgroundColor {
+	return RGBCOLOR(224, 221, 203);
+}*/
+
+- (TTStyle*)blackForwardButton:(UIControlState)state {
+	TTShape* shape = [TTRoundedRightArrowShape shapeWithRadius:4.5];
+	UIColor* tintColor = RGBCOLOR(0, 0, 0);
+	return [TTSTYLESHEET toolbarButtonForState:state shape:shape tintColor:tintColor font:nil];
+}
 
 - (TTStyle*)launcherButton:(UIControlState)state { 
 	return 
