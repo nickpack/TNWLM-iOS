@@ -85,12 +85,14 @@
 								URL: nil];
 	
 	
-	NSMutableArray* tracklist = [NSMutableArray arrayWithCapacity:1];
+	NSMutableArray* tracklist = [NSMutableArray arrayWithObject:coverTitle];
+	[tracklist addObject:year];
+	[tracklist addObject:description];
 	int trackCount = 1;	
 	for (id track in [albumInfo objectAtIndex:4]) {
 		TTTableCaptionItem* ctrack = [TTTableCaptionItem
 									  itemWithText:track
-									  caption: [NSString stringWithFormat:@"%i",trackCount]
+									  caption: [NSString stringWithFormat:@"Track %i",trackCount]
 									  URL: nil];
 		[tracklist addObject:ctrack];
 		trackCount++;

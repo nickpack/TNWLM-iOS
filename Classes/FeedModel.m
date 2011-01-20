@@ -53,7 +53,7 @@
 	
 	NSDictionary* feed = response.rootObject;
 		
-	TTDASSERT([[feed objectForKey:@"channel"] objectForKey:@"item"] isKindOfClass:[NSArray class]]);
+	//TTDASSERT([[feed objectForKey:@"channel"] objectForKey:@"item"] isKindOfClass:[NSArray class]]);
 		
 	NSArray* entries = [[feed objectForKey:@"channel"] objectForKey:@"item"];
 	NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
