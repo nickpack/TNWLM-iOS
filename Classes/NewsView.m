@@ -20,6 +20,7 @@
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.title = @"News";
 		self.variableHeightRows = YES;
+		//self.tableViewStyle = UITableViewStyleGrouped;
 	}
 	
 	return self;

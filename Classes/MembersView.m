@@ -16,7 +16,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-		self.title = @"Members";
+		self.title = @"Bio";
 	}
 	
 	return self;
@@ -29,6 +29,7 @@
 	self.view.backgroundColor = TTSTYLEVAR(tabTintColor);
 	_memberTabs = [[TTTabBar alloc] initWithFrame:CGRectMake(0, _memberTabs.bottom, applicationFrame.size.width, 40)];
 	_memberTabs.tabItems = [NSArray arrayWithObjects:
+					 [[[TTTabItem alloc] initWithTitle:@"The Band"] autorelease],
 					 [[[TTTabItem alloc] initWithTitle:@"Steve"] autorelease],
 					 [[[TTTabItem alloc] initWithTitle:@"Toby"] autorelease],
 					 [[[TTTabItem alloc] initWithTitle:@"Lee"] autorelease],

@@ -39,7 +39,7 @@
 						  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
 														   image:@"bundle://Listen.png"
 															 URL:@"tt://streamer" canDelete:NO] autorelease],
-						  [[[TTLauncherItem alloc] initWithTitle:@"Members"
+						  [[[TTLauncherItem alloc] initWithTitle:@"Bio"
 														   image:@"bundle://Members.png"
 															 URL:@"tt://members" canDelete:NO] autorelease],
 						  [[[TTLauncherItem alloc] initWithTitle:@"Videos"

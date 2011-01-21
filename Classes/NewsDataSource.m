@@ -34,7 +34,7 @@
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSMutableArray* items = [[NSMutableArray alloc] init];
-	NSString* remoteImage = TTIMAGE(@"bundle://TapkuLibrary.bundle/Images/chatbubble.png");
+	NSString* remoteImage = @"bundle://news.png";
 	for (FeedItem* item in _feedModel.items) {
 		NSString* body = [item.body stringByRemovingHTMLTags];
 		[items addObject:[TTTableMessageItem itemWithTitle:item.poster caption:item.title
