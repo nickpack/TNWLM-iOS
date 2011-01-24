@@ -9,6 +9,8 @@
 #import "VideoDataSource.h"
 #import "FeedModel.h"
 #import "FeedItem.h"
+#import "YouTubeTextItem.h"
+#import "YoutubeTableCell.h"
 #import <Three20Core/NSDateAdditions.h>
 #import <Three20Core/NSStringAdditions.h>
 
@@ -32,16 +34,22 @@
 	return _feedModel;
 }
 
+- (Class)tableView:(UITableView *)tableView cellClassForObject:(id)object {
+	
+	if([object isKindOfClass:[YoutubeTextItem class]])
+		return [YoutubeTableCell class];
+	else
+		return [super tableView:tableView cellClassForObject:object];
+}
+
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	
 	for (FeedItem* item in _feedModel.items) {
-		NSString* body = [item.body stringByRemovingHTMLTags];
 		
-		[items addObject:[TTTableSubtitleItem itemWithText:item.title subtitle:body
-												  imageURL:item.thumb defaultImage:nil
-													   URL:item.link accessoryURL:nil]];
+		[items addObject:[YoutubeTextItem itemWithText:item.title url:item.link]];
+		
 	}
 	
 	self.items = items;

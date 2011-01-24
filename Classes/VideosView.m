@@ -21,6 +21,7 @@
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.variableHeightRows = YES;
 		self.title = @"Videos";
+		//self.tableViewStyle = UITableViewStyleGrouped;
 	}
 	
 	return self;

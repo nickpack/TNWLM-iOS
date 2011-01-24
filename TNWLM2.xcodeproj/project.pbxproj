@@ -64,6 +64,8 @@
 		D2D6D75E12CA79900039776B /* MembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D75D12CA79900039776B /* MembersView.m */; };
 		D2D6D78912CA7FBF0039776B /* VideoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78812CA7FBF0039776B /* VideoDataSource.m */; };
 		D2D6D78C12CA818A0039776B /* VideosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78B12CA818A0039776B /* VideosView.m */; };
+		D2E0809E12EDD5F90091D129 /* YouTubeTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */; };
+		D2E080C612EDD7810091D129 /* YoutubeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E080C512EDD7810091D129 /* YoutubeTableCell.m */; };
 		D2EDFF0712D112EF00C62319 /* echoesinthealleyway.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFEFF12D112EF00C62319 /* echoesinthealleyway.png */; };
 		D2EDFF0812D112EF00C62319 /* hereagainsomewhere.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0012D112EF00C62319 /* hereagainsomewhere.png */; };
 		D2EDFF0912D112EF00C62319 /* ill.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0112D112EF00C62319 /* ill.png */; };
@@ -456,6 +458,10 @@
 		D2D6D78812CA7FBF0039776B /* VideoDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoDataSource.m; sourceTree = "<group>"; };
 		D2D6D78A12CA818A0039776B /* VideosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideosView.h; sourceTree = "<group>"; };
 		D2D6D78B12CA818A0039776B /* VideosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideosView.m; sourceTree = "<group>"; };
+		D2E0809C12EDD5F90091D129 /* YouTubeTextItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeTextItem.h; sourceTree = "<group>"; };
+		D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeTextItem.m; sourceTree = "<group>"; };
+		D2E080C412EDD7810091D129 /* YoutubeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeTableCell.h; sourceTree = "<group>"; };
+		D2E080C512EDD7810091D129 /* YoutubeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeTableCell.m; sourceTree = "<group>"; };
 		D2EDFEFF12D112EF00C62319 /* echoesinthealleyway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = echoesinthealleyway.png; sourceTree = "<group>"; };
 		D2EDFF0012D112EF00C62319 /* hereagainsomewhere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hereagainsomewhere.png; sourceTree = "<group>"; };
 		D2EDFF0112D112EF00C62319 /* ill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ill.png; sourceTree = "<group>"; };
@@ -614,6 +620,10 @@
 				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
 				D225668212608ED1001F97E1 /* CommonData.h */,
 				D225668312608ED1001F97E1 /* CommonData.m */,
+				D2E0809C12EDD5F90091D129 /* YouTubeTextItem.h */,
+				D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */,
+				D2E080C412EDD7810091D129 /* YoutubeTableCell.h */,
+				D2E080C512EDD7810091D129 /* YoutubeTableCell.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -1208,6 +1218,8 @@
 				D2CAA33E12E0B11500ECA54B /* PhotosView.m in Sources */,
 				D20DB94F12E45C7500C9975C /* PhotoResponse.m in Sources */,
 				D2AA4CF012E7204D0068484A /* AlbumView.m in Sources */,
+				D2E0809E12EDD5F90091D129 /* YouTubeTextItem.m in Sources */,
+				D2E080C612EDD7810091D129 /* YoutubeTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
