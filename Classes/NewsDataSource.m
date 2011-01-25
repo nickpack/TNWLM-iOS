@@ -36,10 +36,25 @@
 	NSMutableArray* items = [[NSMutableArray alloc] init];
 	NSString* remoteImage = @"bundle://News.png";
 	for (FeedItem* item in _feedModel.items) {
-		NSString* body = [item.body stringByRemovingHTMLTags];
-		[items addObject:[TTTableMessageItem itemWithTitle:item.title caption:[NSString stringWithFormat:@"Posted by: %@",item.poster]
-													  text:body timestamp:item.posted
-												  imageURL:remoteImage URL:item.link]];
+		NSString* body = [item.description stringByRemovingHTMLTags];
+		body = [body stringByReplacingOccurrencesOfString:@"\n" withString:@""];
+		TTTableMessageItem* tableRow = [TTTableMessageItem itemWithTitle:item.title caption:[NSString stringWithFormat:@"Posted by: %@",item.poster]
+																	text:body timestamp:item.posted
+																imageURL:remoteImage URL:@"tt://viewnews"];
+		NSDictionary* rowInfo = [NSDictionary dictionaryWithObjectsAndKeys:
+								 item.title,
+								 @"title", 
+								 item.poster,
+								 @"postedBy", 
+								 item.body,
+								 @"articleBody",
+								 item.posted,
+								 @"timestamp",
+								 item.link,
+								 @"original",
+								 nil];
+		tableRow.userInfo = rowInfo;
+		[items addObject:tableRow];
 	}
 	
 	self.items = items;

@@ -17,6 +17,7 @@
 #import "NPStyles.h"
 #import "PhotosView.h"
 #import "AlbumView.h"
+#import "NewsItemView.h"
 #import "Reachability.h"
 
 #define kStoreType      NSSQLiteStoreType
@@ -59,6 +60,7 @@
 	[map from:@"tt://members" toViewController:[MembersView class]];
 	[map from:@"tt://videos" toViewController:[VideosView class]];
 	[map from:@"tt://photos" toViewController:[PhotosView class]];
+	[map from:@"tt://viewnews" toViewController:[NewsItemView class]];
 	// Check for push notifications and open the request action if we have one
 	NSDictionary *remoteNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotif) {

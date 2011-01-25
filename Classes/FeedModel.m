@@ -75,11 +75,10 @@
 													  objectForXMLNode]];
 		item.posted = date;
 		item.title = [[entry objectForKey:@"title"] objectForXMLNode];
-		item.body = [[entry objectForKey:@"description"] objectForXMLNode];
+		item.body = [[entry objectForKey:@"content:encoded"] objectForXMLNode];
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
-		//item.link = [[[entry objectForKey:@"media:group"] objectForKey:@"media:player"] objectForKey:@"url"];
 		item.poster = [[entry objectForKey:@"dc:creator"] objectForXMLNode];
-		item.thumb = [[[[entry objectForKey:@"media:group"] objectForKey:@"media:thumbnail"] objectAtIndex:0] objectForKey:@"url"];
+		item.description = [[entry objectForKey:@"description"] objectForXMLNode];
 		
 		[items addObject:item];
 		TT_RELEASE_SAFELY(item);

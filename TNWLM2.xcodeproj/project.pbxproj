@@ -37,6 +37,8 @@
 		D29042E412E73BE400818EA4 /* albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = D29042E312E73BE400818EA4 /* albums.plist */; };
 		D2AA4CF012E7204D0068484A /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AA4CEF12E7204D0068484A /* AlbumView.m */; };
 		D2ACC488125D021800A2688D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2ACC487125D021800A2688D /* Default.png */; };
+		D2B2B24F12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */; };
+		D2B2B27E12EF1DFC004BCFA9 /* NewsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B27D12EF1DFC004BCFA9 /* NewsItemView.m */; };
 		D2CAA30B12E0A65100ECA54B /* PhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */; };
 		D2CAA31112E0A67C00ECA54B /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA31012E0A67C00ECA54B /* PhotoItem.m */; };
 		D2CAA33E12E0B11500ECA54B /* PhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA33D12E0B11500ECA54B /* PhotosView.m */; };
@@ -419,6 +421,10 @@
 		D2AA4CEE12E7204D0068484A /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
 		D2AA4CEF12E7204D0068484A /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
 		D2ACC487125D021800A2688D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D2B2B24D12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTTableViewDelegate+URLAdditions.h"; sourceTree = "<group>"; };
+		D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TTTableViewDelegate+URLAdditions.m"; sourceTree = "<group>"; };
+		D2B2B27C12EF1DFC004BCFA9 /* NewsItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItemView.h; sourceTree = "<group>"; };
+		D2B2B27D12EF1DFC004BCFA9 /* NewsItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsItemView.m; sourceTree = "<group>"; };
 		D2CAA30912E0A65100ECA54B /* PhotosDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosDataSource.h; sourceTree = "<group>"; };
 		D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosDataSource.m; sourceTree = "<group>"; };
 		D2CAA30F12E0A67C00ECA54B /* PhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoItem.h; sourceTree = "<group>"; };
@@ -622,6 +628,8 @@
 				D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */,
 				D2E080C412EDD7810091D129 /* YoutubeTableCell.h */,
 				D2E080C512EDD7810091D129 /* YoutubeTableCell.m */,
+				D2B2B24D12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.h */,
+				D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */,
 			);
 			name = Common;
 			sourceTree = "<group>";
@@ -645,6 +653,8 @@
 				D2CAA33D12E0B11500ECA54B /* PhotosView.m */,
 				D2AA4CEE12E7204D0068484A /* AlbumView.h */,
 				D2AA4CEF12E7204D0068484A /* AlbumView.m */,
+				D2B2B27C12EF1DFC004BCFA9 /* NewsItemView.h */,
+				D2B2B27D12EF1DFC004BCFA9 /* NewsItemView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1216,6 +1226,8 @@
 				D2AA4CF012E7204D0068484A /* AlbumView.m in Sources */,
 				D2E0809E12EDD5F90091D129 /* YouTubeTextItem.m in Sources */,
 				D2E080C612EDD7810091D129 /* YoutubeTableCell.m in Sources */,
+				D2B2B24F12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m in Sources */,
+				D2B2B27E12EF1DFC004BCFA9 /* NewsItemView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
