@@ -114,7 +114,11 @@
 {
 	[super viewDidLoad];
 	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000]; 
-		
+	
+	// Hacky work around for TTStyleSheet not loading if UIViewController is the first view shown
+	self.navigationController.navigationBar.tintColor =	RGBCOLOR(116, 14, 14);
+	// End hacky workaround
+	
 	commonData = [CommonData sharedCommonData];
 
 	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 362.0, self.view.width, 60.0)];
@@ -124,7 +128,7 @@
 	
 	UILabel *label;
 	UILabel *label2;
-	label = [[UILabel alloc] initWithFrame:CGRectMake(0, 10, 200, 16)];
+	label = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, 200, 16)];
 	label.tag = 1;
 	label.backgroundColor = [UIColor clearColor];
 	label.font = [UIFont boldSystemFontOfSize:14];
@@ -144,12 +148,11 @@
 	label2.textAlignment = UITextAlignmentCenter;
 	label2.textColor = [UIColor grayColor];
 	label2.text = @"The Nurse Who Loved Me";
-	label2.highlightedTextColor = [UIColor grayColor];
+	label2.highlightedTextColor = [UIColor lightGrayColor];
 	label2.shadowColor = [UIColor blackColor];
 	label2.shadowOffset = CGSizeMake(0,1);
 	
 	if ([commonData.streamer isPlaying]) {
-		NSLog(@"We is playing, set shit up");
 		levelMeterUpdateTimer = 
 		[NSTimer 
 		 scheduledTimerWithTimeInterval:.1 
@@ -168,10 +171,9 @@
 		 selector:@selector(metadataChanged:)
 		 name:ASUpdateMetadataNotification
 		 object:commonData.streamer];
-		NSLog(@"Set label text");
+		
 		label.text = commonData.currentTrack;
 		label2.text = commonData.currentAlbum;
-		NSLog(@"set image view up and set it");
 		imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
 					 autorelease];
 		imageView.urlPath = commonData.currentArt;		
@@ -182,7 +184,7 @@
 		[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
 		[commonData.streamer start];
 	}
-	NSLog(@"Add header labels");
+	
 	[btn addSubview:label];
 	[label release];
 	[btn addSubview:label2];

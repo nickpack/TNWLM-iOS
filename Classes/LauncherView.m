@@ -22,40 +22,48 @@
 	[super dealloc];
 }
 
+- (void)restorePages {
+	NSData *pages = [[NSUserDefaults standardUserDefaults] objectForKey:@"launcher.pages"];
+	if (pages != nil) {
+		_launcherView.pages = [NSKeyedUnarchiver unarchiveObjectWithData:pages];
+	} else {
+		_launcherView.pages = [NSArray arrayWithObjects:
+		 [NSArray arrayWithObjects:
+		  [[[TTLauncherItem alloc] initWithTitle:@"News"
+										   image:@"bundle://News.png"
+											 URL:@"tt://news" canDelete:NO] autorelease],
+		  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
+										   image:@"bundle://Listen.png"
+											 URL:@"tt://streamer" canDelete:NO] autorelease],
+		  [[[TTLauncherItem alloc] initWithTitle:@"Bio"
+										   image:@"bundle://Members.png"
+											 URL:@"tt://members" canDelete:NO] autorelease],
+		  [[[TTLauncherItem alloc] initWithTitle:@"Videos"
+										   image:@"bundle://Videos.png"
+											 URL:@"tt://videos" canDelete:NO] autorelease],
+		  [[[TTLauncherItem alloc] initWithTitle:@"Releases"
+										   image:@"bundle://Releases.png"
+											 URL:@"tt://releases" canDelete:NO] autorelease],
+		  [[[TTLauncherItem alloc] initWithTitle:@"Photos"
+										   image:@"bundle://Pictures.png"
+											 URL:@"tt://photos" canDelete:NO] autorelease],
+		  nil],
+		 nil];	
+	}
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // UIViewController
 
 - (void)loadView {
   [super loadView];
-  UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+  //UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
   _launcherView = [[TTLauncherView alloc] initWithFrame:self.view.bounds];
-  _launcherView.backgroundColor = background;
+  _launcherView.backgroundColor = RGBCOLOR(116, 14, 14);
   _launcherView.delegate = self;
-  _launcherView.pages = [NSArray arrayWithObjects:
-						 [NSArray arrayWithObjects:
-						  [[[TTLauncherItem alloc] initWithTitle:@"News"
-														   image:@"bundle://News.png"
-															 URL:@"tt://news" canDelete:NO] autorelease],
-						  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
-														   image:@"bundle://Listen.png"
-															 URL:@"tt://streamer" canDelete:NO] autorelease],
-						  [[[TTLauncherItem alloc] initWithTitle:@"Bio"
-														   image:@"bundle://Members.png"
-															 URL:@"tt://members" canDelete:NO] autorelease],
-						  [[[TTLauncherItem alloc] initWithTitle:@"Videos"
-														   image:@"bundle://Videos.png"
-															 URL:@"tt://videos" canDelete:NO] autorelease],
-						  [[[TTLauncherItem alloc] initWithTitle:@"Releases"
-														   image:@"bundle://Releases.png"
-															 URL:@"tt://releases" canDelete:NO] autorelease],
-						  [[[TTLauncherItem alloc] initWithTitle:@"Photos"
-														   image:@"bundle://Pictures.png"
-															 URL:@"tt://photos" canDelete:NO] autorelease],
-						  nil],
-						 nil];
-  
+  [self restorePages];
   [self.view addSubview:_launcherView];
-  [background release];
+  //[background release];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -78,9 +86,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // TTLauncherViewDelegate
 
-- (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item 
-{
-    //[[TTNavigator navigator] openURLAction:[[[TTURLAction actionWithURLPath:item.URL] applyTransition:UIViewAnimationTransitionCurlDown] applyAnimated:YES]];
+- (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
 	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]];
 }
 
@@ -91,7 +97,9 @@
 }
 
 - (void)launcherViewDidEndEditing:(TTLauncherView*)launcher {
-  [self.navigationItem setRightBarButtonItem:nil animated:YES];
+	[self.navigationItem setRightBarButtonItem:nil animated:YES];
+	NSData *pages = [NSKeyedArchiver archivedDataWithRootObject:_launcherView.pages];
+	[[NSUserDefaults standardUserDefaults] setObject:pages forKey:@"launcher.pages"];
 }
 
 @end

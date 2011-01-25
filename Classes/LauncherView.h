@@ -4,4 +4,6 @@
 	TTLauncherView* _launcherView;
 }
 
+- (void)restorePages;
+
 @end

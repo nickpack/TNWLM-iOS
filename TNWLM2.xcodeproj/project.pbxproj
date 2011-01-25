@@ -37,7 +37,6 @@
 		D29042E412E73BE400818EA4 /* albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = D29042E312E73BE400818EA4 /* albums.plist */; };
 		D2AA4CF012E7204D0068484A /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AA4CEF12E7204D0068484A /* AlbumView.m */; };
 		D2ACC488125D021800A2688D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2ACC487125D021800A2688D /* Default.png */; };
-		D2ACC4F4125D156400A2688D /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D2ACC4F3125D156400A2688D /* background.jpg */; };
 		D2CAA30B12E0A65100ECA54B /* PhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */; };
 		D2CAA31112E0A67C00ECA54B /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA31012E0A67C00ECA54B /* PhotoItem.m */; };
 		D2CAA33E12E0B11500ECA54B /* PhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA33D12E0B11500ECA54B /* PhotosView.m */; };
@@ -420,7 +419,6 @@
 		D2AA4CEE12E7204D0068484A /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
 		D2AA4CEF12E7204D0068484A /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
 		D2ACC487125D021800A2688D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D2ACC4F3125D156400A2688D /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = background.jpg; sourceTree = "<group>"; };
 		D2CAA30912E0A65100ECA54B /* PhotosDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosDataSource.h; sourceTree = "<group>"; };
 		D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosDataSource.m; sourceTree = "<group>"; };
 		D2CAA30F12E0A67C00ECA54B /* PhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoItem.h; sourceTree = "<group>"; };
@@ -804,7 +802,6 @@
 		D2EDFEF012D10DBA00C62319 /* Launcher Images */ = {
 			isa = PBXGroup;
 			children = (
-				D2ACC4F3125D156400A2688D /* background.jpg */,
 				D22566691260874B001F97E1 /* Contact.png */,
 				D225666A1260874B001F97E1 /* Listen.png */,
 				D225666B1260874B001F97E1 /* Members.png */,
@@ -1166,7 +1163,6 @@
 				D2CB4FB512536B2A001A31CA /* stopbutton.png in Resources */,
 				D2CB4FBB12536BEC001A31CA /* AudioPlayer.xib in Resources */,
 				D2ACC488125D021800A2688D /* Default.png in Resources */,
-				D2ACC4F4125D156400A2688D /* background.jpg in Resources */,
 				D225664D1260865B001F97E1 /* Releases.png in Resources */,
 				D22566501260865B001F97E1 /* Videos.png in Resources */,
 				D225666E1260874B001F97E1 /* Contact.png in Resources */,

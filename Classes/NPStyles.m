@@ -23,52 +23,43 @@
 	return RGBCOLOR(116, 14, 14);
 }
 
+/*- (UIFont*)font {
+	return [UIFont fontWithName:@"AmericanTypewriter" size:14];
+}*/
+
 - (UIColor*)toolbarTintColor {
 	return RGBCOLOR(0, 0, 0);
 }
 
-/*- (UITableViewCellSelectionStyle)tableSelectionStyle {
-	return UITableViewCellSelectionStyleGray;
+- (UIColor*)tableSubTextColor {
+	return [UIColor grayColor];
 }
 
-
-
-- (UIImage*)tableRefreshHeaderArrowImage {
-	return TTIMAGE(@"bundle://Three20.bundle/images/blackArrow.png");
-}*/
-
-- (UIColor*)backgroundColor {
-	return RGBCOLOR(224, 221, 203);
-}
-
-- (UIColor*)screenBackgroundColor {
-	return RGBCOLOR(224, 221, 203);
-}
-
-- (UIColor*)tableGroupedBackgroundColor {
+/*- (UIColor*)tableGroupedBackgroundColor {
 	return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
-	//return RGBCOLOR(224, 221, 203);
-}
-
-- (UIColor*)tablePlainBackgroundColor {
-	//return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
-	return RGBCOLOR(224, 221, 203);
-}
-
-- (TTStyle*)blackForwardButton:(UIControlState)state {
-	TTShape* shape = [TTRoundedRightArrowShape shapeWithRadius:4.5];
-	UIColor* tintColor = RGBCOLOR(0, 0, 0);
-	return [TTSTYLESHEET toolbarButtonForState:state shape:shape tintColor:tintColor font:nil];
-}
+}*/
 
 - (TTStyle*)launcherButton:(UIControlState)state { 
 	return 
     [TTPartStyle styleWithName:@"image" style:TTSTYLESTATE 
 	 (launcherButtonImage:, state) next: 
-	 [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:12] 
-						  color:RGBCOLOR(0, 0, 0) 
+	 [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:13] 
+						  color:RGBCOLOR(255, 255, 255) 
 				minimumFontSize:11 shadowColor:nil 
 				   shadowOffset:CGSizeZero next:nil]]; 
 } 
+
+- (UIColor*)timestampTextColor {
+	return RGBCOLOR(116, 14, 14);
+}
+
+- (UIColor*)moreLinkTextColor {
+	return RGBCOLOR(116, 14, 14);
+}
+
+- (UITableViewCellSelectionStyle)tableSelectionStyle {
+	return UITableViewCellSelectionStyleGray;
+}
+
 @end
 

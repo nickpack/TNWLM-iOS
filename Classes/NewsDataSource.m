@@ -34,10 +34,10 @@
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSMutableArray* items = [[NSMutableArray alloc] init];
-	NSString* remoteImage = @"bundle://news.png";
+	NSString* remoteImage = @"bundle://News.png";
 	for (FeedItem* item in _feedModel.items) {
 		NSString* body = [item.body stringByRemovingHTMLTags];
-		[items addObject:[TTTableMessageItem itemWithTitle:item.poster caption:item.title
+		[items addObject:[TTTableMessageItem itemWithTitle:item.title caption:[NSString stringWithFormat:@"Posted by: %@",item.poster]
 													  text:body timestamp:item.posted
 												  imageURL:remoteImage URL:item.link]];
 	}

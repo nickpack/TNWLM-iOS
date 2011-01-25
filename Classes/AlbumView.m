@@ -46,8 +46,7 @@
 - (void) createModel {
 			
 	NSString* imageUrl = [NSString stringWithFormat:@"bundle://%@",[albumInfo objectAtIndex:1]];
-	
-		
+			
 	TTStyle* style = 
 	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
 	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
@@ -61,62 +60,43 @@
 	
 	
 	TTTableImageItem* coverTitle = [TTTableImageItem
-				  itemWithText: [albumInfo objectAtIndex:0]
+				  itemWithText: [NSString stringWithFormat:@"%@ (%@)",[albumInfo objectAtIndex:0],[albumInfo objectAtIndex:2]]
 				  imageURL: imageUrl
 				  defaultImage: nil
 				  imageStyle: style
 				  URL: nil];
 	
-	TTTableCaptionItem* year = [TTTableCaptionItem
-	 itemWithText:[albumInfo objectAtIndex:2]
-	 caption: @"Year"
-	 URL: nil];
 	
-	TTTableCaptionItem* description = [TTTableCaptionItem
+	TTTableLongTextItem* description = [TTTableLongTextItem
 								itemWithText:[albumInfo objectAtIndex:3]
-								caption: @"Description"
 								URL: nil];
 	
 	
-	NSMutableArray* tracklist = [NSMutableArray arrayWithObject:coverTitle];
-	[tracklist addObject:year];
-	[tracklist addObject:description];
+	NSMutableArray* info = [NSMutableArray arrayWithObjects:coverTitle,description,nil];
+	
+	NSMutableArray* tracklist = [NSMutableArray arrayWithCapacity:1];
 	int trackCount = 1;	
 	for (id track in [albumInfo objectAtIndex:4]) {
 		TTTableCaptionItem* ctrack = [TTTableCaptionItem
 									  itemWithText:track
-									  caption: [NSString stringWithFormat:@"Track %i",trackCount]
+									  caption: [NSString stringWithFormat:@"%i",trackCount]
 									  URL: nil];
 		[tracklist addObject:ctrack];
 		trackCount++;
 	}
-	
-	
-	
-	/*self.dataSource =
-	[TTSectionedDataSource dataSourceWithObjects:
-	 @"",
-	 coverTitle,
-	 year,
-	 description,
-	 @"Track Listing",
-	 tracklist,
-	 nil];*/
-	
-	self.dataSource = [TTSectionedDataSource dataSourceWithItems:tracklist sections: nil];
-	
+	self.dataSource = [[TTSectionedDataSource alloc] initWithItems:[NSArray arrayWithObjects:info, tracklist, nil] sections:[NSArray arrayWithObjects:@"Album Information", @"Track List", nil]];
 	tracklist = nil;
 	imageUrl = nil;
 	style = nil;
 	coverTitle = nil;
-	year = nil;
 	description = nil;
+	info = nil;
 	[tracklist release];
 	[imageUrl release];
 	[style release];
 	[coverTitle release];
-	[year release];
 	[description release];
+	[info release];
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
