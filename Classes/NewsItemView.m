@@ -40,6 +40,19 @@
 	NSArray* info = [NSArray arrayWithObjects:timestamp,articleBody,postedBy,nil];
 	NSArray* links = [NSArray arrayWithObject:[TTTableButton itemWithText:@"View Original Article" URL:[self.article objectForKey:@"original"]]];
 	self.dataSource = [[TTSectionedDataSource alloc] initWithItems:[NSArray arrayWithObjects:info, links, nil] sections:[NSArray arrayWithObjects:[self.article objectForKey:@"title"], @"", nil]];
+	
+	timestamp = nil;
+	text = nil;
+	articleBody = nil;
+	postedBy = nil;
+	info = nil;
+	links = nil;
+	[timestamp dealloc];
+	[text dealloc];
+	[articleBody dealloc];
+	[postedBy dealloc];
+	[info dealloc];
+	[links dealloc];
 }
 
 - (BOOL)persistView:(NSMutableDictionary*)state {
@@ -48,6 +61,11 @@
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
+}
+
+-(void)dealloc {
+	self.dataSource = nil;
+	[super dealloc];
 }
 
 @end

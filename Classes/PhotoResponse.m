@@ -45,14 +45,15 @@
 		[parser parse];
 				
 		NSDictionary* feed = [parser.rootObject retain];
-		
+		parser = nil;
+		TT_RELEASE_SAFELY(parser);
 		NSDictionary *root = [feed objectForKey:@"photos"];
 		self.totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
 	
 		NSArray *results = [root objectForKey:@"photo"];
 		for (NSDictionary *rawResult in results) {        
 			NSString* bigURL = [rawResult objectForKey:@"url_m"];
-			NSString* smallURL = [rawResult objectForKey:@"url_t"];
+			NSString* smallURL = [rawResult objectForKey:@"url_s"];
 			NSString* title = [rawResult objectForKey:@"title"];
 			CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
 										[[rawResult objectForKey:@"height_m"] floatValue]);
@@ -69,14 +70,12 @@
 		}
 		feed = nil;
 		data = nil;
-		parser = nil;
 		root = nil;
 		results = nil;
 		TT_RELEASE_SAFELY(results);
 		TT_RELEASE_SAFELY(root);
 		TT_RELEASE_SAFELY(feed);
 		TT_RELEASE_SAFELY(data);
-		TT_RELEASE_SAFELY(parser);
 	}	
 	
 	return nil;

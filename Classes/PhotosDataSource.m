@@ -18,7 +18,7 @@
 
 - (id)init {
 	_title = @"Photos";
-	
+	//[[TTURLCache sharedCache] setMaxPixelCount:(240 * 240 * 8)];
 	page = 1;
     responseProcessor = [[PhotoResponse alloc] init];
 	
@@ -63,16 +63,13 @@
 		 @"rest", @"format",
 		 [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
 		 @"16", @"per_page",
-		 @"url_m,url_t", @"extras",
+		 @"url_s,url_t", @"extras",
 		 @"b6984df5998a9723e83887d2163e69be", @"api_key", // Admoo Labs three20 key. Please change this.
 		 
 		 nil];
 		 
 		 NSString *apiurl = @"http://api.flickr.com/services/rest/";
 		 NSString *url = [apiurl stringByAddingQueryDictionary:parameters];
-		//NSString *url = @"http://api.flickr.com/services/rest/?method=flickr.groups.pools.getPhotos&group_id=1584352@N23&format=rest&extras=url_m,url_t&page=1&per_page=16&api_key=b6984df5998a9723e83887d2163e69be";
-		NSLog(@"url: %@", url);
-		
 		TTURLRequest* request = [TTURLRequest
 								 requestWithURL: url
 								 delegate: self];		

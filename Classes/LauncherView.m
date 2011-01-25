@@ -11,10 +11,50 @@
   
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     self.title = @"Home";
+	  UILabel *label = [[[UILabel alloc] init] autorelease];
+	  self.navigationItem.titleView = label;
+	  
   }
-	
+
   return self;
 }
+
+- (void) viewDidLoad {
+	[super viewDidLoad];	
+	UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
+																   style:UIBarButtonItemStyleBordered
+																  target:self
+																  action:@selector(showActionSheet:)];
+	self.navigationItem.leftBarButtonItem = menuButton;
+	
+}
+
+
+- (void)showActionSheet:(id)sender{
+	TTActionSheetController * controller = [[[TTActionSheetController alloc] init] autorelease];
+	controller.delegate = self;
+	[controller addDestructiveButtonWithTitle:@"Reset Launcher Items" URL:nil];
+	[controller addButtonWithTitle:@"Help" URL:nil];
+	[controller addButtonWithTitle:@"About" URL:nil];
+	[controller addCancelButtonWithTitle:@"Cancel" URL:nil];
+	[controller showInView:self.view animated:YES];
+}
+
+- (void)actionSheet:(UIActionSheet*)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+	switch (buttonIndex) {
+		case 0:
+			// Reset launcher items
+			[self restorePages:YES];
+			break;
+		case 1:
+			// Halp, I are failz
+			break;
+		case 2:
+			// About
+			break;
+	}
+}
+
 
 - (void)dealloc {
 	_launcherView = nil;
@@ -22,8 +62,13 @@
 	[super dealloc];
 }
 
-- (void)restorePages {
-	NSData *pages = [[NSUserDefaults standardUserDefaults] objectForKey:@"launcher.pages"];
+- (void)restorePages:(BOOL)forceReset {
+	NSData *pages = nil;
+	
+	if (!forceReset) {
+		pages = [[NSUserDefaults standardUserDefaults] objectForKey:@"launcher.pages"];
+	}
+	
 	if (pages != nil) {
 		_launcherView.pages = [NSKeyedUnarchiver unarchiveObjectWithData:pages];
 	} else {
@@ -31,24 +76,29 @@
 		 [NSArray arrayWithObjects:
 		  [[[TTLauncherItem alloc] initWithTitle:@"News"
 										   image:@"bundle://News.png"
-											 URL:@"tt://news" canDelete:NO] autorelease],
+											 URL:@"tt://news" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
 										   image:@"bundle://Listen.png"
-											 URL:@"tt://streamer" canDelete:NO] autorelease],
+											 URL:@"tt://streamer" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Bio"
 										   image:@"bundle://Members.png"
-											 URL:@"tt://members" canDelete:NO] autorelease],
+											 URL:@"tt://members" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Videos"
 										   image:@"bundle://Videos.png"
-											 URL:@"tt://videos" canDelete:NO] autorelease],
+											 URL:@"tt://videos" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Releases"
 										   image:@"bundle://Releases.png"
-											 URL:@"tt://releases" canDelete:NO] autorelease],
+											 URL:@"tt://releases" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Photos"
 										   image:@"bundle://Pictures.png"
-											 URL:@"tt://photos" canDelete:NO] autorelease],
+											 URL:@"tt://photos" canDelete:YES] autorelease],
 		  nil],
 		 nil];	
+	}
+	
+	if (forceReset) {
+		NSData *pages = [NSKeyedArchiver archivedDataWithRootObject:_launcherView.pages];
+		[[NSUserDefaults standardUserDefaults] setObject:pages forKey:@"launcher.pages"];
 	}
 }
 
@@ -59,9 +109,9 @@
   [super loadView];
   //UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
   _launcherView = [[TTLauncherView alloc] initWithFrame:self.view.bounds];
-  _launcherView.backgroundColor = RGBCOLOR(116, 14, 14);
+  _launcherView.backgroundColor = [UIColor blackColor];
   _launcherView.delegate = self;
-  [self restorePages];
+  [self restorePages:NO];
   [self.view addSubview:_launcherView];
   //[background release];
 }

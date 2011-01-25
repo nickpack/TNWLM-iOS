@@ -101,6 +101,13 @@
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = TapkuLibrary;
 		};
+		D2AAC22612EF51C700C50147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 664961641262EE5000C2C80E /* CoreUnitTests-Xcode3.2.5.octest */;
+			remoteInfo = "Three20CoreUnitTests-Xcode3.2.5";
+		};
 		D2D2230212C38B8A00CC6E04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D222FB12C38B8A00CC6E04 /* Three20.xcodeproj */;
@@ -676,6 +683,7 @@
 				D2D2232B12C38BA500CC6E04 /* libThree20Core.a */,
 				D2D2232D12C38BA500CC6E04 /* libThree20Core-Xcode3.2.5.a */,
 				D2D2232F12C38BA500CC6E04 /* CoreUnitTests.octest */,
+				D2AAC22712EF51C700C50147 /* CoreUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -941,6 +949,13 @@
 			fileType = archive.ar;
 			path = libTapkuLibraryExtra.a;
 			remoteRef = D276233312C3421A00AFA9DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2AAC22712EF51C700C50147 /* CoreUnitTests-Xcode3.2.5.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CoreUnitTests-Xcode3.2.5.octest";
+			remoteRef = D2AAC22612EF51C700C50147 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D2D2230312C38B8A00CC6E04 /* libThree20.a */ = {
