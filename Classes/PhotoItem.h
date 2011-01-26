@@ -20,8 +20,6 @@
 }
 
 - (id)initWithURL:(NSString*)URL smallURL:(NSString*)smallURL size:(CGSize)size;
-
-- (id)initWithURL:(NSString*)URL smallURL:(NSString*)smallURL size:(CGSize)size
-		  caption:(NSString*)caption;
+- (id)initWithURL:(NSString*)URL smallURL:(NSString*)smallURL size:(CGSize)size caption:(NSString*)caption;
 
 @end

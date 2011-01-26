@@ -35,24 +35,22 @@ const CGFloat    kYouTubeCellWidth = 100;
 - (void)layoutSubviews {
 	[super layoutSubviews];
 	UIView* cv = (UIView *)self.contentView;
-	
+
 	CGFloat innerWidth = cv.width - ((kTableCellHPadding * 4) + kYouTubeCellWidth);
 	CGFloat innerHeight = cv.height - kTableCellVPadding * 2;
-	
+
 	self.textLabel.frame = CGRectMake((kTableCellHPadding * 2) + kYouTubeCellWidth, kTableCellVPadding,
 									  innerWidth, innerHeight);
-	
+
 	_youtubeView.frame = CGRectMake(kTableCellHPadding,
 									kTableCellVPadding,
 									kYouTubeCellWidth,
 									kYouTubeCellHeight);
-	
 }
 
 - (void)setObject:(id)object {
 	if (_item != object) {
 		[super setObject:object];
-		
 		YoutubeTextItem* item = object;
 		[_youtubeView setUrlPath:item.urlPath];
 	}

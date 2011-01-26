@@ -18,13 +18,13 @@
 	if (self = [super init]) {
 		_feedModel = [[FeedModel alloc] initWithFeedUrl:feedUrl];
 	}
-	
+
 	return self;
 }
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_feedModel);
-	
+
 	[super dealloc];
 }
 
@@ -43,9 +43,9 @@
 																imageURL:remoteImage URL:@"tt://viewnews"];
 		NSDictionary* rowInfo = [NSDictionary dictionaryWithObjectsAndKeys:
 								 item.title,
-								 @"title", 
+								 @"title",
 								 item.poster,
-								 @"postedBy", 
+								 @"postedBy",
 								 item.body,
 								 @"articleBody",
 								 item.posted,
@@ -56,7 +56,7 @@
 		tableRow.userInfo = rowInfo;
 		[items addObject:tableRow];
 	}
-	
+
 	self.items = items;
 	TT_RELEASE_SAFELY(items);
 }

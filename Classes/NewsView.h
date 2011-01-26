@@ -7,7 +7,6 @@
 //
 #import "TTTableViewDelegate+URLAdditions.h"
 @interface NewsView : TTTableViewController {
-
 }
 
 @end

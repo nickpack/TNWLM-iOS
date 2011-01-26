@@ -15,4 +15,5 @@
 }
 
 - (id)initWithFeedUrl:(NSString*)feedUrl;
+
 @end

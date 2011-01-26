@@ -23,7 +23,6 @@
 #define kStoreType      NSSQLiteStoreType
 #define kStoreFilename  @"db.sqlite"
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,8 +43,8 @@
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Forcefully removes the model db and recreates it.
   //_resetModel = YES;
-  
-	[TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc] init] autorelease]]; 
+
+	[TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc] init] autorelease]];
 	TTNavigator* navigator = [TTNavigator navigator];
 	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
 
@@ -70,28 +69,28 @@
 	} else if (![navigator restoreViewControllers]) {
 		[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://launcher"]];
 	}
-	
+
 	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 
 	return YES;
 }
 
 
-- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken { 
-	
-    /*NSString *str = [NSString 
+- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+
+    /*NSString *str = [NSString
 					 stringWithFormat:@"%@",deviceToken];
 	TTURLRequest* request = [TTURLRequest requestWithURL:@"http://thor.nickpack.com/phone.php" delegate: self];
     request.httpMethod = @"POST";
-    request.cachePolicy = TTURLRequestCachePolicyNoCache; 
+    request.cachePolicy = TTURLRequestCachePolicyNoCache;
 	[request.parameters addObject:str forKey:@"device"];
-    request.response = [[[TTURLDataResponse alloc] init] autorelease]; 
+    request.response = [[[TTURLDataResponse alloc] init] autorelease];
 	[request send];*/
 }
 
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
 	//TTURLDataResponse* deviceResponse = (TTURLDataResponse*)request.response;
-	
+
 	DLog(@"Device token submit finished");
 }
 
@@ -100,18 +99,17 @@
 }
 
 
-- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err { 
-    DLog(@"Error: %@", err);	
+- (void)application:(UIApplication *)app didFailToRegisterForRemoteNotificationsWithError:(NSError *)err {
+    DLog(@"Error: %@", err);
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
 	application.applicationIconBadgeNumber = -1;
     for (id key in userInfo) {
 		 DLog(@"key: %@, value: %@", key, [userInfo objectForKey:key]);
-    }    
-	
-}
+    }
 
+}
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_managedObjectContext);
@@ -140,7 +138,7 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     /*
-     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+     Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
      If your application supports background execution, called instead of applicationWillTerminate: when the user quits.
      */
 	self.uiIsVisible = NO;
@@ -177,16 +175,14 @@
       abort();
     }
   }
-  
+
 	self.uiIsVisible = NO;
 	[[NSNotificationCenter defaultCenter]
 	 removeObserver:self
 	 name:ASPresentAlertWithTitleNotification
 	 object:nil];
-	
+
 }
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark -
@@ -198,7 +194,7 @@
   if( _managedObjectContext != nil ) {
     return _managedObjectContext;
   }
-	
+
   NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
   if (coordinator != nil) {
     _managedObjectContext = [[NSManagedObjectContext alloc] init];
@@ -328,7 +324,7 @@
 	 onThread:[NSThread mainThread]
 	 withObject:nil
 	 waitUntilDone:NO];
-	
+
 }
 
 @end

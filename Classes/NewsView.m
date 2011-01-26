@@ -15,7 +15,6 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation NewsView
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
@@ -23,7 +22,7 @@
 		self.variableHeightRows = YES;
 		//self.tableViewStyle = UITableViewStyleGrouped;
 	}
-	
+
 	return self;
 }
 

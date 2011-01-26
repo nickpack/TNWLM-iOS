@@ -20,13 +20,12 @@
 	if (self = [super init]) {
 		_feedModel = [[FeedModel alloc] initWithFeedUrl:feedUrl];
 	}
-	
 	return self;
 }
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_feedModel);
-	
+
 	[super dealloc];
 }
 
@@ -35,7 +34,7 @@
 }
 
 - (Class)tableView:(UITableView *)tableView cellClassForObject:(id)object {
-	
+
 	if([object isKindOfClass:[YoutubeTextItem class]])
 		return [YoutubeTableCell class];
 	else
@@ -43,15 +42,12 @@
 }
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
-	
+
 	NSMutableArray* items = [[NSMutableArray alloc] init];
-	
+
 	for (FeedItem* item in _feedModel.items) {
-		
 		[items addObject:[YoutubeTextItem itemWithText:item.title url:item.link]];
-		
 	}
-	
 	self.items = items;
 	TT_RELEASE_SAFELY(items);
 }

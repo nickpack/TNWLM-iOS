@@ -7,8 +7,6 @@
 //
 
 #import "AlbumView.h"
-
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -22,10 +20,10 @@
 		self.tableViewStyle = UITableViewStyleGrouped;
         self.variableHeightRows = YES;
 	}
-	
+
 	NSString *path=[[NSBundle mainBundle] pathForResource:@"albums" ofType:@"plist"];
 	NSMutableArray* dict = [[NSMutableDictionary dictionaryWithContentsOfFile:path] valueForKey:@"Albums"];
-	albumInfo = [dict objectAtIndex:coverIndex];
+	self.albumInfo = [dict objectAtIndex:coverIndex];
 	path = nil;
 	dict = nil;
 	[path release];
@@ -34,7 +32,7 @@
 }
 
 - (void) viewDidLoad {
-	[super viewDidLoad];	
+	[super viewDidLoad];
 	UIBarButtonItem *close = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(exit)];
 	self.navigationItem.leftBarButtonItem = close;
 	close = nil;
@@ -44,10 +42,10 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void) createModel {
-			
+
 	NSString* imageUrl = [NSString stringWithFormat:@"bundle://%@",[albumInfo objectAtIndex:1]];
-			
-	TTStyle* style = 
+
+	TTStyle* style =
 	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
 	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
 								  width:1 next:
@@ -57,25 +55,25 @@
 						   defaultImage:nil
 							contentMode:UIViewContentModeScaleAspectFill
 								   size:CGSizeMake(50, 50) next:nil]]]]];
-	
-	
+
+
 	TTTableImageItem* coverTitle = [TTTableImageItem
 				  itemWithText: [NSString stringWithFormat:@"%@ (%@)",[albumInfo objectAtIndex:0],[albumInfo objectAtIndex:2]]
 				  imageURL: imageUrl
 				  defaultImage: nil
 				  imageStyle: style
 				  URL: nil];
-	
-	
+
+
 	TTTableLongTextItem* description = [TTTableLongTextItem
 								itemWithText:[albumInfo objectAtIndex:3]
 								URL: nil];
-	
-	
+
+
 	NSMutableArray* info = [NSMutableArray arrayWithObjects:coverTitle,description,nil];
-	
+
 	NSMutableArray* tracklist = [NSMutableArray arrayWithCapacity:1];
-	int trackCount = 1;	
+	int trackCount = 1;
 	for (id track in [albumInfo objectAtIndex:4]) {
 		TTTableCaptionItem* ctrack = [TTTableCaptionItem
 									  itemWithText:track
@@ -104,7 +102,6 @@
 }
 
 - (void) exit{
-	albumInfo = nil;
 	TT_RELEASE_SAFELY(albumInfo);
 	[self dismissModalViewControllerAnimated:YES];
 }

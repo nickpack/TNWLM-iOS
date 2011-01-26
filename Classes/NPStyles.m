@@ -9,7 +9,6 @@
 #import "Three20/Three20.h"
 #import "NPStyles.h"
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -39,15 +38,15 @@
 	return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
 }*/
 
-- (TTStyle*)launcherButton:(UIControlState)state { 
-	return 
-    [TTPartStyle styleWithName:@"image" style:TTSTYLESTATE 
-	 (launcherButtonImage:, state) next: 
-	 [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:13] 
-						  color:RGBCOLOR(255, 255, 255) 
-				minimumFontSize:11 shadowColor:nil 
-				   shadowOffset:CGSizeZero next:nil]]; 
-} 
+- (TTStyle*)launcherButton:(UIControlState)state {
+	return
+    [TTPartStyle styleWithName:@"image" style:TTSTYLESTATE
+	 (launcherButtonImage:, state) next:
+	 [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:13]
+						  color:RGBCOLOR(255, 255, 255)
+				minimumFontSize:11 shadowColor:nil
+				   shadowOffset:CGSizeZero next:nil]];
+}
 
 - (UIColor*)timestampTextColor {
 	return RGBCOLOR(116, 14, 14);

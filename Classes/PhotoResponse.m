@@ -22,15 +22,13 @@
 
 - (void)dealloc {
 	TT_RELEASE_SAFELY(objects);
-	//totalObjectsAvailableOnServer = nil;
 	[super dealloc];
 }
-
 
 - (NSError*)request:(TTURLRequest*)request processResponse:(NSHTTPURLResponse*)response data:(id)data
 {
 	TTDASSERT([data isKindOfClass:[NSData class]]);
-		
+
 	if ([data isKindOfClass:[NSData class]]) {
 		NSString *utf8Response = [[[NSString alloc] initWithData:data encoding: NSUTF8StringEncoding] autorelease];
 		// oh ooh. server sent us data in ISO-8859-1? [hack around standards]
@@ -39,27 +37,27 @@
 			NSString *dataString = [[[NSString alloc] initWithData:data encoding:NSASCIIStringEncoding] autorelease];
 			data = [dataString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
 		}
-				
-		TTXMLParser* parser = [[TTXMLParser alloc] initWithData:data];
+
+		TTXMLParser* parser = [[[TTXMLParser alloc] initWithData:data] autorelease];
 		parser.treatDuplicateKeysAsArrayItems = YES;
 		[parser parse];
-				
+
 		NSDictionary* feed = [parser.rootObject retain];
-		parser = nil;
-		TT_RELEASE_SAFELY(parser);
+
+
 		NSDictionary *root = [feed objectForKey:@"photos"];
 		self.totalObjectsAvailableOnServer = [[root objectForKey:@"total"] integerValue];
-	
+
 		NSArray *results = [root objectForKey:@"photo"];
-		for (NSDictionary *rawResult in results) {        
+		for (NSDictionary *rawResult in results) {
 			NSString* bigURL = [rawResult objectForKey:@"url_m"];
-			NSString* smallURL = [rawResult objectForKey:@"url_s"];
+			NSString* smallURL = [rawResult objectForKey:@"url_t"];
 			NSString* title = [rawResult objectForKey:@"title"];
 			CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
 										[[rawResult objectForKey:@"height_m"] floatValue]);
 			PhotoItem* photo = [[[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
 			[self.objects addObject:photo];
-			
+
 			photo = nil;
 			rawResult = nil;
 			[bigURL release];
@@ -67,7 +65,9 @@
 			[title release];
 			[photo release];
 			[rawResult release];
+
 		}
+
 		feed = nil;
 		data = nil;
 		root = nil;
@@ -76,8 +76,8 @@
 		TT_RELEASE_SAFELY(root);
 		TT_RELEASE_SAFELY(feed);
 		TT_RELEASE_SAFELY(data);
-	}	
-	
+	}
+
 	return nil;
 }
 

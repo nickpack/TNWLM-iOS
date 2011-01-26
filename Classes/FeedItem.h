@@ -25,5 +25,4 @@
 @property (nonatomic, copy)   NSString* poster;
 @property (nonatomic, copy)	  NSString* description;
 
-
 @end

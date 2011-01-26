@@ -27,9 +27,9 @@
 //
 - (void)setButtonImage:(UIImage *)image
 {
-	
+
 	[button.layer removeAllAnimations];
-	
+
 	if (!image)
 	{
 		[button setImage:[UIImage imageNamed:@"playbutton.png"] forState:0];
@@ -37,7 +37,7 @@
 	else
 	{
 		[button setImage:image forState:0];
-		
+
 		if ([button.currentImage isEqual:[UIImage imageNamed:@"loadingbutton.png"]])
 		{
 			[self spinButton];
@@ -58,7 +58,7 @@
 			removeObserver:self
 			name:ASStatusChangedNotification
 			object:commonData.streamer];
-				
+
 		[commonData.streamer stop];
 		[commonData.streamer release];
 		commonData.streamer = nil;
@@ -72,19 +72,19 @@
 //
 - (void)createStreamer
 {
-	
+
 	if (commonData.streamer)
 	{
 		return;
 	}
 
 	[self destroyStreamer];
-	
+
 	commonData.streamUrl = [NSURL URLWithString:@"http://thor.nickpack.com:9000"];
 	commonData.streamer = [[AudioStreamer alloc] initWithURL:commonData.streamUrl];
-	levelMeterUpdateTimer = 
-	[NSTimer 
-			scheduledTimerWithTimeInterval:.1 
+	levelMeterUpdateTimer =
+	[NSTimer
+			scheduledTimerWithTimeInterval:.1
 			target:self
 			selector:@selector(updateLevelMeters:)
 			userInfo:nil
@@ -113,19 +113,19 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000]; 
-	
+	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000];
+
 	// Hacky work around for TTStyleSheet not loading if UIViewController is the first view shown
 	self.navigationController.navigationBar.tintColor =	RGBCOLOR(116, 14, 14);
 	// End hacky workaround
-	
+
 	commonData = [CommonData sharedCommonData];
 
 	levelMeterView = [[LevelMeterView alloc] initWithFrame:CGRectMake(0, 362.0, self.view.width, 60.0)];
 	[self.view addSubview:levelMeterView];
 
 	UIView *btn = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
-	
+
 	UILabel *label;
 	UILabel *label2;
 	label = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, 200, 16)];
@@ -139,7 +139,7 @@
 	label.highlightedTextColor = [UIColor whiteColor];
 	label.shadowColor = [UIColor blackColor];
 	label.shadowOffset = CGSizeMake(0,1);
-		
+
 	label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 16)];
 	label2.tag = 2;
 	label2.backgroundColor = [UIColor clearColor];
@@ -151,11 +151,11 @@
 	label2.highlightedTextColor = [UIColor lightGrayColor];
 	label2.shadowColor = [UIColor blackColor];
 	label2.shadowOffset = CGSizeMake(0,1);
-	
+
 	if ([commonData.streamer isPlaying]) {
-		levelMeterUpdateTimer = 
-		[NSTimer 
-		 scheduledTimerWithTimeInterval:.1 
+		levelMeterUpdateTimer =
+		[NSTimer
+		 scheduledTimerWithTimeInterval:.1
 		 target:self
 		 selector:@selector(updateLevelMeters:)
 		 userInfo:nil
@@ -171,12 +171,12 @@
 		 selector:@selector(metadataChanged:)
 		 name:ASUpdateMetadataNotification
 		 object:commonData.streamer];
-		
+
 		label.text = commonData.currentTrack;
 		label2.text = commonData.currentAlbum;
 		imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
 					 autorelease];
-		imageView.urlPath = commonData.currentArt;		
+		imageView.urlPath = commonData.currentArt;
 		[self.view addSubview:imageView];
 		[self setButtonImage:[UIImage imageNamed:@"stopbutton.png"]];
 	} else {
@@ -184,7 +184,7 @@
 		[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
 		[commonData.streamer start];
 	}
-	
+
 	[btn addSubview:label];
 	[label release];
 	[btn addSubview:label2];
@@ -295,7 +295,7 @@
 {
 	if ([commonData.streamer isWaiting])
 	{
-		[levelMeterView updateMeterWithLeftValue:0.0 
+		[levelMeterView updateMeterWithLeftValue:0.0
 									  rightValue:0.0];
 		[commonData.streamer setMeteringEnabled:NO];
 		[self setButtonImage:[UIImage imageNamed:@"loadingbutton.png"]];
@@ -307,7 +307,7 @@
 	}
 	else if ([commonData.streamer isIdle])
 	{
-		[levelMeterView updateMeterWithLeftValue:0.0 
+		[levelMeterView updateMeterWithLeftValue:0.0
 									  rightValue:0.0];
 		[self destroyStreamer];
 		[self setButtonImage:[UIImage imageNamed:@"playbutton.png"]];
@@ -315,7 +315,7 @@
 }
 
 /** Example metadata
- * 
+ *
  StreamTitle='Kim Sozzi / Amuka / Livvi Franc - Secret Love / It's Over / Automatik',
  StreamUrl='&artist=Kim%20Sozzi%20%2F%20Amuka%20%2F%20Livvi%20Franc&title=Secret%20Love%20%2F%20It%27s%20Over%20%2F%20Automatik&album=&duration=1133453&songtype=S&overlay=no&buycd=&website=&picture=',
 
@@ -323,33 +323,26 @@
  */
 - (void)metadataChanged:(NSNotification *)aNotification
 {
-	NSString *streamArtist;
 	NSString *streamTitle;
 	NSString *streamAlbum;
 	NSArray *metaParts = [[[aNotification userInfo] objectForKey:@"metadata"] componentsSeparatedByString:@";"];
 	NSString *item;
-	NSMutableDictionary *hash = [[NSMutableDictionary alloc] init];
+	NSMutableDictionary *hash = [[[NSMutableDictionary alloc] init] autorelease];
 	for (item in metaParts) {
 		// split the key/value pair
 		NSArray *pair = [item componentsSeparatedByString:@"="];
 		// don't bother with bad metadata
 		if ([pair count] == 2)
 			[hash setObject:[pair objectAtIndex:1] forKey:[pair objectAtIndex:0]];
-		
+
 		pair = nil;
 		[pair release];
 	}
-	
+
 	NSString *streamString = [[hash objectForKey:@"StreamTitle"] stringByReplacingOccurrencesOfString:@"'" withString:@""];
 	NSArray *streamParts = [streamString componentsSeparatedByString:@" - "];
 	hash = nil;
 	[hash release];
-	
-	if ([streamParts count] > 0) {
-		streamArtist = [streamParts objectAtIndex:0];
-	} else {
-		streamArtist = @"";
-	}
 
 	if ([streamParts count] >= 2) {
 		streamTitle = [streamParts objectAtIndex:1];
@@ -362,34 +355,34 @@
 		streamTitle = @"";
 		streamAlbum = @"";
 	}
-	
+
 	streamParts = nil;
 	[streamParts release];
-	
+
 	AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
 	if (appDelegate.uiIsVisible) {
 		UILabel *headerTrack = (UILabel*)[self.navigationItem.titleView viewWithTag:1];
 		UILabel *headerAlbum = (UILabel*)[self.navigationItem.titleView viewWithTag:2];
-		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+" 
+		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+"
 																   withString:@""];
 		NSString *albumArtName = [albumArt lowercaseString];
 		NSString *albumArtUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@.jpg", albumArtName];
-		
+
 		if (imageView == nil) {
 			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
 																								   autorelease];
-			imageView.urlPath = albumArtUrl;		
+			imageView.urlPath = albumArtUrl;
 			[self.view addSubview:imageView];
 		} else {
 			imageView.urlPath = albumArtUrl;
 		}
-		
+
 		headerTrack.text = [NSString stringWithFormat:@"%@", streamTitle];
 		headerAlbum.text = [NSString stringWithFormat:@"%@",streamAlbum];
 		commonData.currentTrack = [NSString stringWithFormat:@"%@", streamTitle];
 		commonData.currentAlbum = [NSString stringWithFormat:@"%@",streamAlbum];
 		commonData.currentArt = albumArtUrl;
-		
+
 		headerTrack = nil;
 		headerAlbum = nil;
 		albumArtName = nil;
@@ -408,7 +401,7 @@
 - (void)updateLevelMeters:(NSTimer *)timer {
 	AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
 	if([commonData.streamer isMeteringEnabled] && appDelegate.uiIsVisible) {
-		[levelMeterView updateMeterWithLeftValue:[commonData.streamer averagePowerForChannel:0] 
+		[levelMeterView updateMeterWithLeftValue:[commonData.streamer averagePowerForChannel:0]
 									  rightValue:[commonData.streamer averagePowerForChannel:1]];
 	}
 }
@@ -427,17 +420,17 @@
 	 removeObserver:self
 	 name:ASStatusChangedNotification
 	 object:commonData.streamer];
-	
+
 	[[NSNotificationCenter defaultCenter]
 	 removeObserver:self
 	 name:ASUpdateMetadataNotification
 	 object:commonData.streamer];
-	
+
 	if(levelMeterUpdateTimer) {
 		[levelMeterUpdateTimer invalidate];
 		levelMeterUpdateTimer = nil;
 	}
-	
+
 	[levelMeterView release];
 	[imageView release];
 	[super dealloc];

@@ -7,7 +7,6 @@
 //
 
 @interface VideosView : TTTableViewController {
-
 }
 
 @end

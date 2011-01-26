@@ -15,15 +15,13 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 @implementation VideosView
 
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.variableHeightRows = YES;
 		self.title = @"Videos";
-		//self.tableViewStyle = UITableViewStyleGrouped;
 	}
-	
+
 	return self;
 }
 

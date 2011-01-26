@@ -18,13 +18,13 @@
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.title = @"Bio";
 	}
-	
+
 	return self;
 }
 
 - (void)loadView {
 	CGRect applicationFrame = [UIScreen mainScreen].applicationFrame;
-	
+
 	self.view = [[[UIView alloc] initWithFrame:applicationFrame] autorelease];
 	self.view.backgroundColor = TTSTYLEVAR(tabTintColor);
 	_memberTabs = [[TTTabBar alloc] initWithFrame:CGRectMake(0, _memberTabs.bottom, applicationFrame.size.width, 40)];
@@ -38,19 +38,19 @@
 	[self.view addSubview:_memberTabs];
 }
 
-- (void)tabBar:(TTTabBar*)tabBar tabSelected:(NSInteger)selectedIndex 
-{ 
-	NSLog(@"Tab %i is selected",selectedIndex); 
-} 
+- (void)tabBar:(TTTabBar*)tabBar tabSelected:(NSInteger)selectedIndex
+{
+	NSLog(@"Tab %i is selected",selectedIndex);
+}
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
 }
 
-- (void)dealloc { 
-	TT_RELEASE_SAFELY(_memberTabs); 
-	[super dealloc]; 
-} 
+- (void)dealloc {
+	TT_RELEASE_SAFELY(_memberTabs);
+	[super dealloc];
+}
 
 @end
 

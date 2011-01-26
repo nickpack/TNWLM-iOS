@@ -8,7 +8,6 @@
 
 #import "NewsItemView.h"
 #import "Three20/Three20+Additions.h"
-
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -16,7 +15,7 @@
 
 @synthesize article;
 
-- (id)initWithNavigatorURL:(NSURL *)URL query:(NSDictionary *)query { 
+- (id)initWithNavigatorURL:(NSURL *)URL query:(NSDictionary *)query {
     if (self = [self initWithNibName:nil bundle:nil]) {
 		self.title = [query objectForKey:@"title"];
 		self.article = query;
@@ -25,6 +24,7 @@
 	}
     return self;
 }
+
 
 - (void) createModel {
 	TTTableCaptionItem* timestamp = [TTTableCaptionItem
@@ -40,7 +40,7 @@
 	NSArray* info = [NSArray arrayWithObjects:timestamp,articleBody,postedBy,nil];
 	NSArray* links = [NSArray arrayWithObject:[TTTableButton itemWithText:@"View Original Article" URL:[self.article objectForKey:@"original"]]];
 	self.dataSource = [[TTSectionedDataSource alloc] initWithItems:[NSArray arrayWithObjects:info, links, nil] sections:[NSArray arrayWithObjects:[self.article objectForKey:@"title"], @"", nil]];
-	
+
 	timestamp = nil;
 	text = nil;
 	articleBody = nil;

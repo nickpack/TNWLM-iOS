@@ -7,7 +7,6 @@
 //
 
 @interface PhotosView : TTThumbsViewController {
-	
 }
 
 @end

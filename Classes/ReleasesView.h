@@ -10,9 +10,7 @@
 #import <TapkuLibrary/TapkuLibrary.h>
 
 @interface ReleasesView : UIViewController <TKCoverflowViewDelegate,TKCoverflowViewDataSource> {
-	
-	TKCoverflowView *coverflow; 
-	
+	TKCoverflowView *coverflow;
 	UIButton *exitButton;
 	UIButton *infoButton;
 	NSMutableArray *covers; // album covers images

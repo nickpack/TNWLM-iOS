@@ -21,7 +21,6 @@
 	//[[TTURLCache sharedCache] setMaxPixelCount:(240 * 240 * 8)];
 	page = 1;
     responseProcessor = [[PhotoResponse alloc] init];
-	
 	return self;
 }
 
@@ -63,17 +62,17 @@
 		 @"rest", @"format",
 		 [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
 		 @"16", @"per_page",
-		 @"url_s,url_t", @"extras",
+		 @"url_m,url_t", @"extras",
 		 @"b6984df5998a9723e83887d2163e69be", @"api_key", // Admoo Labs three20 key. Please change this.
-		 
+
 		 nil];
-		 
+
 		 NSString *apiurl = @"http://api.flickr.com/services/rest/";
 		 NSString *url = [apiurl stringByAddingQueryDictionary:parameters];
 		TTURLRequest* request = [TTURLRequest
 								 requestWithURL: url
-								 delegate: self];		
-		
+								 delegate: self];
+
 		request.cachePolicy = cachePolicy;
 		request.cacheExpirationAge = 600;
 

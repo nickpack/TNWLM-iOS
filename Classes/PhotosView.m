@@ -21,20 +21,5 @@
 	TT_RELEASE_SAFELY(flickrPhotoSource);
 }
 
-- (void)didReceiveMemoryWarning {
-
-    [[TTURLCache sharedCache] removeAll:NO];
-	
-    [super didReceiveMemoryWarning];
-}
-
-- (void)viewDidUnload {
-	
-    [[TTURLCache sharedCache] removeAll:NO];
-	
-    [super viewDidUnload];
-}
-
-
 @end
 

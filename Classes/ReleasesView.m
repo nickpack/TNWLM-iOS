@@ -18,15 +18,13 @@
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.title = @"Releases";
 	}
-	
+
 	return self;
 }
 
-
-
 - (void) viewWillAppear:(BOOL)animated{
 	[super viewWillAppear:animated];
-	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque]; 
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 	[self.navigationController setNavigationBarHidden:YES animated:animated];
 }
 
@@ -45,25 +43,25 @@
 	for (id album in dict) {
 		[covers addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
 	}
-	
+
 	path = nil;
 	dict = nil;
 	[path release];
 	[dict release];
-	
+
 	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, x, y)];
-	
+
 	coverflow.coverflowDelegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:[covers count]];
-	
+
 	exitButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
 	[exitButton setTitle:@"Close" forState:UIControlStateNormal];
 	[exitButton addTarget:self action:@selector(exit) forControlEvents:UIControlEventTouchUpInside];
 	exitButton.frame = CGRectMake(x-80, y-30, 60, 25);
 	[self.view addSubview:exitButton];
-	
+
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];
 	[infoButton addTarget:self action:@selector(info) forControlEvents:UIControlEventTouchUpInside];
 	infoButton.frame = CGRectMake(0, y-30, 50, 30);
@@ -92,18 +90,18 @@
 	self.coverIndex = index;
 }
 - (TKCoverflowCoverView*) coverflowView:(TKCoverflowView*)coverflowView coverAtIndex:(int)index{
-	
+
 	TKCoverflowCoverView *cover = [coverflowView dequeueReusableCoverView];
-	
+
 	if(cover == nil){
 		cover = [[[TKCoverflowCoverView alloc] initWithFrame:CGRectMake(0, 0, 224, 300)] autorelease]; // 224
 		cover.baseline = 224;
 	}
-	
+
 	cover.image = [covers objectAtIndex:index%[covers count]];
-	
+
 	return cover;
-	
+
 }
 
 - (void) coverflowView:(TKCoverflowView*)coverflowView coverAtIndexWasDoubleTapped:(int)index{

@@ -8,27 +8,26 @@
 // NSObject
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-  
+
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     self.title = @"Home";
 	  UILabel *label = [[[UILabel alloc] init] autorelease];
 	  self.navigationItem.titleView = label;
-	  
+
   }
 
   return self;
 }
 
 - (void) viewDidLoad {
-	[super viewDidLoad];	
+	[super viewDidLoad];
 	UIBarButtonItem *menuButton = [[UIBarButtonItem alloc] initWithTitle:@"Menu"
 																   style:UIBarButtonItemStyleBordered
 																  target:self
 																  action:@selector(showActionSheet:)];
 	self.navigationItem.leftBarButtonItem = menuButton;
-	
-}
 
+}
 
 - (void)showActionSheet:(id)sender{
 	TTActionSheetController * controller = [[[TTActionSheetController alloc] init] autorelease];
@@ -64,11 +63,11 @@
 
 - (void)restorePages:(BOOL)forceReset {
 	NSData *pages = nil;
-	
+
 	if (!forceReset) {
 		pages = [[NSUserDefaults standardUserDefaults] objectForKey:@"launcher.pages"];
 	}
-	
+
 	if (pages != nil) {
 		_launcherView.pages = [NSKeyedUnarchiver unarchiveObjectWithData:pages];
 	} else {
@@ -93,9 +92,9 @@
 										   image:@"bundle://Pictures.png"
 											 URL:@"tt://photos" canDelete:YES] autorelease],
 		  nil],
-		 nil];	
+		 nil];
 	}
-	
+
 	if (forceReset) {
 		NSData *pages = [NSKeyedArchiver archivedDataWithRootObject:_launcherView.pages];
 		[[NSUserDefaults standardUserDefaults] setObject:pages forKey:@"launcher.pages"];
