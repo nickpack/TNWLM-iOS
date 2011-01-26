@@ -7,7 +7,7 @@
 //
 #import <Three20/Three20.h>
 
-@interface MembersView : TTViewController<TTTabDelegate> {
+@interface MembersView : TTTableViewController<TTTabDelegate> {
 	TTTabBar* _memberTabs;
 }
 

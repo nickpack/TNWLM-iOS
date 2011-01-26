@@ -21,6 +21,7 @@
 		self.article = query;
 		self.variableHeightRows = YES;
 		self.tableViewStyle = UITableViewStyleGrouped;
+		self.tableView.autoresizesSubviews = YES;
 	}
     return self;
 }
