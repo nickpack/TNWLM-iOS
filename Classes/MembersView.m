@@ -40,7 +40,7 @@
 
 - (void)tabBar:(TTTabBar*)tabBar tabSelected:(NSInteger)selectedIndex
 {
-	NSLog(@"Tab %i is selected",selectedIndex);
+
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
