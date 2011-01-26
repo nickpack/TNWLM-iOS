@@ -47,9 +47,12 @@
 			break;
 		case 1:
 			// Halp, I are failz
+			//
+			[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"http://thenursewholovedme.com/app/"] applyAnimated:YES]];
 			break;
 		case 2:
 			// About
+			[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:@"tt://about"] applyAnimated:YES]];
 			break;
 	}
 }
@@ -108,7 +111,7 @@
   [super loadView];
   //UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
   _launcherView = [[TTLauncherView alloc] initWithFrame:self.view.bounds];
-  _launcherView.backgroundColor = [UIColor blackColor];
+  _launcherView.backgroundColor = [UIColor grayColor];
   _launcherView.delegate = self;
   [self restorePages:NO];
   [self.view addSubview:_launcherView];

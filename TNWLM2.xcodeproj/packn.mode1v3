@@ -279,13 +279,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>74</integer>
-									<integer>70</integer>
+									<integer>6</integer>
+									<integer>2</integer>
+									<integer>1</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 714}, {281, 910}}</string>
+							<string>{{0, 0}, {281, 910}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -322,7 +323,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>RegexKitLite.m</string>
+								<string>LauncherView.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -330,11 +331,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>RegexKitLite.m</string>
+										<string>LauncherView.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>D247151D12F02A7000B90B67</string>
+										<string>D247154012F037D700B90B67</string>
 										<key>history</key>
 										<array>
 											<string>D225667912608757001F97E1</string>
@@ -364,20 +365,13 @@
 											<string>D24714EB12F02A7000B90B67</string>
 											<string>D24714EC12F02A7000B90B67</string>
 											<string>D24714ED12F02A7000B90B67</string>
-											<string>D24714EE12F02A7000B90B67</string>
 											<string>D24714EF12F02A7000B90B67</string>
 											<string>D24714F012F02A7000B90B67</string>
 											<string>D24714F112F02A7000B90B67</string>
 											<string>D24714F212F02A7000B90B67</string>
 											<string>D24714F312F02A7000B90B67</string>
 											<string>D24714F412F02A7000B90B67</string>
-											<string>D24714F512F02A7000B90B67</string>
-											<string>D24714F612F02A7000B90B67</string>
-											<string>D24714F712F02A7000B90B67</string>
-											<string>D24714F812F02A7000B90B67</string>
-											<string>D24714F912F02A7000B90B67</string>
 											<string>D24714FA12F02A7000B90B67</string>
-											<string>D24714FB12F02A7000B90B67</string>
 											<string>D24714FC12F02A7000B90B67</string>
 											<string>D24714FD12F02A7000B90B67</string>
 											<string>D24714FE12F02A7000B90B67</string>
@@ -389,7 +383,6 @@
 											<string>D247150412F02A7000B90B67</string>
 											<string>D247150512F02A7000B90B67</string>
 											<string>D247150612F02A7000B90B67</string>
-											<string>D247150712F02A7000B90B67</string>
 											<string>D247150812F02A7000B90B67</string>
 											<string>D247150912F02A7000B90B67</string>
 											<string>D247150A12F02A7000B90B67</string>
@@ -410,7 +403,15 @@
 											<string>D247151912F02A7000B90B67</string>
 											<string>D247151A12F02A7000B90B67</string>
 											<string>D247151B12F02A7000B90B67</string>
-											<string>D247151C12F02A7000B90B67</string>
+											<string>D247153812F037D700B90B67</string>
+											<string>D247153912F037D700B90B67</string>
+											<string>D247153A12F037D700B90B67</string>
+											<string>D247153B12F037D700B90B67</string>
+											<string>D247153C12F037D700B90B67</string>
+											<string>D247153D12F037D700B90B67</string>
+											<string>D247153E12F037D700B90B67</string>
+											<string>D247153F12F037D700B90B67</string>
+											<string>D24714EE12F02A7000B90B67</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

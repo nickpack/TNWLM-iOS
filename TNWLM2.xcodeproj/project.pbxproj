@@ -24,6 +24,7 @@
 		D22566721260874B001F97E1 /* Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = D225666D1260874B001F97E1 /* Pictures.png */; };
 		D225668412608ED1001F97E1 /* CommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = D225668312608ED1001F97E1 /* CommonData.m */; };
 		D22567221260C074001F97E1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D22567211260C074001F97E1 /* RegexKitLite.m */; };
+		D247154312F0388000B90B67 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D247154212F0388000B90B67 /* AboutView.m */; };
 		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
 		D2494A3412CD372A0089FC79 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2494A3312CD372A0089FC79 /* Reachability.m */; };
 		D276233512C3421D00AFA9DE /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D276233212C3421A00AFA9DE /* libTapkuLibrary.a */; };
@@ -401,6 +402,8 @@
 		D225668512608F4B001F97E1 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Classes/SynthesizeSingleton.h; sourceTree = "<group>"; };
 		D22567201260C074001F97E1 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = Classes/RegexKitLite.h; sourceTree = "<group>"; };
 		D22567211260C074001F97E1 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = Classes/RegexKitLite.m; sourceTree = "<group>"; };
+		D247154112F0388000B90B67 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
+		D247154212F0388000B90B67 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D2494A3212CD372A0089FC79 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
 		D2494A3312CD372A0089FC79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Reachability.m; sourceTree = "<group>"; };
@@ -655,6 +658,8 @@
 				D2AA4CEF12E7204D0068484A /* AlbumView.m */,
 				D2B2B27C12EF1DFC004BCFA9 /* NewsItemView.h */,
 				D2B2B27D12EF1DFC004BCFA9 /* NewsItemView.m */,
+				D247154112F0388000B90B67 /* AboutView.h */,
+				D247154212F0388000B90B67 /* AboutView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -1228,6 +1233,7 @@
 				D2E080C612EDD7810091D129 /* YoutubeTableCell.m in Sources */,
 				D2B2B24F12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m in Sources */,
 				D2B2B27E12EF1DFC004BCFA9 /* NewsItemView.m in Sources */,
+				D247154312F0388000B90B67 /* AboutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1343,7 +1349,7 @@
 				LD_MAP_FILE_PATH = "";
 				LIBRARY_SEARCH_PATHS = /usr/lib;
 				OBJROOT = Build;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-licucore",

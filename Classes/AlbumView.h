@@ -11,5 +11,6 @@
 }
 
 @property (nonatomic,retain) NSMutableArray* albumInfo;
+- (void) exit;
 
 @end

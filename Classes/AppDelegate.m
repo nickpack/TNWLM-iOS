@@ -18,6 +18,7 @@
 #import "PhotosView.h"
 #import "AlbumView.h"
 #import "NewsItemView.h"
+#import "AboutView.h"
 #import "Reachability.h"
 
 #define kStoreType      NSSQLiteStoreType
@@ -54,6 +55,7 @@
 	[map from:@"tt://launcher" toSharedViewController:[LauncherView class]];
 	[map from:@"tt://streamer" toSharedViewController:[AudioPlayer class]];
 	[map from:@"tt://releases" toModalViewController:[ReleasesView class]];
+	[map from:@"tt://about" toModalViewController:[AboutView class]];
 	[map from:@"tt://album/(initWithIndex:)" toModalViewController:[AlbumView class]];
 	[map from:@"tt://news" toViewController:[NewsView class]];
 	[map from:@"tt://members" toViewController:[MembersView class]];

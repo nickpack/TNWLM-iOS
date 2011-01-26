@@ -18,15 +18,15 @@ const CGFloat    kYouTubeCellWidth = 100;
 @implementation YoutubeTableCell
 
 + (CGFloat)tableView:(UITableView*)tableView rowHeightForObject:(id)object {
-	return kYouTubeCellHeight + kTableCellVPadding*2;
+	return kYouTubeCellHeight;
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString*)identifier {
 	if (self = [super initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:identifier]) {
-		_youtubeView = [[TTYouTubeView alloc] initWithFrame:CGRectMake(kTableCellHPadding,
-																	   kTableCellVPadding,
+		_youtubeView = [[TTYouTubeView alloc] initWithFrame:CGRectMake(0,
+																	   0,
 																	   kYouTubeCellWidth,
-																	   kYouTubeCellHeight)];
+																	   kYouTubeCellHeight + kTableCellVPadding)];
 		[self.contentView addSubview:_youtubeView];
 	}
 	return self;
@@ -37,13 +37,13 @@ const CGFloat    kYouTubeCellWidth = 100;
 	UIView* cv = (UIView *)self.contentView;
 
 	CGFloat innerWidth = cv.width - ((kTableCellHPadding * 4) + kYouTubeCellWidth);
-	CGFloat innerHeight = cv.height - kTableCellVPadding * 2;
+	CGFloat innerHeight = cv.height;
 
-	self.textLabel.frame = CGRectMake((kTableCellHPadding * 2) + kYouTubeCellWidth, kTableCellVPadding,
+	self.textLabel.frame = CGRectMake((kTableCellHPadding * 2) + kYouTubeCellWidth, 0,
 									  innerWidth, innerHeight);
 
-	_youtubeView.frame = CGRectMake(kTableCellHPadding,
-									kTableCellVPadding,
+	_youtubeView.frame = CGRectMake(0,
+									0,
 									kYouTubeCellWidth,
 									kYouTubeCellHeight);
 }
