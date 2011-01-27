@@ -50,7 +50,7 @@
 							<object class="IBUIButton" id="650664856">
 								<reference key="NSNextResponder" ref="952243558"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{12, 8}, {29, 29}}</string>
+								<string key="NSFrame">{{12, 3}, {38, 38}}</string>
 								<reference key="NSSuperview" ref="952243558"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClearsContextBeforeDrawing">NO</bool>
@@ -259,7 +259,7 @@
 					<object class="NSAffineTransform">
 						<bytes key="NSTransformStruct">P4AAAL+AAABDhQAAwiwAAA</bytes>
 					</object>
-					<string>{{753, 248}, {320, 480}}</string>
+					<string>{{586, 253}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<object class="NSAffineTransform">
@@ -584,7 +584,7 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="NS.key.0">playbutton.png</string>
-			<string key="NS.object.0">{64, 64}</string>
+			<string key="NS.object.0">{59, 59}</string>
 		</object>
 		<string key="IBCocoaTouchPluginVersion">132</string>
 	</data>

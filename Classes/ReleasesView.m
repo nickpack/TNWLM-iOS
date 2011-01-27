@@ -23,6 +23,7 @@
 }
 
 - (void) viewWillAppear:(BOOL)animated{
+	NSLog(@"ViewWillAppear");
 	[super viewWillAppear:animated];
 	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleBlackOpaque];
 	[self.navigationController setNavigationBarHidden:YES animated:animated];
@@ -48,14 +49,12 @@
 	dict = nil;
 	[path release];
 	[dict release];
-
 	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, x, y)];
-
 	coverflow.coverflowDelegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:[covers count]];
-
+	
 	exitButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
 	[exitButton setTitle:@"Close" forState:UIControlStateNormal];
 	[exitButton addTarget:self action:@selector(exit) forControlEvents:UIControlEventTouchUpInside];
@@ -113,6 +112,7 @@
 }
 
 - (void)didReceiveMemoryWarning {
+	NSLog(@"YOU FUCKING SUCK");
     [super didReceiveMemoryWarning];
 }
 

@@ -58,11 +58,11 @@
 			PhotoItem* photo = [[[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
 			[self.objects addObject:photo];
 
-			photo = nil;
-			rawResult = nil;
 			[bigURL release];
 			[smallURL release];
 			[title release];
+			photo = nil;
+			rawResult = nil;
 			[photo release];
 			[rawResult release];
 

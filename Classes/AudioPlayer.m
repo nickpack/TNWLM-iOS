@@ -369,8 +369,8 @@
 		NSString *albumArtUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@.jpg", albumArtName];
 
 		if (imageView == nil) {
-			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)]
-																								   autorelease];
+			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)] autorelease];
+			imageView.defaultImage = [UIImage imageNamed:@"musicplaceholder.png"];
 			imageView.urlPath = albumArtUrl;
 			[self.view addSubview:imageView];
 		} else {

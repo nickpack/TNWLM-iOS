@@ -15,6 +15,7 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		D20DB94F12E45C7500C9975C /* PhotoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */; };
+		D215059212F20CA400D8DFAD /* musicplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D215059112F20CA400D8DFAD /* musicplaceholder.png */; };
 		D225664D1260865B001F97E1 /* Releases.png in Resources */ = {isa = PBXBuildFile; fileRef = D22566491260865B001F97E1 /* Releases.png */; };
 		D22566501260865B001F97E1 /* Videos.png in Resources */ = {isa = PBXBuildFile; fileRef = D225664C1260865B001F97E1 /* Videos.png */; };
 		D225666E1260874B001F97E1 /* Contact.png in Resources */ = {isa = PBXBuildFile; fileRef = D22566691260874B001F97E1 /* Contact.png */; };
@@ -81,6 +82,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D215052812F1F4B000D8DFAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 664961641262EE5000C2C80E /* CoreUnitTests-Xcode3.2.5.octest */;
+			remoteInfo = "Three20CoreUnitTests-Xcode3.2.5";
+		};
 		D276233112C3421A00AFA9DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */;
@@ -390,6 +398,7 @@
 		8D1107310486CEB800E47090 /* TNWLM2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNWLM2-Info.plist"; sourceTree = "<group>"; };
 		D20DB94D12E45C7500C9975C /* PhotoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoResponse.h; sourceTree = "<group>"; };
 		D20DB94E12E45C7500C9975C /* PhotoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoResponse.m; sourceTree = "<group>"; };
+		D215059112F20CA400D8DFAD /* musicplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicplaceholder.png; sourceTree = "<group>"; };
 		D22566491260865B001F97E1 /* Releases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Releases.png; sourceTree = "<group>"; };
 		D225664C1260865B001F97E1 /* Videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Videos.png; sourceTree = "<group>"; };
 		D22566691260874B001F97E1 /* Contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Contact.png; sourceTree = "<group>"; };
@@ -681,6 +690,7 @@
 				D2D2232B12C38BA500CC6E04 /* libThree20Core.a */,
 				D2D2232D12C38BA500CC6E04 /* libThree20Core-Xcode3.2.5.a */,
 				D2D2232F12C38BA500CC6E04 /* CoreUnitTests.octest */,
+				D215052912F1F4B000D8DFAD /* CoreUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -802,6 +812,7 @@
 		D2EDFEE312D10DA900C62319 /* Albums */ = {
 			isa = PBXGroup;
 			children = (
+				D215059112F20CA400D8DFAD /* musicplaceholder.png */,
 				D2EDFEFF12D112EF00C62319 /* echoesinthealleyway.png */,
 				D2EDFF0012D112EF00C62319 /* hereagainsomewhere.png */,
 				D2EDFF0112D112EF00C62319 /* ill.png */,
@@ -934,6 +945,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		D215052912F1F4B000D8DFAD /* CoreUnitTests-Xcode3.2.5.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CoreUnitTests-Xcode3.2.5.octest";
+			remoteRef = D215052812F1F4B000D8DFAD /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D276233212C3421A00AFA9DE /* libTapkuLibrary.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1195,6 +1213,7 @@
 				D2EDFF0C12D112EF00C62319 /* nursecd2004.png in Resources */,
 				D2EDFF0E12D112EF00C62319 /* vandalattack.png in Resources */,
 				D29042E412E73BE400818EA4 /* albums.plist in Resources */,
+				D215059212F20CA400D8DFAD /* musicplaceholder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
