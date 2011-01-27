@@ -60,9 +60,9 @@
 	return NO;
 }
 
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+/*-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
 	return YES;
-}
+}*/
 
 -(void)dealloc {
 	self.dataSource = nil;
