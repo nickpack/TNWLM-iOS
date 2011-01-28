@@ -35,10 +35,11 @@
 }
 
 /*- (UIColor*)tableGroupedBackgroundColor {
-	return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
+	return [UIColor clearColor];
+	//return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
 }*/
 
-/*- (TTStyle*)launcherButton:(UIControlState)state {
+- (TTStyle*)launcherButton:(UIControlState)state {
 	return
     [TTPartStyle styleWithName:@"image" style:TTSTYLESTATE
 	 (launcherButtonImage:, state) next:
@@ -46,7 +47,7 @@
 						  color:RGBCOLOR(255, 255, 255)
 				minimumFontSize:11 shadowColor:nil
 				   shadowOffset:CGSizeZero next:nil]];
-}*/
+}
 
 - (UIColor*)timestampTextColor {
 	return RGBCOLOR(183, 9, 9);
