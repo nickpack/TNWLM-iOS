@@ -11,8 +11,9 @@
 
   if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
     self.title = @"Home";
-	  UILabel *label = [[[UILabel alloc] init] autorelease];
-	  self.navigationItem.titleView = label;
+	  UIImage *image = [UIImage imageNamed:@"navlogo.png"];
+	  UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
+	  self.navigationItem.titleView = imageView;
 
   }
 

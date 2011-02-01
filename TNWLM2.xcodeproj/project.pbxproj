@@ -37,6 +37,11 @@
 		D276240012C34C6500AFA9DE /* NewsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D27623FF12C34C6500AFA9DE /* NewsDataSource.m */; };
 		D276240312C34DE800AFA9DE /* NewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D276240212C34DE800AFA9DE /* NewsView.m */; };
 		D29042E412E73BE400818EA4 /* albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = D29042E312E73BE400818EA4 /* albums.plist */; };
+		D298CFAD12F748BF006C2BDE /* navlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D298CFAB12F748BF006C2BDE /* navlogo.png */; };
+		D298CFAE12F748BF006C2BDE /* navlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D298CFAC12F748BF006C2BDE /* navlogo@2x.png */; };
+		D298CFB412F74D67006C2BDE /* finalsleep.png in Resources */ = {isa = PBXBuildFile; fileRef = D298CFB212F74D67006C2BDE /* finalsleep.png */; };
+		D29E61D812F88E4000B14CB0 /* echoesinthealleyway.png in Resources */ = {isa = PBXBuildFile; fileRef = D29E61D612F88E4000B14CB0 /* echoesinthealleyway.png */; };
+		D29E61D912F88E4000B14CB0 /* lemonheads.png in Resources */ = {isa = PBXBuildFile; fileRef = D29E61D712F88E4000B14CB0 /* lemonheads.png */; };
 		D2AA4CF012E7204D0068484A /* AlbumView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2AA4CEF12E7204D0068484A /* AlbumView.m */; };
 		D2ACC488125D021800A2688D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D2ACC487125D021800A2688D /* Default.png */; };
 		D2B2B24F12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */; };
@@ -69,11 +74,9 @@
 		D2D6D78C12CA818A0039776B /* VideosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78B12CA818A0039776B /* VideosView.m */; };
 		D2E0809E12EDD5F90091D129 /* YouTubeTextItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */; };
 		D2E080C612EDD7810091D129 /* YoutubeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E080C512EDD7810091D129 /* YoutubeTableCell.m */; };
-		D2EDFF0712D112EF00C62319 /* echoesinthealleyway.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFEFF12D112EF00C62319 /* echoesinthealleyway.png */; };
 		D2EDFF0812D112EF00C62319 /* hereagainsomewhere.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0012D112EF00C62319 /* hereagainsomewhere.png */; };
 		D2EDFF0912D112EF00C62319 /* ill.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0112D112EF00C62319 /* ill.png */; };
 		D2EDFF0A12D112EF00C62319 /* inthisroom.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0212D112EF00C62319 /* inthisroom.png */; };
-		D2EDFF0B12D112EF00C62319 /* lemonheads.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0312D112EF00C62319 /* lemonheads.png */; };
 		D2EDFF0C12D112EF00C62319 /* nursecd2004.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0412D112EF00C62319 /* nursecd2004.png */; };
 		D2EDFF0E12D112EF00C62319 /* vandalattack.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0612D112EF00C62319 /* vandalattack.png */; };
 		D2F0E4111253909F007B48CA /* NPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F0E4101253909F007B48CA /* NPStyles.m */; };
@@ -102,6 +105,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = TapkuLibrary;
+		};
+		D298CF3C12F738BA006C2BDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 664961641262EE5000C2C80E;
+			remoteInfo = "Three20CoreUnitTests-Xcode3.2.5";
 		};
 		D2D2230212C38B8A00CC6E04 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -423,6 +433,11 @@
 		D276240112C34DE800AFA9DE /* NewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsView.h; sourceTree = "<group>"; };
 		D276240212C34DE800AFA9DE /* NewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsView.m; sourceTree = "<group>"; };
 		D29042E312E73BE400818EA4 /* albums.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = albums.plist; sourceTree = "<group>"; };
+		D298CFAB12F748BF006C2BDE /* navlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navlogo.png; sourceTree = "<group>"; };
+		D298CFAC12F748BF006C2BDE /* navlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navlogo@2x.png"; sourceTree = "<group>"; };
+		D298CFB212F74D67006C2BDE /* finalsleep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finalsleep.png; sourceTree = "<group>"; };
+		D29E61D612F88E4000B14CB0 /* echoesinthealleyway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = echoesinthealleyway.png; sourceTree = "<group>"; };
+		D29E61D712F88E4000B14CB0 /* lemonheads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemonheads.png; sourceTree = "<group>"; };
 		D2AA4CEE12E7204D0068484A /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
 		D2AA4CEF12E7204D0068484A /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
 		D2ACC487125D021800A2688D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -471,11 +486,9 @@
 		D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeTextItem.m; sourceTree = "<group>"; };
 		D2E080C412EDD7810091D129 /* YoutubeTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeTableCell.h; sourceTree = "<group>"; };
 		D2E080C512EDD7810091D129 /* YoutubeTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeTableCell.m; sourceTree = "<group>"; };
-		D2EDFEFF12D112EF00C62319 /* echoesinthealleyway.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = echoesinthealleyway.png; sourceTree = "<group>"; };
 		D2EDFF0012D112EF00C62319 /* hereagainsomewhere.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hereagainsomewhere.png; sourceTree = "<group>"; };
 		D2EDFF0112D112EF00C62319 /* ill.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ill.png; sourceTree = "<group>"; };
 		D2EDFF0212D112EF00C62319 /* inthisroom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inthisroom.png; sourceTree = "<group>"; };
-		D2EDFF0312D112EF00C62319 /* lemonheads.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lemonheads.png; sourceTree = "<group>"; };
 		D2EDFF0412D112EF00C62319 /* nursecd2004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nursecd2004.png; sourceTree = "<group>"; };
 		D2EDFF0612D112EF00C62319 /* vandalattack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vandalattack.png; sourceTree = "<group>"; };
 		D2F0E40F1253909F007B48CA /* NPStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPStyles.h; sourceTree = "<group>"; };
@@ -560,6 +573,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D298CFAB12F748BF006C2BDE /* navlogo.png */,
+				D298CFAC12F748BF006C2BDE /* navlogo@2x.png */,
 				D2E5EFC112DDB86300DD7B82 /* Bundles */,
 				D2EDFEF112D10DD100C62319 /* Audio Player */,
 				D2EDFEF012D10DBA00C62319 /* Launcher Images */,
@@ -622,17 +637,25 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D2C89E0112DDD9B5007B153C /* Common */ = {
+		D298CF4B12F738E7006C2BDE /* Table Cells */ = {
 			isa = PBXGroup;
 			children = (
-				EB383C0410BBF8A40000B2D2 /* AppDelegate.h */,
-				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
-				D225668212608ED1001F97E1 /* CommonData.h */,
-				D225668312608ED1001F97E1 /* CommonData.m */,
 				D2E0809C12EDD5F90091D129 /* YouTubeTextItem.h */,
 				D2E0809D12EDD5F90091D129 /* YouTubeTextItem.m */,
 				D2E080C412EDD7810091D129 /* YoutubeTableCell.h */,
 				D2E080C512EDD7810091D129 /* YoutubeTableCell.m */,
+			);
+			name = "Table Cells";
+			sourceTree = "<group>";
+		};
+		D2C89E0112DDD9B5007B153C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				D298CF4B12F738E7006C2BDE /* Table Cells */,
+				EB383C0410BBF8A40000B2D2 /* AppDelegate.h */,
+				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
+				D225668212608ED1001F97E1 /* CommonData.h */,
+				D225668312608ED1001F97E1 /* CommonData.m */,
 				D2B2B24D12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.h */,
 				D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */,
 			);
@@ -683,6 +706,7 @@
 				D2D2232B12C38BA500CC6E04 /* libThree20Core.a */,
 				D2D2232D12C38BA500CC6E04 /* libThree20Core-Xcode3.2.5.a */,
 				D2D2232F12C38BA500CC6E04 /* CoreUnitTests.octest */,
+				D298CF3D12F738BA006C2BDE /* CoreUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -804,12 +828,13 @@
 		D2EDFEE312D10DA900C62319 /* Albums */ = {
 			isa = PBXGroup;
 			children = (
+				D29E61D612F88E4000B14CB0 /* echoesinthealleyway.png */,
+				D29E61D712F88E4000B14CB0 /* lemonheads.png */,
+				D298CFB212F74D67006C2BDE /* finalsleep.png */,
 				D215059112F20CA400D8DFAD /* musicplaceholder.png */,
-				D2EDFEFF12D112EF00C62319 /* echoesinthealleyway.png */,
 				D2EDFF0012D112EF00C62319 /* hereagainsomewhere.png */,
 				D2EDFF0112D112EF00C62319 /* ill.png */,
 				D2EDFF0212D112EF00C62319 /* inthisroom.png */,
-				D2EDFF0312D112EF00C62319 /* lemonheads.png */,
 				D2EDFF0412D112EF00C62319 /* nursecd2004.png */,
 				D2EDFF0612D112EF00C62319 /* vandalattack.png */,
 				D29042E312E73BE400818EA4 /* albums.plist */,
@@ -949,6 +974,13 @@
 			fileType = archive.ar;
 			path = libTapkuLibraryExtra.a;
 			remoteRef = D276233312C3421A00AFA9DE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D298CF3D12F738BA006C2BDE /* CoreUnitTests-Xcode3.2.5.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CoreUnitTests-Xcode3.2.5.octest";
+			remoteRef = D298CF3C12F738BA006C2BDE /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		D2D2230312C38B8A00CC6E04 /* libThree20.a */ = {
@@ -1190,15 +1222,18 @@
 				D22566721260874B001F97E1 /* Pictures.png in Resources */,
 				D276233B12C3424800AFA9DE /* TapkuLibrary.bundle in Resources */,
 				D2D2238A12C38C2400CC6E04 /* Three20.bundle in Resources */,
-				D2EDFF0712D112EF00C62319 /* echoesinthealleyway.png in Resources */,
 				D2EDFF0812D112EF00C62319 /* hereagainsomewhere.png in Resources */,
 				D2EDFF0912D112EF00C62319 /* ill.png in Resources */,
 				D2EDFF0A12D112EF00C62319 /* inthisroom.png in Resources */,
-				D2EDFF0B12D112EF00C62319 /* lemonheads.png in Resources */,
 				D2EDFF0C12D112EF00C62319 /* nursecd2004.png in Resources */,
 				D2EDFF0E12D112EF00C62319 /* vandalattack.png in Resources */,
 				D29042E412E73BE400818EA4 /* albums.plist in Resources */,
 				D215059212F20CA400D8DFAD /* musicplaceholder.png in Resources */,
+				D298CFAD12F748BF006C2BDE /* navlogo.png in Resources */,
+				D298CFAE12F748BF006C2BDE /* navlogo@2x.png in Resources */,
+				D298CFB412F74D67006C2BDE /* finalsleep.png in Resources */,
+				D29E61D812F88E4000B14CB0 /* echoesinthealleyway.png in Resources */,
+				D29E61D912F88E4000B14CB0 /* lemonheads.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

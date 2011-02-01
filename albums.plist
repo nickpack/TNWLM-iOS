@@ -8,16 +8,16 @@
 			<string>The Squealing Fans Covers Project (Lemonheads Tribute)</string>
 			<string>lemonheads.png</string>
 			<string>2010</string>
-			<string>N/A</string>
+			<string>85 track Lemonheads covers project</string>
 			<array>
-				<string>Break Me feat. Chris MacCarthy</string>
+				<string>Break Me</string>
 			</array>
 		</array>
 		<array>
 			<string>Echoes In the Alleyway (Doves Tribute)</string>
 			<string>echoesinthealleyway.png</string>
 			<string>2010</string>
-			<string>Echoes in the alleyway is a cover album put together by fans of doves. </string>
+			<string>Echoes in the alleyway is a covers album by fans of doves. Available for free download from http://www.echoesinthealleyway.com</string>
 			<array>
 				<string>The Cedar Room</string>
 			</array>
@@ -45,10 +45,19 @@ The 12 track album was recorded and produced by the band as a 2 piece, with Guit
 			</array>
 		</array>
 		<array>
+			<string>The Final Sleep</string>
+			<string>finalsleep.png</string>
+			<string>2009</string>
+			<string>Free Download Single</string>
+			<array>
+				<string>The Final Sleep</string>
+			</array>
+		</array>
+		<array>
 			<string>Here, Again, Somewhere</string>
 			<string>hereagainsomewhere.png</string>
 			<string>2008</string>
-			<string>N/A</string>
+			<string>7 Track Mini Album</string>
 			<array>
 				<string>Hear The Squad</string>
 				<string>Inside Down</string>
@@ -57,6 +66,58 @@ The 12 track album was recorded and produced by the band as a 2 piece, with Guit
 				<string>Beat Me Sensible</string>
 				<string>The Crunch</string>
 				<string>Never Enough</string>
+			</array>
+		</array>
+		<array>
+			<string>In This Room</string>
+			<string>inthisroom.png</string>
+			<string>2007</string>
+			<string>12 Track Album</string>
+			<array>
+				<string>The Meat Process</string>
+				<string>Dont Destroy</string>
+				<string>No Ones Different</string>
+				<string>Crossed Our Lines</string>
+				<string>Are We Still Alive</string>
+				<string>Space Invadors</string>
+				<string>Hide Secrets</string>
+				<string>This Is The End</string>
+				<string>Coleman</string>
+				<string>Should Of Known</string>
+				<string>Dogzilla</string>
+				<string>Complete Rewind</string>
+			</array>
+		</array>
+		<array>
+			<string>After The Latest Vandal Attack</string>
+			<string>vandalattack.png</string>
+			<string>2006</string>
+			<string>12 Track Debut Album</string>
+			<array>
+				<string>After The Latest Vandal Attack </string>
+				<string>Not Cautious </string>
+				<string>Around Again </string>
+				<string>Surrender </string>
+				<string>Instrumental </string>
+				<string>Like They Dont Exist </string>
+				<string>I&apos;ll Pretend, I&apos;ll Pretend </string>
+				<string>Fast Goon </string>
+				<string>Silhouette </string>
+				<string>Pass The Blame </string>
+				<string>So Long </string>
+				<string>Meatslop </string>
+			</array>
+		</array>
+		<array>
+			<string>4 Track ep</string>
+			<string>nursecd2004.png</string>
+			<string>2003</string>
+			<string>Debut release</string>
+			<array>
+				<string>After The Latest Vandal Attack </string>
+				<string>Gotta Come Back</string>
+				<string>Radio </string>
+				<string>Rod Song (Dont Wait) </string>
 			</array>
 		</array>
 	</array>

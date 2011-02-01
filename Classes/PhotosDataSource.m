@@ -63,7 +63,7 @@
 		 [NSString stringWithFormat:@"%lu", (unsigned long)page], @"page",
 		 @"16", @"per_page",
 		 @"url_m,url_t", @"extras",
-		 @"b6984df5998a9723e83887d2163e69be", @"api_key", // Admoo Labs three20 key. Please change this.
+		 @"f2ee9894036e6aac85333460172d63eb", @"api_key", // TNWLM API KEY
 
 		 nil];
 
