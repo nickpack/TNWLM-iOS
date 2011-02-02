@@ -37,25 +37,25 @@
 
 - (void) createModel {
 	TTTableCaptionItem* appCopyright = [TTTableCaptionItem
-									 itemWithText:@"TNWLM2 for iOS Copyright 2011 Nikki James Pack."
+									 itemWithText:@"TNWLM2 for iOS Copyright 2010 Nikki James Pack."
 									 caption: @"TNWLM2"
 									 URL: nil];
 	TTTableCaptionItem* photoCopyright = [TTTableCaptionItem
-										itemWithText:@"All photography displayed by this application is Copyright 2011 Amy Constantine, used with permission."
+										itemWithText:@"All photography displayed by this application is Copyright Amy Constantine, used with permission."
 										caption: @"Photography"
 										URL: nil];
 	TTTableCaptionItem* musicCopyright = [TTTableCaptionItem
-										  itemWithText:@"Music broadcasted by this application is Copyright 2011 The Nurse Who Loved Me or used under licence from the respective copyright holder."
+										  itemWithText:@"Music broadcasted by this application is Copyright The Nurse Who Loved Me or used under licence from the respective copyright holder."
 										  caption: @"Music"
 										  URL: nil];
 	TTTableCaptionItem* artworkCopyright = [TTTableCaptionItem
-										  itemWithText:@"Artwork displayed in this application is Copyright 2011 The Nurse Who Loved Me."
+										  itemWithText:@"Artwork displayed in this application is Copyright Steve Weston c/o The Nurse Who Loved Me."
 										  caption: @"Visual Artwork"
 										  URL: nil];
 
-	NSArray* authors = [NSArray arrayWithObjects:appCopyright,photoCopyright,musicCopyright,artworkCopyright,nil];
+	NSArray* copyright = [NSArray arrayWithObjects:appCopyright,photoCopyright,musicCopyright,artworkCopyright,nil];
 
-	self.dataSource = [[TTSectionedDataSource alloc] initWithItems:[NSArray arrayWithObjects:authors, nil] sections:[NSArray arrayWithObjects:@"Copyright Information", nil]];
+	self.dataSource = [[TTSectionedDataSource alloc] initWithItems:[NSArray arrayWithObjects:copyright, nil] sections:[NSArray arrayWithObjects:@"Copyright Information", nil]];
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {

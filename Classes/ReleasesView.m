@@ -18,19 +18,19 @@
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
 		self.title = @"Releases";
 	}
-	
+
 	NSString *path=[[NSBundle mainBundle] pathForResource:@"albums" ofType:@"plist"];
 	NSMutableArray* dict = [[NSMutableDictionary dictionaryWithContentsOfFile:path] valueForKey:@"Albums"];
 	self.covers = [NSMutableArray arrayWithCapacity:1];
 	for (id album in dict) {
-		[covers addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
+		[self.covers addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
 	}
-	
+
 	path = nil;
 	dict = nil;
 	[path release];
 	[dict release];
-		
+
 	return self;
 }
 
@@ -47,17 +47,17 @@
 
 - (void) viewDidLoad {
     [super viewDidLoad];
-	
-	
+
+
 	CGFloat x = self.view.bounds.size.height + 10;
 	CGFloat y = self.view.bounds.size.width;
-	
+
 	coverflow = [[TKCoverflowView alloc] initWithFrame:CGRectMake(0, 0, x, y)];
 	coverflow.coverflowDelegate = self;
 	coverflow.dataSource = self;
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:[covers count]];
-	
+
 	exitButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
 	[exitButton setTitle:@"Close" forState:UIControlStateNormal];
 	[exitButton addTarget:self action:@selector(exit) forControlEvents:UIControlEventTouchUpInside];
@@ -95,15 +95,14 @@
 - (TKCoverflowCoverView*) coverflowView:(TKCoverflowView*)coverflowView coverAtIndex:(int)index{
 
 	TKCoverflowCoverView *cover = [coverflowView dequeueReusableCoverView];
-	NSLog(@"Index %i",index);
+
 	if(cover == nil){
-		NSLog(@"cover is nil");
 		cover = [[[TKCoverflowCoverView alloc] initWithFrame:CGRectMake(0, 0, 224, 300)] autorelease]; // 224
 		cover.baseline = 224;
 	}
 
 	cover.image = [covers objectAtIndex:index%[covers count]];
-	
+
 	return cover;
 
 }

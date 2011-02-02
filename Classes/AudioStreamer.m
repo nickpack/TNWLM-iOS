@@ -399,7 +399,7 @@ void ASReadStreamCallBack
 		}
 
 		errorCode = anErrorCode;
-
+#ifdef DEBUGLOG
 		if (err)
 		{
 			char *errChars = (char *)&err;
@@ -412,7 +412,7 @@ void ASReadStreamCallBack
 		{
 			DLog(@"%@", [AudioStreamer stringForErrorCode:anErrorCode]);
 		}
-
+#endif
 		if (state == AS_PLAYING ||
 			state == AS_PAUSED ||
 			state == AS_BUFFERING)
