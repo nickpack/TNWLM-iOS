@@ -50,22 +50,22 @@
 
 		NSArray *results = [root objectForKey:@"photo"];
 		for (NSDictionary *rawResult in results) {
-			NSString* bigURL = [rawResult objectForKey:@"url_m"];
-			NSString* smallURL = [rawResult objectForKey:@"url_t"];
-			NSString* title = [rawResult objectForKey:@"title"];
-			CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
+			{
+				NSString* bigURL = [rawResult objectForKey:@"url_m"];
+				NSString* smallURL = [rawResult objectForKey:@"url_t"];
+				NSString* title = [rawResult objectForKey:@"title"];
+				CGSize bigSize = CGSizeMake([[rawResult objectForKey:@"width_m"] floatValue],
 										[[rawResult objectForKey:@"height_m"] floatValue]);
-			PhotoItem* photo = [[[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title] autorelease];
-			[self.objects addObject:photo];
-
-			[bigURL release];
-			[smallURL release];
-			[title release];
-			photo = nil;
-			rawResult = nil;
-			[photo release];
-			[rawResult release];
-
+				PhotoItem* photo = [[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title];
+				[self.objects addObject:photo];
+				photo = nil;
+				TT_RELEASE_SAFELY(photo);
+				TT_RELEASE_SAFELY(bigURL);
+				TT_RELEASE_SAFELY(smallURL);
+				TT_RELEASE_SAFELY(title);
+				rawResult = nil;
+				TT_RELEASE_SAFELY(rawResult);
+			}
 		}
 
 		feed = nil;

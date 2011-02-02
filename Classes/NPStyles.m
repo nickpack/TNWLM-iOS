@@ -15,11 +15,12 @@
 @implementation NPStyles
 
 - (UIColor*)navigationBarTintColor {
-	return RGBCOLOR(116, 14, 14);
+	//return RGBCOLOR(116, 14, 14);
+	return RGBCOLOR(44, 44, 44);
 }
 
 -(UIColor*)tabBarTintColor {
-	return RGBCOLOR(116, 14, 14);
+	return RGBCOLOR(0, 0, 0);
 }
 
 /*- (UIFont*)font {

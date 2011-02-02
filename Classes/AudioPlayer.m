@@ -116,7 +116,7 @@
 	[[TTURLRequestQueue mainQueue] setMaxContentLength:500000];
 
 	// Hacky work around for TTStyleSheet not loading if UIViewController is the first view shown
-	self.navigationController.navigationBar.tintColor =	RGBCOLOR(116, 14, 14);
+	self.navigationController.navigationBar.tintColor =	RGBCOLOR(44, 44, 44);
 	// End hacky workaround
 
 	commonData = [CommonData sharedCommonData];
