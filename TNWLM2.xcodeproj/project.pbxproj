@@ -15,10 +15,11 @@
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		D20DB94F12E45C7500C9975C /* PhotoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */; };
+		D214371512FB026F003D068D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D214371412FB026F003D068D /* Reachability.m */; };
+		D214376812FB066C003D068D /* news-nobg.png in Resources */ = {isa = PBXBuildFile; fileRef = D214376712FB066C003D068D /* news-nobg.png */; };
 		D215059212F20CA400D8DFAD /* musicplaceholder.png in Resources */ = {isa = PBXBuildFile; fileRef = D215059112F20CA400D8DFAD /* musicplaceholder.png */; };
 		D225664D1260865B001F97E1 /* Releases.png in Resources */ = {isa = PBXBuildFile; fileRef = D22566491260865B001F97E1 /* Releases.png */; };
 		D22566501260865B001F97E1 /* Videos.png in Resources */ = {isa = PBXBuildFile; fileRef = D225664C1260865B001F97E1 /* Videos.png */; };
-		D225666E1260874B001F97E1 /* Contact.png in Resources */ = {isa = PBXBuildFile; fileRef = D22566691260874B001F97E1 /* Contact.png */; };
 		D225666F1260874B001F97E1 /* Listen.png in Resources */ = {isa = PBXBuildFile; fileRef = D225666A1260874B001F97E1 /* Listen.png */; };
 		D22566701260874B001F97E1 /* Members.png in Resources */ = {isa = PBXBuildFile; fileRef = D225666B1260874B001F97E1 /* Members.png */; };
 		D22566711260874B001F97E1 /* News.png in Resources */ = {isa = PBXBuildFile; fileRef = D225666C1260874B001F97E1 /* News.png */; };
@@ -27,7 +28,6 @@
 		D22567221260C074001F97E1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D22567211260C074001F97E1 /* RegexKitLite.m */; };
 		D247154312F0388000B90B67 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D247154212F0388000B90B67 /* AboutView.m */; };
 		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
-		D2494A3412CD372A0089FC79 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2494A3312CD372A0089FC79 /* Reachability.m */; };
 		D276233512C3421D00AFA9DE /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D276233212C3421A00AFA9DE /* libTapkuLibrary.a */; };
 		D276233B12C3424800AFA9DE /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */; };
 		D27623A312C3426D00AFA9DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27623A212C3426D00AFA9DE /* MapKit.framework */; };
@@ -394,6 +394,9 @@
 		8D1107310486CEB800E47090 /* TNWLM2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNWLM2-Info.plist"; sourceTree = "<group>"; };
 		D20DB94D12E45C7500C9975C /* PhotoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoResponse.h; sourceTree = "<group>"; };
 		D20DB94E12E45C7500C9975C /* PhotoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoResponse.m; sourceTree = "<group>"; };
+		D214371312FB026F003D068D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		D214371412FB026F003D068D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D214376712FB066C003D068D /* news-nobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news-nobg.png"; sourceTree = "<group>"; };
 		D215059112F20CA400D8DFAD /* musicplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicplaceholder.png; sourceTree = "<group>"; };
 		D22566491260865B001F97E1 /* Releases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Releases.png; sourceTree = "<group>"; };
 		D225664C1260865B001F97E1 /* Videos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Videos.png; sourceTree = "<group>"; };
@@ -410,8 +413,6 @@
 		D247154112F0388000B90B67 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
 		D247154212F0388000B90B67 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D2494A3212CD372A0089FC79 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
-		D2494A3312CD372A0089FC79 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Reachability.m; sourceTree = "<group>"; };
 		D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapkuLibrary.bundle; path = ../tapkulibrary/src/TapkuLibrary.bundle; sourceTree = SOURCE_ROOT; };
 		D27623A212C3426D00AFA9DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -566,6 +567,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D214376712FB066C003D068D /* news-nobg.png */,
 				D298CFAB12F748BF006C2BDE /* navlogo.png */,
 				D298CFAC12F748BF006C2BDE /* navlogo@2x.png */,
 				D2E5EFC112DDB86300DD7B82 /* Bundles */,
@@ -601,8 +603,6 @@
 		6EF963BC118E96B7003902E7 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				D2494A3212CD372A0089FC79 /* Reachability.h */,
-				D2494A3312CD372A0089FC79 /* Reachability.m */,
 				D22567201260C074001F97E1 /* RegexKitLite.h */,
 				D22567211260C074001F97E1 /* RegexKitLite.m */,
 				D225668512608F4B001F97E1 /* SynthesizeSingleton.h */,
@@ -644,6 +644,8 @@
 		D2C89E0112DDD9B5007B153C /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				D214371312FB026F003D068D /* Reachability.h */,
+				D214371412FB026F003D068D /* Reachability.m */,
 				D298CF4B12F738E7006C2BDE /* Table Cells */,
 				EB383C0410BBF8A40000B2D2 /* AppDelegate.h */,
 				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
@@ -1200,7 +1202,6 @@
 				D2ACC488125D021800A2688D /* Default.png in Resources */,
 				D225664D1260865B001F97E1 /* Releases.png in Resources */,
 				D22566501260865B001F97E1 /* Videos.png in Resources */,
-				D225666E1260874B001F97E1 /* Contact.png in Resources */,
 				D225666F1260874B001F97E1 /* Listen.png in Resources */,
 				D22566701260874B001F97E1 /* Members.png in Resources */,
 				D22566711260874B001F97E1 /* News.png in Resources */,
@@ -1219,6 +1220,7 @@
 				D298CFB412F74D67006C2BDE /* finalsleep.png in Resources */,
 				D29E61D812F88E4000B14CB0 /* echoesinthealleyway.png in Resources */,
 				D29E61D912F88E4000B14CB0 /* lemonheads.png in Resources */,
+				D214376812FB066C003D068D /* news-nobg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1247,7 +1249,6 @@
 				D2D6D75E12CA79900039776B /* MembersView.m in Sources */,
 				D2D6D78912CA7FBF0039776B /* VideoDataSource.m in Sources */,
 				D2D6D78C12CA818A0039776B /* VideosView.m in Sources */,
-				D2494A3412CD372A0089FC79 /* Reachability.m in Sources */,
 				D2CAA30B12E0A65100ECA54B /* PhotosDataSource.m in Sources */,
 				D2CAA31112E0A67C00ECA54B /* PhotoItem.m in Sources */,
 				D2CAA33E12E0B11500ECA54B /* PhotosView.m in Sources */,
@@ -1258,6 +1259,7 @@
 				D2B2B24F12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m in Sources */,
 				D2B2B27E12EF1DFC004BCFA9 /* NewsItemView.m in Sources */,
 				D247154312F0388000B90B67 /* AboutView.m in Sources */,
+				D214371512FB026F003D068D /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1316,8 +1318,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1345,8 +1347,8 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
 				SYMROOT = Build/Products;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1356,6 +1358,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1381,6 +1385,8 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
+				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
 				SYMROOT = Build/Products;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1409,8 +1415,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "3559CA4F-8B95-4A01-9DBB-EC17F338CCBE";
+				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1419,8 +1425,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
 				CURRENT_PROJECT_VERSION = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = SHOUTCAST_METADATA;
@@ -1435,8 +1441,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

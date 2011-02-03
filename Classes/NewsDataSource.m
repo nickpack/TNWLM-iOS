@@ -34,7 +34,7 @@
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSMutableArray* items = [[NSMutableArray alloc] init];
-	NSString* remoteImage = @"bundle://News.png";
+	NSString* remoteImage = @"bundle://news-nobg.png";
 	for (FeedItem* item in _feedModel.items) {
 		NSString* body = [item.description stringByRemovingHTMLTags];
 		body = [body stringByReplacingOccurrencesOfString:@"\n" withString:@""];

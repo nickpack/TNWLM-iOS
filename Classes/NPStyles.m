@@ -15,48 +15,34 @@
 @implementation NPStyles
 
 - (UIColor*)navigationBarTintColor {
-	//return RGBCOLOR(116, 14, 14);
 	return RGBCOLOR(44, 44, 44);
 }
 
 -(UIColor*)tabBarTintColor {
-	return RGBCOLOR(0, 0, 0);
+	return RGBCOLOR(44, 44, 44);
 }
 
-/*- (UIFont*)font {
+- (UIFont*)font {
 	return [UIFont fontWithName:@"AmericanTypewriter" size:14];
-}*/
+}
 
 - (UIColor*)toolbarTintColor {
-	return RGBCOLOR(0, 0, 0);
+	return RGBCOLOR(44, 44, 44);
 }
 
 - (UIColor*)tableSubTextColor {
 	return [UIColor grayColor];
 }
 
-/*- (UIColor*)tableGroupedBackgroundColor {
-	return [UIColor clearColor];
-	//return [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
-}*/
-
 - (TTStyle*)launcherButton:(UIControlState)state {
 	return
     [TTPartStyle styleWithName:@"image" style:TTSTYLESTATE
 	 (launcherButtonImage:, state) next:
-	 [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:13]
+	 [TTTextStyle styleWithFont:[UIFont boldSystemFontOfSize:12]
 						  color:RGBCOLOR(255, 255, 255)
-				minimumFontSize:11 shadowColor:nil
-				   shadowOffset:CGSizeZero next:nil]];
+				minimumFontSize:11 shadowColor:[UIColor blackColor]
+				   shadowOffset:CGSizeMake(2, -2) next:nil]];
 }
-
-/*- (UIColor*)timestampTextColor {
-	return RGBCOLOR(183, 9, 9);
-}
-
-- (UIColor*)moreLinkTextColor {
-	return RGBCOLOR(183, 9, 9);
-}*/
 
 - (UITableViewCellSelectionStyle)tableSelectionStyle {
 	return UITableViewCellSelectionStyleGray;

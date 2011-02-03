@@ -109,18 +109,17 @@
 // UIViewController
 
 - (void)loadView {
-  [super loadView];
+	[super loadView];
 
 	CAGradientLayer *gradient = [CAGradientLayer layer];
 	gradient.frame = self.view.bounds;
 	gradient.colors = [NSArray arrayWithObjects:(id)[[UIColor blackColor] CGColor], (id)[[UIColor grayColor] CGColor], (id)[[UIColor blackColor] CGColor],nil];
 	[self.view.layer insertSublayer:gradient atIndex:0];
-  //UIColor *background = [[UIColor alloc] initWithPatternImage:[UIImage imageNamed:@"background.jpg"]];
-  _launcherView = [[TTLauncherView alloc] initWithFrame:self.view.bounds];
-  _launcherView.backgroundColor = [UIColor clearColor];
-  _launcherView.delegate = self;
-  [self restorePages:NO];
-  [self.view addSubview:_launcherView];
+	_launcherView = [[TTLauncherView alloc] initWithFrame:self.view.bounds];
+	_launcherView.backgroundColor = [UIColor clearColor];
+	_launcherView.delegate = self;
+	[self restorePages:NO];
+	[self.view addSubview:_launcherView];
   //[background release];
 }
 
