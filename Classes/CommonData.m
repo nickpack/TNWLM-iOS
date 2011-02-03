@@ -19,6 +19,7 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(CommonData);
 @synthesize currentTrack;
 @synthesize currentAlbum;
 @synthesize currentArt;
+@synthesize internetReachable;
 
 -(void)dealloc{
 	TT_RELEASE_SAFELY(streamUrl);

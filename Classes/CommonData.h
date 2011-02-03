@@ -15,6 +15,7 @@
 	NSString *currentAlbum;
 	NSString *currentArt;
 	AudioStreamer *streamer;
+	BOOL internetReachable;
 }
 
 +(CommonData *)sharedCommonData;
@@ -24,5 +25,6 @@
 @property (nonatomic, retain) NSString *currentTrack;
 @property (nonatomic, retain) NSString *currentAlbum;
 @property (nonatomic, retain) NSString *currentArt;
+@property (nonatomic) BOOL internetReachable;
 
 @end

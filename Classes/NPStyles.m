@@ -30,6 +30,10 @@
 	return RGBCOLOR(44, 44, 44);
 }
 
+/*- (UIColor*)tableHeaderTintColor {
+	return RGBCOLOR(44, 44, 44);
+}*/
+
 - (UIColor*)tableSubTextColor {
 	return [UIColor grayColor];
 }

@@ -1,5 +1,5 @@
 #import "LauncherView.h"
-
+#import "CommonData.h"
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 @implementation LauncherView
@@ -144,7 +144,17 @@
 // TTLauncherViewDelegate
 
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
-	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]];
+	CommonData* commonData = [CommonData sharedCommonData];
+	if (commonData.internetReachable == NO) {
+		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Sorry, this feature requires an active internet connection. Please reconnect and try again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alert show];
+	} else {
+		[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]];
+	}
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	[alertView release];
 }
 
 - (void)launcherViewDidBeginEditing:(TTLauncherView*)launcher {

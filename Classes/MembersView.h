@@ -9,6 +9,14 @@
 
 @interface MembersView : TTTableViewController<TTTabDelegate> {
 	TTTabBar* _memberTabs;
+	TTSectionedDataSource* bandBio;
+	TTSectionedDataSource* steveBio;
+	TTSectionedDataSource* leeBio;
+	TTSectionedDataSource* tobyBio;
 }
+@property (readonly) TTSectionedDataSource *bandBio;
+@property (readonly) TTSectionedDataSource *steveBio;
+@property (readonly) TTSectionedDataSource *leeBio;
+@property (readonly) TTSectionedDataSource *tobyBio;
 
 @end

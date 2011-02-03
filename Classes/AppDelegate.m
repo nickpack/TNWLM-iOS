@@ -23,6 +23,7 @@
 
 #define kStoreType      NSSQLiteStoreType
 #define kStoreFilename  @"db.sqlite"
+#define kHostName @"thor.nickpack.com"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -44,7 +45,10 @@
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Forcefully removes the model db and recreates it.
   //_resetModel = YES;
-
+	[[NSNotificationCenter defaultCenter] addObserver: self selector:  @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
+	hostReach = [[Reachability reachabilityWithHostName: kHostName] retain];
+    [hostReach startNotifier];
+	
 	[TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc] init] autorelease]];
 	TTNavigator* navigator = [TTNavigator navigator];
 	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
@@ -62,32 +66,49 @@
 	[map from:@"tt://videos" toViewController:[VideosView class]];
 	[map from:@"tt://photos" toViewController:[PhotosView class]];
 	[map from:@"tt://viewnews" toViewController:[NewsItemView class]];
-	// Check for push notifications and open the request action if we have one
+	/* Check for push notifications and open the request action if we have one
 	NSDictionary *remoteNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotif) {
 		NSString *itemName = [NSString stringWithFormat:@"tt://%@",[remoteNotif objectForKey:@"action"]];
 		[navigator openURLAction:[TTURLAction actionWithURLPath:itemName]];
 		DLog(@"I got some action: %@",itemName);
-	} else if (![navigator restoreViewControllers]) {
+	} else*/ 
+	
+	if (![navigator restoreViewControllers]) {
 		[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://launcher"]];
 	}
 
-	[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
+	//[[UIApplication sharedApplication] registerForRemoteNotificationTypes:(UIRemoteNotificationTypeAlert | UIRemoteNotificationTypeBadge | UIRemoteNotificationTypeSound)];
 
 	return YES;
 }
 
+- (void) reachabilityChanged: (NSNotification* )note {
+	Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+	[self updateReachability: curReach];
+}
 
-- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+- (void) updateReachability: (Reachability*) curReach { 
+	
+    if(curReach == hostReach) { 
+		CommonData* commonData = [CommonData sharedCommonData];
+        NetworkStatus netStatus = [curReach currentReachabilityStatus];
+		commonData.internetReachable = (netStatus != NotReachable); 
+    } 
+}
 
-    /*NSString *str = [NSString
+
+/*- (void)application:(UIApplication *)app didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+
+    NSString *str = [NSString
 					 stringWithFormat:@"%@",deviceToken];
 	TTURLRequest* request = [TTURLRequest requestWithURL:@"http://thor.nickpack.com/phone.php" delegate: self];
     request.httpMethod = @"POST";
     request.cachePolicy = TTURLRequestCachePolicyNoCache;
 	[request.parameters addObject:str forKey:@"device"];
     request.response = [[[TTURLDataResponse alloc] init] autorelease];
-	[request send];*/
+	[request send];
 }
 
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
@@ -111,7 +132,7 @@
 		 DLog(@"key: %@, value: %@", key, [userInfo objectForKey:key]);
     }
 
-}
+}*/
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
 	TT_RELEASE_SAFELY(_managedObjectContext);

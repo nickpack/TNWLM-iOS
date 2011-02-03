@@ -28,6 +28,7 @@
 		D22567221260C074001F97E1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D22567211260C074001F97E1 /* RegexKitLite.m */; };
 		D247154312F0388000B90B67 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D247154212F0388000B90B67 /* AboutView.m */; };
 		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
+		D24E051412FB495D003BE2C3 /* bio-head.png in Resources */ = {isa = PBXBuildFile; fileRef = D24E051312FB495C003BE2C3 /* bio-head.png */; };
 		D276233512C3421D00AFA9DE /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D276233212C3421A00AFA9DE /* libTapkuLibrary.a */; };
 		D276233B12C3424800AFA9DE /* TapkuLibrary.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */; };
 		D27623A312C3426D00AFA9DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27623A212C3426D00AFA9DE /* MapKit.framework */; };
@@ -85,6 +86,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D24E041012FB3181003BE2C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 664961641262EE5000C2C80E /* CoreUnitTests-Xcode3.2.5.octest */;
+			remoteInfo = "Three20CoreUnitTests-Xcode3.2.5";
+		};
 		D276233112C3421A00AFA9DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */;
@@ -413,6 +421,7 @@
 		D247154112F0388000B90B67 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
 		D247154212F0388000B90B67 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D24E051312FB495C003BE2C3 /* bio-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bio-head.png"; sourceTree = "<group>"; };
 		D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D276233A12C3424800AFA9DE /* TapkuLibrary.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TapkuLibrary.bundle; path = ../tapkulibrary/src/TapkuLibrary.bundle; sourceTree = SOURCE_ROOT; };
 		D27623A212C3426D00AFA9DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
@@ -567,6 +576,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D24E051312FB495C003BE2C3 /* bio-head.png */,
 				D214376712FB066C003D068D /* news-nobg.png */,
 				D298CFAB12F748BF006C2BDE /* navlogo.png */,
 				D298CFAC12F748BF006C2BDE /* navlogo@2x.png */,
@@ -701,6 +711,7 @@
 				D2D2232B12C38BA500CC6E04 /* libThree20Core.a */,
 				D2D2232D12C38BA500CC6E04 /* libThree20Core-Xcode3.2.5.a */,
 				D2D2232F12C38BA500CC6E04 /* CoreUnitTests.octest */,
+				D24E041112FB3181003BE2C3 /* CoreUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -956,6 +967,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		D24E041112FB3181003BE2C3 /* CoreUnitTests-Xcode3.2.5.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "CoreUnitTests-Xcode3.2.5.octest";
+			remoteRef = D24E041012FB3181003BE2C3 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		D276233212C3421A00AFA9DE /* libTapkuLibrary.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1221,6 +1239,7 @@
 				D29E61D812F88E4000B14CB0 /* echoesinthealleyway.png in Resources */,
 				D29E61D912F88E4000B14CB0 /* lemonheads.png in Resources */,
 				D214376812FB066C003D068D /* news-nobg.png in Resources */,
+				D24E051412FB495D003BE2C3 /* bio-head.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1347,8 +1366,8 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
-				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
 				SYMROOT = Build/Products;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1385,8 +1404,8 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
-				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
 				SYMROOT = Build/Products;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1415,8 +1434,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1441,8 +1460,8 @@
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8AEB18DB-BEB5-4E24-B5D5-4CB4DB9A5653";
+				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
 				SDKROOT = iphoneos;
 			};
 			name = Release;

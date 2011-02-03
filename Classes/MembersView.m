@@ -38,36 +38,131 @@
 	_memberTabs.contentMode = UIViewContentModeScaleToFill;
 	self.tableView.tableHeaderView = _memberTabs;
 	self.tableView.backgroundColor = TTSTYLEVAR(tabTintColor);
-	//self.tableView.style = UITableViewStyleGrouped;
 	self.variableHeightRows = YES;
+	self.dataSource = self.bandBio;
 }
 
 - (void)tabBar:(TTTabBar*)tabBar tabSelected:(NSInteger)selectedIndex
 {
+	NSLog(@"Selected Tab: %i",selectedIndex);
+	if(selectedIndex == 0) {
+		self.dataSource = self.bandBio;
+	} else if(selectedIndex == 1) {
+		self.dataSource = self.steveBio;
+	} else if(selectedIndex == 2) {
+		self.dataSource = self.tobyBio;
+	} else {
+		self.dataSource = self.leeBio;
+	}
+	
+	[self refresh];
 
 }
 
-- (void) createModel {
-	TTTableCaptionItem* appCopyright = [TTTableCaptionItem
-										itemWithText:@"TNWLM2 for iOS Copyright 2011 Nikki James Pack."
-										caption: @"TNWLM2"
-										URL: nil];
-	TTTableCaptionItem* photoCopyright = [TTTableCaptionItem
-										  itemWithText:@"All photography displayed by this application is Copyright 2011 Amy Constantine, used with permission."
-										  caption: @"Photography"
-										  URL: nil];
-	TTTableCaptionItem* musicCopyright = [TTTableCaptionItem
-										  itemWithText:@"Music broadcasted by this application is Copyright 2011 The Nurse Who Loved Me or used under licence from the respective copyright holder."
-										  caption: @"Music"
-										  URL: nil];
-	TTTableCaptionItem* artworkCopyright = [TTTableCaptionItem
-											itemWithText:@"Artwork displayed in this application is Copyright 2011 The Nurse Who Loved Me."
-											caption: @"Visual Artwork"
-											URL: nil];
+-(TTSectionedDataSource* )bandBio {
+		bandBio = [TTSectionedDataSource dataSourceWithObjects:
+				   @"Band Bio",
+				   [TTTableTextItem itemWithText:@"The Nurse Who Loved Me formed in 2003, blend Riffy Rock with Big ambient guitar sounds. Pulling influences from the Foo Fighters, Doves, Elbow and Feeder. 2009 saw the band return from a 2 year hiatus with their third album ‘Illuminate’ and a whole bigger sound. The band are currently working on a set of new songs in the studio, which will be available as a free download at the end of 2011."
+									URL:nil
+									accessoryURL:nil],
+				   @"Rocksound magazine said:",
+				   [TTTableTextItem itemWithText:@"A member lighter and an effects pedal heavier, The Nurse Who Loved Me return for their third LP. For a band named after a Failure track, success is on their side. Accomplished and cohesive, ‘Illuminate’ manages to straddle melody and fuzzy feedback admirably. ‘The Final Sleep’ is lush and angry at the same time, and sees vocalist Steve Weston keening “you are missed” over swampy guitars. Meanwhile, ‘Slowest Summer’ is a sweet and subdued acoustic number that sublimates into post-Pixies fuzz around the halfway mark. ‘Illuminate’? It’s a spark in a dark room."
+									         URL:nil
+									accessoryURL:nil],
+				   
+				   nil];
+	return bandBio;
+}
 
-	NSArray* authors = [NSArray arrayWithObjects:appCopyright,photoCopyright,musicCopyright,artworkCopyright,nil];
+-(TTSectionedDataSource* )steveBio {
+	TTStyle* style =
+	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
+	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
+								  width:1 next:
+	  [TTInsetStyle styleWithInset:UIEdgeInsetsMake(2, 2, 2, 2) next:
+	   [TTContentStyle styleWithNext:
+        [TTImageStyle styleWithImageURL:nil
+						   defaultImage:nil
+							contentMode:UIViewContentModeScaleAspectFill
+								   size:CGSizeMake(50, 50) next:nil]]]]];
+	
+	
+	
+	steveBio = [TTSectionedDataSource dataSourceWithObjects:
+				   @"",
+				[TTTableImageItem itemWithText: @"Steve Weston"
+									  imageURL: @"http://thenursewholovedme.com/wp-content/uploads/avatars/2/1295103253-bpfull.jpg"
+								  defaultImage: TTIMAGE(@"bundle://bio-head.png")
+									imageStyle: style
+										   URL: nil],
+				[TTTableCaptionItem
+				 itemWithText:@"Vocals / Guitars / Keyboard"
+				 caption: @"plays"
+				 URL: nil],
+				[TTTableCaptionItem
+				 itemWithText:@"@steve_weston"
+				 caption: @"twitter"
+				 URL: @"http://www.twitter.com/steve_weston"],
+				   nil];
+	//
+	return steveBio;
+}
+-(TTSectionedDataSource* )leeBio {
+	TTStyle* style =
+	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
+	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
+								  width:1 next:
+	  [TTInsetStyle styleWithInset:UIEdgeInsetsMake(2, 2, 2, 2) next:
+	   [TTContentStyle styleWithNext:
+        [TTImageStyle styleWithImageURL:nil
+						   defaultImage:nil
+							contentMode:UIViewContentModeScaleAspectFill
+								   size:CGSizeMake(50, 50) next:nil]]]]];
+	leeBio = [TTSectionedDataSource dataSourceWithObjects:
+			  @"",
+			  [TTTableImageItem itemWithText: @"Lee 'Meatarm' Yates"
+									imageURL: @"http://thenursewholovedme.com/wp-content/uploads/avatars/3/1295188568-bpfull.jpg"
+								defaultImage: TTIMAGE(@"bundle://bio-head.png")
+								  imageStyle: style
+										 URL: nil],
+			  [TTTableCaptionItem
+			   itemWithText:@"Bass / Guitar"
+			   caption: @"plays"
+			   URL: nil],
+			  [TTTableCaptionItem
+			   itemWithText:@"@meatarm"
+			   caption: @"twitter"
+			   URL: @"http://www.twitter.com/meatarm"],
+			  nil];
+	
+	return leeBio;
+}
 
-	self.dataSource = [[TTSectionedDataSource alloc] initWithItems:[NSArray arrayWithObjects:authors, nil] sections:[NSArray arrayWithObjects:@"", nil]];
+-(TTSectionedDataSource* )tobyBio {
+	TTStyle* style =
+	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
+	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
+								  width:1 next:
+	  [TTInsetStyle styleWithInset:UIEdgeInsetsMake(2, 2, 2, 2) next:
+	   [TTContentStyle styleWithNext:
+        [TTImageStyle styleWithImageURL:nil
+						   defaultImage:nil
+							contentMode:UIViewContentModeScaleAspectFill
+								   size:CGSizeMake(50, 50) next:nil]]]]];
+	tobyBio = [TTSectionedDataSource dataSourceWithObjects:
+			   @"",
+			   [TTTableImageItem itemWithText: @"Toby Gore"
+									 imageURL: @"http://thenursewholovedme.com/wp-content/uploads/avatars/4/1295218844-bpfull.jpg"
+								 defaultImage: TTIMAGE(@"bundle://bio-head.png")
+								   imageStyle: style
+										  URL: nil],
+			   [TTTableCaptionItem
+				itemWithText:@"Drums / Vocals / Samples"
+				caption: @"plays"
+				URL: nil],
+			   nil];
+	
+	return tobyBio;
 }
 
 -(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
