@@ -50,13 +50,13 @@
 				   shadowOffset:CGSizeZero next:nil]];
 }
 
-- (UIColor*)timestampTextColor {
+/*- (UIColor*)timestampTextColor {
 	return RGBCOLOR(183, 9, 9);
 }
 
 - (UIColor*)moreLinkTextColor {
 	return RGBCOLOR(183, 9, 9);
-}
+}*/
 
 - (UITableViewCellSelectionStyle)tableSelectionStyle {
 	return UITableViewCellSelectionStyleGray;
