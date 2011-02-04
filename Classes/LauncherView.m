@@ -145,7 +145,7 @@
 
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
 	CommonData* commonData = [CommonData sharedCommonData];
-	if (commonData.internetReachable == NO) {
+	if ((commonData.internetReachable == NO) && (item.URL != @"tt://members") && (item.URL != @"tt://releases")) {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Sorry, this feature requires an active internet connection. Please reconnect and try again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
 	} else {

@@ -58,10 +58,11 @@
 	[self.view addSubview:coverflow];
 	[coverflow setNumberOfCovers:[covers count]];
 
-	exitButton = [[UIButton buttonWithType:UIButtonTypeRoundedRect] retain];
-	[exitButton setTitle:@"Close" forState:UIControlStateNormal];
+	exitButton = [[UIButton buttonWithType:UIButtonTypeCustom] retain];
+	UIImage* buttonImage = [UIImage imageNamed:@"close.png"];
+	[exitButton setImage:buttonImage forState:UIControlStateNormal];
 	[exitButton addTarget:self action:@selector(exit) forControlEvents:UIControlEventTouchUpInside];
-	exitButton.frame = CGRectMake(x-80, y-30, 60, 25);
+	exitButton.frame = CGRectMake(x-60, y-30, 60, 25);
 	[self.view addSubview:exitButton];
 
 	infoButton = [[UIButton buttonWithType:UIButtonTypeInfoLight] retain];

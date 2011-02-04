@@ -37,6 +37,8 @@
 		D27623FD12C349C400AFA9DE /* FeedModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D27623FC12C349C400AFA9DE /* FeedModel.m */; };
 		D276240012C34C6500AFA9DE /* NewsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D27623FF12C34C6500AFA9DE /* NewsDataSource.m */; };
 		D276240312C34DE800AFA9DE /* NewsView.m in Sources */ = {isa = PBXBuildFile; fileRef = D276240212C34DE800AFA9DE /* NewsView.m */; };
+		D276241912FC2E0300CEF5CB /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D276241712FC2E0300CEF5CB /* close@2x.png */; };
+		D276241A12FC2E0300CEF5CB /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = D276241812FC2E0300CEF5CB /* close.png */; };
 		D29042E412E73BE400818EA4 /* albums.plist in Resources */ = {isa = PBXBuildFile; fileRef = D29042E312E73BE400818EA4 /* albums.plist */; };
 		D298CFAD12F748BF006C2BDE /* navlogo.png in Resources */ = {isa = PBXBuildFile; fileRef = D298CFAB12F748BF006C2BDE /* navlogo.png */; };
 		D298CFAE12F748BF006C2BDE /* navlogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D298CFAC12F748BF006C2BDE /* navlogo@2x.png */; };
@@ -86,13 +88,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D24E041012FB3181003BE2C3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 664961641262EE5000C2C80E /* CoreUnitTests-Xcode3.2.5.octest */;
-			remoteInfo = "Three20CoreUnitTests-Xcode3.2.5";
-		};
 		D276233112C3421A00AFA9DE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */;
@@ -435,6 +430,8 @@
 		D27623FF12C34C6500AFA9DE /* NewsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDataSource.m; sourceTree = "<group>"; };
 		D276240112C34DE800AFA9DE /* NewsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsView.h; sourceTree = "<group>"; };
 		D276240212C34DE800AFA9DE /* NewsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsView.m; sourceTree = "<group>"; };
+		D276241712FC2E0300CEF5CB /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		D276241812FC2E0300CEF5CB /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		D29042E312E73BE400818EA4 /* albums.plist */ = {isa = PBXFileReference; explicitFileType = text.plist.xml; fileEncoding = 4; path = albums.plist; sourceTree = "<group>"; };
 		D298CFAB12F748BF006C2BDE /* navlogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navlogo.png; sourceTree = "<group>"; };
 		D298CFAC12F748BF006C2BDE /* navlogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navlogo@2x.png"; sourceTree = "<group>"; };
@@ -576,6 +573,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D276241712FC2E0300CEF5CB /* close@2x.png */,
+				D276241812FC2E0300CEF5CB /* close.png */,
 				D24E051312FB495C003BE2C3 /* bio-head.png */,
 				D214376712FB066C003D068D /* news-nobg.png */,
 				D298CFAB12F748BF006C2BDE /* navlogo.png */,
@@ -711,7 +710,6 @@
 				D2D2232B12C38BA500CC6E04 /* libThree20Core.a */,
 				D2D2232D12C38BA500CC6E04 /* libThree20Core-Xcode3.2.5.a */,
 				D2D2232F12C38BA500CC6E04 /* CoreUnitTests.octest */,
-				D24E041112FB3181003BE2C3 /* CoreUnitTests-Xcode3.2.5.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -967,13 +965,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D24E041112FB3181003BE2C3 /* CoreUnitTests-Xcode3.2.5.octest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CoreUnitTests-Xcode3.2.5.octest";
-			remoteRef = D24E041012FB3181003BE2C3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		D276233212C3421A00AFA9DE /* libTapkuLibrary.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1240,6 +1231,8 @@
 				D29E61D912F88E4000B14CB0 /* lemonheads.png in Resources */,
 				D214376812FB066C003D068D /* news-nobg.png in Resources */,
 				D24E051412FB495D003BE2C3 /* bio-head.png in Resources */,
+				D276241912FC2E0300CEF5CB /* close@2x.png in Resources */,
+				D276241A12FC2E0300CEF5CB /* close.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1337,9 +1330,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
-				COPY_PHASE_STRIP = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"$(inherited)",
@@ -1354,11 +1347,11 @@
 					../tapkulibrary/src,
 				);
 				INFOPLIST_FILE = "TNWLM2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_MAP_FILE_PATH = "";
 				LIBRARY_SEARCH_PATHS = /usr/lib;
 				OBJROOT = Build;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-all_load",
 					"-licucore",
@@ -1366,10 +1359,10 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
-				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SYMROOT = Build/Products;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1377,8 +1370,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
@@ -1392,7 +1385,7 @@
 					../tapkulibrary/src,
 				);
 				INFOPLIST_FILE = "TNWLM2-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 3.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_MAP_FILE_PATH = "";
 				LIBRARY_SEARCH_PATHS = /usr/lib;
 				OBJROOT = Build;
@@ -1404,10 +1397,10 @@
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
-				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SYMROOT = Build/Products;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1415,8 +1408,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1427,15 +1420,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/Build/Products;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_OPENMP_FLAGS = "-fopenmp";
 				OTHER_LDFLAGS = (
 					"-licucore",
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1444,8 +1437,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Nikki Pack (P5HYE39C37)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nikki Pack (P5HYE39C37)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = "";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_PREPROCESSOR_DEFINITIONS = SHOUTCAST_METADATA;
@@ -1453,15 +1446,15 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = ../three20/Build/Products;
-				IPHONEOS_DEPLOYMENT_TARGET = 3.1.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_OPENMP_FLAGS = "-fopenmp";
 				OTHER_LDFLAGS = (
 					"-licucore",
 					"-ObjC",
 				);
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A7A1ACFB-D15B-45AC-8333-09C6ED57C1EE";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
