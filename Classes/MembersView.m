@@ -54,14 +54,14 @@
 	} else {
 		self.dataSource = self.leeBio;
 	}
-	
+
 	[self refresh];
 
 }
 
 -(TTSectionedDataSource* )bandBio {
 		bandBio = [TTSectionedDataSource dataSourceWithObjects:
-				   @"Band Biography",
+				   @"",
 				   [TTTableTextItem itemWithText:@"The Nurse Who Loved Me formed in 2003, blend Riffy Rock with Big ambient guitar sounds. Pulling influences from the Foo Fighters, Doves, Elbow and Feeder. 2009 saw the band return from a 2 year hiatus with their third album ‘Illuminate’ and a whole bigger sound. The band are currently working on a set of new songs in the studio, which will be available as a free download at the end of 2011."
 									URL:nil
 									accessoryURL:nil],
@@ -69,7 +69,7 @@
 				   [TTTableTextItem itemWithText:@"A member lighter and an effects pedal heavier, The Nurse Who Loved Me return for their third LP. For a band named after a Failure track, success is on their side. Accomplished and cohesive, ‘Illuminate’ manages to straddle melody and fuzzy feedback admirably. ‘The Final Sleep’ is lush and angry at the same time, and sees vocalist Steve Weston keening “you are missed” over swampy guitars. Meanwhile, ‘Slowest Summer’ is a sweet and subdued acoustic number that sublimates into post-Pixies fuzz around the halfway mark. ‘Illuminate’? It’s a spark in a dark room."
 									         URL:nil
 									accessoryURL:nil],
-				   
+
 				   nil];
 	return bandBio;
 }
@@ -85,9 +85,9 @@
 						   defaultImage:nil
 							contentMode:UIViewContentModeScaleAspectFill
 								   size:CGSizeMake(50, 50) next:nil]]]]];
-	
-	
-	
+
+
+
 	steveBio = [TTSectionedDataSource dataSourceWithObjects:
 				   @"",
 				[TTTableImageItem itemWithText: @"Steve Weston"
@@ -144,7 +144,7 @@
 			   URL: nil],
 			  
 			  nil];
-	
+
 	return leeBio;
 }
 
@@ -176,7 +176,7 @@
 				URL: nil],
 			   
 			   nil];
-	
+
 	return tobyBio;
 }
 

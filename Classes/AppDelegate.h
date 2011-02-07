@@ -3,7 +3,7 @@
 //  TNWLM2
 //
 //  Created by Nick on 18/09/2010.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//  Copyright Nikki James Pack 2010. All rights reserved.
 //
 #import "Reachability.h"
 

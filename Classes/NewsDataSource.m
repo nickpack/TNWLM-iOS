@@ -11,6 +11,7 @@
 #import "FeedItem.h"
 #import <Three20Core/NSDateAdditions.h>
 #import <Three20Core/NSStringAdditions.h>
+#import "RegexKitLite.h"
 
 @implementation NewsDataSource
 
@@ -34,13 +35,24 @@
 
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
 	NSMutableArray* items = [[NSMutableArray alloc] init];
-	NSString* remoteImage = @"bundle://news-nobg.png";
+
 	for (FeedItem* item in _feedModel.items) {
+		NSString *avatar = [[item.poster stringByReplacingOccurrencesOfRegex:@"\\W+"
+																   withString:@""]
+																	lowercaseString];
+		NSLog(@"%@",avatar);
+		NSString *avatarUrl = [[NSString alloc] autorelease];
+		if (![avatar isEqualToString:@"steveweston"] && ![avatar isEqualToString:@"nickpack"] && ![avatar isEqualToString:@"tobygore"] && ![avatar isEqualToString:@"meatarm"]) {
+			avatarUrl = @"bundle://news-nobg.png";
+		} else {
+			avatarUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/%@.jpg", avatar];
+		}
+
 		NSString* body = [item.description stringByRemovingHTMLTags];
 		body = [body stringByReplacingOccurrencesOfString:@"\n" withString:@""];
 		TTTableMessageItem* tableRow = [TTTableMessageItem itemWithTitle:item.title caption:[NSString stringWithFormat:@"Posted by: %@",item.poster]
 																	text:body timestamp:item.posted
-																imageURL:remoteImage URL:@"tt://viewnews"];
+																imageURL:avatarUrl URL:@"tt://viewnews"];
 		NSDictionary* rowInfo = [NSDictionary dictionaryWithObjectsAndKeys:
 								 item.title,
 								 @"title",
@@ -58,6 +70,7 @@
 	}
 
 	self.items = items;
+
 	TT_RELEASE_SAFELY(items);
 }
 

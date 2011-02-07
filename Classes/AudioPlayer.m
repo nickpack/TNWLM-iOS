@@ -1,3 +1,8 @@
+//  TNWLM2
+//
+//  Created by Nick Pack on 23/12/2010.
+//  Copyright 2010 Nikki James Pack. All rights reserved.
+//
 
 #import "AppDelegate.h"
 #import "AudioPlayer.h"
@@ -40,7 +45,10 @@
 
 		if ([button.currentImage isEqual:[UIImage imageNamed:@"loadingbutton.png"]])
 		{
+			[self.view addSubview:self.loading];
 			[self spinButton];
+		} else {
+			[self.loading removeFromSuperview];
 		}
 	}
 }
@@ -433,6 +441,7 @@
 
 	[levelMeterView release];
 	[imageView release];
+	[loading release];
 	[super dealloc];
 }
 
@@ -460,6 +469,15 @@
 		default:
 			break;
 	}
+}
+
+- (TKLoadingView *) loading{
+	if(loading==nil){
+		loading  = [[TKLoadingView alloc] initWithTitle:@"Buffering Stream..."];
+		[loading startAnimating];
+		loading.center = CGPointMake(self.view.bounds.size.width/2, 160);
+	}
+	return loading;
 }
 
 @end

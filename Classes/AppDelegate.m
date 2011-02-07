@@ -3,7 +3,7 @@
 //  TNWLM2
 //
 //  Created by Nick on 18/09/2010.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
+//  Copyright Nikki James Pack 2010. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -48,7 +48,7 @@
 	[[NSNotificationCenter defaultCenter] addObserver: self selector:  @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
 	hostReach = [[Reachability reachabilityWithHostName: kHostName] retain];
     [hostReach startNotifier];
-	
+
 	[TTStyleSheet setGlobalStyleSheet:[[[NPStyles alloc] init] autorelease]];
 	TTNavigator* navigator = [TTNavigator navigator];
 	navigator.persistenceMode = TTNavigatorPersistenceModeAll;
@@ -72,8 +72,8 @@
 		NSString *itemName = [NSString stringWithFormat:@"tt://%@",[remoteNotif objectForKey:@"action"]];
 		[navigator openURLAction:[TTURLAction actionWithURLPath:itemName]];
 		DLog(@"I got some action: %@",itemName);
-	} else*/ 
-	
+	} else*/
+
 	if (![navigator restoreViewControllers]) {
 		[navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://launcher"]];
 	}
@@ -89,13 +89,13 @@
 	[self updateReachability: curReach];
 }
 
-- (void) updateReachability: (Reachability*) curReach { 
-	
-    if(curReach == hostReach) { 
+- (void) updateReachability: (Reachability*) curReach {
+
+    if(curReach == hostReach) {
 		CommonData* commonData = [CommonData sharedCommonData];
         NetworkStatus netStatus = [curReach currentReachabilityStatus];
-		commonData.internetReachable = (netStatus != NotReachable); 
-    } 
+		commonData.internetReachable = (netStatus != NotReachable);
+    }
 }
 
 
