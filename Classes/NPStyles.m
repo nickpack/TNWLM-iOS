@@ -19,7 +19,7 @@
 }
 
 -(UIColor*)tabBarTintColor {
-	return RGBCOLOR(44, 44, 44);
+	return RGBCOLOR(72,72,72);
 }
 
 - (UIFont*)font {
@@ -27,12 +27,16 @@
 }
 
 - (UIColor*)toolbarTintColor {
-	return RGBCOLOR(44, 44, 44);
+	return RGBCOLOR(72,72,72);
 }
 
-/*- (UIColor*)tableHeaderTintColor {
-	return RGBCOLOR(44, 44, 44);
-}*/
+- (UIColor*)tableHeaderTintColor {
+	return RGBCOLOR(72,72,72);
+}
+
+- (UIColor*)tableHeaderTextColor {
+	return [UIColor whiteColor];
+}
 
 - (UIColor*)tableSubTextColor {
 	return [UIColor grayColor];

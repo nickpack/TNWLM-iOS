@@ -16,8 +16,9 @@
 - (id)initWithFrame:(CGRect)frame {
     if ((self = [super initWithFrame:frame])) {
         // Initialization code
-		self.backgroundColor = [UIColor blackColor];
-    }
+		//self.backgroundColor = [UIColor grayColor];
+		self.backgroundColor = RGBCOLOR(72,72,72);
+	}
     return self;
 }
 
@@ -28,9 +29,10 @@
 	[[UIColor whiteColor] set];
 	[@"L" drawInRect:CGRectMake(0.0, 10.0, 15.0, 15.0) withFont:[UIFont boldSystemFontOfSize:[UIFont systemFontSize]] lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentCenter];
 	[@"R" drawInRect:CGRectMake(0.0, 35.0, 15.0, 15.0) withFont:[UIFont boldSystemFontOfSize:[UIFont systemFontSize]] lineBreakMode:UILineBreakModeWordWrap alignment:UITextAlignmentCenter];
-	
+
 	CGContextRef context = UIGraphicsGetCurrentContext();
-	CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
+	//CGContextSetFillColorWithColor(context, [UIColor greenColor].CGColor);
+	CGContextSetFillColorWithColor(context, RGBCOLOR(11,130,244).CGColor);
 	CGContextFillRect(context, CGRectMake(15.0, 10.0, kMeterViewFullWidth * leftValue, 15.0));
 	CGContextFillRect(context, CGRectMake(15.0, 35.0, kMeterViewFullWidth * rightValue, 15.0));
 	CGContextFlush(context);
