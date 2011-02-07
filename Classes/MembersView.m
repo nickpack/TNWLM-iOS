@@ -16,7 +16,7 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
 	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-		self.title = @"Bio";
+		self.title = @"Biography";
 	}
 
 	return self;
@@ -61,7 +61,7 @@
 
 -(TTSectionedDataSource* )bandBio {
 		bandBio = [TTSectionedDataSource dataSourceWithObjects:
-				   @"Band Bio",
+				   @"Band Biography",
 				   [TTTableTextItem itemWithText:@"The Nurse Who Loved Me formed in 2003, blend Riffy Rock with Big ambient guitar sounds. Pulling influences from the Foo Fighters, Doves, Elbow and Feeder. 2009 saw the band return from a 2 year hiatus with their third album ‘Illuminate’ and a whole bigger sound. The band are currently working on a set of new songs in the studio, which will be available as a free download at the end of 2011."
 									URL:nil
 									accessoryURL:nil],
@@ -103,6 +103,11 @@
 				 itemWithText:@"@steve_weston"
 				 caption: @"twitter"
 				 URL: @"http://www.twitter.com/steve_weston"],
+				[TTTableCaptionItem
+				 itemWithText:@"I've played guitar since I was 14 and like to play a bit of drums. As well as write and produce music, I love graphic design. My favourite bands would have to be Doves, Foo Fighters, Sparklehorse and Portishead."
+				 caption: @"bio"
+				 URL: nil],
+				
 				   nil];
 	//
 	return steveBio;
@@ -133,6 +138,11 @@
 			   itemWithText:@"@meatarm"
 			   caption: @"twitter"
 			   URL: @"http://www.twitter.com/meatarm"],
+			  [TTTableCaptionItem
+			   itemWithText:@"As well as play bass for the nurse, I have a solo project called Idée Fixe which is kinda of ambient film music."
+			   caption: @"bio"
+			   URL: nil],
+			  
 			  nil];
 	
 	return leeBio;
@@ -160,6 +170,11 @@
 				itemWithText:@"Drums / Vocals / Samples"
 				caption: @"plays"
 				URL: nil],
+			   [TTTableCaptionItem
+				itemWithText:@"I am a dedicated drummer/teacher who plays with The Nurse Who Loved Me. I have also made it my mission to make girls understand why Predator is such a good film."
+				caption: @"bio"
+				URL: nil],
+			   
 			   nil];
 	
 	return tobyBio;
