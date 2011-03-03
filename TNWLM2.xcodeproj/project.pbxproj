@@ -26,6 +26,7 @@
 		D22566721260874B001F97E1 /* Pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = D225666D1260874B001F97E1 /* Pictures.png */; };
 		D225668412608ED1001F97E1 /* CommonData.m in Sources */ = {isa = PBXBuildFile; fileRef = D225668312608ED1001F97E1 /* CommonData.m */; };
 		D22567221260C074001F97E1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D22567211260C074001F97E1 /* RegexKitLite.m */; };
+		D24551A9131FB76A00B24177 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = D24551A8131FB76A00B24177 /* iRate.m */; };
 		D247154312F0388000B90B67 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D247154212F0388000B90B67 /* AboutView.m */; };
 		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
 		D24E051412FB495D003BE2C3 /* bio-head.png in Resources */ = {isa = PBXBuildFile; fileRef = D24E051312FB495C003BE2C3 /* bio-head.png */; };
@@ -123,56 +124,56 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2231712C38BA500CC6E04 /* Three20Network.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20Network */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20Network;
 		};
 		D2AE7F6B131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2231D12C38BA500CC6E04 /* Three20UICommon.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20UICommon */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20UICommon;
 		};
 		D2AE7F6D131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2231A12C38BA500CC6E04 /* Three20Style.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20Style */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20Style;
 		};
 		D2AE7F6F131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2232012C38BA500CC6E04 /* Three20UINavigator.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20UINavigator */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20UINavigator;
 		};
 		D2AE7F71131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D222FB12C38B8A00CC6E04 /* Three20.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20 */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20;
 		};
 		D2AE7F73131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20Core */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20Core;
 		};
 		D2AE7F75131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2232312C38BA500CC6E04 /* Three20UI.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* Three20UI */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = Three20UI;
 		};
 		D2AE7F77131F9760009665A7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D2D2239212C38D0000CC6E04 /* extThree20XML.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = BEF31F390F352DF5000DE5D2 /* extThree20XML */;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
 			remoteInfo = extThree20XML;
 		};
 		D2D2230212C38B8A00CC6E04 /* PBXContainerItemProxy */ = {
@@ -302,8 +303,8 @@
 		8D1107310486CEB800E47090 /* TNWLM2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNWLM2-Info.plist"; sourceTree = "<group>"; };
 		D20DB94D12E45C7500C9975C /* PhotoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoResponse.h; sourceTree = "<group>"; };
 		D20DB94E12E45C7500C9975C /* PhotoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoResponse.m; sourceTree = "<group>"; };
-		D214371312FB026F003D068D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
-		D214371412FB026F003D068D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		D214371312FB026F003D068D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
+		D214371412FB026F003D068D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = Classes/Reachability.m; sourceTree = "<group>"; };
 		D214376712FB066C003D068D /* news-nobg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "news-nobg.png"; sourceTree = "<group>"; };
 		D215059112F20CA400D8DFAD /* musicplaceholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = musicplaceholder.png; sourceTree = "<group>"; };
 		D22566491260865B001F97E1 /* Releases.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Releases.png; sourceTree = "<group>"; };
@@ -317,6 +318,8 @@
 		D225668512608F4B001F97E1 /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SynthesizeSingleton.h; path = Classes/SynthesizeSingleton.h; sourceTree = "<group>"; };
 		D22567201260C074001F97E1 /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegexKitLite.h; path = Classes/RegexKitLite.h; sourceTree = "<group>"; };
 		D22567211260C074001F97E1 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegexKitLite.m; path = Classes/RegexKitLite.m; sourceTree = "<group>"; };
+		D24551A7131FB76A00B24177 /* iRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iRate.h; sourceTree = "<group>"; };
+		D24551A8131FB76A00B24177 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		D247154112F0388000B90B67 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
 		D247154212F0388000B90B67 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
@@ -406,8 +409,8 @@
 		D2EDFF0612D112EF00C62319 /* vandalattack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vandalattack.png; sourceTree = "<group>"; };
 		D2F0E40F1253909F007B48CA /* NPStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPStyles.h; sourceTree = "<group>"; };
 		D2F0E4101253909F007B48CA /* NPStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPStyles.m; sourceTree = "<group>"; };
-		EB383C0410BBF8A40000B2D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		EB383C0510BBF8A40000B2D2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EB383C0410BBF8A40000B2D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
+		EB383C0510BBF8A40000B2D2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -478,6 +481,8 @@
 		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
+				EB383C0410BBF8A40000B2D2 /* AppDelegate.h */,
+				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
 				32CA4F630368D1EE00C91783 /* TNWLM2_Prefix.pch */,
 				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
@@ -527,6 +532,10 @@
 		6EF963BC118E96B7003902E7 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				D214371312FB026F003D068D /* Reachability.h */,
+				D214371412FB026F003D068D /* Reachability.m */,
+				D24551A7131FB76A00B24177 /* iRate.h */,
+				D24551A8131FB76A00B24177 /* iRate.m */,
 				D22567201260C074001F97E1 /* RegexKitLite.h */,
 				D22567211260C074001F97E1 /* RegexKitLite.m */,
 				D225668512608F4B001F97E1 /* SynthesizeSingleton.h */,
@@ -568,11 +577,7 @@
 		D2C89E0112DDD9B5007B153C /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				D214371312FB026F003D068D /* Reachability.h */,
-				D214371412FB026F003D068D /* Reachability.m */,
 				D298CF4B12F738E7006C2BDE /* Table Cells */,
-				EB383C0410BBF8A40000B2D2 /* AppDelegate.h */,
-				EB383C0510BBF8A40000B2D2 /* AppDelegate.m */,
 				D225668212608ED1001F97E1 /* CommonData.h */,
 				D225668312608ED1001F97E1 /* CommonData.m */,
 				D2B2B24D12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.h */,
@@ -1083,6 +1088,7 @@
 				D2B2B27E12EF1DFC004BCFA9 /* NewsItemView.m in Sources */,
 				D247154312F0388000B90B67 /* AboutView.m in Sources */,
 				D214371512FB026F003D068D /* Reachability.m in Sources */,
+				D24551A9131FB76A00B24177 /* iRate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

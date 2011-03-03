@@ -44,7 +44,7 @@
 		if (![avatar isEqualToString:@"steveweston"] && ![avatar isEqualToString:@"nickpack"] && ![avatar isEqualToString:@"tobygore"] && ![avatar isEqualToString:@"meatarm"]) {
 			avatarUrl = @"bundle://news-nobg.png";
 		} else {
-			avatarUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/%@.jpg", avatar];
+			avatarUrl = [NSString stringWithFormat:@"http://app.thenursewholovedme.com/%@.jpg", avatar];
 		}
 
 		NSString* body = [item.description stringByRemovingHTMLTags];

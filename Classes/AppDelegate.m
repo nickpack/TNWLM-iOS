@@ -20,6 +20,7 @@
 #import "NewsItemView.h"
 #import "AboutView.h"
 #import "Reachability.h"
+#import "iRate.h"
 
 #define kStoreType      NSSQLiteStoreType
 #define kStoreFilename  @"db.sqlite"
@@ -41,11 +42,19 @@
 @synthesize uiIsVisible;
 @synthesize shouldOpenStream;
 
++ (void)initialize
+{
+	// Nobody really uses this app much so set the limits low
+	[iRate sharedInstance].appStoreID = 418966284;
+	[iRate sharedInstance].applicationName = @"TNWLM";
+	[iRate sharedInstance].daysUntilPrompt = 1;
+	[iRate sharedInstance].usesUntilPrompt = 2;
+	[iRate sharedInstance].debug = NO;
+}
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  // Forcefully removes the model db and recreates it.
-  //_resetModel = YES;
-	TTURLCache *cache = [[TTURLCache alloc] initWithName:@"tnwlm2"];
+  	TTURLCache *cache = [[TTURLCache alloc] initWithName:@"tnwlm2"];
 	cache.invalidationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
 	[TTURLCache setSharedCache:cache];
 	TT_RELEASE_SAFELY(cache);

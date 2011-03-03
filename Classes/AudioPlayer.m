@@ -88,7 +88,7 @@
 
 	[self destroyStreamer];
 
-	commonData.streamUrl = [NSURL URLWithString:@"http://thor.nickpack.com:9000"];
+	commonData.streamUrl = [NSURL URLWithString:@"http://app.thenursewholovedme.com:9000"];
 	commonData.streamer = [[AudioStreamer alloc] initWithURL:commonData.streamUrl];
 	levelMeterUpdateTimer =
 	[NSTimer
@@ -369,7 +369,7 @@
 		NSString *albumArt = [streamAlbum stringByReplacingOccurrencesOfRegex:@"\\W+"
 																   withString:@""];
 		NSString *albumArtName = [albumArt lowercaseString];
-		NSString *albumArtUrl = [NSString stringWithFormat:@"http://nurse.bandapp.mobi/audio/%@.jpg", albumArtName];
+		NSString *albumArtUrl = [NSString stringWithFormat:@"http://app.thenursewholovedme.com/audio/%@.jpg", albumArtName];
 
 		if (imageView == nil) {
 			imageView = [[[TTImageView alloc] initWithFrame:CGRectMake(0, 0, self.view.width, self.view.width)] autorelease];
