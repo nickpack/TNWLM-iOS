@@ -40,8 +40,7 @@
 		NSString *avatar = [[item.poster stringByReplacingOccurrencesOfRegex:@"\\W+"
 																   withString:@""]
 																	lowercaseString];
-		NSLog(@"%@",avatar);
-		NSString *avatarUrl = [[NSString alloc] autorelease];
+		NSString *avatarUrl;
 		if (![avatar isEqualToString:@"steveweston"] && ![avatar isEqualToString:@"nickpack"] && ![avatar isEqualToString:@"tobygore"] && ![avatar isEqualToString:@"meatarm"]) {
 			avatarUrl = @"bundle://news-nobg.png";
 		} else {

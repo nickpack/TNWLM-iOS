@@ -72,14 +72,10 @@
 		item.link = [[entry objectForKey:@"link"] objectForXMLNode];
 		item.poster = [[entry objectForKey:@"dc:creator"] objectForXMLNode];
 		item.description = [[entry objectForKey:@"description"] objectForXMLNode];
-
 		[items addObject:item];
 		TT_RELEASE_SAFELY(item);
-
 	}
 	_items = items;
-	entries = nil;
-	TT_RELEASE_SAFELY(entries);
 	TT_RELEASE_SAFELY(dateFormatter);
 
 	[super requestDidFinishLoad:request];

@@ -342,15 +342,10 @@
 		// don't bother with bad metadata
 		if ([pair count] == 2)
 			[hash setObject:[pair objectAtIndex:1] forKey:[pair objectAtIndex:0]];
-
-		pair = nil;
-		[pair release];
 	}
 
 	NSString *streamString = [[hash objectForKey:@"StreamTitle"] stringByReplacingOccurrencesOfString:@"'" withString:@""];
 	NSArray *streamParts = [streamString componentsSeparatedByString:@" - "];
-	hash = nil;
-	[hash release];
 
 	if ([streamParts count] >= 2) {
 		streamTitle = [streamParts objectAtIndex:1];
@@ -390,15 +385,6 @@
 		commonData.currentTrack = [NSString stringWithFormat:@"%@", streamTitle];
 		commonData.currentAlbum = [NSString stringWithFormat:@"%@",streamAlbum];
 		commonData.currentArt = albumArtUrl;
-
-		headerTrack = nil;
-		headerAlbum = nil;
-		albumArtName = nil;
-		albumArtUrl = nil;
-		TT_RELEASE_SAFELY(headerTrack);
-		TT_RELEASE_SAFELY(headerAlbum);
-		TT_RELEASE_SAFELY(albumArtName);
-		TT_RELEASE_SAFELY(albumArtUrl);
 	}
 }
 

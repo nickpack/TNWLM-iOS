@@ -26,11 +26,6 @@
 		[self.covers addObject:[UIImage imageNamed:[album objectAtIndex:1]]];
 	}
 
-	path = nil;
-	dict = nil;
-	[path release];
-	[dict release];
-
 	return self;
 }
 
@@ -74,17 +69,9 @@
 -(void) info{
 	NSString* albumUrl = [NSString stringWithFormat:@"tt://album/%d",self.coverIndex];
 	[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:albumUrl] applyAnimated:YES]];
-	albumUrl = nil;
-	TT_RELEASE_SAFELY(albumUrl);
 }
 
 - (void) exit{
-	infoButton = nil;
-	coverflow = nil;
-	self.covers = nil;
-	[infoButton release];
-	[coverflow release];
-	[self.covers release];
 	[self dismissModalViewControllerAnimated:YES];
 }
 
@@ -121,13 +108,7 @@
 }
 
 - (void)dealloc {
-	infoButton = nil;
-	coverflow = nil;
-	covers = nil;
-	[infoButton release];
-	[coverflow release];
-	[covers release];
-    [super dealloc];
+	[super dealloc];
 }
 
 @end

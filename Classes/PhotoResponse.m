@@ -50,7 +50,6 @@
 
 		NSArray *results = [root objectForKey:@"photo"];
 		for (NSDictionary *rawResult in results) {
-			{
 				NSString* bigURL = [rawResult objectForKey:@"url_m"];
 				NSString* smallURL = [rawResult objectForKey:@"url_t"];
 				NSString* title = [rawResult objectForKey:@"title"];
@@ -58,24 +57,8 @@
 										[[rawResult objectForKey:@"height_m"] floatValue]);
 				PhotoItem* photo = [[PhotoItem alloc] initWithURL:bigURL smallURL:smallURL size:bigSize caption:title];
 				[self.objects addObject:photo];
-				photo = nil;
-				TT_RELEASE_SAFELY(photo);
-				TT_RELEASE_SAFELY(bigURL);
-				TT_RELEASE_SAFELY(smallURL);
-				TT_RELEASE_SAFELY(title);
-				rawResult = nil;
-				TT_RELEASE_SAFELY(rawResult);
-			}
+				[photo release];
 		}
-
-		feed = nil;
-		data = nil;
-		root = nil;
-		results = nil;
-		TT_RELEASE_SAFELY(results);
-		TT_RELEASE_SAFELY(root);
-		TT_RELEASE_SAFELY(feed);
-		TT_RELEASE_SAFELY(data);
 	}
 
 	return nil;

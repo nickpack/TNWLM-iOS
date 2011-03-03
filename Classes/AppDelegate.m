@@ -45,6 +45,11 @@
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   // Forcefully removes the model db and recreates it.
   //_resetModel = YES;
+	TTURLCache *cache = [[TTURLCache alloc] initWithName:@"tnwlm2"];
+	cache.invalidationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
+	[TTURLCache setSharedCache:cache];
+	TT_RELEASE_SAFELY(cache);
+
 	[[NSNotificationCenter defaultCenter] addObserver: self selector:  @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
 	hostReach = [[Reachability reachabilityWithHostName: kHostName] retain];
     [hostReach startNotifier];
@@ -95,7 +100,13 @@
 		CommonData* commonData = [CommonData sharedCommonData];
         NetworkStatus netStatus = [curReach currentReachabilityStatus];
 		commonData.internetReachable = (netStatus != NotReachable);
-    }
+
+		if (commonData.internetReachable == NO) {
+			[TTURLCache sharedCache].invalidationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
+		} else {
+			[TTURLCache sharedCache].invalidationAge = TT_DEFAULT_CACHE_EXPIRATION_AGE;
+		}
+	}
 }
 
 

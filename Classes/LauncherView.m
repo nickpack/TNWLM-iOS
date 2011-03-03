@@ -20,7 +20,6 @@
 	  UIImage *image = [UIImage imageNamed:@"navlogo.png"];
 	  UIImageView *imageView = [[UIImageView alloc] initWithImage:image];
 	  self.navigationItem.titleView = imageView;
-	  [image release];
 	  [imageView release];
 
   }
@@ -153,9 +152,10 @@
 
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
 	CommonData* commonData = [CommonData sharedCommonData];
-	if ((commonData.internetReachable == NO) && (item.URL != @"tt://members") && (item.URL != @"tt://releases")) {
+	if ((commonData.internetReachable == NO) && (item.URL == @"tt://streamer")) {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Sorry, this feature requires an active internet connection. Please reconnect and try again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
+		[alert release];
 	} else {
 		[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]];
 	}
