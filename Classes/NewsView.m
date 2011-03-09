@@ -27,7 +27,7 @@
 
 - (void)createModel {
 	self.dataSource = [[[NewsDataSource alloc]
-						initWithFeedUrl:@"http://thenursewholovedme.com/feed/"] autorelease];
+						initWithFeedUrl:@"http://app.thenursewholovedme.com/feed"] autorelease];
 }
 
 - (id<UITableViewDelegate>)createDelegate {

@@ -134,9 +134,7 @@
 
 	UIView *btn = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 60)];
 
-	UILabel *label;
-	UILabel *label2;
-	label = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, 200, 16)];
+	UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 15, 200, 16)];
 	label.tag = 1;
 	label.backgroundColor = [UIColor clearColor];
 	label.font = [UIFont boldSystemFontOfSize:14];
@@ -148,7 +146,7 @@
 	label.shadowColor = [UIColor blackColor];
 	label.shadowOffset = CGSizeMake(0,1);
 
-	label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 16)];
+	UILabel *label2 = [[UILabel alloc] initWithFrame:CGRectMake(0, 30, 200, 16)];
 	label2.tag = 2;
 	label2.backgroundColor = [UIColor clearColor];
 	label2.font = [UIFont boldSystemFontOfSize:10];
