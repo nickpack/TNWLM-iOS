@@ -87,6 +87,9 @@
 		  [[[TTLauncherItem alloc] initWithTitle:@"News"
 										   image:@"bundle://News.png"
 											 URL:@"tt://news" canDelete:YES] autorelease],
+          [[[TTLauncherItem alloc] initWithTitle:@"Twitter"
+										   image:@"bundle://News.png"
+											 URL:@"tt://twitter" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
 										   image:@"bundle://Listen.png"
 											 URL:@"tt://streamer" canDelete:YES] autorelease],

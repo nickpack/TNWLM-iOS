@@ -19,6 +19,7 @@
 #import "AlbumView.h"
 #import "NewsItemView.h"
 #import "AboutView.h"
+#import "TwitterView.h"
 #import "Reachability.h"
 #import "iRate.h"
 
@@ -80,6 +81,7 @@
 	[map from:@"tt://videos" toViewController:[VideosView class]];
 	[map from:@"tt://photos" toViewController:[PhotosView class]];
 	[map from:@"tt://viewnews" toViewController:[NewsItemView class]];
+    [map from:@"tt://twitter" toViewController:[TwitterView class]];
 	/* Check for push notifications and open the request action if we have one
 	NSDictionary *remoteNotif = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
     if (remoteNotif) {

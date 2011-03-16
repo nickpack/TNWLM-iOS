@@ -35,9 +35,8 @@
 								 requestWithURL: self.feedUrl
 								 delegate: self];
 
-		request.cachePolicy = cachePolicy;
-		request.cacheExpirationAge = 1;
-
+		request.cachePolicy = TTURLRequestCachePolicyDisk;
+		
 		TTURLXMLResponse* response = [[TTURLXMLResponse alloc] init];
 		response.isRssFeed = YES;
 		request.response = response;

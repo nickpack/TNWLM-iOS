@@ -14,6 +14,8 @@
 		28C3AD8A0F43EF2300507BA6 /* TNWLM2.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 28C3AD890F43EF2300507BA6 /* TNWLM2.xcdatamodel */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
+		D20B8B5B133144B800277A38 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D20B8B5A133144B800277A38 /* Three20.bundle */; };
+		D20B8B5E1331529700277A38 /* TwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B8B5D1331529700277A38 /* TwitterView.m */; };
 		D20DB94F12E45C7500C9975C /* PhotoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */; };
 		D214371512FB026F003D068D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D214371412FB026F003D068D /* Reachability.m */; };
 		D214376812FB066C003D068D /* news-nobg.png in Resources */ = {isa = PBXBuildFile; fileRef = D214376712FB066C003D068D /* news-nobg.png */; };
@@ -53,7 +55,6 @@
 		D2AE7F89131F9813009665A7 /* libThree20UINavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2235B12C38BA500CC6E04 /* libThree20UINavigator.a */; };
 		D2AE7F8A131F9816009665A7 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2236712C38BA500CC6E04 /* libThree20UI.a */; };
 		D2AE7F8B131F981A009665A7 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2D2230312C38B8A00CC6E04 /* libThree20.a */; };
-		D2AE8031131F995B009665A7 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2AE8030131F995B009665A7 /* Three20.bundle */; };
 		D2B2B24F12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */; };
 		D2B2B27E12EF1DFC004BCFA9 /* NewsItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2B2B27D12EF1DFC004BCFA9 /* NewsItemView.m */; };
 		D2CAA30B12E0A65100ECA54B /* PhotosDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2CAA30A12E0A65100ECA54B /* PhotosDataSource.m */; };
@@ -301,6 +302,9 @@
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDK_ROOT; };
 		32CA4F630368D1EE00C91783 /* TNWLM2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNWLM2_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TNWLM2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNWLM2-Info.plist"; sourceTree = "<group>"; };
+		D20B8B5A133144B800277A38 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = "<group>"; };
+		D20B8B5C1331529600277A38 /* TwitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterView.h; sourceTree = "<group>"; };
+		D20B8B5D1331529700277A38 /* TwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterView.m; sourceTree = "<group>"; };
 		D20DB94D12E45C7500C9975C /* PhotoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoResponse.h; sourceTree = "<group>"; };
 		D20DB94E12E45C7500C9975C /* PhotoResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoResponse.m; sourceTree = "<group>"; };
 		D214371312FB026F003D068D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = Classes/Reachability.h; sourceTree = "<group>"; };
@@ -345,7 +349,6 @@
 		D2AA4CEE12E7204D0068484A /* AlbumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlbumView.h; sourceTree = "<group>"; };
 		D2AA4CEF12E7204D0068484A /* AlbumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlbumView.m; sourceTree = "<group>"; };
 		D2ACC487125D021800A2688D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		D2AE8030131F995B009665A7 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/Three20.bundle; sourceTree = SOURCE_ROOT; };
 		D2B2B24D12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TTTableViewDelegate+URLAdditions.h"; sourceTree = "<group>"; };
 		D2B2B24E12EF1D7E004BCFA9 /* TTTableViewDelegate+URLAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TTTableViewDelegate+URLAdditions.m"; sourceTree = "<group>"; };
 		D2B2B27C12EF1DFC004BCFA9 /* NewsItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsItemView.h; sourceTree = "<group>"; };
@@ -609,6 +612,8 @@
 				D2B2B27D12EF1DFC004BCFA9 /* NewsItemView.m */,
 				D247154112F0388000B90B67 /* AboutView.h */,
 				D247154212F0388000B90B67 /* AboutView.m */,
+				D20B8B5C1331529600277A38 /* TwitterView.h */,
+				D20B8B5D1331529700277A38 /* TwitterView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -727,7 +732,7 @@
 		D2E5EFC112DDB86300DD7B82 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
-				D2AE8030131F995B009665A7 /* Three20.bundle */,
+				D20B8B5A133144B800277A38 /* Three20.bundle */,
 			);
 			name = Bundles;
 			sourceTree = "<group>";
@@ -1048,7 +1053,7 @@
 				D2D95782130048FC002B7B35 /* Pictures@2x.png in Resources */,
 				D2D95783130048FC002B7B35 /* Releases@2x.png in Resources */,
 				D2D95784130048FC002B7B35 /* Videos@2x.png in Resources */,
-				D2AE8031131F995B009665A7 /* Three20.bundle in Resources */,
+				D20B8B5B133144B800277A38 /* Three20.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1089,6 +1094,7 @@
 				D247154312F0388000B90B67 /* AboutView.m in Sources */,
 				D214371512FB026F003D068D /* Reachability.m in Sources */,
 				D24551A9131FB76A00B24177 /* iRate.m in Sources */,
+				D20B8B5E1331529700277A38 /* TwitterView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,13 +1161,15 @@
 					"$(inherited)",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TNWLM2_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
-					../three20/Build/Products/three20,
 					../tapkulibrary/src,
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
+					../three20/Build/Products/three20,
 				);
 				INFOPLIST_FILE = "TNWLM2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
@@ -1170,9 +1178,9 @@
 				OBJROOT = Build;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-all_load",
 					"-licucore",
 					"-ObjC",
+					"-all_load",
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
@@ -1198,8 +1206,10 @@
 				GCC_PREFIX_HEADER = TNWLM2_Prefix.pch;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				HEADER_SEARCH_PATHS = (
-					../three20/Build/Products/three20,
 					../tapkulibrary/src,
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
+					../three20/Build/Products/three20,
 				);
 				INFOPLIST_FILE = "TNWLM2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
@@ -1208,9 +1218,9 @@
 				OBJROOT = Build;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
-					"-all_load",
 					"-licucore",
 					"-ObjC",
+					"-all_load",
 				);
 				PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR = YES;
 				PRODUCT_NAME = TNWLM2;
@@ -1236,7 +1246,11 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
+					../three20/Build/Products/three20,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_OPENMP_FLAGS = "-fopenmp";
 				OTHER_LDFLAGS = (
@@ -1262,7 +1276,11 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = ../three20/Build/Products;
+				HEADER_SEARCH_PATHS = (
+					"\"$(BUILT_PRODUCTS_DIR)/../../three20\"",
+					"\"$(BUILT_PRODUCTS_DIR)/../three20\"",
+					../three20/Build/Products/three20,
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_OPENMP_FLAGS = "-fopenmp";
 				OTHER_LDFLAGS = (
