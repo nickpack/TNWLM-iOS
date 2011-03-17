@@ -7,30 +7,31 @@
 //
 
 #import "TwitterView.h"
-#import "NewsDataSource.h"
+#import "TwitterDataSource.h"
 
 @implementation TwitterView
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-	if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
-		self.title = @"Twitter";
-		self.variableHeightRows = YES;
-	}
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        self.title = @"Twitter feed";
+        self.variableHeightRows = YES;
+    }
     
-	return self;
+    return self;
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)createModel {
-	self.dataSource = [[[NewsDataSource alloc]
-						initWithFeedUrl:@"https://api.twitter.com/1/statuses/user_timeline.atom?screen_name=tnwlm"] autorelease];
+    self.dataSource = [[[TwitterDataSource alloc]
+                        initWithSearchQuery:@"tnwlm"] autorelease];
 }
 
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id<UITableViewDelegate>)createDelegate {
-	return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
-}
-
--(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-	return YES;
+    return [[[TTTableViewDragRefreshDelegate alloc] initWithController:self] autorelease];
 }
 
 @end

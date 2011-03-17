@@ -55,12 +55,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (BOOL)application:(UIApplication *)app didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  	TTURLCache *cache = [[TTURLCache alloc] initWithName:@"tnwlm2"];
-	cache.invalidationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
-	[TTURLCache setSharedCache:cache];
-	TT_RELEASE_SAFELY(cache);
-
-	[[NSNotificationCenter defaultCenter] addObserver: self selector:  @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
+  	[[NSNotificationCenter defaultCenter] addObserver: self selector:  @selector(reachabilityChanged:) name: kReachabilityChangedNotification object: nil];
 	hostReach = [[Reachability reachabilityWithHostName: kHostName] retain];
     [hostReach startNotifier];
 

@@ -183,7 +183,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					1138,
+					1378,
 					20,
 					48,
 					43,
@@ -222,17 +222,17 @@
 					PBXFileDataSource_Warnings_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 321367596;
-			PBXWorkspaceStateSaveDate = 321367596;
+			PBXPerProjectTemplateStateSaveDate = 322081070;
+			PBXWorkspaceStateSaveDate = 322081070;
 		};
 		perUserProjectItems = {
 			D215059F12F2120000D8DFAD /* PBXBookmark */ = D215059F12F2120000D8DFAD /* PBXBookmark */;
 			D21505A012F2120000D8DFAD /* PBXBookmark */ = D21505A012F2120000D8DFAD /* PBXBookmark */;
 			D21505A112F2120000D8DFAD /* PBXBookmark */ = D21505A112F2120000D8DFAD /* PBXBookmark */;
 			D23A8DEB1324E8B000131C8A /* PBXTextBookmark */ = D23A8DEB1324E8B000131C8A /* PBXTextBookmark */;
+			D23FDC7B1332910400EE1568 /* PBXTextBookmark */ = D23FDC7B1332910400EE1568 /* PBXTextBookmark */;
 			D24551C2131FBB0100B24177 /* PBXTextBookmark */ = D24551C2131FBB0100B24177 /* PBXTextBookmark */;
 			D24551C3131FBB0100B24177 /* PBXTextBookmark */ = D24551C3131FBB0100B24177 /* PBXTextBookmark */;
-			D24551C5131FBB0100B24177 /* PBXTextBookmark */ = D24551C5131FBB0100B24177 /* PBXTextBookmark */;
 			D24551C6131FBB0100B24177 /* PBXTextBookmark */ = D24551C6131FBB0100B24177 /* PBXTextBookmark */;
 			D24551C7131FBB0100B24177 /* PBXTextBookmark */ = D24551C7131FBB0100B24177 /* PBXTextBookmark */;
 			D24551C8131FBB0100B24177 /* PBXTextBookmark */ = D24551C8131FBB0100B24177 /* PBXTextBookmark */;
@@ -271,10 +271,6 @@
 			D2AA4CFD12E721AC0068484A /* PBXBookmark */ = D2AA4CFD12E721AC0068484A /* PBXBookmark */;
 			D2AA4CFE12E721AC0068484A /* PBXBookmark */ = D2AA4CFE12E721AC0068484A /* PBXBookmark */;
 			D2AA4D0212E721AC0068484A /* PBXBookmark */ = D2AA4D0212E721AC0068484A /* PBXBookmark */;
-			D2AE807E131F9B3C009665A7 /* PBXTextBookmark */ = D2AE807E131F9B3C009665A7 /* PBXTextBookmark */;
-			D2AE8080131F9B3C009665A7 /* PBXBookmark */ = D2AE8080131F9B3C009665A7 /* PBXBookmark */;
-			D2AE8082131F9B3C009665A7 /* PBXTextBookmark */ = D2AE8082131F9B3C009665A7 /* PBXTextBookmark */;
-			D2AE8084131F9B3C009665A7 /* PBXTextBookmark */ = D2AE8084131F9B3C009665A7 /* PBXTextBookmark */;
 			D2AE8086131F9B3C009665A7 /* PBXTextBookmark */ = D2AE8086131F9B3C009665A7 /* PBXTextBookmark */;
 			D2AE8087131F9B3C009665A7 /* PBXTextBookmark */ = D2AE8087131F9B3C009665A7 /* PBXTextBookmark */;
 			D2AE8089131F9B3C009665A7 /* PBXTextBookmark */ = D2AE8089131F9B3C009665A7 /* PBXTextBookmark */;
@@ -284,7 +280,6 @@
 			D2AE80CF131FA734009665A7 /* PBXTextBookmark */ = D2AE80CF131FA734009665A7 /* PBXTextBookmark */;
 			D2AE8141131FB37F009665A7 /* PBXTextBookmark */ = D2AE8141131FB37F009665A7 /* PBXTextBookmark */;
 			D2AE8142131FB37F009665A7 /* PBXTextBookmark */ = D2AE8142131FB37F009665A7 /* PBXTextBookmark */;
-			D2B05E551327A799002BEEF0 /* PBXTextBookmark */ = D2B05E551327A799002BEEF0 /* PBXTextBookmark */;
 			D2B05E561327A799002BEEF0 /* PBXTextBookmark */ = D2B05E561327A799002BEEF0 /* PBXTextBookmark */;
 			D2B05E571327A799002BEEF0 /* PBXTextBookmark */ = D2B05E571327A799002BEEF0 /* PBXTextBookmark */;
 			D2B05E581327A799002BEEF0 /* PBXTextBookmark */ = D2B05E581327A799002BEEF0 /* PBXTextBookmark */;
@@ -324,7 +319,6 @@
 			D2E5EF0212DDB66700DD7B82 /* PBXTextBookmark */ = D2E5EF0212DDB66700DD7B82 /* PBXTextBookmark */;
 			D2EE140C1327B2A100885CC9 /* PBXTextBookmark */ = D2EE140C1327B2A100885CC9 /* PBXTextBookmark */;
 			D2EE140D1327B2A100885CC9 /* PBXTextBookmark */ = D2EE140D1327B2A100885CC9 /* PBXTextBookmark */;
-			D2EE140E1327B2A100885CC9 /* PBXTextBookmark */ = D2EE140E1327B2A100885CC9 /* PBXTextBookmark */;
 		};
 		sourceControlManager = D26E9F0F1245132F0011CCEE /* Source Control */;
 		userBuildSettings = {
@@ -434,12 +428,15 @@
 		vrLen = 2238;
 		vrLoc = 993;
 	};
-	D23A8DF51324E97E00131C8A /* TTURLXMLResponse.m */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.objc;
-		name = TTURLXMLResponse.m;
-		path = /Users/packn/dev/three20/src/extThree20XML/Source/TTURLXMLResponse.m;
-		sourceTree = "<absolute>";
+	D23FDC7B1332910400EE1568 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = D276240212C34DE800AFA9DE /* NewsView.m */;
+		name = "NewsView.m: 30";
+		rLen = 0;
+		rLoc = 1017;
+		rType = 0;
+		vrLen = 1291;
+		vrLoc = 0;
 	};
 	D24551A7131FB76A00B24177 /* iRate.h */ = {
 		uiCtxt = {
@@ -473,16 +470,6 @@
 		rLoc = 522;
 		rType = 0;
 		vrLen = 1174;
-		vrLoc = 0;
-	};
-	D24551C5131FBB0100B24177 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D276240212C34DE800AFA9DE /* NewsView.m */;
-		name = "NewsView.m: 22";
-		rLen = 0;
-		rLoc = 867;
-		rType = 0;
-		vrLen = 1284;
 		vrLoc = 0;
 	};
 	D24551C6131FBB0100B24177 /* PBXTextBookmark */ = {
@@ -888,9 +875,9 @@
 	};
 	D276240212C34DE800AFA9DE /* NewsView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1316, 580}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1556, 596}}";
 			sepNavSelRange = "{1017, 0}";
-			sepNavVisRange = "{0, 1287}";
+			sepNavVisRange = "{0, 1291}";
 		};
 	};
 	D276242A12FC310100CEF5CB /* PBXTextBookmark */ = {
@@ -981,68 +968,6 @@
 		isa = PBXBookmark;
 		fRef = D2EDFF0212D112EF00C62319 /* inthisroom.png */;
 	};
-	D2AE807E131F9B3C009665A7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D2AE807F131F9B3C009665A7 /* Localizable.strings */;
-		name = "Localizable.strings: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 829;
-		vrLoc = 0;
-	};
-	D2AE807F131F9B3C009665A7 /* Localizable.strings */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.plist.strings;
-		name = Localizable.strings;
-		path = /Users/packn/dev/three20/Three20.bundle/es.lproj/Localizable.strings;
-		sourceTree = "<absolute>";
-	};
-	D2AE8080131F9B3C009665A7 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = D2AE8081131F9B3C009665A7 /* overflowLeft.png */;
-	};
-	D2AE8081131F9B3C009665A7 /* overflowLeft.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = overflowLeft.png;
-		path = /Users/packn/dev/three20/Three20.bundle/images/overflowLeft.png;
-		sourceTree = "<absolute>";
-	};
-	D2AE8082131F9B3C009665A7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D2AE8083131F9B3C009665A7 /* Localizable.strings */;
-		name = "Localizable.strings: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 808;
-		vrLoc = 0;
-	};
-	D2AE8083131F9B3C009665A7 /* Localizable.strings */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.plist.strings;
-		name = Localizable.strings;
-		path = /Users/packn/dev/three20/Three20.bundle/de.lproj/Localizable.strings;
-		sourceTree = "<absolute>";
-	};
-	D2AE8084131F9B3C009665A7 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D2AE8085131F9B3C009665A7 /* Localizable.strings */;
-		name = "Localizable.strings: 50";
-		rLen = 0;
-		rLoc = 919;
-		rType = 0;
-		vrLen = 846;
-		vrLoc = 0;
-	};
-	D2AE8085131F9B3C009665A7 /* Localizable.strings */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text.plist.strings;
-		name = Localizable.strings;
-		path = /Users/packn/dev/three20/Three20.bundle/en.lproj/Localizable.strings;
-		sourceTree = "<absolute>";
-	};
 	D2AE8086131F9B3C009665A7 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = D2CB4F7412536AAA001A31CA /* LevelMeterView.h */;
@@ -1132,16 +1057,6 @@
 		rType = 0;
 		vrLen = 1724;
 		vrLoc = 1209;
-	};
-	D2B05E551327A799002BEEF0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D23A8DF51324E97E00131C8A /* TTURLXMLResponse.m */;
-		name = "TTURLXMLResponse.m: 56";
-		rLen = 0;
-		rLoc = 2030;
-		rType = 0;
-		vrLen = 1613;
-		vrLoc = 0;
 	};
 	D2B05E561327A799002BEEF0 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -1603,16 +1518,6 @@
 		rLoc = 226;
 		rType = 0;
 		vrLen = 232;
-		vrLoc = 0;
-	};
-	D2EE140E1327B2A100885CC9 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = D276240212C34DE800AFA9DE /* NewsView.m */;
-		name = "NewsView.m: 30";
-		rLen = 0;
-		rLoc = 1017;
-		rType = 0;
-		vrLen = 1287;
 		vrLoc = 0;
 	};
 	D2F0E40F1253909F007B48CA /* NPStyles.h */ = {

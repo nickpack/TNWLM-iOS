@@ -14,7 +14,6 @@
 		28C3AD8A0F43EF2300507BA6 /* TNWLM2.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 28C3AD890F43EF2300507BA6 /* TNWLM2.xcdatamodel */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
 		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
-		D20B8B5B133144B800277A38 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D20B8B5A133144B800277A38 /* Three20.bundle */; };
 		D20B8B5E1331529700277A38 /* TwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B8B5D1331529700277A38 /* TwitterView.m */; };
 		D20DB94F12E45C7500C9975C /* PhotoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */; };
 		D214371512FB026F003D068D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D214371412FB026F003D068D /* Reachability.m */; };
@@ -30,6 +29,9 @@
 		D22567221260C074001F97E1 /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = D22567211260C074001F97E1 /* RegexKitLite.m */; };
 		D24551A9131FB76A00B24177 /* iRate.m in Sources */ = {isa = PBXBuildFile; fileRef = D24551A8131FB76A00B24177 /* iRate.m */; };
 		D247154312F0388000B90B67 /* AboutView.m in Sources */ = {isa = PBXBuildFile; fileRef = D247154212F0388000B90B67 /* AboutView.m */; };
+		D2480B3D133292A200E0F299 /* Tweet.m in Sources */ = {isa = PBXBuildFile; fileRef = D2480B3C133292A200E0F299 /* Tweet.m */; };
+		D2480B401332974700E0F299 /* TwitterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2480B3F1332974700E0F299 /* TwitterModel.m */; };
+		D2480B4313329A4000E0F299 /* TwitterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2480B4213329A4000E0F299 /* TwitterDataSource.m */; };
 		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
 		D24E051412FB495D003BE2C3 /* bio-head.png in Resources */ = {isa = PBXBuildFile; fileRef = D24E051312FB495C003BE2C3 /* bio-head.png */; };
 		D276233512C3421D00AFA9DE /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D276233212C3421A00AFA9DE /* libTapkuLibrary.a */; };
@@ -72,6 +74,12 @@
 		D2CB4FB412536B2A001A31CA /* playbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FB012536B2A001A31CA /* playbutton.png */; };
 		D2CB4FB512536B2A001A31CA /* stopbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FB112536B2A001A31CA /* stopbutton.png */; };
 		D2CB4FBB12536BEC001A31CA /* AudioPlayer.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2CB4FBA12536BEC001A31CA /* AudioPlayer.xib */; };
+		D2D60A2913328D4F00198974 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2413328D4F00198974 /* Icon-72.png */; };
+		D2D60A2A13328D4F00198974 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2513328D4F00198974 /* Icon-Small-50.png */; };
+		D2D60A2B13328D4F00198974 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2613328D4F00198974 /* Icon-Small.png */; };
+		D2D60A2C13328D4F00198974 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2713328D4F00198974 /* Icon-Small@2x.png */; };
+		D2D60A2D13328D4F00198974 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2813328D4F00198974 /* Icon@2x.png */; };
+		D2D60A2F13328EC400198974 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2E13328EC400198974 /* Three20.bundle */; };
 		D2D6D75E12CA79900039776B /* MembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D75D12CA79900039776B /* MembersView.m */; };
 		D2D6D78912CA7FBF0039776B /* VideoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78812CA7FBF0039776B /* VideoDataSource.m */; };
 		D2D6D78C12CA818A0039776B /* VideosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78B12CA818A0039776B /* VideosView.m */; };
@@ -302,7 +310,6 @@
 		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDK_ROOT; };
 		32CA4F630368D1EE00C91783 /* TNWLM2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNWLM2_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TNWLM2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNWLM2-Info.plist"; sourceTree = "<group>"; };
-		D20B8B5A133144B800277A38 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = "<group>"; };
 		D20B8B5C1331529600277A38 /* TwitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterView.h; sourceTree = "<group>"; };
 		D20B8B5D1331529700277A38 /* TwitterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterView.m; sourceTree = "<group>"; };
 		D20DB94D12E45C7500C9975C /* PhotoResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoResponse.h; sourceTree = "<group>"; };
@@ -326,6 +333,12 @@
 		D24551A8131FB76A00B24177 /* iRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iRate.m; sourceTree = "<group>"; };
 		D247154112F0388000B90B67 /* AboutView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutView.h; sourceTree = "<group>"; };
 		D247154212F0388000B90B67 /* AboutView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutView.m; sourceTree = "<group>"; };
+		D2480B3B133292A200E0F299 /* Tweet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tweet.h; sourceTree = "<group>"; };
+		D2480B3C133292A200E0F299 /* Tweet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tweet.m; sourceTree = "<group>"; };
+		D2480B3E1332974700E0F299 /* TwitterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterModel.h; sourceTree = "<group>"; };
+		D2480B3F1332974700E0F299 /* TwitterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterModel.m; sourceTree = "<group>"; };
+		D2480B4113329A3F00E0F299 /* TwitterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterDataSource.h; sourceTree = "<group>"; };
+		D2480B4213329A4000E0F299 /* TwitterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterDataSource.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D24E051312FB495C003BE2C3 /* bio-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bio-head.png"; sourceTree = "<group>"; };
 		D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
@@ -383,6 +396,12 @@
 		D2D2232012C38BA500CC6E04 /* Three20UINavigator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UINavigator.xcodeproj; path = ../three20/src/Three20UINavigator/Three20UINavigator.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D2D2232312C38BA500CC6E04 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = ../three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D2D2239212C38D0000CC6E04 /* extThree20XML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20XML.xcodeproj; path = ../three20/src/extThree20XML/extThree20XML.xcodeproj; sourceTree = SOURCE_ROOT; };
+		D2D60A2413328D4F00198974 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		D2D60A2513328D4F00198974 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small-50.png"; sourceTree = "<group>"; };
+		D2D60A2613328D4F00198974 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		D2D60A2713328D4F00198974 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
+		D2D60A2813328D4F00198974 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		D2D60A2E13328EC400198974 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Three20.bundle; sourceTree = "<group>"; };
 		D2D6D75C12CA79900039776B /* MembersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersView.h; sourceTree = "<group>"; };
 		D2D6D75D12CA79900039776B /* MembersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersView.m; sourceTree = "<group>"; };
 		D2D6D78712CA7FBF0039776B /* VideoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDataSource.h; sourceTree = "<group>"; };
@@ -495,6 +514,12 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				D2D60A2E13328EC400198974 /* Three20.bundle */,
+				D2D60A2413328D4F00198974 /* Icon-72.png */,
+				D2D60A2513328D4F00198974 /* Icon-Small-50.png */,
+				D2D60A2613328D4F00198974 /* Icon-Small.png */,
+				D2D60A2713328D4F00198974 /* Icon-Small@2x.png */,
+				D2D60A2813328D4F00198974 /* Icon@2x.png */,
 				D2D956B613003B9D002B7B35 /* close.png */,
 				D2D956B713003B9D002B7B35 /* close@2x.png */,
 				D2D9569C130039F2002B7B35 /* Default@2x.png */,
@@ -707,6 +732,12 @@
 				D2CAA31012E0A67C00ECA54B /* PhotoItem.m */,
 				D20DB94D12E45C7500C9975C /* PhotoResponse.h */,
 				D20DB94E12E45C7500C9975C /* PhotoResponse.m */,
+				D2480B3B133292A200E0F299 /* Tweet.h */,
+				D2480B3C133292A200E0F299 /* Tweet.m */,
+				D2480B3E1332974700E0F299 /* TwitterModel.h */,
+				D2480B3F1332974700E0F299 /* TwitterModel.m */,
+				D2480B4113329A3F00E0F299 /* TwitterDataSource.h */,
+				D2480B4213329A4000E0F299 /* TwitterDataSource.m */,
 			);
 			name = Feeds;
 			sourceTree = "<group>";
@@ -732,7 +763,6 @@
 		D2E5EFC112DDB86300DD7B82 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
-				D20B8B5A133144B800277A38 /* Three20.bundle */,
 			);
 			name = Bundles;
 			sourceTree = "<group>";
@@ -1053,7 +1083,12 @@
 				D2D95782130048FC002B7B35 /* Pictures@2x.png in Resources */,
 				D2D95783130048FC002B7B35 /* Releases@2x.png in Resources */,
 				D2D95784130048FC002B7B35 /* Videos@2x.png in Resources */,
-				D20B8B5B133144B800277A38 /* Three20.bundle in Resources */,
+				D2D60A2913328D4F00198974 /* Icon-72.png in Resources */,
+				D2D60A2A13328D4F00198974 /* Icon-Small-50.png in Resources */,
+				D2D60A2B13328D4F00198974 /* Icon-Small.png in Resources */,
+				D2D60A2C13328D4F00198974 /* Icon-Small@2x.png in Resources */,
+				D2D60A2D13328D4F00198974 /* Icon@2x.png in Resources */,
+				D2D60A2F13328EC400198974 /* Three20.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1095,6 +1130,9 @@
 				D214371512FB026F003D068D /* Reachability.m in Sources */,
 				D24551A9131FB76A00B24177 /* iRate.m in Sources */,
 				D20B8B5E1331529700277A38 /* TwitterView.m in Sources */,
+				D2480B3D133292A200E0F299 /* Tweet.m in Sources */,
+				D2480B401332974700E0F299 /* TwitterModel.m in Sources */,
+				D2480B4313329A4000E0F299 /* TwitterDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
