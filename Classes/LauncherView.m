@@ -158,7 +158,6 @@
 	if ((commonData.internetReachable == NO) && (item.URL == @"tt://streamer")) {
 		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Network Error" message:@"Sorry, this feature requires an active internet connection. Please reconnect and try again." delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
         [alert show];
-		[alert release];
 	} else {
 		[[TTNavigator navigator] openURLAction:[[TTURLAction actionWithURLPath:item.URL] applyAnimated:YES]];
 	}

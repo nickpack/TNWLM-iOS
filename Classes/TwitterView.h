@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 
 
-@interface TwitterView : TTTableViewController {
-    
+@interface TwitterView : TTTableViewController<TTTabDelegate> {
+    TTTabBar* _memberTabs;
 }
 
 @end

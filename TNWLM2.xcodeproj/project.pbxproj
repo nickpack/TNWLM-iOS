@@ -13,7 +13,6 @@
 		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
 		28C3AD8A0F43EF2300507BA6 /* TNWLM2.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 28C3AD890F43EF2300507BA6 /* TNWLM2.xcdatamodel */; };
 		28D801B40F44B63D00FB423F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28D801B30F44B63D00FB423F /* CoreData.framework */; };
-		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
 		D20B8B5E1331529700277A38 /* TwitterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D20B8B5D1331529700277A38 /* TwitterView.m */; };
 		D20DB94F12E45C7500C9975C /* PhotoResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = D20DB94E12E45C7500C9975C /* PhotoResponse.m */; };
 		D214371512FB026F003D068D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D214371412FB026F003D068D /* Reachability.m */; };
@@ -103,6 +102,7 @@
 		D2EDFF0C12D112EF00C62319 /* nursecd2004.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0412D112EF00C62319 /* nursecd2004.png */; };
 		D2EDFF0E12D112EF00C62319 /* vandalattack.png in Resources */ = {isa = PBXBuildFile; fileRef = D2EDFF0612D112EF00C62319 /* vandalattack.png */; };
 		D2F0E4111253909F007B48CA /* NPStyles.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F0E4101253909F007B48CA /* NPStyles.m */; };
+		D2FCC1271337E03A0029EDC9 /* libextThree20JSON+SBJSON.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D2FCC1261337E03A0029EDC9 /* libextThree20JSON+SBJSON.a */; };
 		EB383C0610BBF8A40000B2D2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EB383C0510BBF8A40000B2D2 /* AppDelegate.m */; };
 		EB383C1410BBF8C70000B2D2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -297,6 +297,34 @@
 			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
 			remoteInfo = extThree20XMLUnitTests;
 		};
+		D2FCC1191337DFA40029EDC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = "extThree20JSON+SBJSON";
+		};
+		D2FCC11B1337DFA40029EDC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6E645BD91187751200F08CB1;
+			remoteInfo = "extThree20JSON+YAJL";
+		};
+		D2FCC11D1337DFA40029EDC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = "extThree20JSONUnitTests+SBJSON";
+		};
+		D2FCC1241337E02F0029EDC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = "extThree20JSON+SBJSON";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -307,7 +335,6 @@
 		28C3AD890F43EF2300507BA6 /* TNWLM2.xcdatamodel */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = wrapper.xcdatamodel; path = TNWLM2.xcdatamodel; sourceTree = "<group>"; };
 		28D801B30F44B63D00FB423F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDK_ROOT; };
 		32CA4F630368D1EE00C91783 /* TNWLM2_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TNWLM2_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TNWLM2-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TNWLM2-Info.plist"; sourceTree = "<group>"; };
 		D20B8B5C1331529600277A38 /* TwitterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwitterView.h; sourceTree = "<group>"; };
@@ -431,6 +458,8 @@
 		D2EDFF0612D112EF00C62319 /* vandalattack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vandalattack.png; sourceTree = "<group>"; };
 		D2F0E40F1253909F007B48CA /* NPStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NPStyles.h; sourceTree = "<group>"; };
 		D2F0E4101253909F007B48CA /* NPStyles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NPStyles.m; sourceTree = "<group>"; };
+		D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = extThree20JSON.xcodeproj; path = ../three20/src/extThree20JSON/extThree20JSON.xcodeproj; sourceTree = "<group>"; };
+		D2FCC1261337E03A0029EDC9 /* libextThree20JSON+SBJSON.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; name = "libextThree20JSON+SBJSON.a"; path = "/Users/packn/appdev/Xcode/three20/Build/Products/Debug-iphoneos/libextThree20JSON+SBJSON.a"; sourceTree = "<absolute>"; };
 		EB383C0410BBF8A40000B2D2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		EB383C0510BBF8A40000B2D2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		EB383C1310BBF8C70000B2D2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -441,7 +470,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */,
+				D2FCC1271337E03A0029EDC9 /* libextThree20JSON+SBJSON.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -490,6 +519,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				D2FCC1261337E03A0029EDC9 /* libextThree20JSON+SBJSON.a */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -545,7 +575,6 @@
 				D2CB4FA812536B0B001A31CA /* AudioToolbox.framework */,
 				D2CB4FAA12536B0B001A31CA /* CFNetwork.framework */,
 				D2CB4FAC12536B0B001A31CA /* MediaPlayer.framework */,
-				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
 				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
 				1D30AB110D05D00D00671497 /* Foundation.framework */,
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
@@ -569,6 +598,7 @@
 				D225668512608F4B001F97E1 /* SynthesizeSingleton.h */,
 				D2CB4F7012536AAA001A31CA /* AudioStreamer.h */,
 				D2CB4F7112536AAA001A31CA /* AudioStreamer.m */,
+				D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */,
 				D2D2239212C38D0000CC6E04 /* extThree20XML.xcodeproj */,
 				D2D2231412C38BA500CC6E04 /* Three20Core.xcodeproj */,
 				D2D2231712C38BA500CC6E04 /* Three20Network.xcodeproj */,
@@ -817,6 +847,16 @@
 			name = "Audio Player";
 			sourceTree = "<group>";
 		};
+		D2FCC10F1337DFA30029EDC9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2FCC11A1337DFA40029EDC9 /* libextThree20JSON+SBJSON.a */,
+				D2FCC11C1337DFA40029EDC9 /* libextThree20JSON+YAJL.a */,
+				D2FCC11E1337DFA40029EDC9 /* extJSONUnitTests+SBJSON.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -831,6 +871,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D2FCC1251337E02F0029EDC9 /* PBXTargetDependency */,
 				D276233712C3423100AFA9DE /* PBXTargetDependency */,
 				D2AE7F6A131F9760009665A7 /* PBXTargetDependency */,
 				D2AE7F6C131F9760009665A7 /* PBXTargetDependency */,
@@ -867,6 +908,10 @@
 			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = D2FCC10F1337DFA30029EDC9 /* Products */;
+					ProjectRef = D2FCC10E1337DFA30029EDC9 /* extThree20JSON.xcodeproj */;
+				},
 				{
 					ProductGroup = D2D2239312C38D0000CC6E04 /* Products */;
 					ProjectRef = D2D2239212C38D0000CC6E04 /* extThree20XML.xcodeproj */;
@@ -1038,6 +1083,27 @@
 			remoteRef = D2D223A212C38D0000CC6E04 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		D2FCC11A1337DFA40029EDC9 /* libextThree20JSON+SBJSON.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+SBJSON.a";
+			remoteRef = D2FCC1191337DFA40029EDC9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2FCC11C1337DFA40029EDC9 /* libextThree20JSON+YAJL.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libextThree20JSON+YAJL.a";
+			remoteRef = D2FCC11B1337DFA40029EDC9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D2FCC11E1337DFA40029EDC9 /* extJSONUnitTests+SBJSON.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "extJSONUnitTests+SBJSON.octest";
+			remoteRef = D2FCC11D1337DFA40029EDC9 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -1184,6 +1250,11 @@
 			name = extThree20XML;
 			targetProxy = D2AE7F77131F9760009665A7 /* PBXContainerItemProxy */;
 		};
+		D2FCC1251337E02F0029EDC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "extThree20JSON+SBJSON";
+			targetProxy = D2FCC1241337E02F0029EDC9 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -1212,7 +1283,10 @@
 				INFOPLIST_FILE = "TNWLM2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_MAP_FILE_PATH = "";
-				LIBRARY_SEARCH_PATHS = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib,
+					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphoneos\"",
+				);
 				OBJROOT = Build;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
@@ -1252,7 +1326,10 @@
 				INFOPLIST_FILE = "TNWLM2-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1.3;
 				LD_MAP_FILE_PATH = "";
-				LIBRARY_SEARCH_PATHS = /usr/lib;
+				LIBRARY_SEARCH_PATHS = (
+					/usr/lib,
+					"\"$(SRCROOT)/../three20/Build/Products/Debug-iphoneos\"",
+				);
 				OBJROOT = Build;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (

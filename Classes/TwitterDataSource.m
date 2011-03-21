@@ -43,14 +43,14 @@
     NSMutableArray* items = [[NSMutableArray alloc] init];
     
     for (Tweet* tweet in _searchFeedModel.tweets) {
-        //TTDPRINT(@"Response text: %@", response.text);
         TTStyledText* styledText = [TTStyledText textFromXHTML:
-                                    [NSString stringWithFormat:@"%@\n<b>%@</b>",
+                                    [NSString stringWithFormat:@"%@\n<b>%@</b> from %@",
                                      [[tweet.text stringByReplacingOccurrencesOfString:@"&"
                                                                             withString:@"&amp;"]
                                       stringByReplacingOccurrencesOfString:@"<"
                                       withString:@"&lt;"],
-                                     [tweet.created formatRelativeTime]]
+                                     [tweet.created formatRelativeTime],
+                                     tweet.source]
                                                     lineBreaks:YES URLs:YES];
         // If this asserts, it's likely that the tweet.text contains an HTML character that caused
         // the XML parser to fail.
@@ -59,7 +59,7 @@
     }
     
     if (!_searchFeedModel.finished) {
-        [items addObject:[TTTableMoreButton itemWithText:@"more…"]];
+        [items addObject:[TTTableMoreButton itemWithText:@"More Tweets…"]];
     }
     
     self.items = items;

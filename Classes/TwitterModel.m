@@ -8,10 +8,10 @@
 
 #import "TwitterModel.h"
 #import "Tweet.h"
-#import "extThree20XML/extThree20XML.h"
+#import "extThree20JSON/extThree20JSON.h"
 
 static NSString* kTwitterSearchFeedFormat =
-@"https://api.twitter.com/1/statuses/user_timeline.xml?screen_name=%@&count=%u&page=%u";
+@"https://api.twitter.com/1/statuses/user_timeline.json?screen_name=%@&count=%u&page=%u";
 
 @implementation TwitterModel
 
@@ -62,8 +62,8 @@ static NSString* kTwitterSearchFeedFormat =
         request.cachePolicy = cachePolicy;
         //request.cacheExpirationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
         
-        TTURLXMLResponse* response = [[TTURLXMLResponse alloc] init];
-		response.isRssFeed = YES;
+        TTURLJSONResponse* response = [[TTURLJSONResponse alloc] init];
+		//response.isRssFeed = YES;
         request.response = response;
         TT_RELEASE_SAFELY(response);
         
@@ -74,30 +74,30 @@ static NSString* kTwitterSearchFeedFormat =
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
-    TTURLXMLResponse* response = request.response;
+    TTURLJSONResponse* response = request.response;
     TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
     
     NSDictionary* feed = response.rootObject;
-    TTDASSERT([[feed objectForKey:@"contributers"] isKindOfClass:[NSArray class]]);
+    /*TTDASSERT([[feed objectForKey:@"contributers"] isKindOfClass:[NSArray class]]);
     
     NSArray* entries = [feed objectForKey:@"contributers"];
-    NSLog(@"%@",[feed objectForKey:@"contributers"]);
+    NSLog(@"%@",[feed objectForKey:@"contributers"]);*/
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
-    [dateFormatter setDateFormat:@"EEE, dd MMMM yyyy HH:mm:ss ZZ"];
+    [dateFormatter setDateFormat:@"eee MMM dd HH:mm:ss ZZZZ yyyy"];
     
-    NSMutableArray* tweets = [NSMutableArray arrayWithCapacity:[entries count]];
+    NSMutableArray* tweets = [NSMutableArray arrayWithCapacity:[feed count]];
     
-    for (NSDictionary* entry in entries) {
+    for (NSDictionary* entry in feed) {
         Tweet* tweet = [[Tweet alloc] init];
         
         NSDate* date = [dateFormatter dateFromString:[entry objectForKey:@"created_at"]];
+        NSLog(@"%@",date);
         tweet.created = date;
         tweet.tweetId = [NSNumber numberWithLongLong:
                          [[entry objectForKey:@"id"] longLongValue]];
         tweet.text = [entry objectForKey:@"text"];
         tweet.source = [entry objectForKey:@"source"];
-        
         [tweets addObject:tweet];
         TT_RELEASE_SAFELY(tweet);
     }

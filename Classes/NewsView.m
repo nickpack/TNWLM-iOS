@@ -38,5 +38,27 @@
 	return YES;
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForLoading:(BOOL)reloading {
+    if (reloading) {
+        return NSLocalizedString(@"Updating News feed...", @"News feed updating text");
+    } else {
+        return NSLocalizedString(@"Loading News feed...", @"News feed loading text");
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForEmpty {
+    return NSLocalizedString(@"No news articles found.", @"News feed no results");
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)subtitleForError:(NSError*)error {
+    return NSLocalizedString(@"Sorry, there was an error loading the News feed.", @"");
+}
+
+
 @end
 
