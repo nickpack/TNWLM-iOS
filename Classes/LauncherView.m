@@ -74,7 +74,14 @@
 
 - (void)restorePages:(BOOL)forceReset {
 	NSData *pages = nil;
-
+    /* I dont like having to do this, but given that I didnt allow for it, I'm gonna have to 
+     * Later this will obviously need to be a version check later on
+     */
+    if ([[NSUserDefaults standardUserDefaults] objectForKey:@"Version"] == nil) {
+        [[NSUserDefaults standardUserDefaults] setObject:@"2.1" forKey:@"Version"];
+        forceReset = YES;
+    }
+    
 	if (!forceReset) {
 		pages = [[NSUserDefaults standardUserDefaults] objectForKey:@"launcher.pages"];
 	}
@@ -88,7 +95,7 @@
 										   image:@"bundle://News.png"
 											 URL:@"tt://news" canDelete:YES] autorelease],
           [[[TTLauncherItem alloc] initWithTitle:@"Twitter"
-										   image:@"bundle://News.png"
+										   image:@"bundle://Twitter.png"
 											 URL:@"tt://twitter" canDelete:YES] autorelease],
 		  [[[TTLauncherItem alloc] initWithTitle:@"Listen"
 										   image:@"bundle://Listen.png"
@@ -177,6 +184,10 @@
 	[self.navigationItem setRightBarButtonItem:nil animated:YES];
 	NSData *pages = [NSKeyedArchiver archivedDataWithRootObject:_launcherView.pages];
 	[[NSUserDefaults standardUserDefaults] setObject:pages forKey:@"launcher.pages"];
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
 }
 
 @end

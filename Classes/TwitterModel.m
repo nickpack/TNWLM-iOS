@@ -43,7 +43,7 @@ static NSString* kTwitterSearchFeedFormat =
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)load:(TTURLRequestCachePolicy)cachePolicy more:(BOOL)more {
-    if (!self.isLoading && TTIsStringWithAnyText(_searchQuery)) {
+    if (!self.isLoading && TTIsStringWithAnyText(_username)) {
         if (more) {
             _page++;
         }
@@ -72,7 +72,7 @@ static NSString* kTwitterSearchFeedFormat =
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)requestDidFinishLoad:(TTURLRequest*)request {
     TTURLJSONResponse* response = request.response;
-    TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
+    //TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
     
     NSDictionary* feed = response.rootObject;
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];

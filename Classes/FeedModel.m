@@ -34,7 +34,8 @@
 		TTURLRequest* request = [TTURLRequest
 								 requestWithURL: self.feedUrl
 								 delegate: self];
-
+        request.cachePolicy = cachePolicy;
+        
 		TTURLXMLResponse* response = [[TTURLXMLResponse alloc] init];
 		response.isRssFeed = YES;
 		request.response = response;

@@ -107,11 +107,11 @@
         NetworkStatus netStatus = [curReach currentReachabilityStatus];
 		commonData.internetReachable = (netStatus != NotReachable);
 
-		if (commonData.internetReachable == NO) {
+		/*if (commonData.internetReachable == NO) {
 			[TTURLCache sharedCache].invalidationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
 		} else {
 			[TTURLCache sharedCache].invalidationAge = TT_DEFAULT_CACHE_EXPIRATION_AGE;
-		}
+		}*/
 	}
 }
 

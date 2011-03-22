@@ -9,7 +9,7 @@
 #import "TwitterDataSource.h"
 #import "TwitterModel.h"
 #import "Tweet.h"
-
+#import "RegexKitLite.h"
 #import <Three20Core/NSDateAdditions.h>
 
 @implementation TwitterDataSource
@@ -41,17 +41,49 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
     NSMutableArray* items = [[NSMutableArray alloc] init];
+    TTStyle* style =
+	[TTShapeStyle styleWithShape:[TTRectangleShape shape] next:
+	 [TTSolidBorderStyle styleWithColor:[UIColor colorWithWhite:0.86 alpha:1]
+								  width:1 next:
+	  [TTInsetStyle styleWithInset:UIEdgeInsetsMake(2, 2, 2, 2) next:
+	   [TTContentStyle styleWithNext:
+        [TTImageStyle styleWithImageURL:nil
+						   defaultImage:nil
+							contentMode:UIViewContentModeScaleAspectFill
+								   size:CGSizeMake(50, 50) next:nil]]]]];
+    
+    if(_twitterFeedModel.username == @"steve_weston") {
+        [items addObject:[TTTableImageItem itemWithText: @"@steve_weston"
+                          imageURL: @"http://app.thenursewholovedme.com/steveweston.jpg"
+                      defaultImage: TTIMAGE(@"bundle://bio-head.png")
+                        imageStyle: style
+                               URL: @"http://twitter.com/steve_weston"]];
+    } else if (_twitterFeedModel.username == @"meatarm") {
+        [items addObject:[TTTableImageItem itemWithText: @"@meatarm"
+                                               imageURL: @"http://app.thenursewholovedme.com/meatarm.jpg"
+                                           defaultImage: TTIMAGE(@"bundle://bio-head.png")
+                                             imageStyle: style
+                                                    URL: @"http://twitter.com/meatarm"]];
+    } else {
+        [items addObject:[TTTableImageItem itemWithText: @"@tnwlm"
+                                               imageURL: @"fail"
+                                           defaultImage: TTIMAGE(@"bundle://bio-head.png")
+                                             imageStyle: style
+                                                    URL: @"http://twitter.com/tnwlm"]];
+    }
     
     for (Tweet* tweet in _twitterFeedModel.tweets) {
+              
+        tweet.text = [[tweet.text stringByReplacingOccurrencesOfRegex:@"(\\A|\\s)@(\\w+)" withString:@" <a href=\"http://www.twitter.com/$2\">@$2</a>"] 
+                                  stringByReplacingOccurrencesOfRegex:@"(\\A|\\s)#(\\w+)" withString:@" <a href=\"http://search.twitter.com/search?q=$2\">$2</a>"];
+        
         TTStyledText* styledText = [TTStyledText textFromXHTML:
                                     [NSString stringWithFormat:@"%@\n<b>%@</b> from %@",
-                                     [[tweet.text stringByReplacingOccurrencesOfString:@"&"
-                                                                            withString:@"&amp;"]
-                                      stringByReplacingOccurrencesOfString:@"<"
-                                      withString:@"&lt;"],
+                                     [tweet.text stringByReplacingOccurrencesOfString:@"&"
+                                                                            withString:@"&amp;"],
                                      [tweet.created formatRelativeTime],
                                      tweet.source]
-                                                    lineBreaks:YES URLs:YES];
+                                                    lineBreaks:YES URLs:NO];
         // If this asserts, it's likely that the tweet.text contains an HTML character that caused
         // the XML parser to fail.
         TTDASSERT(nil != styledText);

@@ -44,7 +44,6 @@
 
 - (void)tabBar:(TTTabBar*)tabBar tabSelected:(NSInteger)selectedIndex
 {
-	NSLog(@"Selected Tab: %i",selectedIndex);
 	if(selectedIndex == 0) {
 		self.dataSource = self.bandBio;
 	} else if(selectedIndex == 1) {

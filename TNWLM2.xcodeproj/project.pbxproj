@@ -33,6 +33,9 @@
 		D2480B4313329A4000E0F299 /* TwitterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2480B4213329A4000E0F299 /* TwitterDataSource.m */; };
 		D2494A2F12CD36E80089FC79 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */; };
 		D24E051412FB495D003BE2C3 /* bio-head.png in Resources */ = {isa = PBXBuildFile; fileRef = D24E051312FB495C003BE2C3 /* bio-head.png */; };
+		D266C36A1339263A003E99EF /* Twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = D266C3681339263A003E99EF /* Twitter.png */; };
+		D266C36B1339263A003E99EF /* Twitter@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D266C3691339263A003E99EF /* Twitter@2x.png */; };
+		D266C36D13392B0D003E99EF /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D266C36C13392B0D003E99EF /* Three20.bundle */; };
 		D276233512C3421D00AFA9DE /* libTapkuLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D276233212C3421A00AFA9DE /* libTapkuLibrary.a */; };
 		D27623A312C3426D00AFA9DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27623A212C3426D00AFA9DE /* MapKit.framework */; };
 		D27623AB12C342D600AFA9DE /* ReleasesView.m in Sources */ = {isa = PBXBuildFile; fileRef = D27623AA12C342D600AFA9DE /* ReleasesView.m */; };
@@ -78,7 +81,6 @@
 		D2D60A2B13328D4F00198974 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2613328D4F00198974 /* Icon-Small.png */; };
 		D2D60A2C13328D4F00198974 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2713328D4F00198974 /* Icon-Small@2x.png */; };
 		D2D60A2D13328D4F00198974 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2813328D4F00198974 /* Icon@2x.png */; };
-		D2D60A2F13328EC400198974 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2D60A2E13328EC400198974 /* Three20.bundle */; };
 		D2D6D75E12CA79900039776B /* MembersView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D75D12CA79900039776B /* MembersView.m */; };
 		D2D6D78912CA7FBF0039776B /* VideoDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78812CA7FBF0039776B /* VideoDataSource.m */; };
 		D2D6D78C12CA818A0039776B /* VideosView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2D6D78B12CA818A0039776B /* VideosView.m */; };
@@ -368,6 +370,9 @@
 		D2480B4213329A4000E0F299 /* TwitterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwitterDataSource.m; sourceTree = "<group>"; };
 		D2494A2E12CD36E80089FC79 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D24E051312FB495C003BE2C3 /* bio-head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bio-head.png"; sourceTree = "<group>"; };
+		D266C3681339263A003E99EF /* Twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Twitter.png; sourceTree = "<group>"; };
+		D266C3691339263A003E99EF /* Twitter@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Twitter@2x.png"; sourceTree = "<group>"; };
+		D266C36C13392B0D003E99EF /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../three20/src/Three20.bundle; sourceTree = "<group>"; };
 		D276232912C3421A00AFA9DE /* TapkuLibrary.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TapkuLibrary.xcodeproj; path = ../tapkulibrary/src/TapkuLibrary.xcodeproj; sourceTree = SOURCE_ROOT; };
 		D27623A212C3426D00AFA9DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		D27623A912C342D600AFA9DE /* ReleasesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReleasesView.h; sourceTree = "<group>"; };
@@ -428,7 +433,6 @@
 		D2D60A2613328D4F00198974 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
 		D2D60A2713328D4F00198974 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		D2D60A2813328D4F00198974 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		D2D60A2E13328EC400198974 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Three20.bundle; sourceTree = "<group>"; };
 		D2D6D75C12CA79900039776B /* MembersView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MembersView.h; sourceTree = "<group>"; };
 		D2D6D75D12CA79900039776B /* MembersView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MembersView.m; sourceTree = "<group>"; };
 		D2D6D78712CA7FBF0039776B /* VideoDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoDataSource.h; sourceTree = "<group>"; };
@@ -544,7 +548,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D2D60A2E13328EC400198974 /* Three20.bundle */,
+				D266C3681339263A003E99EF /* Twitter.png */,
+				D266C3691339263A003E99EF /* Twitter@2x.png */,
 				D2D60A2413328D4F00198974 /* Icon-72.png */,
 				D2D60A2513328D4F00198974 /* Icon-Small-50.png */,
 				D2D60A2613328D4F00198974 /* Icon-Small.png */,
@@ -793,6 +798,7 @@
 		D2E5EFC112DDB86300DD7B82 /* Bundles */ = {
 			isa = PBXGroup;
 			children = (
+				D266C36C13392B0D003E99EF /* Three20.bundle */,
 			);
 			name = Bundles;
 			sourceTree = "<group>";
@@ -1154,7 +1160,9 @@
 				D2D60A2B13328D4F00198974 /* Icon-Small.png in Resources */,
 				D2D60A2C13328D4F00198974 /* Icon-Small@2x.png in Resources */,
 				D2D60A2D13328D4F00198974 /* Icon@2x.png in Resources */,
-				D2D60A2F13328EC400198974 /* Three20.bundle in Resources */,
+				D266C36A1339263A003E99EF /* Twitter.png in Resources */,
+				D266C36B1339263A003E99EF /* Twitter@2x.png in Resources */,
+				D266C36D13392B0D003E99EF /* Three20.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

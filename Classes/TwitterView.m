@@ -14,15 +14,15 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
-        self.title = @"Twitter feed";
+        self.title = @"Twitter Feeds";
         self.variableHeightRows = YES;
         
         CGRect applicationFrame = [UIScreen mainScreen].applicationFrame;
         _memberTabs = [[TTTabBar alloc] initWithFrame:CGRectMake(0, _memberTabs.bottom, applicationFrame.size.width, 40)];
         _memberTabs.tabItems = [NSArray arrayWithObjects:
-                                [[[TTTabItem alloc] initWithTitle:@"@tnwlm"] autorelease],
-                                [[[TTTabItem alloc] initWithTitle:@"@steve_weston"] autorelease],
-                                [[[TTTabItem alloc] initWithTitle:@"@meatarm"] autorelease],
+                                [[[TTTabItem alloc] initWithTitle:@"Band"] autorelease],
+                                [[[TTTabItem alloc] initWithTitle:@"Steve"] autorelease],
+                                [[[TTTabItem alloc] initWithTitle:@"Lee"] autorelease],
                                 nil];
         _memberTabs.delegate = self;
         _memberTabs.contentMode = UIViewContentModeScaleToFill;
@@ -59,6 +59,14 @@
 		self.dataSource = [[[TwitterDataSource alloc]
                             initWithUsername:@"meatarm"] autorelease];
 	}    
+}
+
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+	return YES;
+}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
+	[self.tableView reloadRowsAtIndexPaths:[self.tableView indexPathsForVisibleRows] withRowAnimation:UITableViewRowAnimationNone];	
 }
 
 -(void) dealloc {
