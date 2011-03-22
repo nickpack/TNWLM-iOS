@@ -13,7 +13,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+    if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
         self.title = @"Twitter feed";
         self.variableHeightRows = YES;
         
@@ -37,7 +37,7 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)createModel {
     self.dataSource = [[[TwitterDataSource alloc]
-                        initWithSearchQuery:@"tnwlm"] autorelease];
+                        initWithUsername:@"tnwlm"] autorelease];
 }
 
 
@@ -51,13 +51,13 @@
 	[self invalidateModel];
     if(selectedIndex == 0) {
 		self.dataSource = [[[TwitterDataSource alloc]
-                            initWithSearchQuery:@"tnwlm"] autorelease];
+                            initWithUsername:@"tnwlm"] autorelease];
 	} else if(selectedIndex == 1) {
 		self.dataSource = [[[TwitterDataSource alloc]
-                            initWithSearchQuery:@"steve_weston"] autorelease];
+                            initWithUsername:@"steve_weston"] autorelease];
 	} else {
 		self.dataSource = [[[TwitterDataSource alloc]
-                            initWithSearchQuery:@"meatarm"] autorelease];
+                            initWithUsername:@"meatarm"] autorelease];
 	}    
 }
 

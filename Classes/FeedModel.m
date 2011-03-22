@@ -16,7 +16,7 @@
 @synthesize items = _items;
 
 - (id)initWithFeedUrl:(NSString*)feedUrl {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		self.feedUrl = feedUrl;
 	}
 	return self;
@@ -35,8 +35,6 @@
 								 requestWithURL: self.feedUrl
 								 delegate: self];
 
-		request.cachePolicy = TTURLRequestCachePolicyDisk;
-		
 		TTURLXMLResponse* response = [[TTURLXMLResponse alloc] init];
 		response.isRssFeed = YES;
 		request.response = response;

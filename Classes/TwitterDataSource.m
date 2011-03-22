@@ -15,9 +15,9 @@
 @implementation TwitterDataSource
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (id)initWithSearchQuery:(NSString*)searchQuery {
-    if (self = [super init]) {
-        _searchFeedModel = [[TwitterModel alloc] initWithSearchQuery:searchQuery];
+- (id)initWithUsername:(NSString*)username {
+    if ((self = [super init])) {
+        _twitterFeedModel = [[TwitterModel alloc] initWithUsername:username];
     }
     
     return self;
@@ -26,7 +26,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void)dealloc {
-    TT_RELEASE_SAFELY(_searchFeedModel);
+    TT_RELEASE_SAFELY(_twitterFeedModel);
     
     [super dealloc];
 }
@@ -34,7 +34,7 @@
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id<TTModel>)model {
-    return _searchFeedModel;
+    return _twitterFeedModel;
 }
 
 
@@ -42,7 +42,7 @@
 - (void)tableViewDidLoadModel:(UITableView*)tableView {
     NSMutableArray* items = [[NSMutableArray alloc] init];
     
-    for (Tweet* tweet in _searchFeedModel.tweets) {
+    for (Tweet* tweet in _twitterFeedModel.tweets) {
         TTStyledText* styledText = [TTStyledText textFromXHTML:
                                     [NSString stringWithFormat:@"%@\n<b>%@</b> from %@",
                                      [[tweet.text stringByReplacingOccurrencesOfString:@"&"
@@ -58,7 +58,7 @@
         [items addObject:[TTTableStyledTextItem itemWithText:styledText]];
     }
     
-    if (!_searchFeedModel.finished) {
+    if (!_twitterFeedModel.finished) {
         [items addObject:[TTTableMoreButton itemWithText:@"More Tweets…"]];
     }
     

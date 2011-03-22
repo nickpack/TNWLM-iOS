@@ -15,15 +15,15 @@ static NSString* kTwitterSearchFeedFormat =
 
 @implementation TwitterModel
 
-@synthesize searchQuery     = _searchQuery;
+@synthesize username     = _username;
 @synthesize tweets          = _tweets;
 @synthesize resultsPerPage  = _resultsPerPage;
 @synthesize finished        = _finished;
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-- (id)initWithSearchQuery:(NSString*)searchQuery {
+- (id)initWithUsername:(NSString*)username {
     if (self = [super init]) {
-        self.searchQuery = searchQuery;
+        self.username = username;
         _resultsPerPage = 10;
         _page = 1;
         _tweets = [[NSMutableArray array] retain];
@@ -35,7 +35,7 @@ static NSString* kTwitterSearchFeedFormat =
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (void) dealloc {
-    TT_RELEASE_SAFELY(_searchQuery);
+    TT_RELEASE_SAFELY(_username);
     TT_RELEASE_SAFELY(_tweets);
     [super dealloc];
 }
@@ -53,17 +53,14 @@ static NSString* kTwitterSearchFeedFormat =
             [_tweets removeAllObjects];
         }
         
-        NSString* url = [NSString stringWithFormat:kTwitterSearchFeedFormat, _searchQuery, _resultsPerPage, _page];
-        NSLog(@"%@",url);
+        NSString* url = [NSString stringWithFormat:kTwitterSearchFeedFormat, _username, _resultsPerPage, _page];
         TTURLRequest* request = [TTURLRequest
                                  requestWithURL: url
                                  delegate: self];
         
         request.cachePolicy = cachePolicy;
-        //request.cacheExpirationAge = TT_CACHE_EXPIRATION_AGE_NEVER;
         
         TTURLJSONResponse* response = [[TTURLJSONResponse alloc] init];
-		//response.isRssFeed = YES;
         request.response = response;
         TT_RELEASE_SAFELY(response);
         
@@ -78,10 +75,6 @@ static NSString* kTwitterSearchFeedFormat =
     TTDASSERT([response.rootObject isKindOfClass:[NSDictionary class]]);
     
     NSDictionary* feed = response.rootObject;
-    /*TTDASSERT([[feed objectForKey:@"contributers"] isKindOfClass:[NSArray class]]);
-    
-    NSArray* entries = [feed objectForKey:@"contributers"];
-    NSLog(@"%@",[feed objectForKey:@"contributers"]);*/
     NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setTimeStyle:NSDateFormatterFullStyle];
     [dateFormatter setDateFormat:@"eee MMM dd HH:mm:ss ZZZZ yyyy"];
@@ -92,7 +85,6 @@ static NSString* kTwitterSearchFeedFormat =
         Tweet* tweet = [[Tweet alloc] init];
         
         NSDate* date = [dateFormatter dateFromString:[entry objectForKey:@"created_at"]];
-        NSLog(@"%@",date);
         tweet.created = date;
         tweet.tweetId = [NSNumber numberWithLongLong:
                          [[entry objectForKey:@"id"] longLongValue]];

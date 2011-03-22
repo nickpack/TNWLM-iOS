@@ -9,9 +9,9 @@
 @class TwitterModel;
 
 @interface TwitterDataSource : TTListDataSource {
-    TwitterModel* _searchFeedModel;
+    TwitterModel* _twitterFeedModel;
 }
 
-- (id)initWithSearchQuery:(NSString*)searchQuery;
+- (id)initWithUsername:(NSString*)username;
 
 @end

@@ -10,7 +10,7 @@
 
 
 @interface TwitterModel : TTURLRequestModel {
-    NSString* _searchQuery;
+    NSString* _username;
     NSMutableArray*  _tweets;
     
     NSUInteger _page;             // page of search request
@@ -19,11 +19,11 @@
     BOOL _finished;
 }
 
-@property (nonatomic, copy)     NSString*       searchQuery;
+@property (nonatomic, copy)     NSString*       username;
 @property (nonatomic, readonly) NSMutableArray* tweets;
 @property (nonatomic, assign)   NSUInteger      resultsPerPage;
 @property (nonatomic, readonly) BOOL            finished;
 
-- (id)initWithSearchQuery:(NSString*)searchQuery;
+- (id)initWithUsername:(NSString*)username;
 
 @end
