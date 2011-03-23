@@ -16,7 +16,7 @@
 @implementation NewsDataSource
 
 - (id)initWithFeedUrl:(NSString*)feedUrl {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		_feedModel = [[FeedModel alloc] initWithFeedUrl:feedUrl];
 	}
 
@@ -72,5 +72,27 @@
 
 	TT_RELEASE_SAFELY(items);
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForLoading:(BOOL)reloading {
+    if (reloading) {
+        return NSLocalizedString(@"Updating News Feed...", @"News feed updating text");
+    } else {
+        return NSLocalizedString(@"Loading News Feed...", @"News feed loading text");
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForEmpty {
+    return NSLocalizedString(@"No news articles found.", @"News feed no results");
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)subtitleForError:(NSError*)error {
+    return NSLocalizedString(@"Sorry, there was an error loading the News Feed.", @"");
+}
+
 
 @end

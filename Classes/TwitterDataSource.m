@@ -102,9 +102,9 @@
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (NSString*)titleForLoading:(BOOL)reloading {
     if (reloading) {
-        return NSLocalizedString(@"Updating Twitter feed...", @"Twitter feed updating text");
+        return NSLocalizedString(@"Updating Twitter Feed...", @"Twitter feed updating text");
     } else {
-        return NSLocalizedString(@"Loading Twitter feed...", @"Twitter feed loading text");
+        return NSLocalizedString(@"Loading Twitter Feed...", @"Twitter feed loading text");
     }
 }
 

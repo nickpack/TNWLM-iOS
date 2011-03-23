@@ -30,6 +30,28 @@
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForLoading:(BOOL)reloading {
+    if (reloading) {
+        return NSLocalizedString(@"Updating Photos...", @"Photos feed updating text");
+    } else {
+        return NSLocalizedString(@"Loading  Photos...", @"Photos feed loading text");
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForEmpty {
+    return NSLocalizedString(@"No photos found.", @"Photos feed no results");
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)subtitleForError:(NSError*)error {
+    return NSLocalizedString(@"Sorry, there was an error loading the photo stream.", @"");
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
 // TTPhotoSource
 
 - (NSInteger)numberOfPhotos {

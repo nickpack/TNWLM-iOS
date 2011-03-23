@@ -22,7 +22,7 @@ static NSString* kTwitterSearchFeedFormat =
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (id)initWithUsername:(NSString*)username {
-    if (self = [super init]) {
+    if ((self = [super init])) {
         self.username = username;
         _resultsPerPage = 10;
         _page = 1;
@@ -59,6 +59,7 @@ static NSString* kTwitterSearchFeedFormat =
                                  delegate: self];
         
         request.cachePolicy = cachePolicy;
+        request.cacheExpirationAge = 1;
         
         TTURLJSONResponse* response = [[TTURLJSONResponse alloc] init];
         request.response = response;

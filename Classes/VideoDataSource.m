@@ -17,7 +17,7 @@
 @implementation VideoDataSource
 
 - (id)initWithFeedUrl:(NSString*)feedUrl {
-	if (self = [super init]) {
+	if ((self = [super init])) {
 		_feedModel = [[FeedModel alloc] initWithFeedUrl:feedUrl];
 	}
 	return self;
@@ -51,5 +51,27 @@
 	self.items = items;
 	TT_RELEASE_SAFELY(items);
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForLoading:(BOOL)reloading {
+    if (reloading) {
+        return NSLocalizedString(@"Updating Videos List...", @"Video feed updating text");
+    } else {
+        return NSLocalizedString(@"Loading Videos List...", @"Video feed loading text");
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)titleForEmpty {
+    return NSLocalizedString(@"No videos found.", @"Video feed no results");
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (NSString*)subtitleForError:(NSError*)error {
+    return NSLocalizedString(@"Sorry, there was an error loading the Video feed.", @"");
+}
+
 
 @end
