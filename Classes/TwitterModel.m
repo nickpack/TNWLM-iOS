@@ -59,7 +59,7 @@ static NSString* kTwitterSearchFeedFormat =
                                  delegate: self];
         
         request.cachePolicy = cachePolicy;
-        request.cacheExpirationAge = 1;
+        request.cacheExpirationAge = 300;
         
         TTURLJSONResponse* response = [[TTURLJSONResponse alloc] init];
         request.response = response;
